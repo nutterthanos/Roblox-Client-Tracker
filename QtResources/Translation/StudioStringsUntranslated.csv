@@ -913,6 +913,7 @@ Studio.App.Property.SelectionBackgroundColor,,Selection Background Color,Selecti
 Studio.App.Property.SelectionColor,,Selection Color,Selection Color
 Studio.App.Property.ServerAudioBehavior,,Server Audio Behavior,Server Audio Behavior
 Studio.App.Property.ShowActiveAnimationAsset,,Show Active Animation Asset,Show Active Animation Asset
+Studio.App.Property.ShowBones,,Show Bones,Show Bones
 Studio.App.Property.ShowBoundingBoxes,,Show Bounding Boxes,Show Bounding Boxes
 Studio.App.Property.ShowCoreGUIInExplorerWhilePlaying,,Show Core GUI in Explorer while Playing,Show Core GUI in Explorer while Playing
 Studio.App.Property.ShowDecompositionGeometry,,Show Decomposition Geometry,Show Decomposition Geometry
@@ -1990,6 +1991,8 @@ Studio.App.UploadMeshRequest.MeshContainedRiggingData,,Mesh contained rigging da
 Studio.App.UploadMeshRequest.MeshContainsMultipleMeshes,,Mesh contained multiple meshes that were merged,Mesh contained multiple meshes that were merged
 Studio.App.UploadMeshRequest.MeshContainsMultipleTextures,,Mesh contained multiple textures so mesh texture may be incorrect,Mesh contained multiple textures so mesh texture may be incorrect
 Studio.App.UploadMeshRequest.MeshHasBeenResized,,Mesh has been resized,Mesh has been resized
+Studio.App.UploadMeshRequest.MeshMissingTangents,,Some of the mesh vertices have tangents and some don't. Normal maps may not appear correctly,Some of the mesh vertices have tangents and some don't. Normal maps may not appear correctly
+Studio.App.UploadMeshRequest.MeshPureBlack,,All imported mesh vertices have black vertex color. Your mesh will appear black.,All imported mesh vertices have black vertex color. Your mesh will appear black.
 Studio.App.UploadMeshRequest.MultipleMeshesUnsupported,,Multiple meshes in mesh is unsupported,Multiple meshes in mesh is unsupported
 Studio.App.UploadMeshRequest.MultipleTexturesUnsupported,,Multiple textures in mesh is unsupported,Multiple textures in mesh is unsupported
 Studio.App.UploadMeshRequest.NoVerticesFound,,No vertices found,No vertices found

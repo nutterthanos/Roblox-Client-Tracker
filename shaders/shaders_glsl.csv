@@ -20,6 +20,8 @@ Blur3FS,Fragment
 Blur5FS,Fragment
 Blur7FS,Fragment
 CopyGuiVS,Vertex
+DefaultCustomHQFS,Fragment
+DefaultCustomHQFSShadowed,Fragment
 DefaultForceFieldFS,Fragment
 DefaultForceFieldHQFS,Fragment
 DefaultForceFieldSHQFS,Fragment
@@ -36,8 +38,10 @@ DefaultPlasticHQFS,Fragment
 DefaultPlasticReflectionFS,Fragment
 DefaultShadowFS,Fragment
 DefaultShadowGeomSkinnedVS,Vertex
+DefaultShadowGeomSmoothSkinnedVS,Vertex
 DefaultShadowGeomStaticVS,Vertex
 DefaultShadowSkinnedVS,Vertex
+DefaultShadowSmoothSkinnedVS,Vertex
 DefaultShadowStaticVS,Vertex
 DefaultSkinnedForceFieldHQVS,Vertex
 DefaultSkinnedForceFieldVS,Vertex
@@ -45,6 +49,12 @@ DefaultSkinnedHQVS,Vertex
 DefaultSkinnedReflectionVS,Vertex
 DefaultSkinnedSurfaceHQVS,Vertex
 DefaultSkinnedVS,Vertex
+DefaultSmoothSkinnedForceFieldHQVS,Vertex
+DefaultSmoothSkinnedForceFieldVS,Vertex
+DefaultSmoothSkinnedHQVS,Vertex
+DefaultSmoothSkinnedReflectionVS,Vertex
+DefaultSmoothSkinnedSurfaceHQVS,Vertex
+DefaultSmoothSkinnedVS,Vertex
 DefaultStaticForceFieldHQVS,Vertex
 DefaultStaticForceFieldVS,Vertex
 DefaultStaticHQVS,Vertex
@@ -69,6 +79,7 @@ DownSampleGlowTemporalLinear8x8FS,Fragment
 FXCompositingFS,Fragment
 FXCompositingLinearFS,Fragment
 GlassSkinnedVS,Vertex
+GlassSmoothSkinnedVS,Vertex
 GlassStaticVS,Vertex
 GlassTintFS,Fragment
 GrassFS,Fragment

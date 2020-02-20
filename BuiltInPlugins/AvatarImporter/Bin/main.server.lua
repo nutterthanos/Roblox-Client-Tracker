@@ -4,6 +4,7 @@
 local CoreGui = game:GetService("CoreGui")
 local Selection = game:GetService("Selection")
 local Workspace = game:GetService("Workspace")
+local ChangeHistoryService = game:GetService("ChangeHistoryService")
 
 local Plugin = script.Parent.Parent
 local Src = Plugin.src
@@ -62,6 +63,13 @@ if FastFlags:isBundleConfigurationEnabled() then
 	local Configurer = require(Src.configurer.Configurer)
 	configurer = Configurer.new(screenGui)
 	configurer:createButtons(plugin, toolbar)
+end
+
+-- Avatar Evolution rig correction module
+local avatarEvolutionRigAdjuster = nil
+if FastFlags:isAutoAdjustRigPoseEnabled() then
+	local rigAdjustmentModule = script.Parent:FindFirstChild("AutoRigAdjuster")
+	avatarEvolutionRigAdjuster = rigAdjustmentModule and require(rigAdjustmentModule) or nil
 end
 
 -- utility functions
@@ -172,6 +180,16 @@ local function setupImportedAvatar(avatar, avatarType)
 	addFace(avatar)
 	setupAvatarScaleTypeValues(avatar, avatarType)
 	setupHumanoidScaleValues(avatar, avatarType)
+	
+	--[[ Avatar Evolution support for auto detection of T-pose vs I-pose and corresponding adjustments to rig Attachments and Bone instances ]]--
+	local isR15 = avatarType ~= "Custom"
+	
+	--print("Setup imported avatar, avatarEvolutionRigAdjuster:",avatarEvolutionRigAdjuster," avatarType:",avatarType," isR15:",isR15)
+	if avatarEvolutionRigAdjuster and isR15 then
+		avatarEvolutionRigAdjuster:AdjustRig(avatar, avatarType)
+	end
+	
+	
 	avatar:MoveTo(getCameraLookAt(10))
 	Selection:Set({ avatar })
 
@@ -252,6 +270,7 @@ local function openUI()
 			end
 		else
 			setupImportedAvatar(avatarOrError, avatarType)
+			ChangeHistoryService:SetWaypoint("Avatar Import")
 			closeUI()
 		end
 

@@ -11,6 +11,9 @@ local MathUtils = require(Plugin.UILibrary.Utils.MathUtils)
 local buildHierarchy = require(Plugin.Src.Util.buildHierarchy)
 local AnimationData = require(Plugin.Src.Util.AnimationData)
 local KeyframeUtils = require(Plugin.Src.Util.KeyframeUtils)
+local Adorn = require(Plugin.Src.Util.Adorn)
+
+local IsMicroboneSupportEnabled = require(Plugin.LuaFlags.GetFFlagAnimationEditorMicroboneSupport)
 
 local Workspace = game:GetService("Workspace")
 
@@ -40,6 +43,112 @@ function RigUtils.getDescendants(descendants,  model)
 	getDescendants(descendants, model)
 end
 
+function RigUtils.clearMicrobones()
+	local folder = Workspace:FindFirstChild("RBX_MICROBONE_NODES")
+	if folder then
+		folder:Destroy()
+	end
+end
+
+--[[
+	Bone's WorldCFrame property is the just CFrame for it's base
+	pose in world space, not the current pose of wherever it actually
+	is in the world after being transformed. This has to be calculated
+	manually until the Bone API supports this.
+]]
+function RigUtils.getBoneCFrame(joint)
+	local transforms = {}
+	local pivot
+
+	-- gather all transforms from bone to root
+	while joint ~= nil do
+		if joint:IsA("Bone") then
+			table.insert(transforms, joint.Transform)
+			table.insert(transforms, joint.CFrame)
+			pivot = joint.WorldCFrame
+			joint = joint.Parent
+		else
+			if joint:IsA("BasePart") then
+				pivot = joint.CFrame
+			end
+			joint = nil
+		end
+	end
+
+	-- apply all transforms in reverse order
+	for i = #transforms, 1, -1 do
+		pivot = pivot * transforms[i]
+	end
+
+	return pivot
+end
+
+local function getLinkLength(bone, bonePos)
+	local length = 0
+	local parent = bone.Parent
+	if parent and parent:IsA("Bone") then
+		local parentPos = RigUtils.getBoneCFrame(parent).p
+		length = (parentPos - bonePos).Magnitude
+	end
+	return length
+end
+
+local function alignBoneLink(parentPos, childPos)
+	local lookVector = (childPos - parentPos).Unit
+	local upVector = Vector3.new(0, 1, 0)
+
+	if MathUtils:fuzzyEq(math.abs(lookVector:Dot(upVector)), 1) then
+		upVector = Vector3.new(1, 0, 0)
+	end
+
+	local rightVector = lookVector:Cross(upVector)
+	local upVector2 = rightVector:Cross(lookVector)
+	return CFrame.fromMatrix(parentPos, rightVector, upVector2)
+end
+
+function RigUtils.updateMicrobones(rig)
+	local folder = Workspace:FindFirstChild("RBX_MICROBONE_NODES")
+	if not folder then
+		folder = Instance.new("Folder", Workspace)
+		folder.Name = "RBX_MICROBONE_NODES"
+	end
+
+	local bones = RigUtils.getBones(rig)
+	for _, bone in ipairs(bones) do
+		local nodePosition = RigUtils.getBoneCFrame(bone).p
+		local nodeName = bone.Name .."Node"
+		local boneNode = folder:FindFirstChild(nodeName)
+		if not boneNode then
+			boneNode = Instance.new("Part", folder)
+			boneNode.Transparency = 1
+			boneNode.Name = nodeName
+			Adorn:Sphere("Sphere", boneNode, Constants.BONE_NODE_TRANSPARENCY, Constants.BONE_NODE_COLOR, 0)
+		end
+		boneNode.Sphere.Radius = getLinkLength(bone, nodePosition) / Constants.LENGTH_TO_RADIUS_RATIO
+		boneNode.CFrame = CFrame.new(nodePosition)
+
+		for _, child in ipairs(bone:GetChildren()) do
+			if child:IsA(Constants.BONE_CLASS_NAME) then
+				local nextNodePosition = RigUtils.getBoneCFrame(child).p
+				local length = (nextNodePosition - nodePosition).Magnitude
+				local linkName = bone.Name .."To" ..child.Name
+				local boneLink = folder:FindFirstChild(linkName)
+				if not boneLink then
+					boneLink = Instance.new("Part", folder)
+					boneLink.Transparency = 1
+					boneLink.Name = linkName
+					Adorn:Cone("Cone", boneLink, Constants.BONE_LINK_TRANSPARENCY, Constants.BONE_CONE_COLOR, 0)
+					Adorn:Line("Line", boneLink, 1, Constants.BONE_LINK_COLOR, 0, 0)
+				end
+				boneLink.Cone.Radius = length / Constants.LENGTH_TO_RADIUS_RATIO
+				boneLink.Cone.Height = length
+				boneLink.Line.Length = length
+				boneLink.CFrame = alignBoneLink(nodePosition, nextNodePosition)
+			end
+		end
+	end
+end
+
 -- Returns a list of every Motor6D in the rig.
 function RigUtils.getMotors(rig)
 	local motors = {}
@@ -52,6 +161,18 @@ function RigUtils.getMotors(rig)
 		end
 	end
 	return motors
+end
+
+function RigUtils.getBones(rig)
+	local bones = {}
+
+	local descendants = getDescendants({}, rig)
+	for _, child in ipairs(descendants) do
+		if child:IsA(Constants.BONE_CLASS_NAME) then
+			table.insert(bones, child)
+		end
+	end
+	return bones
 end
 
 local function getTemporaryConstraints()
@@ -103,7 +224,12 @@ function RigUtils.findRootPart(rig)
 			return rig.PrimaryPart
 		end
 
-		local _, motorMap = RigUtils.getRigInfo(rig)
+		local parts, motorMap, constraints, boneMap = nil
+		if IsMicroboneSupportEnabled() then
+			parts, motorMap, constraints, boneMap = RigUtils.getRigInfo(rig)
+		else
+			parts, motorMap = RigUtils.getRigInfo(rig)
+		end
 		local root = nil
 		local currentPart = next(motorMap)
 		if currentPart then
@@ -117,7 +243,32 @@ function RigUtils.findRootPart(rig)
 			end
 		end
 
-		return rig:FindFirstChild(root)
+		if IsMicroboneSupportEnabled() and not root then
+			local currentBone = next(boneMap)
+			if currentBone then
+				while not root do
+					local bone = boneMap[currentBone]
+					if bone then
+						currentBone = bone.Parent.Name
+					else
+						root = currentBone
+					end
+				end
+			end
+		end
+
+		if IsMicroboneSupportEnabled() then
+			local descendants = getDescendants({}, rig)
+			for _, child in ipairs(descendants) do
+				if child.Name == root then
+					if child:IsA("BasePart") then
+						return child
+					end
+				end
+			end
+		else
+			return rig:FindFirstChild(root)
+		end
 	else
 		for _, child in ipairs(rig:GetChildren()) do
 			if child:IsA("BasePart") then
@@ -171,6 +322,11 @@ function RigUtils.rigHasErrors(rig)
 	local motors = RigUtils.getMotors(rig)
 	local parts = RigUtils.getRigInfo(rig)
 
+	local bones = nil
+	if IsMicroboneSupportEnabled() then
+		bones = RigUtils.getBones(rig)
+	end
+
 	for _, motor in pairs(motors) do
 		local part0 = motor.Part0
 		local part1 = motor.Part1
@@ -186,8 +342,6 @@ function RigUtils.rigHasErrors(rig)
 		if part0 and part1 and rig:FindFirstChild(part0.Name, true) and rig:FindFirstChild(part1.Name, true) then
 			if motorsMap[part1] then
 				table.insert(partsWithMultipleParents, part1)
-				--motorsMap = {}
-				--break
 			else
 				motorsMap[part1] = motor
 			end
@@ -228,13 +382,14 @@ function RigUtils.rigHasErrors(rig)
 		end
 	end
 
-	if #motors == 0 then
+	local hasBones = bones ~= nil and #bones > 0
+	if #motors == 0 and not hasBones then
 		table.insert(errorList, {
 			ID = Constants.RIG_ERRORS.NoMotors,
 		})
 	end
 
-	if not unanchoredPartExists then
+	if not unanchoredPartExists and not hasBones then
 		table.insert(errorList, {
 			ID = Constants.RIG_ERRORS.PartsAnchored,
 		})
@@ -348,6 +503,14 @@ function RigUtils.getPartByName(rig, name)
 	end
 end
 
+function RigUtils.getBoneByName(rig, name)
+	local _, _, _, boneMap = RigUtils.getRigInfo(rig)
+	local bone = boneMap[name]
+	if bone then
+		return bone
+	end
+end
+
 function RigUtils.findMatchingAttachments(part0, part1)
 	if not FixRigUtils() or (part0 and part1) then
 		for _, child in ipairs(part0:GetChildren()) do
@@ -365,6 +528,10 @@ end
 function RigUtils.buildRigHierarchy(rig)
 	local rootPart = RigUtils.findRootPart(rig)
 	local motors = RigUtils.getMotors(rig)
+	local bones = nil
+	if IsMicroboneSupportEnabled() then
+		bones = RigUtils.getBones(rig)
+	end
 	assert(rootPart, "Rig is missing a root part.")
 
 	local root = rootPart.Name
@@ -374,6 +541,13 @@ function RigUtils.buildRigHierarchy(rig)
 			for _, motor in ipairs(motors) do
 				if motor.Part0.Name == partName then
 					table.insert(children, motor.Part1.Name)
+				end
+			end
+			if IsMicroboneSupportEnabled() then
+				for _, bone in ipairs(bones) do
+					if bone.Parent.Name == partName then
+						table.insert(children, bone.Name)
+					end
 				end
 			end
 			return children
@@ -631,10 +805,15 @@ end
 function RigUtils.getUnusedRigTracks(rig, tracks)
 	local unusedTracks = {}
 	local rootPart = RigUtils.findRootPart(rig)
-	local parts, partNameToMotorMap = RigUtils.getRigInfo(rig)
+	local parts, partNameToMotorMap, constraintMap, boneMap
+	if IsMicroboneSupportEnabled() then
+		parts, partNameToMotorMap, constraintMap, boneMap = RigUtils.getRigInfo(rig)
+	else
+		parts, partNameToMotorMap = RigUtils.getRigInfo(rig)
+	end
 
 	for _, part in ipairs(parts) do
-		if partNameToMotorMap[part.Name] and part ~= rootPart then
+		if partNameToMotorMap[part.Name] and part ~= rootPart or (IsMicroboneSupportEnabled() and boneMap[part.Name]) then
 			local used = false
 			for _, track in ipairs(tracks) do
 				if part.Name == track.Name then
@@ -667,12 +846,7 @@ function RigUtils.getRigInfo(rig)
 	local partNameToMotorMap = {}
 	local partNameToConstraintMap = {}
 
-	local descendants
-	if FindNestedParts() then
-		descendants = getDescendants({}, rig)
-	else
-		descendants = rig:GetChildren()
-	end
+	local descendants = getDescendants({}, rig)
 
 	for _, child in ipairs(descendants) do
 		if child:IsA("BasePart") then
@@ -689,9 +863,23 @@ function RigUtils.getRigInfo(rig)
 					break
 				end
 			end
+		elseif IsMicroboneSupportEnabled() and child:IsA(Constants.BONE_CLASS_NAME) then
+			table.insert(parts, child)
 		end
 	end
-	return parts, partNameToMotorMap, partNameToConstraintMap
+
+	if IsMicroboneSupportEnabled() then
+		local bones = RigUtils.getBones(rig)
+		local boneNameToBoneInstanceMap = {}
+
+		for _, bone in ipairs(bones) do
+			boneNameToBoneInstanceMap[bone.Name] = bone
+		end
+
+		return parts, partNameToMotorMap, partNameToConstraintMap, boneNameToBoneInstanceMap
+	else
+		return parts, partNameToMotorMap, partNameToConstraintMap
+	end
 end
 
 -- For KeyframeSequence animations, traverse all poses and sub-poses for a given keyframe.
@@ -734,7 +922,7 @@ end
 -- a chain all the way back to the root part. This function
 -- constructs the chain, making use of existing poses along the way
 -- if they exist.
-local function makePoseChain(keyframe, trackName, rig, trackData, partsToMotors)
+local function makePoseChain(keyframe, trackName, rig, trackData, partsToMotors, boneMap)
 	if FixRigUtils() then
 		local poseInstance = keyframe:FindFirstChild(trackName, true)
 		if poseInstance == nil then
@@ -748,9 +936,13 @@ local function makePoseChain(keyframe, trackName, rig, trackData, partsToMotors)
 		poseInstance.EasingDirection = trackData.EasingDirection.Name
 		local poseChain = poseInstance
 
-		local parts
+		local parts, constraints
 		if not FixExportSpeed() then
-			parts, partsToMotors = RigUtils.getRigInfo(rig)
+			if IsMicroboneSupportEnabled() then
+				parts, partsToMotors, constraints, boneMap = RigUtils.getRigInfo(rig)
+			else
+				parts, partsToMotors = RigUtils.getRigInfo(rig)
+			end
 		end
 		local currentPart = trackName
 		while currentPart ~= nil do
@@ -767,6 +959,26 @@ local function makePoseChain(keyframe, trackName, rig, trackData, partsToMotors)
 				poseChain = parentPose
 			else
 				currentPart = nil
+			end
+		end
+
+		if IsMicroboneSupportEnabled() then
+			local currentBone = trackName
+			while currentBone ~= nil do
+				local bone = boneMap[currentBone]
+				if bone then
+					currentBone = bone.Parent.Name
+					local parentPose = keyframe:FindFirstChild(currentBone, true)
+					if not parentPose then
+						parentPose = Instance.new("Pose")
+						parentPose.Name = currentBone
+						parentPose.Weight = 0
+					end
+					poseChain.Parent = parentPose
+					poseChain = parentPose
+				else
+					currentBone = nil
+				end
 			end
 		end
 
@@ -827,9 +1039,13 @@ function RigUtils.toRigAnimation(animationData, rig)
 	local numPoses = 0
 	local numEvents = 0
 
-	local parts, partsToMotors
+	local parts, partsToMotors, constraints, boneMap
 	if FixExportSpeed() then
-		parts, partsToMotors = RigUtils.getRigInfo(rig)
+		if IsMicroboneSupportEnabled() then
+			parts, partsToMotors, constraints, boneMap = RigUtils.getRigInfo(rig)
+		else
+			parts, partsToMotors = RigUtils.getRigInfo(rig)
+		end
 	end
 
 	-- Create poses
@@ -841,7 +1057,7 @@ function RigUtils.toRigAnimation(animationData, rig)
 			local time = keyframe / frameRate
 			local keyframeInstance = getKeyframeInstance(keyframeSequence, time)
 			local trackData = track.Data[keyframe]
-			makePoseChain(keyframeInstance, trackName, rig, trackData, partsToMotors)
+			makePoseChain(keyframeInstance, trackName, rig, trackData, partsToMotors, boneMap)
 
 			-- Set keyframe name, if one exists
 			if namedKeyframes[keyframe] then
@@ -992,28 +1208,46 @@ end
 
 function RigUtils.stepRigAnimation(rig, instance, frame)
 	local animator = getAnimator(rig)
-	local parts, partsToMotors = RigUtils.getRigInfo(rig)
+	local parts, partsToMotors, _, boneMap
+	if IsMicroboneSupportEnabled() then
+		parts, partsToMotors, _, boneMap = RigUtils.getRigInfo(rig)
+	else
+		parts, partsToMotors = RigUtils.getRigInfo(rig)
+	end
 
 	for _, part in ipairs(parts) do
-		local motor = partsToMotors[part.Name]
+		local joint = partsToMotors[part.Name]
+		if IsMicroboneSupportEnabled() then
+			joint = joint or boneMap[part.Name]
+		end
 		local track = instance.Tracks[part.Name]
 		if track then
-			motor.Transform = KeyframeUtils:getValue(track, frame)
+			joint.Transform = KeyframeUtils:getValue(track, frame)
 		else
-			motor.Transform = CFrame.new()
+			joint.Transform = CFrame.new()
 		end
 	end
+
 	animator:StepAnimations(0)
 end
 
 function RigUtils.clearPose(rig)
 	local animator = getAnimator(rig)
-	local parts, partsToMotors = RigUtils.getRigInfo(rig)
+	local parts, partsToMotors, _, boneMap
+	if IsMicroboneSupportEnabled() then
+		parts, partsToMotors, _, boneMap = RigUtils.getRigInfo(rig)
+	else
+		parts, partsToMotors = RigUtils.getRigInfo(rig)
+	end
 
 	for _, part in ipairs(parts) do
-		local motor = partsToMotors[part.Name]
-		motor.Transform = CFrame.new()
+		local joint = partsToMotors[part.Name]
+		if IsMicroboneSupportEnabled() then
+			joint = joint or boneMap[part.Name]
+		end
+		joint.Transform = CFrame.new()
 	end
+
 	animator:StepAnimations(0)
 end
 

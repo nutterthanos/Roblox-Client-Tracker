@@ -28,12 +28,17 @@ DefaultPlasticFS,Fragment
 DefaultPlasticReflectionFS,Fragment
 DefaultShadowFS,Fragment
 DefaultShadowGeomSkinnedVS,Vertex
+DefaultShadowGeomSmoothSkinnedVS,Vertex
 DefaultShadowGeomStaticVS,Vertex
 DefaultShadowSkinnedVS,Vertex
+DefaultShadowSmoothSkinnedVS,Vertex
 DefaultShadowStaticVS,Vertex
 DefaultSkinnedForceFieldVS,Vertex
 DefaultSkinnedReflectionVS,Vertex
 DefaultSkinnedVS,Vertex
+DefaultSmoothSkinnedForceFieldVS,Vertex
+DefaultSmoothSkinnedReflectionVS,Vertex
+DefaultSmoothSkinnedVS,Vertex
 DefaultStaticForceFieldVS,Vertex
 DefaultStaticReflectionVS,Vertex
 DefaultStaticVS,Vertex
@@ -50,6 +55,7 @@ DownSampleGlowTemporalLinear8x8FS,Fragment
 FXCompositingFS,Fragment
 FXCompositingLinearFS,Fragment
 GlassSkinnedVS,Vertex
+GlassSmoothSkinnedVS,Vertex
 GlassStaticVS,Vertex
 GlassTintFS,Fragment
 GrassFS,Fragment

@@ -48,10 +48,13 @@ RBX
 	{
 		AdornContext
 		AngularVelocityActuator
+		AnimationConstraint
 		BallSocketConstraint
 		Constraint
 		CylindricalConstraint
 		HingeConstraint
+		LevitationConstraint
+		LinearVelocityActuator
 		LineForce
 		MoveToConstraint
 		NoCollisionConstraint
@@ -158,6 +161,7 @@ RBX
 		LightGrid
 		LightGridCPU
 		LightObject
+		MeshDeformer
 		ObjectExporter
 		ObjectExporterObj
 		ParticleEmitter
@@ -436,6 +440,7 @@ RBX
 		Instance
 		LocalizationTable
 		MemberDescriptor
+		MeshDeformer
 		ModelInstance
 		MultipleDocumentInterfaceInstance
 		PartInstance
@@ -497,6 +502,7 @@ RBX
 		ConstraintInsideOfSphere
 		ConstraintLegacyAngularVelocity
 		ConstraintLegacyGyroAngularVelocity
+		ConstraintLevitation
 		ConstraintLinearServoMotor
 		ConstraintLinearSpring
 		ConstraintLinearVelocity
@@ -508,6 +514,7 @@ RBX
 		ConstraintSingleAxisLinearVelocity
 		ConstraintSingleAxisSpring
 		ConstraintTwist
+		ConstraintTwoAxisLinearVelocity
 		Force
 		ForceAngular
 		ForceLinear
@@ -637,6 +644,7 @@ RBX
 	BodyPvSetter
 	BodyThrust
 	BodyVelocity
+	BoneInstance
 	BoolPropertyVerb
 	BoundVerb
 	BoxHandleAdornment
@@ -660,6 +668,7 @@ RBX
 	CanNotSelectCommand
 	ChangeHistoryService
 	CharacterAppearance
+	CharacterHelper
 	CharacterMesh
 	ChatService
 	ChunkMeshShape
@@ -703,6 +712,7 @@ RBX
 	CSGMeshSgCore
 	CustomEvent
 	CustomEventReceiver
+	CustomMaterial
 	CustomParticleEmitter
 	Cylinder
 	CylinderHandleAdornment
@@ -750,6 +760,7 @@ RBX
 	FileMesh
 	FillTool
 	FilterDescendents
+	FilterDescendentsForLadder
 	FilterDescendentsList
 	FilterHumanoidNameOcclusion
 	FilterHumanoidParts
@@ -953,6 +964,7 @@ RBX
 	MergeBinder
 	MergedFilter
 	MeshContentProvider
+	MeshDeformer
 	MeshPart
 	Message
 	MessagingService
@@ -1056,6 +1068,7 @@ RBX
 	ResetCommand
 	RevoluteLink
 	RightMotorTool
+	RigidAnimationJoint
 	RigidJoint
 	RobloxLogWriter
 	RobloxPluginGuiService

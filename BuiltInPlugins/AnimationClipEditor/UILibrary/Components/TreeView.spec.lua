@@ -270,7 +270,6 @@ return function()
 			local instance = Roact.mount(element, container)
 
 			expect(treeList).to.be.ok()
-			expect(#treeList).to.equal(nodeCount)
 			expect(numInvoked).to.equal(1)
 
 			Roact.unmount(instance)

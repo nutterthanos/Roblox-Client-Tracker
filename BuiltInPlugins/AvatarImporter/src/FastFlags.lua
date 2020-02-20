@@ -28,4 +28,8 @@ function FastFlags:isRoactEnabled()
 	return isFlagOn("AvatarImporterRoact")
 end
 
+function FastFlags:isAutoAdjustRigPoseEnabled()
+	return isFlagOn("AvatarImporterAutoAdjustJointOrientations")
+end
+
 return FastFlags

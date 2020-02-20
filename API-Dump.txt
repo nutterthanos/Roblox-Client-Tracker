@@ -48,6 +48,7 @@ Class Accoutrement : Instance
 	Property Vector3 Accoutrement.AttachmentPos [<📁> LoadOnly] [NotReplicated]
 	Property Vector3 Accoutrement.AttachmentRight [<📁> LoadOnly] [NotReplicated]
 	Property Vector3 Accoutrement.AttachmentUp [<📁> LoadOnly] [NotReplicated]
+	Function void Accoutrement:RebuildWeld()
 Class Accessory : Accoutrement
 Class Hat : Accoutrement [Deprecated]
 Class AdService : Instance [NotCreatable] [Service] [Deprecated]
@@ -83,6 +84,7 @@ Class AnimationTrack : Instance [NotCreatable]
 	Event AnimationTrack.KeyframeReached(string keyframeName)
 	Event AnimationTrack.Stopped()
 Class Animator : Instance
+	Function void Animator:ApplyJointVelocities(Variant motors)
 	Function Array Animator:GetPlayingAnimationTracks()
 	Function Instance Animator:LoadAnimation(Instance animation)
 	Function void Animator:StepAnimations(float deltaTime) {PluginSecurity}
@@ -115,6 +117,8 @@ Class Attachment : Instance
 	Function Vector3 Attachment:GetSecondaryAxis() [Deprecated]
 	Function void Attachment:SetAxis(Vector3 axis) [Deprecated]
 	Function void Attachment:SetSecondaryAxis(Vector3 axis) [Deprecated]
+Class Bone : Attachment
+	Property CFrame Bone.Transform  [Hidden] [NotReplicated]
 Class Backpack : Instance
 Class BackpackItem : Instance [NotCreatable]
 	Property Content BackpackItem.TextureId
@@ -340,6 +344,14 @@ Class ShirtGraphic : CharacterAppearance
 	Property Content ShirtGraphic.Graphic
 Class Skin : CharacterAppearance [Deprecated]
 	Property BrickColor Skin.SkinColor  [Deprecated]
+Class CharacterHelper : Instance
+	Property float CharacterHelper.LadderSearchDepth
+	Property Vector3 CharacterHelper.LastLadderHitLocation  [ReadOnly] [NotReplicated]
+	Property Vector3 CharacterHelper.LastLadderLookAxis  [ReadOnly] [NotReplicated]
+	Property Class<BasePart> CharacterHelper.LastLadderPart  [ReadOnly] [NotReplicated]
+	Property Vector3 CharacterHelper.LastLadderUpAxis  [ReadOnly] [NotReplicated]
+	Function bool CharacterHelper:CheckForLadder()
+	Function bool CharacterHelper:IsPartBuoyant(Instance part)
 Class Chat : Instance [NotCreatable] [Service] [NotReplicated]
 	Property bool Chat.BubbleChatEnabled
 	Property bool Chat.LoadDefaultChat {✏️NotAccessibleSecurity}
@@ -399,10 +411,23 @@ Class AlignPosition : Constraint
 Class AngularVelocity : Constraint
 	Property Vector3 AngularVelocity.AngularVelocity
 	Property float AngularVelocity.MaxTorque
+	Property bool AngularVelocity.ReactionTorqueEnabled
 	Property Enum<ActuatorRelativeTo> AngularVelocity.RelativeTo
+Class AnimationConstraint : Constraint
+	Property bool AnimationConstraint.ApplyAtCenterOfMass
+	Property bool AnimationConstraint.ReactionForceEnabled
+	Property bool AnimationConstraint.RigidityEnabled
+	Property Enum<AnimationMode> AnimationConstraint.Mode
+	Property CFrame AnimationConstraint.TargetTransform
+	Property float AnimationConstraint.MaxAngularVelocity
+	Property float AnimationConstraint.MaxForce
+	Property float AnimationConstraint.MaxTorque
+	Property float AnimationConstraint.MaxVelocity
+	Property float AnimationConstraint.Responsiveness
 Class BallSocketConstraint : Constraint
 	Property float BallSocketConstraint.Radius
 	Property bool BallSocketConstraint.LimitsEnabled
+	Property float BallSocketConstraint.MaxFrictionTorque
 	Property float BallSocketConstraint.Restitution
 	Property bool BallSocketConstraint.TwistLimitsEnabled
 	Property float BallSocketConstraint.UpperAngle
@@ -422,12 +447,26 @@ Class HingeConstraint : Constraint
 	Property float HingeConstraint.AngularSpeed
 	Property float HingeConstraint.ServoMaxTorque
 	Property float HingeConstraint.TargetAngle
+Class LevitationConstraint : Constraint
+	Property float LevitationConstraint.Size
+	Property float LevitationConstraint.Friction
+	Property float LevitationConstraint.CurrentPosition [<💾> SaveOnly] [ReadOnly] [NotReplicated]
+	Property float LevitationConstraint.MotorMaxAcceleration
+	Property Vector3 LevitationConstraint.MotorVelocity
+	Property float LevitationConstraint.ServoMaxForce
+	Property float LevitationConstraint.ServoMaxSpeed
+	Property float LevitationConstraint.TargetPosition
 Class LineForce : Constraint
 	Property bool LineForce.ApplyAtCenterOfMass
 	Property bool LineForce.InverseSquareLaw
 	Property float LineForce.Magnitude
 	Property float LineForce.MaxForce
 	Property bool LineForce.ReactionForceEnabled
+Class LinearVelocity : Constraint
+	Property float LinearVelocity.MaxAcceleration
+	Property float LinearVelocity.MaxForce
+	Property Vector3 LinearVelocity.Velocity
+	Property Vector3 LinearVelocity.WorldAxis
 Class RodConstraint : Constraint
 	Property float RodConstraint.Thickness
 	Property float RodConstraint.CurrentDistance [<💾> SaveOnly] [ReadOnly] [NotReplicated]
@@ -1615,6 +1654,24 @@ Class MemStorageService : Instance [NotCreatable] [Service] [NotReplicated]
 	Function bool MemStorageService:HasItem(string key) {RobloxScriptSecurity}
 	Function bool MemStorageService:RemoveItem(string key) {RobloxScriptSecurity}
 	Function void MemStorageService:SetItem(string key, string value = "") {RobloxScriptSecurity}
+Class MeshDeformer : Instance
+	Property float MeshDeformer.FadeDistance
+	Property Vector3 MeshDeformer.LocalOffset
+	Property Class<MeshDeformer> MeshDeformer.ParentDeformer {PluginSecurity}
+	Property float MeshDeformer.Radius
+	Property float MeshDeformer.RbfConst
+	Property float MeshDeformer.RbfSmoothnes
+	Property Enum<RbfFunctionType> MeshDeformer.RbfType
+	Property BinaryString MeshDeformer.SourceData  [NotScriptable]
+	Property bool MeshDeformer.DebugShowAlways  [NotReplicated] [NotScriptable]
+	Property Enum<RbfDebugVisualization> MeshDeformer.DebugVisualizationType  [NotReplicated] [NotScriptable]
+	Property CFrame MeshDeformer.WorldCFrame  [Hidden] [ReadOnly] [NotReplicated]
+	Function Array MeshDeformer:GetRbfSourceKeys() {PluginSecurity}
+	Function Array MeshDeformer:GetRbfSourceValues() {PluginSecurity}
+	Function void MeshDeformer:RandomizePointCloud()
+	Function void MeshDeformer:SetRbfSourceData(Array keys, Array values) {PluginSecurity}
+	Function void MeshDeformer:SetRbfSourceKeys(Array keys) {PluginSecurity}
+	Function void MeshDeformer:SetRbfSourceValues(Array values) {PluginSecurity}
 Class Message : Instance [Deprecated]
 	Property string Message.Text  [Deprecated]
 Class Hint : Message [Deprecated]
@@ -1775,6 +1832,7 @@ Class BasePart : PVInstance [NotCreatable] [NotBrowsable]
 	Function float BasePart:GetMass() [CustomLuaState]
 	Function Instance BasePart:GetNetworkOwner()
 	Function bool BasePart:GetNetworkOwnershipAuto()
+	Function Vector3 BasePart:GetRelativeVelocityAt(Instance otherPart, Vector3 worldPoint)
 	Function CFrame BasePart:GetRenderCFrame() [Deprecated]
 	Function Instance BasePart:GetRootPart()
 	Function Objects BasePart:GetTouchingParts()
@@ -1801,7 +1859,7 @@ Class FlagStand : Part [Deprecated]
 Class Platform : Part [NotCreatable]
 Class Seat : Part
 	Property bool Seat.Disabled
-	Property Class<Humanoid> Seat.Occupant  [ReadOnly] [NotReplicated]
+	Property Instance Seat.Occupant
 	Function void Seat:Sit(Instance humanoid)
 Class SkateboardPlatform : Part [Deprecated]
 	Property Class<SkateboardController> SkateboardPlatform.Controller  [ReadOnly] [NotReplicated] [Deprecated]
@@ -1862,6 +1920,7 @@ Class Terrain : BasePart [NotCreatable]
 Class TriangleMeshPart : BasePart [NotCreatable]
 	Property Enum<CollisionFidelity> TriangleMeshPart.CollisionFidelity {✏️PluginSecurity} [<📁> LoadOnly] [NotReplicated]
 Class MeshPart : TriangleMeshPart
+	Property Class<MeshDeformer> MeshPart.Deformer
 	Property Content MeshPart.MeshID  [NotScriptable] [Deprecated]
 	Property Content MeshPart.MeshId {✏️NotAccessibleSecurity}
 	Property Enum<RenderFidelity> MeshPart.RenderFidelity {✏️PluginSecurity}
@@ -1879,7 +1938,7 @@ Class VehicleSeat : BasePart
 	Property bool VehicleSeat.Disabled
 	Property bool VehicleSeat.HeadsUpDisplay
 	Property float VehicleSeat.MaxSpeed
-	Property Class<Humanoid> VehicleSeat.Occupant  [ReadOnly] [NotReplicated]
+	Property Instance VehicleSeat.Occupant
 	Property int VehicleSeat.Steer
 	Property float VehicleSeat.SteerFloat
 	Property int VehicleSeat.Throttle
@@ -2204,6 +2263,7 @@ Class Plugin : Instance [NotCreatable]
 	Function Variant Plugin:GetSetting(string key) {PluginSecurity}
 	Function int64 Plugin:GetStudioUserId() {PluginSecurity} [Deprecated]
 	Function Instance Plugin:ImportFbxAnimation(Instance rigModel, bool isR15 = true) {PluginSecurity} [Yields]
+	Function Instance Plugin:ImportFbxPointCloud() {PluginSecurity} [Yields]
 	Function Instance Plugin:ImportFbxRig(bool isR15 = true) {PluginSecurity} [Yields]
 	Function void Plugin:Invoke(string key, Tuple arguments) {RobloxScriptSecurity}
 	Function bool Plugin:IsActivated() {PluginSecurity}
@@ -2360,6 +2420,7 @@ Class RenderSettings : Instance [NotCreatable] [Service] [NotBrowsable]
 	Property bool RenderSettings.EnableFRM [<📁> LoadOnly] [Hidden] [NotReplicated]
 	Property bool RenderSettings.ReloadAssets
 	Property bool RenderSettings.RenderCSGTrianglesDebug
+	Property bool RenderSettings.ShowBones
 	Property bool RenderSettings.ShowBoundingBoxes
 	Property bool RenderSettings.ExportMergeByMaterial
 	Property Enum<FramerateManagerMode> RenderSettings.FrameRateManager
@@ -2409,6 +2470,7 @@ Class RunService : Instance [NotCreatable] [Service] [NotReplicated]
 	Function void RunService:Stop() {PluginSecurity}
 	Function void RunService:UnbindFromRenderStep(string name)
 	Function void RunService:setThrottleFramerateEnabled(bool enable) {RobloxScriptSecurity}
+	Event RunService.EarlyStepped(double time, double step)
 	Event RunService.Heartbeat(double step)
 	Event RunService.RenderStepped(double step)
 	Event RunService.Stepped(double time, double step)
@@ -2839,6 +2901,14 @@ Class StudioService : Instance [NotCreatable] [Service] [NotReplicated]
 Class StudioTheme : Instance [NotCreatable] [NotReplicated]
 	Function Color3 StudioTheme:GetColor(Enum<StudioStyleGuideColor> styleguideitem, Enum<StudioStyleGuideModifier> modifier = "Default") {PluginSecurity}
 	Function string StudioTheme:GetPath(string assetid, Enum<StudioStyleGuideModifier> modifier = "Default") {PluginSecurity}
+Class SurfaceAppearance : Instance
+	Property float SurfaceAppearance.MetalnessScale
+	Property float SurfaceAppearance.RoughnessScale
+	Property Content SurfaceAppearance.ColorMap {LocalUserSecurity}
+	Property Content SurfaceAppearance.MetalnessMap {LocalUserSecurity}
+	Property Content SurfaceAppearance.NormalMap {LocalUserSecurity}
+	Property Content SurfaceAppearance.RoughnessMap {LocalUserSecurity}
+	Property Content SurfaceAppearance.TexturePack {RobloxSecurity}
 Class TaskScheduler : Instance [NotCreatable] [Service]
 	Property Enum<ThreadPoolConfig> TaskScheduler.ThreadPoolConfig
 	Property double TaskScheduler.SchedulerDutyCycle [<💾> SaveOnly] [ReadOnly] [NotReplicated]
@@ -3277,6 +3347,12 @@ Enum ActuatorType
 Enum AlignType
 	EnumItem AlignType.Parallel : 0
 	EnumItem AlignType.Perpendicular : 1
+Enum AnimationMode
+	EnumItem AnimationMode.Kinematic : 0
+	EnumItem AnimationMode.DynamicPosition : 1
+	EnumItem AnimationMode.DynamicOrientation : 2
+	EnumItem AnimationMode.DynamicPositionOrientation : 3
+	EnumItem AnimationMode.DynamicBallSocketOrientation : 6
 Enum AnimationPriority
 	EnumItem AnimationPriority.Idle : 0
 	EnumItem AnimationPriority.Movement : 1
@@ -4412,6 +4488,18 @@ Enum QualityLevel
 Enum R15CollisionType
 	EnumItem R15CollisionType.OuterBox : 0
 	EnumItem R15CollisionType.InnerBox : 1
+Enum RbfDebugVisualization
+	EnumItem RbfDebugVisualization.Source : 0
+	EnumItem RbfDebugVisualization.Target : 1
+	EnumItem RbfDebugVisualization.VectorField : 2
+Enum RbfFunctionType
+	EnumItem RbfFunctionType.Linear : 0
+	EnumItem RbfFunctionType.Cubic : 1
+	EnumItem RbfFunctionType.Quintic : 2
+	EnumItem RbfFunctionType.MultiQuadric : 3
+	EnumItem RbfFunctionType.Inverse : 4
+	EnumItem RbfFunctionType.Gaussian : 5
+	EnumItem RbfFunctionType.ThinPlate : 6
 Enum RenderFidelity
 	EnumItem RenderFidelity.Automatic : 0
 	EnumItem RenderFidelity.Precise : 1

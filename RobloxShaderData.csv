@@ -21,6 +21,8 @@ Blur5FS,Fragment,✔,✔,✔,✔,✔,✔,✔
 Blur7FS,Fragment,✔,✔,✔,✔,✔,✔,✔
 CheckerboardDepthFS,Fragment,✔,✔,✔,❌,❌,✔,✔
 CopyGuiVS,Vertex,✔,✔,✔,✔,✔,✔,✔
+DefaultCustomHQFS,Fragment,✔,✔,✔,❌,✔,✔,✔
+DefaultCustomHQFSShadowed,Fragment,✔,✔,✔,❌,✔,✔,✔
 DefaultForceFieldFS,Fragment,✔,✔,✔,✔,✔,✔,✔
 DefaultForceFieldHQFS,Fragment,✔,✔,✔,❌,✔,✔,✔
 DefaultForceFieldHQFSShadowed,Fragment,✔,✔,✔,❌,❌,✔,✔
@@ -54,6 +56,8 @@ DefaultNewShadowMSAAOpaqueFS,Fragment,❌,❌,❌,❌,❌,❌,✔
 DefaultNewShadowMSAAOpaquePancakingFallbackFS,Fragment,❌,❌,❌,❌,❌,❌,✔
 DefaultNewShadowMSAASkinnedPancakingFallbackVS,Vertex,❌,❌,❌,❌,❌,❌,✔
 DefaultNewShadowMSAASkinnedVS,Vertex,❌,❌,❌,❌,❌,❌,✔
+DefaultNewShadowMSAASmoothSkinnedPancakingFallbackVS,Vertex,❌,❌,❌,❌,❌,❌,✔
+DefaultNewShadowMSAASmoothSkinnedVS,Vertex,❌,❌,❌,❌,❌,❌,✔
 DefaultNewShadowMSAAStaticPancakingFallbackVS,Vertex,❌,❌,❌,❌,❌,❌,✔
 DefaultNewShadowMSAAStaticVS,Vertex,❌,❌,❌,❌,❌,❌,✔
 DefaultNewShadowMSAATransparentFS,Fragment,❌,❌,❌,❌,❌,❌,✔
@@ -62,6 +66,8 @@ DefaultNewShadowOpaqueFS,Fragment,✔,✔,✔,❌,❌,✔,✔
 DefaultNewShadowOpaquePancakingFallbackFS,Fragment,✔,✔,✔,❌,❌,✔,✔
 DefaultNewShadowSkinnedPancakingFallbackVS,Vertex,✔,✔,✔,❌,❌,✔,✔
 DefaultNewShadowSkinnedVS,Vertex,✔,✔,✔,❌,❌,✔,✔
+DefaultNewShadowSmoothSkinnedPancakingFallbackVS,Vertex,✔,✔,✔,❌,❌,✔,✔
+DefaultNewShadowSmoothSkinnedVS,Vertex,✔,✔,✔,❌,❌,✔,✔
 DefaultNewShadowStaticPancakingFallbackVS,Vertex,✔,✔,✔,❌,❌,✔,✔
 DefaultNewShadowStaticVS,Vertex,✔,✔,✔,❌,❌,✔,✔
 DefaultNewShadowTransparentFS,Fragment,✔,✔,✔,❌,❌,✔,✔
@@ -76,9 +82,11 @@ DefaultPlasticReflectionFS,Fragment,✔,✔,✔,✔,✔,✔,✔
 DefaultShadowFS,Fragment,✔,✔,✔,✔,✔,✔,✔
 DefaultShadowGeomInstancedVS,Vertex,✔,✔,✔,❌,❌,✔,✔
 DefaultShadowGeomSkinnedVS,Vertex,✔,✔,✔,✔,✔,✔,✔
+DefaultShadowGeomSmoothSkinnedVS,Vertex,✔,✔,✔,✔,✔,✔,✔
 DefaultShadowGeomStaticVS,Vertex,✔,✔,✔,✔,✔,✔,✔
 DefaultShadowInstancedVS,Vertex,✔,✔,✔,❌,❌,✔,✔
 DefaultShadowSkinnedVS,Vertex,✔,✔,✔,✔,✔,✔,✔
+DefaultShadowSmoothSkinnedVS,Vertex,✔,✔,✔,✔,✔,✔,✔
 DefaultShadowStaticVS,Vertex,✔,✔,✔,✔,✔,✔,✔
 DefaultSkinnedForceFieldHQVS,Vertex,✔,✔,✔,❌,✔,✔,✔
 DefaultSkinnedForceFieldHQVSShadowed,Vertex,✔,✔,✔,❌,❌,✔,✔
@@ -90,6 +98,16 @@ DefaultSkinnedReflectionVSShadowed,Vertex,✔,✔,✔,❌,❌,✔,✔
 DefaultSkinnedSurfaceHQVS,Vertex,✔,✔,✔,❌,✔,✔,✔
 DefaultSkinnedSurfaceHQVSShadowed,Vertex,✔,✔,✔,❌,❌,✔,✔
 DefaultSkinnedVS,Vertex,✔,✔,✔,✔,✔,✔,✔
+DefaultSmoothSkinnedForceFieldHQVS,Vertex,✔,✔,✔,❌,✔,✔,✔
+DefaultSmoothSkinnedForceFieldHQVSShadowed,Vertex,✔,✔,✔,❌,❌,✔,✔
+DefaultSmoothSkinnedForceFieldVS,Vertex,✔,✔,✔,✔,✔,✔,✔
+DefaultSmoothSkinnedHQVS,Vertex,✔,✔,✔,❌,✔,✔,✔
+DefaultSmoothSkinnedHQVSShadowed,Vertex,✔,✔,✔,❌,❌,✔,✔
+DefaultSmoothSkinnedReflectionVS,Vertex,✔,✔,✔,✔,✔,✔,✔
+DefaultSmoothSkinnedReflectionVSShadowed,Vertex,✔,✔,✔,❌,❌,✔,✔
+DefaultSmoothSkinnedSurfaceHQVS,Vertex,✔,✔,✔,❌,✔,✔,✔
+DefaultSmoothSkinnedSurfaceHQVSShadowed,Vertex,✔,✔,✔,❌,❌,✔,✔
+DefaultSmoothSkinnedVS,Vertex,✔,✔,✔,✔,✔,✔,✔
 DefaultStaticForceFieldHQVS,Vertex,✔,✔,✔,❌,✔,✔,✔
 DefaultStaticForceFieldHQVSShadowed,Vertex,✔,✔,✔,❌,❌,✔,✔
 DefaultStaticForceFieldVS,Vertex,✔,✔,✔,✔,✔,✔,✔
@@ -124,6 +142,7 @@ FXCompositingFS,Fragment,✔,✔,✔,✔,✔,✔,✔
 FXCompositingLinearFS,Fragment,✔,✔,✔,✔,✔,✔,✔
 GlassInstancedVS,Vertex,✔,✔,✔,❌,❌,✔,✔
 GlassSkinnedVS,Vertex,✔,✔,✔,✔,✔,✔,✔
+GlassSmoothSkinnedVS,Vertex,✔,✔,✔,✔,✔,✔,✔
 GlassStaticVS,Vertex,✔,✔,✔,✔,✔,✔,✔
 GlassTintFS,Fragment,✔,✔,✔,✔,✔,✔,✔
 GrassFS,Fragment,✔,✔,✔,✔,✔,✔,✔

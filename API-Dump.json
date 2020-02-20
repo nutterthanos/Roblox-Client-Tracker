@@ -1023,6 +1023,17 @@
                         "Category": "DataType",
                         "Name": "Vector3"
                     }
+                },
+                {
+                    "MemberType": "Function",
+                    "Name": "RebuildWeld",
+                    "Parameters": [
+                    ],
+                    "ReturnType": {
+                        "Category": "Primitive",
+                        "Name": "void"
+                    },
+                    "Security": "None"
                 }
             ],
             "MemoryCategory": "Instances",
@@ -1578,6 +1589,24 @@
         },
         {
             "Members": [
+                {
+                    "MemberType": "Function",
+                    "Name": "ApplyJointVelocities",
+                    "Parameters": [
+                        {
+                            "Name": "motors",
+                            "Type": {
+                                "Category": "Group",
+                                "Name": "Variant"
+                            }
+                        }
+                    ],
+                    "ReturnType": {
+                        "Category": "Primitive",
+                        "Name": "void"
+                    },
+                    "Security": "None"
+                },
                 {
                     "MemberType": "Function",
                     "Name": "GetPlayingAnimationTracks",
@@ -2215,6 +2244,34 @@
             "MemoryCategory": "Instances",
             "Name": "Attachment",
             "Superclass": "Instance"
+        },
+        {
+            "Members": [
+                {
+                    "Category": "Data",
+                    "MemberType": "Property",
+                    "Name": "Transform",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": false,
+                        "CanSave": false
+                    },
+                    "Tags": [
+                        "Hidden",
+                        "NotReplicated"
+                    ],
+                    "ValueType": {
+                        "Category": "DataType",
+                        "Name": "CFrame"
+                    }
+                }
+            ],
+            "MemoryCategory": "Instances",
+            "Name": "Bone",
+            "Superclass": "Attachment"
         },
         {
             "Members": [
@@ -6015,6 +6072,143 @@
         {
             "Members": [
                 {
+                    "Category": "Configuration",
+                    "MemberType": "Property",
+                    "Name": "LadderSearchDepth",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    }
+                },
+                {
+                    "Category": "Output",
+                    "MemberType": "Property",
+                    "Name": "LastLadderHitLocation",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": false,
+                        "CanSave": false
+                    },
+                    "Tags": [
+                        "ReadOnly",
+                        "NotReplicated"
+                    ],
+                    "ValueType": {
+                        "Category": "DataType",
+                        "Name": "Vector3"
+                    }
+                },
+                {
+                    "Category": "Output",
+                    "MemberType": "Property",
+                    "Name": "LastLadderLookAxis",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": false,
+                        "CanSave": false
+                    },
+                    "Tags": [
+                        "ReadOnly",
+                        "NotReplicated"
+                    ],
+                    "ValueType": {
+                        "Category": "DataType",
+                        "Name": "Vector3"
+                    }
+                },
+                {
+                    "Category": "Output",
+                    "MemberType": "Property",
+                    "Name": "LastLadderPart",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": false,
+                        "CanSave": false
+                    },
+                    "Tags": [
+                        "ReadOnly",
+                        "NotReplicated"
+                    ],
+                    "ValueType": {
+                        "Category": "Class",
+                        "Name": "BasePart"
+                    }
+                },
+                {
+                    "Category": "Output",
+                    "MemberType": "Property",
+                    "Name": "LastLadderUpAxis",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": false,
+                        "CanSave": false
+                    },
+                    "Tags": [
+                        "ReadOnly",
+                        "NotReplicated"
+                    ],
+                    "ValueType": {
+                        "Category": "DataType",
+                        "Name": "Vector3"
+                    }
+                },
+                {
+                    "MemberType": "Function",
+                    "Name": "CheckForLadder",
+                    "Parameters": [
+                    ],
+                    "ReturnType": {
+                        "Category": "Primitive",
+                        "Name": "bool"
+                    },
+                    "Security": "None"
+                },
+                {
+                    "MemberType": "Function",
+                    "Name": "IsPartBuoyant",
+                    "Parameters": [
+                        {
+                            "Name": "part",
+                            "Type": {
+                                "Category": "Class",
+                                "Name": "Instance"
+                            }
+                        }
+                    ],
+                    "ReturnType": {
+                        "Category": "Primitive",
+                        "Name": "bool"
+                    },
+                    "Security": "None"
+                }
+            ],
+            "MemoryCategory": "Instances",
+            "Name": "CharacterHelper",
+            "Superclass": "Instance"
+        },
+        {
+            "Members": [
+                {
                     "Category": "Behavior",
                     "MemberType": "Property",
                     "Name": "BubbleChatEnabled",
@@ -7090,6 +7284,23 @@
                 {
                     "Category": "Torque",
                     "MemberType": "Property",
+                    "Name": "ReactionTorqueEnabled",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "bool"
+                    }
+                },
+                {
+                    "Category": "Torque",
+                    "MemberType": "Property",
                     "Name": "RelativeTo",
                     "Security": {
                         "Read": "None",
@@ -7112,6 +7323,183 @@
         {
             "Members": [
                 {
+                    "Category": "Align",
+                    "MemberType": "Property",
+                    "Name": "ApplyAtCenterOfMass",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "bool"
+                    }
+                },
+                {
+                    "Category": "Compliance",
+                    "MemberType": "Property",
+                    "Name": "MaxAngularVelocity",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    }
+                },
+                {
+                    "Category": "Compliance",
+                    "MemberType": "Property",
+                    "Name": "MaxForce",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    }
+                },
+                {
+                    "Category": "Compliance",
+                    "MemberType": "Property",
+                    "Name": "MaxTorque",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    }
+                },
+                {
+                    "Category": "Compliance",
+                    "MemberType": "Property",
+                    "Name": "MaxVelocity",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    }
+                },
+                {
+                    "Category": "Animation",
+                    "MemberType": "Property",
+                    "Name": "Mode",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Enum",
+                        "Name": "AnimationMode"
+                    }
+                },
+                {
+                    "Category": "Align",
+                    "MemberType": "Property",
+                    "Name": "ReactionForceEnabled",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "bool"
+                    }
+                },
+                {
+                    "Category": "Compliance",
+                    "MemberType": "Property",
+                    "Name": "Responsiveness",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    }
+                },
+                {
+                    "Category": "Align",
+                    "MemberType": "Property",
+                    "Name": "RigidityEnabled",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "bool"
+                    }
+                },
+                {
+                    "Category": "Animation",
+                    "MemberType": "Property",
+                    "Name": "TargetTransform",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "DataType",
+                        "Name": "CFrame"
+                    }
+                }
+            ],
+            "MemoryCategory": "Instances",
+            "Name": "AnimationConstraint",
+            "Superclass": "Constraint"
+        },
+        {
+            "Members": [
+                {
                     "Category": "BallSocket",
                     "MemberType": "Property",
                     "Name": "LimitsEnabled",
@@ -7126,6 +7514,23 @@
                     "ValueType": {
                         "Category": "Primitive",
                         "Name": "bool"
+                    }
+                },
+                {
+                    "Category": "Friction",
+                    "MemberType": "Property",
+                    "Name": "MaxFrictionTorque",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
                     }
                 },
                 {
@@ -7470,6 +7875,153 @@
         {
             "Members": [
                 {
+                    "Category": "Derived",
+                    "MemberType": "Property",
+                    "Name": "CurrentPosition",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": false,
+                        "CanSave": true
+                    },
+                    "Tags": [
+                        "ReadOnly",
+                        "NotReplicated"
+                    ],
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    }
+                },
+                {
+                    "Category": "Contact",
+                    "MemberType": "Property",
+                    "Name": "Friction",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    }
+                },
+                {
+                    "Category": "Motor",
+                    "MemberType": "Property",
+                    "Name": "MotorMaxAcceleration",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    }
+                },
+                {
+                    "Category": "Motor",
+                    "MemberType": "Property",
+                    "Name": "MotorVelocity",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "DataType",
+                        "Name": "Vector3"
+                    }
+                },
+                {
+                    "Category": "Servo",
+                    "MemberType": "Property",
+                    "Name": "ServoMaxForce",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    }
+                },
+                {
+                    "Category": "Servo",
+                    "MemberType": "Property",
+                    "Name": "ServoMaxSpeed",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    }
+                },
+                {
+                    "Category": "Appearance",
+                    "MemberType": "Property",
+                    "Name": "Size",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    }
+                },
+                {
+                    "Category": "Servo",
+                    "MemberType": "Property",
+                    "Name": "TargetPosition",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    }
+                }
+            ],
+            "MemoryCategory": "Instances",
+            "Name": "LevitationConstraint",
+            "Superclass": "Constraint"
+        },
+        {
+            "Members": [
+                {
                     "Category": "LineForce",
                     "MemberType": "Property",
                     "Name": "ApplyAtCenterOfMass",
@@ -7557,6 +8109,81 @@
             ],
             "MemoryCategory": "Instances",
             "Name": "LineForce",
+            "Superclass": "Constraint"
+        },
+        {
+            "Members": [
+                {
+                    "Category": "Velocity",
+                    "MemberType": "Property",
+                    "Name": "MaxAcceleration",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    }
+                },
+                {
+                    "Category": "Velocity",
+                    "MemberType": "Property",
+                    "Name": "MaxForce",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    }
+                },
+                {
+                    "Category": "Velocity",
+                    "MemberType": "Property",
+                    "Name": "Velocity",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "DataType",
+                        "Name": "Vector3"
+                    }
+                },
+                {
+                    "Category": "Velocity",
+                    "MemberType": "Property",
+                    "Name": "WorldAxis",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "DataType",
+                        "Name": "Vector3"
+                    }
+                }
+            ],
+            "MemoryCategory": "Instances",
+            "Name": "LinearVelocity",
             "Superclass": "Constraint"
         },
         {
@@ -28343,6 +28970,310 @@
         {
             "Members": [
                 {
+                    "Category": "Debug",
+                    "MemberType": "Property",
+                    "Name": "DebugShowAlways",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "Tags": [
+                        "NotReplicated",
+                        "NotScriptable"
+                    ],
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "bool"
+                    }
+                },
+                {
+                    "Category": "Debug",
+                    "MemberType": "Property",
+                    "Name": "DebugVisualizationType",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "Tags": [
+                        "NotReplicated",
+                        "NotScriptable"
+                    ],
+                    "ValueType": {
+                        "Category": "Enum",
+                        "Name": "RbfDebugVisualization"
+                    }
+                },
+                {
+                    "Category": "Appearance",
+                    "MemberType": "Property",
+                    "Name": "FadeDistance",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    }
+                },
+                {
+                    "Category": "Appearance",
+                    "MemberType": "Property",
+                    "Name": "LocalOffset",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "DataType",
+                        "Name": "Vector3"
+                    }
+                },
+                {
+                    "Category": "Appearance",
+                    "MemberType": "Property",
+                    "Name": "ParentDeformer",
+                    "Security": {
+                        "Read": "PluginSecurity",
+                        "Write": "PluginSecurity"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Class",
+                        "Name": "MeshDeformer"
+                    }
+                },
+                {
+                    "Category": "Appearance",
+                    "MemberType": "Property",
+                    "Name": "Radius",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    }
+                },
+                {
+                    "Category": "Appearance",
+                    "MemberType": "Property",
+                    "Name": "RbfConst",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    }
+                },
+                {
+                    "Category": "Appearance",
+                    "MemberType": "Property",
+                    "Name": "RbfSmoothnes",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    }
+                },
+                {
+                    "Category": "Appearance",
+                    "MemberType": "Property",
+                    "Name": "RbfType",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Enum",
+                        "Name": "RbfFunctionType"
+                    }
+                },
+                {
+                    "Category": "Data",
+                    "MemberType": "Property",
+                    "Name": "SourceData",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "Tags": [
+                        "NotScriptable"
+                    ],
+                    "ValueType": {
+                        "Category": "DataType",
+                        "Name": "BinaryString"
+                    }
+                },
+                {
+                    "Category": "Derived World Data",
+                    "MemberType": "Property",
+                    "Name": "WorldCFrame",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": false,
+                        "CanSave": false
+                    },
+                    "Tags": [
+                        "Hidden",
+                        "ReadOnly",
+                        "NotReplicated"
+                    ],
+                    "ValueType": {
+                        "Category": "DataType",
+                        "Name": "CFrame"
+                    }
+                },
+                {
+                    "MemberType": "Function",
+                    "Name": "GetRbfSourceKeys",
+                    "Parameters": [
+                    ],
+                    "ReturnType": {
+                        "Category": "Group",
+                        "Name": "Array"
+                    },
+                    "Security": "PluginSecurity"
+                },
+                {
+                    "MemberType": "Function",
+                    "Name": "GetRbfSourceValues",
+                    "Parameters": [
+                    ],
+                    "ReturnType": {
+                        "Category": "Group",
+                        "Name": "Array"
+                    },
+                    "Security": "PluginSecurity"
+                },
+                {
+                    "MemberType": "Function",
+                    "Name": "RandomizePointCloud",
+                    "Parameters": [
+                    ],
+                    "ReturnType": {
+                        "Category": "Primitive",
+                        "Name": "void"
+                    },
+                    "Security": "None"
+                },
+                {
+                    "MemberType": "Function",
+                    "Name": "SetRbfSourceData",
+                    "Parameters": [
+                        {
+                            "Name": "keys",
+                            "Type": {
+                                "Category": "Group",
+                                "Name": "Array"
+                            }
+                        },
+                        {
+                            "Name": "values",
+                            "Type": {
+                                "Category": "Group",
+                                "Name": "Array"
+                            }
+                        }
+                    ],
+                    "ReturnType": {
+                        "Category": "Primitive",
+                        "Name": "void"
+                    },
+                    "Security": "PluginSecurity"
+                },
+                {
+                    "MemberType": "Function",
+                    "Name": "SetRbfSourceKeys",
+                    "Parameters": [
+                        {
+                            "Name": "keys",
+                            "Type": {
+                                "Category": "Group",
+                                "Name": "Array"
+                            }
+                        }
+                    ],
+                    "ReturnType": {
+                        "Category": "Primitive",
+                        "Name": "void"
+                    },
+                    "Security": "PluginSecurity"
+                },
+                {
+                    "MemberType": "Function",
+                    "Name": "SetRbfSourceValues",
+                    "Parameters": [
+                        {
+                            "Name": "values",
+                            "Type": {
+                                "Category": "Group",
+                                "Name": "Array"
+                            }
+                        }
+                    ],
+                    "ReturnType": {
+                        "Category": "Primitive",
+                        "Name": "void"
+                    },
+                    "Security": "PluginSecurity"
+                }
+            ],
+            "MemoryCategory": "Instances",
+            "Name": "MeshDeformer",
+            "Superclass": "Instance"
+        },
+        {
+            "Members": [
+                {
                     "Category": "Appearance",
                     "MemberType": "Property",
                     "Name": "Text",
@@ -31095,6 +32026,31 @@
                 },
                 {
                     "MemberType": "Function",
+                    "Name": "GetRelativeVelocityAt",
+                    "Parameters": [
+                        {
+                            "Name": "otherPart",
+                            "Type": {
+                                "Category": "Class",
+                                "Name": "Instance"
+                            }
+                        },
+                        {
+                            "Name": "worldPoint",
+                            "Type": {
+                                "Category": "DataType",
+                                "Name": "Vector3"
+                            }
+                        }
+                    ],
+                    "ReturnType": {
+                        "Category": "DataType",
+                        "Name": "Vector3"
+                    },
+                    "Security": "None"
+                },
+                {
+                    "MemberType": "Function",
                     "Name": "GetRenderCFrame",
                     "Parameters": [
                     ],
@@ -31618,13 +32574,9 @@
                         "CanLoad": false,
                         "CanSave": false
                     },
-                    "Tags": [
-                        "ReadOnly",
-                        "NotReplicated"
-                    ],
                     "ValueType": {
                         "Category": "Class",
-                        "Name": "Humanoid"
+                        "Name": "Instance"
                     }
                 },
                 {
@@ -33025,6 +33977,23 @@
                 {
                     "Category": "Appearance",
                     "MemberType": "Property",
+                    "Name": "Deformer",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Class",
+                        "Name": "MeshDeformer"
+                    }
+                },
+                {
+                    "Category": "Appearance",
+                    "MemberType": "Property",
                     "Name": "MeshID",
                     "Security": {
                         "Read": "None",
@@ -33288,13 +34257,9 @@
                         "CanLoad": false,
                         "CanSave": false
                     },
-                    "Tags": [
-                        "ReadOnly",
-                        "NotReplicated"
-                    ],
                     "ValueType": {
                         "Category": "Class",
-                        "Name": "Humanoid"
+                        "Name": "Instance"
                     }
                 },
                 {
@@ -40053,6 +41018,20 @@
                 },
                 {
                     "MemberType": "Function",
+                    "Name": "ImportFbxPointCloud",
+                    "Parameters": [
+                    ],
+                    "ReturnType": {
+                        "Category": "Class",
+                        "Name": "Instance"
+                    },
+                    "Security": "PluginSecurity",
+                    "Tags": [
+                        "Yields"
+                    ]
+                },
+                {
+                    "MemberType": "Function",
                     "Name": "ImportFbxRig",
                     "Parameters": [
                         {
@@ -42512,6 +43491,23 @@
                 {
                     "Category": "Debug",
                     "MemberType": "Property",
+                    "Name": "ShowBones",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "bool"
+                    }
+                },
+                {
+                    "Category": "Debug",
+                    "MemberType": "Property",
                     "Name": "ShowBoundingBoxes",
                     "Security": {
                         "Read": "None",
@@ -43098,6 +44094,27 @@
                         "Name": "void"
                     },
                     "Security": "RobloxScriptSecurity"
+                },
+                {
+                    "MemberType": "Event",
+                    "Name": "EarlyStepped",
+                    "Parameters": [
+                        {
+                            "Name": "time",
+                            "Type": {
+                                "Category": "Primitive",
+                                "Name": "double"
+                            }
+                        },
+                        {
+                            "Name": "step",
+                            "Type": {
+                                "Category": "Primitive",
+                                "Name": "double"
+                            }
+                        }
+                    ],
+                    "Security": "None"
                 },
                 {
                     "MemberType": "Event",
@@ -50534,6 +51551,132 @@
                 "NotCreatable",
                 "NotReplicated"
             ]
+        },
+        {
+            "Members": [
+                {
+                    "Category": "Textures",
+                    "MemberType": "Property",
+                    "Name": "ColorMap",
+                    "Security": {
+                        "Read": "LocalUserSecurity",
+                        "Write": "LocalUserSecurity"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "DataType",
+                        "Name": "Content"
+                    }
+                },
+                {
+                    "Category": "Textures",
+                    "MemberType": "Property",
+                    "Name": "MetalnessMap",
+                    "Security": {
+                        "Read": "LocalUserSecurity",
+                        "Write": "LocalUserSecurity"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "DataType",
+                        "Name": "Content"
+                    }
+                },
+                {
+                    "Category": "Lighting",
+                    "MemberType": "Property",
+                    "Name": "MetalnessScale",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    }
+                },
+                {
+                    "Category": "Textures",
+                    "MemberType": "Property",
+                    "Name": "NormalMap",
+                    "Security": {
+                        "Read": "LocalUserSecurity",
+                        "Write": "LocalUserSecurity"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "DataType",
+                        "Name": "Content"
+                    }
+                },
+                {
+                    "Category": "Textures",
+                    "MemberType": "Property",
+                    "Name": "RoughnessMap",
+                    "Security": {
+                        "Read": "LocalUserSecurity",
+                        "Write": "LocalUserSecurity"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "DataType",
+                        "Name": "Content"
+                    }
+                },
+                {
+                    "Category": "Lighting",
+                    "MemberType": "Property",
+                    "Name": "RoughnessScale",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    }
+                },
+                {
+                    "Category": "Textures",
+                    "MemberType": "Property",
+                    "Name": "TexturePack",
+                    "Security": {
+                        "Read": "RobloxSecurity",
+                        "Write": "RobloxSecurity"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ValueType": {
+                        "Category": "DataType",
+                        "Name": "Content"
+                    }
+                }
+            ],
+            "MemoryCategory": "Instances",
+            "Name": "SurfaceAppearance",
+            "Superclass": "Instance"
         },
         {
             "Members": [
@@ -58385,6 +59528,31 @@
         {
             "Items": [
                 {
+                    "Name": "Kinematic",
+                    "Value": 0
+                },
+                {
+                    "Name": "DynamicPosition",
+                    "Value": 1
+                },
+                {
+                    "Name": "DynamicOrientation",
+                    "Value": 2
+                },
+                {
+                    "Name": "DynamicPositionOrientation",
+                    "Value": 3
+                },
+                {
+                    "Name": "DynamicBallSocketOrientation",
+                    "Value": 6
+                }
+            ],
+            "Name": "AnimationMode"
+        },
+        {
+            "Items": [
+                {
                     "Name": "Idle",
                     "Value": 0
                 },
@@ -63166,6 +64334,56 @@
                 }
             ],
             "Name": "R15CollisionType"
+        },
+        {
+            "Items": [
+                {
+                    "Name": "Source",
+                    "Value": 0
+                },
+                {
+                    "Name": "Target",
+                    "Value": 1
+                },
+                {
+                    "Name": "VectorField",
+                    "Value": 2
+                }
+            ],
+            "Name": "RbfDebugVisualization"
+        },
+        {
+            "Items": [
+                {
+                    "Name": "Linear",
+                    "Value": 0
+                },
+                {
+                    "Name": "Cubic",
+                    "Value": 1
+                },
+                {
+                    "Name": "Quintic",
+                    "Value": 2
+                },
+                {
+                    "Name": "MultiQuadric",
+                    "Value": 3
+                },
+                {
+                    "Name": "Inverse",
+                    "Value": 4
+                },
+                {
+                    "Name": "Gaussian",
+                    "Value": 5
+                },
+                {
+                    "Name": "ThinPlate",
+                    "Value": 6
+                }
+            ],
+            "Name": "RbfFunctionType"
         },
         {
             "Items": [
