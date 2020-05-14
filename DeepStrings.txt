@@ -202,6 +202,7 @@ ACTUAL_BYTES_RECEIVED
 ActuatorRelativeTo
 ActuatorType
 Acutesmall
+AD0uqiuSZMrQ6QtQtIOFPc4Ud0vZJQq6
 AdapterDesc
 ADD_STYLE_NAME
 AddAccessory
@@ -778,7 +779,6 @@ ArrowLeftIcon
 ArrowRightIcon
 ArrowToolAction
 ArtistIntent
-ArYjdpYigX4
 Ascii_helper
 AScrollWheelDeltaAmount
 ASIdentifierChoice
@@ -911,7 +911,6 @@ AT_SIGNATURE
 ATAUAVAWIc
 ATAUAVAWLcT
 AtEndChanged
-Atgc4bEix3n7pHLTYVncMCAwEAAQ
 Atildesmall
 AtlAxWinLic140
 AtlThunk_AllocateData
@@ -4019,7 +4018,6 @@ BetterAddInstance
 BF11E395B6E5DB6211F344
 BF5757DAAEA11E38B9D871882A8E559
 BF5757EAAEA11E38B9D871882A8E559
-Bf5HUErTy7Sv8jFxxCgdQ5ikDE
 BF9701C11E3B075CBAD925AA50F
 BFA701C11E3B075CBAD925AA50F
 BFB1B25E9A
@@ -4418,7 +4416,6 @@ BuyDeveloperProduct
 BuyDeveloperProduct_AutoAccepted
 BvBvBvBvBvBvBvBv
 BVCoordinateFrame
-BVKfcPh2csbSYLoZUBA
 BVQVariant
 BVRegion3int16
 BVSystemAddress
@@ -4427,9 +4424,7 @@ BW4AlphaMode
 BWGradient.png
 ByCongestionControl
 ByDatacenter_
-ByHUcgbXu52oRIdOxNNx4
 ByIPForDatacenterId_
-BykluFdP050SJizHHuMNv
 ByLocationForDatacenterId_
 ByOutBandwidthLimit
 ByteParser
@@ -4438,7 +4433,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.433.0.405142
+ByVersion_0.434.0.405135
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -6714,6 +6709,7 @@ CWindowImpl
 CWindowImplBaseT
 CWindowImplRoot
 CWinTraits
+Cx2DNKhlXHHLFNMhlfv1HioJpVGcOXC
 CxxFrameHandler3
 CxxThrowException
 CycleOffset
@@ -9020,7 +9016,6 @@ FDA6E1EA211E49FA6F7D125AE5309
 FDA6F1EA211E49FA6F7D125AE5309
 FDE5E01E7934
 Fdossl_static.pdb
-FDXnLgsX3JFjLbQBoAtHUFKhRs6
 Feature_AppBridgeRewrite
 Feature_NewGameJoinInstance
 Feature_UniversalStartup
@@ -9051,6 +9046,7 @@ FFlagStudioSaveToCloudV2
 FFlagStudioSaveToCloudV3
 FFlagToolboxJointMigrationApi
 FFoRLVHHHHoTJVF
+Fgxiztd2x6kpK
 FHFRF\FfFpFzF
 FidelityRequestTriggered
 FieldOfView
@@ -9295,6 +9291,7 @@ FixTextureCompositorFramebufferManagement2
 FixThrottlingCalculationForRot
 FixToolboxInitLoad
 FixUpCoCFS
+FixUsingGameIdInsteadOfJobId
 FixWeldConstraintTeamCreateReplication
 FixZeroNormalInDecompositeGeometry
 FJFTF^FhFrF
@@ -9349,7 +9346,6 @@ FMODPlaybackDSP
 FMODReportDeviceInfo
 FMODSoundChannels
 FMODStudio
-FNd4o01eSLhFNH
 FocusChange
 FocusChanged
 FocusDistance
@@ -9628,7 +9624,6 @@ FunctionUnused
 FunctionVar
 FutureIsBrightPhase2GL3
 FutureIsBrightPhase2GLES3
-FWnyVSQqzVdWAl7nBVDOmkHbIXA
 FXCompositing
 FXCompositingFS
 FXCompositingLinearFS
@@ -10616,7 +10611,6 @@ GrabRotateCursor.png
 GradientEditor
 GradientEditorAdapter
 GradientEditorCanvas
-GRakNetResendMaxThresholdTimeInUs
 GraphicsD3D11PerFrameQuery
 GraphicsD3D9TextureDL
 GraphicsEffect
@@ -11397,6 +11391,7 @@ IKCollisionsMode
 IkDragCollisionsMode
 IkDraggerAnchorMode
 IkDraggerSolveIterations
+Il5CmHiBXz94i875GCx6h0d6q9IgwnJjCmDeVXd4AGP
 IllegalTeleport
 ILoggedInUser
 Image.Loading
@@ -12020,6 +12015,7 @@ JIRA_RIDE_711
 JJJBBB\\\xx
 JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
 JKLMNOPQRSTU
+JmhFVODIQP1LZKokrjUVnogpW7g
 JoinBlobInvalidateThresholdPercent
 JoinCommand
 JoinDataCacheChecksClientOwnedParts
@@ -12078,9 +12074,7 @@ JointsService
 JointStepSingleArrayBroadphaseFix
 JointTime_TextureCooldown
 JointToolHelpDialogVerb
-JonXBhES92pjl
 JPEBUSG_INDEX_TRIANGLE
-JqDC8eMGDrluMryscA
 JSON.parse
 JSON.stringify
 JSON_Parser
@@ -12107,6 +12101,7 @@ JW4HttpRequestResult
 JW4InfoType
 JW4TextFilterContext
 JW4ThumbnailType
+JXBHBmvnr8wZB7J7pXW525YV0O
 K\7IxU..UxI7\K
 K_Key_dn.png
 KaiTi_GB2312
@@ -12170,6 +12165,7 @@ KickByDatacenter_
 KiDszBCYB0gyp03Pc
 KillPtClicked
 KillSurfaceJointsPart1
+KLnBt7PRQ9lO5Rva4veg5Vuw8p8DvrHwCcA3CBtbF9D2ODKvWW4k6dr3O0FtHvn5
 KnownHeaders
 KodchiangUPC
 KPEAVICHull
@@ -12237,8 +12233,8 @@ LayoutInfo
 LayoutNode
 LayoutOrder
 LazySubmitTask
+LBiJMAp5NgOx
 LC_MESSAGES
-LcDXsM0X2ynfZw66NuVyzhDsoSlJQVYBn3RJHZA7cUdf
 LCMapStringW
 LDLBuildProgramTimeReportEnabled
 LDLBuildProgramTimeReportRate
@@ -12859,7 +12855,6 @@ LuauTypeInferTypePackLoopLimit
 LuauWarnOnUtf8
 LuauWatchdog
 LuaWebService
-LUSMT1t09z
 LVvuOx39]O
 M_NVWeakFunctionRef
 MachineAddress
@@ -13493,7 +13488,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEAtxcHUIJBCl5sRVe01Iz2QlMVpsKZ3Ae5oMoZ7eQYSxgCYqzkGFK9
+MIICCgKCAgEAsbro4lpn37zZX9D8kSwFMqvTJtjPQguiEFaSVnie7F04CqhVzdJV
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -14039,7 +14034,6 @@ NfXf`fhfzf
 NHDHVQChar
 NHVVariant
 NinjaMask.mesh
-NJc5XkX3LRiU2Po8
 NNW4SizeMode
 NoCacheForLocalContent
 NoCollisionConstraint
@@ -14292,7 +14286,6 @@ OfRawBytes
 OfResidence
 OfTimesLooped
 OfTopLevelItem
-OgAz0x88UAHcpIBhcY15Mlnk7lduSYipX2b
 Ogoneksmall
 Ogravesmall
 OGRE_VIEW_UPDATE
@@ -14310,6 +14303,7 @@ OLEAUT32.dll
 OleInitialize
 OleLockRunning
 OleUninitialize
+OmVS9DddG3LNGhugD0e50RewZJwkBxnVgsCAwEAAQ
 OnAllScriptErrorsAction
 OnBadgeAwarded
 OnboardingsCompleted
@@ -14581,6 +14575,7 @@ PA_A^A]A\_^
 PA_A^A]A\_^[
 PA_A^A]A\_^]
 PA_A^A]A\_^]H
+PA2c3XMxjH2jdukkovkgfj1UhQUqS
 PackageAction
 PackageAlwaysPublish
 PackageAlwaysUpdate
@@ -17000,8 +16995,10 @@ QGridLayout
 QGuiApplication
 QHBoxLayout
 QHeaderView
+QhOBL25zArMTwb
 QHostAddress
 QHoverEvent
+QhSW3hEwsEgL8jPGYbprogZnnMWL7xlaf6ZGbFXDYIeqnQmW
 QInputDialog
 QIntValidator
 QItemDelegate
@@ -17018,7 +17015,6 @@ QLayoutItem
 QLinearGradient
 QListWidget
 QListWidgetItem
-QlJWr0HymkSwlsQDu
 QLocalServer
 QLocalSocket
 QMainWindow
@@ -17054,7 +17050,6 @@ QParallelAnimationGroup
 QPersistentModelIndex
 QPixmapCache
 QPlainTextEdit
-QPnhzpXQpRolqWy3gmmiQM4
 QProgressBar
 QPropertyAnimation
 QProxyStyle
@@ -17318,6 +17313,7 @@ RakNetPasswordAccepted
 RakNetPasswordRejected
 RakNetPing
 RakNetResendBufferArrayLength
+RakNetResendMaxThresholdTimeInUs
 RakNetResendMsgLen_Platform_
 RakNetResendScaleBackFactorHundredthsPercent
 RakNetResentPercent_Platform_
@@ -18297,7 +18293,6 @@ RevocationList
 RevocationRefs
 RevocationUrl
 RevokeFriendship
-RhPBxkdRSGDutBcuqkJrfsWp9ijTd4GjksHfktxtPcd8O6aMdFH0LOw467UZAoS
 RibbonButton
 RibbonButtonControl
 RibbonGallery
@@ -18409,7 +18404,6 @@ RigidBodyLazyUpdating
 RigidityEnabled
 RiseVelocity
 Rj0isQcnqX
-RlteCAHy229
 Roact.createElement
 ROBLOSECURITY
 Roblox.Hybrid
@@ -22200,6 +22194,7 @@ StudioQuickOpenSearchActions
 StudioQuickOpenSelectFirstByDefault
 StudioRecentActionCacheSize
 StudioRecoveryWidgetDuplicatedEntry
+StudioRemoveDebuggerLegacyLock
 StudioRemoveExtraFindAction
 StudioRemoveObjectBrowserUI
 StudioRemoveToolboxScrollingFrameHack
@@ -23853,6 +23848,7 @@ UEBAXW4ComplexControl
 UEBAXW4ControlElement
 UEBAXW4PrimitiveElement
 UEditionEntry
+UeofXpuHLapZRZoL
 UEventInfo
 UEventInstance
 UEventSlot
@@ -24398,6 +24394,7 @@ UseUniqueProfilePorts
 UseVelocityGateForMoment
 UseWidthBasedFormFactorRule
 UseWorkspaceJoinToOutsiders
+USgZFxPgVrYoU0KHERrP
 Ushared_state_base
 USharedState
 USimpleBlock
@@ -24449,7 +24446,6 @@ UTimerData
 UTimeSlice
 UTrackEntry
 Utransport_config
-UtyZE0FhSZWYBQaFPc6
 UUID_UdriTagTables
 UUID_WMDRMTagTables
 Uunspecified
@@ -24491,7 +24487,6 @@ VAdvLuaDragger
 VAdvRotateTool
 VAdvScaleTool
 VAdvTranslateTool
-Val3KdlcUuUn3
 VAliasRequestResult
 ValidateProgram
 Validation
@@ -25168,6 +25163,7 @@ Vlength_error
 VLineForce
 VLineHandleAdornment
 VLinkedSourceInstance
+VlLORIoEbKqmqamA0vfdzhgfuFk8uu
 VLocalizationService
 VLocalizationTable
 VLocalPlacePublishRequestMediator
@@ -25943,6 +25939,7 @@ WithSHA224
 WithSHA256
 WithSHA384
 WithSHA512
+Wk1esqG9Wt9gFrJ9aZw5pa
 WM_ATLGETCONTROL
 WM_ATLGETHOST
 WMCreateProfileManager
@@ -26007,7 +26004,6 @@ WSAStartup
 WSAStringToAddressW
 WTHelperGetProvSignerFromChain
 WTHelperProvDataFromStateData
-WthY2vakaUDi7asU0
 X_deprecated
 X_Fullscreen
 X_JW4AssetType
@@ -26219,6 +26215,7 @@ YieldFuncDesc
 YieldFunction
 YQByteArray
 YResolution
+YTT1EPiovxkP
 YwBBvY55YvBBwY5
 Z_KPEIBX_K_KPEIAU1
 Zcaronsmall
