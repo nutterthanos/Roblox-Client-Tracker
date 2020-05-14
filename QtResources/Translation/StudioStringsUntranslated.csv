@@ -98,6 +98,8 @@ Studio.App.BetaFeatures.SelectFeaturesToActivate,,Select beta features to activa
 Studio.App.BetaFeatures.SetInstanceDefaultsWindowDescription,,Set a Part or Script to be the default for future inserted instances of a Part or Script.,Set a Part or Script to be the default for future inserted instances of a Part or Script.
 Studio.App.BetaFeatures.SetInstanceDefaultsWindowTitle,,Set Instance as Default,Set Instance as Default
 Studio.App.BetaFeatures.SomethingChangedPrompt,,Would you like to restart Studio now?,Would you like to restart Studio now?
+Studio.App.BetaFeatures.SupportPluginDebuggingDescription,,Set `Plugin Debugging Enabled` to true and you can debug local plugins under the PluginDebugService in Explorer,Set `Plugin Debugging Enabled` to true and you can debug local plugins under the PluginDebugService in Explorer
+Studio.App.BetaFeatures.SupportPluginDebuggingTitle,,Plugin Debugging,Plugin Debugging
 Studio.App.BetaFeatures.SurfaceJoinChangesDescription,,"Remove the 'Surface' Join Mode, all surfaces create ManualWelds.","Remove the 'Surface' Join Mode, all surfaces create ManualWelds."
 Studio.App.BetaFeatures.SurfaceJoinChangesTitle,,Surface Join Behavior Change,Surface Join Behavior Change
 Studio.App.BetaFeatures.TryCoolFeatures,,Try out cool new Studio features! Your feedback is invaluable to us as we move forward towards building a powerful imagination platform.,Try out cool new Studio features! Your feedback is invaluable to us as we move forward towards building a powerful imagination platform.
@@ -856,6 +858,9 @@ Studio.App.PlaceResourceController.AddingPlace,,Adding Place...,Adding Place...
 Studio.App.PlaceResourceController.CantRemoveStartPlace,,You cannot remove the start place from a game.,You cannot remove the start place from a game.
 Studio.App.PlaceResourceController.ErrorWhileAddingPlace,,Error while adding place. See Output window for details.,Error while adding place. See Output window for details.
 Studio.App.PlaceResourceController.ThisFunctionalityHasBeenDisabled,,This functionality has been disabled. You can update your start place by doing File > Publish to Roblox As... and selecting the start place.,This functionality has been disabled. You can update your start place by doing File > Publish to Roblox As... and selecting the start place.
+Studio.App.PlaceVersionHistoryDialog.Empty,,No Place Versions found,No Place Versions found
+Studio.App.PlaceVersionHistoryDialog.PublishedColumnTitle,,Published,Published
+Studio.App.PlaceVersionHistoryDialog.ViewHistory,,View History,View History
 Studio.App.PlayModifiedScriptController.AlwaysSave,,Always Save,Always Save
 Studio.App.PlayModifiedScriptController.KeepTheseChanges,,You've made script changes while playing.  Would you like to keep these changes?,You've made script changes while playing.  Would you like to keep these changes?
 Studio.App.PluginLoader.CloudLoadFailedFmt1,error fetching installed plugins from cloud,Failed to load installed plugins from cloud: %1,Failed to load installed plugins from cloud: %1
@@ -2062,10 +2067,17 @@ Studio.App.RobloxTeamCreateWidget.TeamCreateDisabled,,Team Create in this game i
 Studio.App.RobloxTeamCreateWidget.TeamCreateOptions,,Team Create Options,Team Create Options
 Studio.App.RobloxTeamCreateWidget.TurnOffTeamCreate,,Turn OFF Team Create,Turn OFF Team Create
 Studio.App.RobloxTextOutputWidget.ClearOutput,,Clear Output,Clear Output
+Studio.App.RobloxTextOutputWidget.Client,,Client,Client
 Studio.App.RobloxTextOutputWidget.Copy,,Copy,Copy
+Studio.App.RobloxTextOutputWidget.Edit,,Edit,Edit
 Studio.App.RobloxTextOutputWidget.MaxTableDepthReached,,Max table depth reached,Max table depth reached
+Studio.App.RobloxTextOutputWidget.Message,,Message,Message
 Studio.App.RobloxTextOutputWidget.OpenLink,,Open link,Open link
+Studio.App.RobloxTextOutputWidget.Other,,Other,Other
+Studio.App.RobloxTextOutputWidget.PlaySolo,,PlaySolo,PlaySolo
 Studio.App.RobloxTextOutputWidget.SelectAll,,Select All,Select All
+Studio.App.RobloxTextOutputWidget.Server,,Server,Server
+Studio.App.RobloxTextOutputWidget.Timestamp,,Timestamp,Timestamp
 Studio.App.RobloxTutorials.CopyText,,Build amazing games with Roblox Studio. No experience necessary!,Build amazing games with Roblox Studio. No experience necessary!
 Studio.App.RobloxTutorials.LearnNow,,Learn now,Learn now
 Studio.App.RobloxViewStudio.ExitUiLayer,,Exit UI Layer,Exit UI Layer
@@ -2166,6 +2178,8 @@ Studio.App.StartPageLogin.TwoStepVerificationSmsInstruction,,Enter the code we j
 Studio.App.StartPageLogin.TwoStepVerificationTitle,,2-Step Verification,2-Step Verification
 Studio.App.StartPageLogin.Username,,Username,Username
 Studio.App.StudioDataModelLoadUtil.ErrorCannotOpenTCPlaceDueToCancellation,,Failed to open the team create place due to cancellation,Failed to open the team create place due to cancellation
+Studio.App.StudioDataModelLoadUtil.ErrorCannotOpenTCPlaceDueToConflictGlobal,,Global Studio does not support joining a TeamCreate session with a Luobu Studio developer. Please download Luobu Studio to use TeamCreate together: www.robloxdev.cn,Global Studio does not support joining a TeamCreate session with a Luobu Studio developer. Please download Luobu Studio to use TeamCreate together: www.robloxdev.cn
+Studio.App.StudioDataModelLoadUtil.ErrorCannotOpenTCPlaceDueToConflictLuobu,,Luobu Studio does not support joining a TeamCreate session with a global Studio developer. Please ask your teammates to download Loubu Studio to use TeamCreate together: www.robloxdev.cn,Luobu Studio does not support joining a TeamCreate session with a global Studio developer. Please ask your teammates to download Loubu Studio to use TeamCreate together: www.robloxdev.cn
 Studio.App.StudioDataModelLoadUtil.ErrorCannotOpenTCPlaceDueToTimeout,,Failed to open the team create place due to timeout,Failed to open the team create place due to timeout
 Studio.App.StudioDataModelLoadUtil.ErrorCannotOpenTCPlaceGeneral,,"Failed to open the team create place, please try again","Failed to open the team create place, please try again"
 Studio.App.StudioDataModelLoadUtil.ErrorCannotOpenTCPlaceWithErrorCode1,,"Failed to open the team create place, please try again. (Error Code: %1)","Failed to open the team create place, please try again. (Error Code: %1)"
