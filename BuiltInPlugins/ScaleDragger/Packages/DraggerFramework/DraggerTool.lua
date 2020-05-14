@@ -15,8 +15,6 @@ local plugin = Library.Parent
 local Roact = require(Library.Packages.Roact)
 
 -- Flags
-local getFFlagClearHoverBoxOnDelete = require(Framework.Flags.getFFlagClearHoverBoxOnDelete)
-local getFFlagLuaDraggerIconBandaid = require(Framework.Flags.getFFlagLuaDraggerIconBandaid)
 local getFFlagOnlyReadyHover = require(Framework.Flags.getFFlagOnlyReadyHover)
 local getFFlagHandleCanceledToolboxDrag = require(Framework.Flags.getFFlagHandleCanceledToolboxDrag)
 local getFFlagHandleFlakeyMouseEvents = require(Framework.Flags.getFFlagHandleFlakeyMouseEvents)
@@ -90,15 +88,11 @@ function DraggerTool:init()
 
 	self._derivedWorldState = DerivedWorldState.new()
 	if not getFFlagOnlyReadyHover() then
-		if getFFlagClearHoverBoxOnDelete() then
-			local function onHoverExternallyChanged()
-				self:_processViewChanged()
-			end
-			self._hoverTracker =
-				HoverTracker.new(self.props.ToolImplementation, onHoverExternallyChanged)
-		else
-			self._hoverTracker = HoverTracker.new(self.props.ToolImplementation)
+		local function onHoverExternallyChanged()
+			self:_processViewChanged()
 		end
+		self._hoverTracker =
+			HoverTracker.new(self.props.ToolImplementation, onHoverExternallyChanged)
 	end
 
 	self._boundsChangedTracker = BoundsChangedTracker.new(function(part)
@@ -222,9 +216,7 @@ function DraggerTool:willUnmount()
 	self._boundsChangedTracker:uninstall()
 
 	if not getFFlagOnlyReadyHover() then
-		if getFFlagClearHoverBoxOnDelete() then
-			self._hoverTracker:clearHover()
-		end
+		self._hoverTracker:clearHover()
 	end
 
 	RunService:UnbindFromRenderStep(DRAGGER_UPDATE_BIND_NAME)
@@ -251,19 +243,6 @@ function DraggerTool:render()
 	local selection = SelectionWrapper:Get()
 
 	local coreGuiContent = {}
-
-	if not getFFlagLuaDraggerIconBandaid() then
-		-- Default mouse behavior if stateObject doesn't override it
-		if UserInputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) then
-			if #selection > 0 then
-				mouse.Icon = "rbxasset://textures/advClosed-hand.png"
-			else
-				mouse.Icon = "rbxasset://textures/advCursor-openedHand.png"
-			end
-		else
-			mouse.Icon = "rbxasset://textures/advCursor-openedHand.png"
-		end
-	end
 
 	-- State specific rendering code
 	coreGuiContent.StateSpecificUI = self.state.stateObject:render(self)

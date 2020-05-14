@@ -11,7 +11,6 @@
 local HttpService = game:GetService("HttpService")
 local StudioService = game:GetService("StudioService")
 
-local FFlagGameSettingsUsesNewIconEndpoint = settings():GetFFlag("GameSettingsUsesNewIconEndpoint")
 local FFlagVersionControlServiceScriptCollabEnabled = settings():GetFFlag("VersionControlServiceScriptCollabEnabled")
 local FFlagsEnableVersionHistorySetting = settings():GetFFlag("CollabEditVersionHistoryEnabled") and
 	(settings():GetFFlag("StudioInternalScriptVersionHistorySetting") or settings():GetFFlag("StudioPlaceFilterScriptVersionHistorySetting"))
@@ -130,15 +129,8 @@ function SettingsImpl:GetSettings()
 				
 				table.insert(getRequests, Requests.GamePermissions.Get(gameId, creatorName, creatorId, creatorType))
 
-				if FFlagGameSettingsUsesNewIconEndpoint then
-					table.insert(getRequests, Requests.RootPlaceInfo.Get(gameId))
-					table.insert(getRequests, Requests.GameIcon.Get(gameId))
-				else
-					table.insert(getRequests, Requests.RootPlaceInfo.Get(gameId):andThen(function(result)
-						settings = Cryo.Dictionary.join(settings, result)
-						return Requests.GameIcon.DEPRECATED_Get(result.rootPlaceId)
-					end))
-				end
+				table.insert(getRequests, Requests.RootPlaceInfo.Get(gameId))
+				table.insert(getRequests, Requests.GameIcon.Get(gameId))
 
 				if DFFlagDeveloperSubscriptionsEnabled then
 					table.insert(getRequests, Requests.DeveloperSubscriptions.Get())

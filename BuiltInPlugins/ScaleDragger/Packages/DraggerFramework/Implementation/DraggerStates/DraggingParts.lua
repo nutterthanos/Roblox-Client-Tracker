@@ -13,11 +13,12 @@ local SelectionWrapper = require(Framework.Utility.SelectionWrapper)
 local PartMover = require(Framework.Utility.PartMover)
 local AttachmentMover = require(Framework.Utility.AttachmentMover)
 local setInsertPoint = require(Framework.Utility.setInsertPoint)
+local StandardCursor = require(Framework.Utility.StandardCursor)
 
-local getFFlagLuaDraggerIconBandaid = require(Framework.Flags.getFFlagLuaDraggerIconBandaid)
 local getFFlagSetInsertPoint = require(Framework.Flags.getFFlagSetInsertPoint)
 local getFFlagMoveViaSelectionCenter = require(Framework.Flags.getFFlagMoveViaSelectionCenter)
 local getFFlagHandleNoRotateTarget = require(Framework.Flags.getFFlagHandleNoRotateTarget)
+local getFFlagFixDraggerCursors = require(Framework.Flags.getFFlagFixDraggerCursors)
 
 local DraggingParts = {}
 DraggingParts.__index = DraggingParts
@@ -77,7 +78,9 @@ function DraggingParts:_initIgnoreList(parts)
 end
 
 function DraggingParts:render(draggerTool)
-	if getFFlagLuaDraggerIconBandaid() then
+	if getFFlagFixDraggerCursors() then
+		draggerTool.props.Mouse.Icon = StandardCursor.getClosedHand()
+	else
 		draggerTool.props.Mouse.Icon = "rbxasset://SystemCursors/ClosedHand"
 	end
 
