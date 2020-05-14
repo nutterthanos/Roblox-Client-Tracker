@@ -8,6 +8,23 @@
         Enabled = boolean, whether or not this component is enabled.
         Selected = boolean, "true" if On button should be selected, "false" if the off button should be selected.
         LayoutOrder = number, order in which this component should appear under its parent.
+        VIPServersData = table, a table of relevant VIP Servers info to populate the component.
+            example of VIPServersData:
+            {
+                isEnabled = true,
+                price = 1000000000000000,
+                activeServersCount = 1000,
+                activeSubscriptionsCount = 1000,
+            }
+
+        OnVipServersToggled = function(button), this is a callback thta is invoked with the button info, when the radio button is toggled.
+            example of button info:
+            {
+                Id = true,
+                Title = "This is a foo button.",
+                Description = "Lorem ipsum",
+            }
+        OnVipServersPriceChanged = function(price), this is a callback to be invoked when the price field changes values
 ]]
 
 local Plugin = script.Parent.Parent.Parent
@@ -33,17 +50,25 @@ function PaidAccess:render()
     local layoutIndex = LayoutOrderIterator.new()
 
     local title = localization:getText("Monetization", "TitleVIPServers")
-    local price = props.Price
+
     local layoutOrder = props.LayoutOrder
+    local vipServersData = props.VIPServersData
 
     local enabled = props.Enabled
-    local selected = props.Selected
+
+    local selected = vipServersData.isEnabled
+    local price =  vipServersData.price
+    local serversCount = vipServersData.activeServersCount
+    local subsCount = vipServersData.activeSubscriptionsCount
+
+    local onVipServersToggled = props.OnVipServersToggled
+    local onVipServersPriceChanged = props.OnVipServersPriceChanged
 
     local disabledSubText = localization:getText("Monetization", "VIPServersHint")
 
-    local subscriptionsText = localization:getText("Monetization", "Subscriptions", { numOfSubscriptions = 475 })
+    local subscriptionsText = localization:getText("Monetization", "Subscriptions", { numOfSubscriptions = subsCount })
 
-    local totalVIPServersText = localization:getText("Monetization", "TotalVIPServers", { totalVipServers = 500 })
+    local totalVIPServersText = localization:getText("Monetization", "TotalVIPServers", { totalVipServers = serversCount })
 
     local transparency = enabled and theme.robuxFeeBase.transparency.enabled or theme.robuxFeeBase.transparency.disabled
 
@@ -53,14 +78,12 @@ function PaidAccess:render()
             Title = localization:getText("General", "SettingOn"),
             Children = {
                 RobuxFeeBase = Roact.createElement(RobuxFeeBase, {
-                    Title = title,
                     Price = price,
                     DisabledSubText = disabledSubText,
 
                     Enabled = enabled,
-                    Selected = selected,
-                    SelectionChanged = function()
-                    end,
+
+                    OnPriceChanged = onVipServersPriceChanged,
 
                     LayoutOrder = layoutIndex:getNextOrder(),
                 }),
@@ -118,8 +141,7 @@ function PaidAccess:render()
 
             Enabled = enabled,
             Selected = selected,
-            SelectionChanged = function()
-            end,
+            SelectionChanged = onVipServersToggled,
         })
     })
 end

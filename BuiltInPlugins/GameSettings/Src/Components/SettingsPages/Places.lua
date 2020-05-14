@@ -57,7 +57,7 @@ local StudioService = game:GetService("StudioService")
 --Loads settings values into props by key
 local function loadValuesToProps(getValue, state)
 	local loadedProps = {
-
+		Places = getValue("places")
 	}
 	return loadedProps
 end
@@ -73,7 +73,19 @@ local function displayPlaceListPage(props, localization)
 	local layoutIndex = LayoutOrderIterator.new()
 
 	local buttonText = localization:getText("General", "ButtonCreate")
-    local buttonTextExtents = GetTextSize(buttonText, theme.fontStyle.Header.TextSize, theme.fontStyle.Header.Font)
+	local buttonTextExtents = GetTextSize(buttonText, theme.fontStyle.Header.TextSize, theme.fontStyle.Header.Font)
+
+	local placeTableHeaders = {
+		localization:getText("Places", "PlaceVersion"),
+		localization:getText("Places", "PlaceName"),
+		localization:getText("Places", "MaxPlayers"),
+	}
+
+	local placesData = {}
+	for _, place in pairs(props.Places) do
+		local row = { place.id, place.name, place.universeId }
+		table.insert(placesData, row)
+	end
 
 	return
 	{
@@ -94,6 +106,24 @@ local function displayPlaceListPage(props, localization)
 		}, {
 			Roact.createElement(HoverArea, {Cursor = "PointingHand"}),
 		}),
+
+		PlacesTable = Roact.createElement(TableWithMenu, {
+			LayoutOrder = layoutIndex:getNextOrder(),
+			Headers = placeTableHeaders,
+			Data = placesData,
+			MenuItems = {
+				{ Key = "EditKey", Text = localization:getText("General", "ButtonEdit") },
+				{ Key = "VerisonHistoryKey", Text = localization:getText("Places", "VersionHistory") },
+			},
+			OnItemClicked = function(key, row)
+				if key == "EditKey" then
+					--TODO: Switch to Edit Page behavior
+					print(row)
+				elseif key == "VerisonHistoryKey" then
+					StudioService:ShowPlaceHistoryVersionDialog()
+				end
+			end,
+		})
 	}
 end
 
@@ -223,7 +253,7 @@ end
 local function displayContents(page, localization)
 	local props = page.props
 
-	return displayEditPlacePage(props, localization)
+	return displayPlaceListPage(props, localization)
 end
 
 local SettingsPage = createSettingsPage(PageName, loadValuesToProps, dispatchChanges)

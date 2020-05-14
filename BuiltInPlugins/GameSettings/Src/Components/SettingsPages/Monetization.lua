@@ -24,6 +24,8 @@ local TextEntry = UILibrary.Component.TextEntry
 
 local layoutIndex = LayoutOrderIterator.new()
 
+local AddChange = require(Plugin.Src.Actions.AddChange)
+
 local PageName = "Monetization"
 
 local MAX_NAME_LENGTH = 50
@@ -33,15 +35,67 @@ local createSettingsPage = require(Plugin.Src.Components.SettingsPages.DEPRECATE
 
 --Loads settings values into props by key
 local function loadValuesToProps(getValue, state)
+    local loadedProps = {
+        PaidAccess = {
+            enabled = getValue("isForSale"),
+            price = getValue("price"),
+        },
+        VIPServers = {
+            isEnabled = getValue("vipServersIsEnabled"),
+			price = getValue("vipServersPrice"),
+			activeServersCount = getValue("vipServersActiveServersCount"),
+			activeSubscriptionsCount = getValue("vipServersActiveSubscriptionsCount"),
+        }
+    }
 
+    return loadedProps
 end
 
 --Implements dispatch functions for when the user changes values
 local function dispatchChanges(setValue, dispatch)
+    local dispatchFuncs = {
+        PaidAccessToggled = function(button)
+            dispatch(AddChange("isForSale", button.Id))
+        end,
 
+        PaidAccessPriceChanged = function(text)
+            local numberValue = tonumber(text)
+
+            if numberValue and numberValue >= 25 and numberValue <= 1000 then
+                dispatch(AddChange("price", text))
+            end
+        end,
+
+        VIPServersToggled = function(button)
+            dispatch(AddChange("vipServersIsEnabled", button.Id))
+        end,
+
+        VIPServersPriceChanged = function(text)
+            local numberValue = tonumber(text)
+
+            if numberValue and numberValue >= 10 then
+                dispatch(AddChange("vipServersPrice", text))
+            end
+        end,
+    }
+    return dispatchFuncs
 end
 
+--Uses props to display current settings values
 local function displayMonetizationPage(props, localization)
+    local props = page.props
+
+    local paidAccessEnabled = props.PaidAccess.enabled
+    local paidAccessPrice = props.PaidAccess.price
+
+    local vipServers = props.VIPServers
+
+    local paidAccessToggled = props.PaidAccessToggled
+    local paidAccessPriceChanged = props.PaidAccessPriceChanged
+
+    local vipServersToggled = props.VIPServersToggled
+    local vipServersPriceChanged = props.VIPServersPriceChanged
+ 
     return {
         Header = Roact.createElement(Header, {
             Title = localization:getText("General", "Category"..PageName),
@@ -49,19 +103,24 @@ local function displayMonetizationPage(props, localization)
         }),
 
         PaidAccess = Roact.createElement(PaidAccess, {
-            Price = 100,
+            Price = paidAccessPrice,
 
             LayoutOrder = layoutIndex:getNextOrder(),
-            Enabled = true,
-            Selected = true,
+            Enabled = not vipServers.isEnabled,
+            Selected = paidAccessEnabled,
+
+            OnPaidAccessToggle = paidAccessToggled,
+            OnPaidAccessPriceChanged = paidAccessPriceChanged,
         }),
 
         VIPServers = Roact.createElement(VIPServers, {
-            Price = 200,
+            VIPServersData = vipServers,
 
             LayoutOrder = layoutIndex:getNextOrder(),
-            Enabled = false,
-            Selected = false,
+            Enabled = not paidAccessEnabled,
+
+            OnVipServersToggled = vipServersToggled,
+            OnVipServersPriceChanged = vipServersPriceChanged,
         }),
     }
 end

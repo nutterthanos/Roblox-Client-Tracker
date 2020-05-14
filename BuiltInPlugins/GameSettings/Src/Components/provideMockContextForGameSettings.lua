@@ -31,36 +31,40 @@ return function(props, children)
         props = {}
     end
 
+    local contextItems = {}
+
     local showDialog = props.ShowDialog
     if not showDialog then
         showDialog = function()
         end
-        table.insert(props, DialogProvider.new(showDialog))
+        table.insert(contextItems, DialogProvider.new(showDialog))
     end
 
     local settingsSaverLoader = props.SettingsSaverLoader
     if not settingsSaverLoader then
         settingsSaverLoader = SettingsImpl.new("")
-        table.insert(props, SettingsImplProvider.new(settingsSaverLoader))
+        table.insert(contextItems, SettingsImplProvider.new(settingsSaverLoader))
     end
 
     local store = props.Store
     if not store then
         store = Rodux.Store.new(MainReducer, nil, middlewares)
-        table.insert(props, ThumbnailLoaderProvider.new(store))
+        table.insert(contextItems, ThumbnailLoaderProvider.new(store))
+    else
+        table.insert(contextItems, store)
     end
 
     local themeContext = props.Theme
     if not themeContext then
         themeContext = Theme.new()
-        table.insert(props, themeContext)
+        table.insert(contextItems, themeContext)
     end
 
     local uiLibWrapper = props.UILibraryWrapper
     if not uiLibWrapper then
         uiLibWrapper = UILibraryWrapper.new()
-        table.insert(props, uiLibWrapper)
+        table.insert(contextItems, uiLibWrapper)
     end
 
-    return provideMockContext(props, children)
+    return provideMockContext(contextItems, children)
 end

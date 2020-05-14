@@ -412,7 +412,7 @@ local function createContents(props, localized, addThumbnail, addIcon, page)
 
 	return {
 		Header = (not fflagNetworkRefactor) and Roact.createElement(Header, {
-			Title = FFlagStudioConvertGameSettingsToDevFramework and localized:getText("General", "Category"..LOCALIZATION_ID) or localized.Category[LOCALIZATION_ID],
+			Title = FFlagStudioConvertGameSettingsToDevFramework and localized:getText("General", "Category"..LOCALIZATION_ID) or localized.Category["Basic Info"],
 			LayoutOrder = 0,
 		}),
 

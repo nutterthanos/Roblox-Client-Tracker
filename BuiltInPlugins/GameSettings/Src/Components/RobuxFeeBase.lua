@@ -3,21 +3,15 @@
     label for fee, label for actual amount earned).
 
     Necessary props:
+        Title = string, the title of the 
         Price = number, the initial price to be shown in the text field.
         DisabledSubText = string, text to be shown under the price text field when this component is disabled.
             this text usually describes what must be done for this component to be enabled again.
         Enabled = boolean, controls whether DisabledSubText is shown and if text/images are greyed out. (true is shown, false is hidden).
-        LayoutOrder = number, order in which this component should appear under its parent.
+        OnPriceChanged = function(newPrice), a callback that will be invoked when the price in the text entry is changed.
 
-    Optional Props:
-        Margin = table{number}, table of 4 numbers that correspond to the margins on this component.
-        e.g. You want to offset the content of this component by the size and padding of a radio button that is to the left.
-        margin = {
-            left = theme.radioButton.size + theme.radioButton.padding,
-            right = 0,
-            top = 0,
-            bottom = 0,
-        }
+    Optional props:
+        LayoutOrder = number, order in which this component should appear under its parent.
 ]]
 
 local Plugin = script.Parent.Parent.Parent
@@ -41,15 +35,17 @@ function RobuxFeeBase:render()
     local theme = props.Theme:get("Plugin")
     local localization = props.Localization
 
-    local price = props.Price
+    local price = string.format("%.f", props.Price)
     local disabledSubText = props.DisabledSubText
     local enabled = props.Enabled
-    local margin = props.Margin and props.Margin or nil
+    local onPriceChanged = props.OnPriceChanged
+
+    local layoutOrder = props.LayoutOrder
 
     local feeText = localization:getText("Monetization", "FeeLabel")
     local feeTextSize = GetTextSize(feeText, theme.fontStyle.Normal.TextSize, theme.fontStyle.Normal.Font)
 
-    local feeAmount = tostring(price * 0.30)
+    local feeAmount = string.format("%.f", tostring(math.ceil(price * 0.30)))
 
     local priceText = localization:getText("Monetization", "Price")
     local priceTextSize = GetTextSize(priceText, theme.fontStyle.Normal.TextSize, theme.fontStyle.Normal.Font)
@@ -57,7 +53,7 @@ function RobuxFeeBase:render()
     local earnText = localization:getText("Monetization", "EarnLabel")
     local earnTextSize = GetTextSize(earnText, theme.fontStyle.Normal.TextSize, theme.fontStyle.Normal.Font)
 
-    local earnAmount = tostring(price * 0.70)
+    local earnAmount = string.format("%.f", tostring(math.floor(price * 0.70)))
 
     local disabledSubTextSize = GetTextSize(disabledSubText, theme.fontStyle.Subtext.TextSize, theme.fontStyle.Subtext.Font,
         Vector2.new(theme.robuxFeeBase.disabledSubText.width, math.huge))
@@ -69,10 +65,9 @@ function RobuxFeeBase:render()
         minimumSize = UDim2.new(1, 0, 0, 0),
         contentPadding = UDim.new(0, theme.robuxFeeBase.spacing),
         BackgroundTransparency = 1,
-        margin = margin,
         FillDirection = Enum.FillDirection.Horizontal,
 
-        LayoutOrder = props.LayoutOrder,
+        LayoutOrder = layoutOrder,
     }, {
         PriceLabel = Roact.createElement("TextLabel", Cryo.Dictionary.join(theme.fontStyle.Normal, {
             Text = priceText,
@@ -124,11 +119,7 @@ function RobuxFeeBase:render()
                     PlaceholderText = "",
                     Enabled = enabled,
 
-                    SetText = function(newPaidAccessPrice)
-                        self:setState({
-                            PaidAccessPrice = newPaidAccessPrice
-                        })
-                    end,
+                    SetText = onPriceChanged,
 
                     FocusChanged = function()
                     end,

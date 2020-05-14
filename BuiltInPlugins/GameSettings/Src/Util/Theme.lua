@@ -275,8 +275,9 @@ function Theme.createValues(theme, getColor)
 				menu = {
 					--TODO: add image
 					image = "",
-					itemPadding = 50,
+					itemPadding = 30,
 					buttonSize = 32,
+					buttonPaddingY = 10,
 				},
 				textPadding = 6,
 			},
@@ -668,6 +669,11 @@ local function getUILibraryTheme()
 				or "rbxasset://textures/RoactStudioWidgets/toggle_off_light.png",
 			disabledImage = isDark and "rbxasset://textures/RoactStudioWidgets/toggle_disable_dark.png"
 				or "rbxasset://textures/RoactStudioWidgets/toggle_disable_light.png",
+		},
+
+		tooltip = {
+			textSize = 16,
+			font = Enum.Font.SourceSans,
 		}
 	}
 

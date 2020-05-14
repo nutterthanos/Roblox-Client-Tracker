@@ -7,6 +7,15 @@
         Enabled = boolean, whether or not this component is enabled.
         Selected = boolean, "true" if On button should be selected, "false" if the off button should be selected.
         LayoutOrder = number, order in which this component should appear under its parent.
+
+        OnPaidAccessToggle = function(button), this is a callback thta is invoked with the button info, when the radio button is toggled.
+            example of button info:
+            {
+                Id = true,
+                Title = "This is a foo button.",
+                Description = "Lorem ipsum",
+            }
+        OnPaidAccessPriceChanged = function(price), this is a callback to be invoked when the price field changes values
 ]]
 
 local Plugin = script.Parent.Parent.Parent
@@ -34,20 +43,21 @@ function PaidAccess:render()
     local enabled = props.Enabled
     local selected = props.Selected
 
+    local onButtonToggled = props.OnPaidAccessToggle
+    local onPaidAccessPriceChanged = props.OnPaidAccessPriceChanged
+
     local buttons = {
         {
             Id = true,
             Title = localization:getText("General", "SettingOn"),
             Children = {
                 RobuxFeeBase = Roact.createElement(RobuxFeeBase, {
-                    Title = title,
                     Price = price,
                     DisabledSubText = disabledSubText,
 
+                    OnPriceChanged = onPaidAccessPriceChanged,
+
                     Enabled = enabled,
-                    Selected = selected,
-                    SelectionChanged = function()
-                    end,
                 }),
             },
         },
@@ -69,10 +79,9 @@ function PaidAccess:render()
 
             Buttons = buttons,
 
-            Enabled = true,
-            Selected = true,
-            SelectionChanged = function()
-            end,
+            Enabled = enabled,
+            Selected = selected,
+            SelectionChanged = onButtonToggled,
         })
     })
 end
