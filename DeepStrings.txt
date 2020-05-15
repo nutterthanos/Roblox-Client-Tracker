@@ -377,6 +377,7 @@ AEFA2AAED11E38B9D871882A8E559
 AEFA3AAED11E38B9D871882A8E559
 AesSettingsCipherMode
 AF1224888D11E18561866242201959
+AFah5OyoOkexEB8MJIyriw0HkIpktbibyOn19wmDqkL2ZDactj2ecU6f96e
 Affiliation
 AfterBufferedHandling
 AfterDisconnectChecks
@@ -407,6 +408,7 @@ AHPEAU_iobuf
 AHPEAX1PEAPEAX
 AHW4DataStoreRequestType
 AHW4UserInputType
+AJxPVpKrBzmebEn3CNJhsus2qY0foiOrGwGMtVQO
 Algorithms
 AliasRequestResult
 ALIGN_TYPE
@@ -478,6 +480,7 @@ AllUsers.LuaChat.ShareGameToChatFromChat
 AllUsers.Studio.PaidPlugins
 AllWatches
 AllWindows
+AlnHWuQugsqRrsup1E3sHoKGH9KlzLfUdTHc5PVfPfFpCzVM55H
 AlphaBufferSize
 AlreadyReset
 AlternateName
@@ -4039,6 +4042,7 @@ BgUpdateRedirectsHttpErrInfluxHundredthsPercentage
 BgUpdateRedirectsRejectInfluxHundredthsPercentage
 BillboardGui
 BillboardGuiDistanceStepping2
+BIMzqcAzXNY0Mfh0VVo026qkCAwEAAQ
 BinaryData
 BinaryString
 BinaryStringValue
@@ -4438,7 +4442,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405242
+ByVersion_0.434.0.405244
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -6164,7 +6168,6 @@ CountryRegionCode
 CountryRegionCodeReplicate
 CountShifted
 CountWidth
-Cp1pBNkpDEm5QRakD4KxpY2fEVF42XE
 CrackedLava
 CrashDumpFileName
 CrashEvent
@@ -6504,6 +6507,7 @@ CSwitchThreads[ThreadId]
 CSwitchTime
 CSwitchTime.length
 CSwitchTime[i]
+CsyKoupa4WSVRWz
 CT_POLICY_EVAL_CTX_new
 CtctStageCtcts
 CTLOG_new_from_base64
@@ -6890,6 +6894,7 @@ DB33D3AAF011E38B9D871882A8E559
 DB33D6AAF011E38B9D871882A8E559
 DB33D7AAF011E38B9D871882A8E559
 DBD856014A660
+DBPt5nTIxxQgjrSmht6Ba9rKvagPRdiZ
 DBSAES_ASM
 Dconst_iterator
 DD11E2898E9FB8E4A9E79B
@@ -7776,6 +7781,7 @@ DistributionPoint
 DistributionPoints
 DistToShowBufferCountSqr
 DKECCAK1600_ASM
+Dkk3SvmiioUTLv1Wew
 DlcVersion
 DListenerAttributes
 DMinMaxDistance
@@ -8340,8 +8346,8 @@ ElevatedPhysicsFPSDetected_80
 ElevatedPhysicsFPSDetected_90
 ElevatedPhysicsFPSDetected_SetMinimum
 ElevatedPhysicsFPSReportThresholdTenths
-ElGYyO2ddCHHtKveEbhI2v2Cs7SmGsBQmdRBmwu15oVYZBChKZXIRElsXVkkK9LR
 Elimination
+EM97nZZlQ2VZUOgMpL87Tc49MDr3l2Mi5BYwoJekWXLhvlWvPyHa9GSV8FGPBRZ
 EmbeddedFindInTextBadPattern
 EmbeddedFindPosition
 EmbeddedFindReplace_CloseDialogButton
@@ -10624,7 +10630,6 @@ GoToPreviousScriptLocation
 GoToSourceCodeTB
 GoToVersionFailed
 GpuVariance
-GQNctKCmjzgueSKy3cVaL3PMq1PS
 GrabCursor.png
 GrabRotateCursor
 GrabRotateCursor.png
@@ -10770,7 +10775,6 @@ GroupTeleportLog
 GroupTeleportStarted
 GroupTeleportSuccess
 GroupTime.Sum.toFixed
-GSfjyF0KDu0XR96omTQ37lRInlnkyyVdHh8PfiGrNo3IJ7VxRlS2XS8r8d5UJAj
 GSSolverActive
 GSSS466FSSS455
 GTInfluxDB
@@ -11005,7 +11009,6 @@ HistoryViewMouseX
 HistoryViewMouseY
 HitLocationPartFilterDescendents
 HitsPrecise
-HKEEcpELFhBKaKXR
 HKEY_CLASSES_ROOT
 HKEY_CURRENT_CONFIG
 HKEY_CURRENT_USER
@@ -12030,6 +12033,7 @@ JavaScriptCallback
 Jba5qWkYU5nARYZm1gQVP
 Jcircumflex
 JDJNJXJbJlJvJ
+Jg84TTZXoEo6UZXE6cXv1shbRkg0eDleRt19i
 JHJRJ\JfJpJxJ
 JHW4MembershipType
 JIRA_RIDE_192
@@ -12098,7 +12102,6 @@ JointStepSingleArrayBroadphaseFix
 JointTime_TextureCooldown
 JointToolHelpDialogVerb
 JPEBUSG_INDEX_TRIANGLE
-JRWW0ilSfhPasJZABbWrZO
 JSON.parse
 JSON.stringify
 JSON_Parser
@@ -12448,7 +12451,6 @@ LevelChanged
 LevelItemCount
 LevelOfDetailSetting
 LevelQuality
-LGB3Ah8MDOrdpbu2YnwAskCCOdK6nkaQAgD0QW16nTS
 Liberation
 LIBOVR_DLL_DIR
 LibsodiumDRG
@@ -12744,6 +12746,8 @@ LowQMaterialFS
 LowQMaterialWangFallbackFS
 LowQMaterialWangFS
 LowResolution
+LPP2uHlk3ObdZ9
+LQzQx0WxWDWK
 Lslashsmall
 LSPManager
 LSPWarning
@@ -13494,7 +13498,6 @@ MethodQuery
 Metrics.width
 MetricsSets
 MetricType
-MFmDEIyNlFeoa10AqOhJM23toowXy5WSwQ
 MHapV7R8MxA953
 MicroProfile
 MicroProfileFlip
@@ -13511,7 +13514,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEAthlhShUSkznQ41rjuJVQLMjwsfd6cIqRg5rGKnK8s2EwRFMuSMa
+MIICCgKCAgEA58T910eyDec
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -13915,7 +13918,6 @@ NCONF_get_string
 NCONF_load
 NCONF_load_bio
 NCONF_load_fp
-NdfilwtuFS0PPqS
 NdnuScpeLkclOiiaVruaSilaKgnjRicyLiraCidyLmahCanaLtvaTtsvApygErmaSusiLumaBavaJietMimrAbraSitrPilhPhkrOihtKktaBharBdnaMmkaCcreMoreMdrlPdrhSaroSrkaTzzzZssaBbhgAlpuDablEnarGjohKdniSaniLjhaMinaMdneMidoMoorMtabNbraNmrePgnmHmlaPcuaPplhPddiShriTaraWmohAwulHrtaHtluMgn
 NE9F0uHE9F4uBE9F8u
 NearIntensity
@@ -14055,11 +14057,12 @@ NextSelectionRight
 NextSelectionUp
 NextSpawnLocation
 NextTabPage
-NfsxG0Kuwv
 NfXf`fhfzf
 NHDHVQChar
 NHVVariant
 NinjaMask.mesh
+NKkhGvKeEXAp9PBFVV8cxBMZX8BuGWZFj6PXnce2imYtX
+NLKeN7laCFbyPYc8LhNdcT6MRCQ8LZFRgCuyj5PB
 NNW4SizeMode
 NoCacheForLocalContent
 NoCollisionConstraint
@@ -14145,8 +14148,8 @@ NPCUnequipTools
 NPEAVInstance
 NPEAVQString
 NPEAVQWidget
+NSOGEsGXCNNksWIJAy
 Ntildesmall
-NtL9u9b7fXqMc7E8q18Vyc4gtugzGeg0o80pwl
 NullPassword
 NUMBER_OF_ORDERED_STREAMS
 NumberAnimation
@@ -17083,6 +17086,7 @@ QPropertyAnimation
 QProxyStyle
 QPushButton
 QPushButton[default
+QqkQqRetbmv1oD
 QQmlContext
 QQmlEngine
 QQmlImageProviderBase
@@ -17518,7 +17522,6 @@ RBXScriptSignal
 RbxScriptSource
 RbxSendCoreScripts
 RbxWorkspace
-RcafJvOTV4xEC7JwDQ3
 RCC28699p2
 RCC28699Permyriad
 RCCInfluxHundredthsPercentage
@@ -18643,7 +18646,6 @@ RSA_verify_PKCS1_PSS_mgf1
 RSAPrivateKey
 RSAPublicKey
 RTDynamicCast
-RtKtbyyDxZm6
 RtlCaptureContext
 RtlLookupFunctionEntry
 RtlVirtualUnwind
@@ -18712,7 +18714,6 @@ SAPEAVQClipboard
 SAPEAVQDesktopWidget
 SAPEAVQStyle
 SAPEAVQWidget
-SAQPRSlAGln0bXZLCskLeFVHPen
 SAShowErrors
 SAShowWarnings
 SATAUAVAWH
@@ -22057,6 +22058,7 @@ StudioFixSetTitleMacCrash
 StudioFixShareIcon
 StudioFixShortcutSorting
 StudioFixTextBoxFocusAndToolTipCloseClashHang
+StudioFixTimingOnTeamCreateRestart
 StudioFixTreeViewForFlatList
 StudioFixTreeViewForSquish
 StudioFixUILibDropdownStyle
@@ -23327,6 +23329,7 @@ TLS_SRP_SHA_WITH_AES_256_CBC_SHA
 TlsGetValue
 TlsSetValue
 Tmap_traits
+TMrOJZhmB3wvVJ9h
 TMxQPxAA13
 ToArtistIntentAssetMigratorEnabled
 ToastNotification
@@ -23902,6 +23905,7 @@ UGeometryBatch
 UGlobalResult
 Ugravesmall
 UGroupRolesResult
+UGtNm3KmlDSkW
 UGuiClusterRT
 UHttpApiRequest
 UHttpRequest
@@ -24263,6 +24267,7 @@ Uproxy_data
 UpSampleTentFS
 UPublishDiagnosticsNotification
 UQByteArrayDataPtr
+UqfmEBhhXBgkVx
 UQLatin1Char
 UQMetaObject
 UQPrivateSignal
@@ -24508,7 +24513,6 @@ UWindowInputState
 UWindowShowMessageNotification
 UWindowShowMessageRequest
 UWindowShowMessageResponse
-UXi1JgfRBT
 V_http_request
 V_http_response
 VABTestEnrollmentsRequest
@@ -26221,7 +26225,6 @@ YA_NPEBDAEBVQByteArray
 YA_NPEBVQStringList
 YA_NPEBVsgCScene
 YAAEAVQDataStream
-YAbqL4Oz57sLlYZSDhgvn4ClNul1
 Yacutesmall
 YAHAEAUonce_flag
 YAHAEBVQByteArray
@@ -26271,7 +26274,7 @@ ZoomToHighlight
 ZP6APEAX1PEBX
 ZP6AX1PEAX
 ZPEAVRBXMessageBox
+ZqlWbwOtoVBgAScN
 ZRZZZbZt[.[
 ZVspecial_equipped_signal
 ZVTouchedSignal
-ZWK4yB454WpfGxaD7WQOKt6MfjoH
