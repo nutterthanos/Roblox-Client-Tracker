@@ -15,9 +15,6 @@ local plugin = Library.Parent
 local Roact = require(Library.Packages.Roact)
 
 -- Flags
-local getFFlagClearHoverBoxOnDelete = require(Framework.Flags.getFFlagClearHoverBoxOnDelete)
-local getFFlagLuaDraggerIconBandaid = require(Framework.Flags.getFFlagLuaDraggerIconBandaid)
-local getFFlagOnlyReadyHover = require(Framework.Flags.getFFlagOnlyReadyHover)
 local getFFlagHandleCanceledToolboxDrag = require(Framework.Flags.getFFlagHandleCanceledToolboxDrag)
 local getFFlagHandleFlakeyMouseEvents = require(Framework.Flags.getFFlagHandleFlakeyMouseEvents)
 
@@ -71,35 +68,16 @@ local function isShiftKeyDown()
 end
 
 function DraggerTool:init()
-	local initialState
-	if getFFlagOnlyReadyHover() then
-		initialState = DraggerState[DraggerStateType.Ready].new()
-		self:setState({
-			mainState = DraggerStateType.Ready,
-			stateObject = initialState,
-		})
-	else
-		self:setState({
-			mainState = DraggerStateType.Ready,
-			stateObject = DraggerState[DraggerStateType.Ready].new(),
-		})
-	end
+	local initialState = DraggerState[DraggerStateType.Ready].new()
+	self:setState({
+		mainState = DraggerStateType.Ready,
+		stateObject = initialState,
+	})
 
 	self._isMounted = false
 	self._isMouseDown = false
 
 	self._derivedWorldState = DerivedWorldState.new()
-	if not getFFlagOnlyReadyHover() then
-		if getFFlagClearHoverBoxOnDelete() then
-			local function onHoverExternallyChanged()
-				self:_processViewChanged()
-			end
-			self._hoverTracker =
-				HoverTracker.new(self.props.ToolImplementation, onHoverExternallyChanged)
-		else
-			self._hoverTracker = HoverTracker.new(self.props.ToolImplementation)
-		end
-	end
 
 	self._boundsChangedTracker = BoundsChangedTracker.new(function(part)
 		self:_processPartBoundsChanged(part)
@@ -107,9 +85,7 @@ function DraggerTool:init()
 
 	self:_updateSelectionInfo()
 
-	if getFFlagOnlyReadyHover() then
-		initialState:enter(self)
-	end
+	initialState:enter(self)
 
 	-- We also have to fire off an initial update, since the only update we do
 	-- is in willUpdate, which isn't called during mounting.
@@ -221,24 +197,17 @@ function DraggerTool:willUnmount()
 	SelectionWrapper:destroy()
 	self._boundsChangedTracker:uninstall()
 
-	if not getFFlagOnlyReadyHover() then
-		if getFFlagClearHoverBoxOnDelete() then
-			self._hoverTracker:clearHover()
-		end
-	end
-
 	RunService:UnbindFromRenderStep(DRAGGER_UPDATE_BIND_NAME)
 
 	self:_analyticsSendSession()
 end
 
 function DraggerTool:willUpdate(nextProps, nextState)
-	if getFFlagOnlyReadyHover() then
-		if nextState.mainState ~= self.state.mainState then
-			self.state.stateObject:leave(self)
-			nextState.stateObject:enter(self)
-		end
+	if nextState.mainState ~= self.state.mainState then
+		self.state.stateObject:leave(self)
+		nextState.stateObject:enter(self)
 	end
+
 	if nextState.mainState == DraggerStateType.Ready or nextState.mainState == DraggerStateType.DraggingHandle then
 		if nextProps.ToolImplementation and nextProps.ToolImplementation.update then
 			nextProps.ToolImplementation:update(nextState, self._derivedWorldState)
@@ -251,19 +220,6 @@ function DraggerTool:render()
 	local selection = SelectionWrapper:Get()
 
 	local coreGuiContent = {}
-
-	if not getFFlagLuaDraggerIconBandaid() then
-		-- Default mouse behavior if stateObject doesn't override it
-		if UserInputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) then
-			if #selection > 0 then
-				mouse.Icon = "rbxasset://textures/advClosed-hand.png"
-			else
-				mouse.Icon = "rbxasset://textures/advCursor-openedHand.png"
-			end
-		else
-			mouse.Icon = "rbxasset://textures/advCursor-openedHand.png"
-		end
-	end
 
 	-- State specific rendering code
 	coreGuiContent.StateSpecificUI = self.state.stateObject:render(self)
@@ -311,13 +267,8 @@ function DraggerTool:_scheduleRender()
 end
 
 function DraggerTool:_processSelectionChanged()
-	if getFFlagOnlyReadyHover() then
-		self:_updateSelectionInfo()
-		self.state.stateObject:processSelectionChanged(self)
-	else
-		self.state.stateObject:processSelectionChanged(self)
-		self:_updateSelectionInfo()
-	end
+	self:_updateSelectionInfo()
+	self.state.stateObject:processSelectionChanged(self)
 end
 
 function DraggerTool:_processKeyDown(keyCode)
@@ -357,10 +308,6 @@ end
 ]]
 function DraggerTool:_processViewChanged()
 	self._derivedWorldState:updateView()
-	if not getFFlagOnlyReadyHover() then
-		self._hoverTracker:update(self._derivedWorldState)
-	end
-
 	self.state.stateObject:processViewChanged(self)
 
 	-- Derived world state may have changed as a result of the view update, so
@@ -381,9 +328,6 @@ end
 
 function DraggerTool:_updateSelectionInfo()
 	self._derivedWorldState:updateSelectionInfo()
-	if not getFFlagOnlyReadyHover() then
-		self._hoverTracker:update(self._derivedWorldState)
-	end
 	local allAttachments = self._derivedWorldState:getAllSelectedAttachments()
 	self._boundsChangedTracker:setAttachments(allAttachments)
 	self._boundsChangedTracker:setParts(self._derivedWorldState:getObjectsToTransform())
