@@ -956,7 +956,6 @@ AU_ContinuationTaskHandleBase
 AU_Crt_new_delete
 AU_Task_impl_base
 AU_TaskProcHandle
-Au18AolHwe2qYnYG0g5btpC
 AUAdornMesh
 AUambiguous_result
 AUArcCollector
@@ -4037,6 +4036,7 @@ BFSupportPluginDebuggingRoleSet
 BgUpdateRedirectsDisable
 BgUpdateRedirectsHttpErrInfluxHundredthsPercentage
 BgUpdateRedirectsRejectInfluxHundredthsPercentage
+BGX456pNnlrtziIWpV
 BillboardGui
 BillboardGuiDistanceStepping2
 BinaryData
@@ -4330,7 +4330,7 @@ BrowserWindow
 BrowserWindowClosed
 BrowserWindowWillNavigate
 BrushStyle
-BsPPlm6nLd
+Bth5r7QoLjBQm3R0Vlnp6wxdPDSNpmDkmq5Pn
 BtYovqVKoHMDMoDd0u9Mc5CIyRqyu0IGS99A0jeEXRj7aofQ
 BU_Simplex1to4
 BubbleChat
@@ -4439,7 +4439,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405181
+ByVersion_0.434.0.405238
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -5503,7 +5503,6 @@ CmdUpdateBuffer
 CmdWaitEvents
 CmdWriteBufferMarkerAMD
 CmdWriteTimestamp
-CmNlSmnbYRgtDW4Lygvysug2HVNp7xsrEKaNI0K9ldrVN2
 CMS_add0_cert
 CMS_add0_recipient_key
 CMS_add0_recipient_password
@@ -5586,6 +5585,7 @@ CMS_uncompress
 CMS_verify
 CMS3DESwrap
 CMSRC2wrap
+CMyUbDaQorOD7ssl
 Cnd_broadcast
 Cnd_destroy
 Cnd_destroy_in_situ
@@ -6507,7 +6507,6 @@ CSwitchTime.length
 CSwitchTime[i]
 CT_POLICY_EVAL_CTX_new
 CtctStageCtcts
-CTGrehThqQFWXCHn7i1tbXI9dg7x830BoO5fXTAo0zQCLcoYwr6r6n8CAwEAAQ
 CTLOG_new_from_base64
 CTLOG_STORE_load_file
 CTLOG_STORE_new
@@ -8253,6 +8252,7 @@ ED6CA7E456DC11E2898E9FB8E4A9E79B
 ED6CA7E556DC11E2898E9FB8E4A9E79B
 EDEABA8211E68B9ECD8848BAB4E2
 EDEBBA8211E68B9ECD8848BAB4E2
+EdfOqmF0NbQF
 EdgeReductionsInPivotOrder
 Edieresissmall
 EdiPartyName
@@ -8320,6 +8320,7 @@ EffectBoundings
 EffectiveRetryCount
 EFrontVector
 Egravesmall
+Eh20z6IEHGkSASW9zoHA2EZzyqc
 EHERE\EfEpEzE
 EJTU\^bcfguw
 ElapsedSeconds
@@ -8552,7 +8553,6 @@ EndRecording
 EndsSession
 EndTrackKern
 EndTransformFeedback
-EnEkVg3hBC
 EnemyOcclusion
 EnforceSlaveStateEnabledStatus
 ENGINE_add
@@ -9055,6 +9055,7 @@ FetchUserId
 FetchUsername
 FF65B11E38470F846885BB6FB
 FFFPFZFdFnFxF
+FfiN7UXcOgJEQ88Bpe7n
 FFlagCreateAndUpdateDataReplicationCache3Adding
 FFlagDebugStartPageRefreshOnF5
 FFlagSpecular
@@ -9242,6 +9243,7 @@ FixCharacterAppearanceLoadedEvent2
 FixCharacterAppearanceLoadedEvent3
 FixCharacterJitterDownStairs
 FixCheckSeatTransitionEnabled
+FixClientNetworkMetricsForParallelConnection
 FixColorPickerAppearingInWrongLocation
 FixCountOfUnreadNotificationError
 FixCutAndUndoAfterSavingCSGUnionToNewFile
@@ -10554,6 +10556,7 @@ GfxClusters
 GfxClustersFull
 GfxPartInvalidationBudgetMs
 GfxPartInvalidationLimitToTime2
+GGwKuZpvT7q
 GIM_ShapeRetriever
 GImpactCollisionAlgorithm
 GImpactCompound
@@ -10562,6 +10565,7 @@ GiveFocusBackAfterClickingTextbox
 GizmoRaycast
 GL_ARB_texture_storage
 GL_EXT_texture_compression_s3tc
+Gl2uMaumhQvWdH09krSTeB0reSvFRirDcQ36xHBtSOJjDaQNP00vUCAwEAAQ
 Glass[0]VS
 GlassTintFS
 GlobalAdvancedSettings
@@ -11015,6 +11019,7 @@ HKEY_PERFORMANCE_DATA
 HKEY_PERFORMANCE_NLSTEXT
 HKEY_PERFORMANCE_TEXT
 HMACGostR3411
+HmGyDMMrvI9XTIRuATbRDDzXQNgxXn1meHGml3vAn6uM0V0XCBzBz0DiW1hT1XC
 HomeClicked
 HomePageLoaded
 HopperPanel.png
@@ -11252,6 +11257,7 @@ HuaTianKaiTi
 HuaTianSongTi
 HubCallback
 HubMethodCalled
+HUc04jvOR7Z154Dj4IA1e
 HumanoidAdornRaycasts
 HumanoidAnimationScripts
 HumanoidCacheNameplate
@@ -12252,7 +12258,6 @@ LayoutInfo
 LayoutNode
 LayoutOrder
 LazySubmitTask
-LBXadEiaXTsDhicf9f99lk7lAMU4EuRNcBg0iuotKlLnRpmNu
 LC_MESSAGES
 LCMapStringW
 LDLBuildProgramTimeReportEnabled
@@ -13491,7 +13496,6 @@ MethodQuery
 Metrics.width
 MetricsSets
 MetricType
-MfCV43RizHxVj2jn
 MHapV7R8MxA953
 MicroProfile
 MicroProfileFlip
@@ -13508,7 +13512,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEAsWucpsTRShaF8XkQH1TmBh1PslWkpd0VyBlhFFlMCCZSgq
+MIICCgKCAgEA8Kz35XHffahAVer3WCJpQ53mxJGYdcP1s3tr5NASZAV3qln
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -14809,6 +14813,7 @@ PBKDF2PARAM
 PCDesktopClient
 PCertReqData
 PCertResTBS
+PCfAIprtFK8
 PCStudioApp
 PCStudioAppCJV
 PE_MAX_NB_SUBFR
@@ -16202,6 +16207,7 @@ PostUserAgreementsAcceptanceFailure
 PostUserAgreementsAcceptanceSuccess
 PotentialShadowCasters
 POWRPROF.dll
+PP2fADRn6YC7mqRBurcQFigCIhWNlFjnfOaiKvqfFQN99QJkrxWDm
 PPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPA
 PpjCapacity
 PpjClientBreak
@@ -16514,7 +16520,7 @@ PushPixels
 PVAdornment
 PVInstance
 PVK_header
-PYFMPs4C36B6tweZu
+PY83f28bhYF6MdOrq0TTgWA0y
 PyJlf7IHZQpFHohBe
 QAbstractAnimation
 QAbstractButton
@@ -17071,7 +17077,6 @@ QPaintDevice
 QPainterPath
 QParallelAnimationGroup
 QPersistentModelIndex
-QPfG6SgE9ndt
 QPixmapCache
 QPlainTextEdit
 QProgressBar
@@ -17309,7 +17314,6 @@ QWheelEvent
 QWidgetAction
 QWidgetPluginGui
 QWidgetWindow
-QZDtWpC8z4wkjaFF5p
 RadialBlurFS
 RagdollDefaultTimerTenthSecond
 RagdollEarlyExitTimeTenthSecond
@@ -18639,6 +18643,7 @@ RSA_verify_PKCS1_PSS_mgf1
 RSAPrivateKey
 RSAPublicKey
 RTDynamicCast
+RtdZNN3B9BF34u
 RtlCaptureContext
 RtlLookupFunctionEntry
 RtlVirtualUnwind
@@ -18679,6 +18684,7 @@ RVideoInternal
 RVideoMemLogging
 RVideoTrace
 RxRlReport
+RyGMytCUNWBU1UajenDfPNXZ9RbLAm14d6G7JN1QcY4S7H
 S_Key_dn.png
 SA_KPEAPEBV123
 SA_KPEAPEBVfacet
@@ -19162,6 +19168,7 @@ SentTouchPackets
 SeparateSelection
 Separation
 SeparatorToMenuInternal
+SEQbg24FJcnHgarZ97alFifc19
 SequenceFormat
 SequenceListChanged
 SequenceNumbers
@@ -23745,6 +23752,7 @@ Typesetter
 TypeString
 TypeToImport
 Typewriter
+TZcmJCDC4fDztNyqc5Qr75jI
 U_ContinuationTaskHandleBase
 U_ExceptionHolder
 U_Key_dn.png
@@ -24502,6 +24510,7 @@ UWindowInputState
 UWindowShowMessageNotification
 UWindowShowMessageRequest
 UWindowShowMessageResponse
+UZwPdWnjyW63zTq1tKdy
 V_http_request
 V_http_response
 VABTestEnrollmentsRequest
@@ -24618,7 +24627,6 @@ VBrowserTrackerIdTask
 VBufferD3D11
 VBufferVulkan
 VBulkImportService
-VbZnAT6XaKHhyDieTYR7xX2i94cL8dBrwK
 VCacheableContentProvider
 VCachedItem
 VCachedRecord
@@ -25030,6 +25038,7 @@ VHumanoidAssetRequirement
 VHumanoidController
 VHumanoidDescription
 VHumanoidState
+ViableConnectionsLeft
 VIAdornableCollector
 VibrationMotor
 VIdElementParser
@@ -25146,7 +25155,6 @@ VInventoryPages
 VIPluginInstancesSource
 VIPServerId
 VIPServerOwnerId
-VIQHthxKJzEUKjitjMT9bIY3
 VirtualAlloc
 VirtualFree
 VirtualInputManager
@@ -25671,6 +25679,7 @@ Vwebsocket_transport
 VWeldConstraint
 Vwin_iocp_io_service
 Vwinhttp_client
+VWj3YV2CBLUN9UriNbG35efG
 Vwork_io_service_runner
 VWorkspace
 VWorldModel
@@ -25678,7 +25687,6 @@ VWorldRoot
 Vwspp_callback_client
 VWSUATAUAVAW
 VWXYZ[\]^_`a
-VxldBYdIFR62kYFYg3G4DeFHgziifwEDcWBAR20jZVoWjEvj
 VXmlElement
 VYieldFunctions
 VYieldFunctionStateObject
@@ -26079,7 +26087,6 @@ XboxPresencePolling
 XboxSaleAvatarPackageIds
 XboxUseCuratedGameSort2
 XboxUseNewValidUsernameCheck2
-XdtkoQ4kXjP4EPcjJaPJpEIVWCmDW3wmZ
 XFbxAMatrix
 XFREE86_GLYPH_RANGES
 XGetLastError
@@ -26251,6 +26258,7 @@ YieldFunction
 YQByteArray
 YResolution
 YwBBvY55YvBBwY5
+YWWFlGsG4Q49Ed9
 Z_KPEIBX_K_KPEIAU1
 Zcaronsmall
 Zdotaccent
@@ -26266,8 +26274,6 @@ ZoomToHighlight
 ZP6APEAX1PEBX
 ZP6AX1PEAX
 ZPEAVRBXMessageBox
-ZpH8qyTkgnt5O2BRt2SIQbcx5Qyj43NdZHVntHyc7
 ZRZZZbZt[.[
-ZSDFbhW1rKS7cTwSyvVSfwznLAwEWvvgszp0
 ZVspecial_equipped_signal
 ZVTouchedSignal
