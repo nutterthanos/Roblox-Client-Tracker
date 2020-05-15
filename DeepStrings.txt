@@ -402,11 +402,11 @@ AggregateInfo.Frames
 AggregateInfo.Time.toFixed
 AggrFrames
 Agravesmall
-Agreements
 AHPEAU_iobuf
 AHPEAX1PEAPEAX
 AHW4DataStoreRequestType
 AHW4UserInputType
+AiRrWsKxlyPey9au4zt9YQFnx1SiuvlJ6QSA4Dj8OzxtxZtVQGHqMC1ty6Wm
 Algorithms
 AliasRequestResult
 ALIGN_TYPE
@@ -493,7 +493,6 @@ AlwaysLogTcDisco
 AlwaysLongStep
 AlwaysOnTop
 AlwaysSelectOnInsertPart
-AlzMFhYYq3gYojpiDn
 AM_INTERFACESETID_Standard
 AM_KSCATEGORY_AUDIO
 AM_KSCATEGORY_CAPTURE
@@ -1242,6 +1241,7 @@ AUWindowShowMessageRequest
 AV_Boolean
 AV_CancellationTokenRegistration
 AV_CancellationTokenState
+AV_com_error
 AV_DefaultPPLTaskScheduler
 AV_Facet_base
 AV_Generic_error_category
@@ -1264,7 +1264,6 @@ AV_RefCounter
 AV_Root_node
 AV_System_error
 AV_System_error_category
-AV7wYgJXLPWmfV30SgSrsLuhKbWJZVxg00EZgMG26iAg12dY0EpJikQKKH2xEr
 AVabstract_variables_map
 AVAbstractBitStream
 AVAbstractSocketMessageStream
@@ -1617,6 +1616,7 @@ AVCAMThread
 AVCancelledException
 AVCanCollideVerb
 AVCanNotSelectCommand
+AVCaptchaDialog
 AVCapturedMouseCommand
 AVcategory
 AVCategoryItem
@@ -1736,6 +1736,7 @@ AVCompareScriptsTask
 AVCompileError
 AVCompoundPrimitiveManager
 AVCompressorSoundEffect
+AVComWindowCallback
 AVConeHandleAdornment
 AVConfiguration
 AVconnection
@@ -2002,6 +2003,8 @@ AVEmbeddedFindReplaceWidget
 AVEmbeddedFindReplaceWidgetListener
 AVEmbeddedInsertWidget
 AVEmbeddedOutputFindWidget
+AVEmbeddedWebBrowser
+AVEmbeddedWebBrowserWindows
 AVEmotesPages
 AVEmptyResourceController
 AVEmulationDeviceInfo
@@ -4034,7 +4037,6 @@ BFSupportPluginDebuggingRoleSet
 BgUpdateRedirectsDisable
 BgUpdateRedirectsHttpErrInfluxHundredthsPercentage
 BgUpdateRedirectsRejectInfluxHundredthsPercentage
-BHqoQ2IzpxIOD9Xtbk1Yqgl3BASwGIz81IwyVbVoorswl8LlD2S8gcCAwEAAQ
 BillboardGui
 BillboardGuiDistanceStepping2
 BinaryData
@@ -4140,6 +4142,7 @@ BlockCurrent
 BlockDecals
 BlockDecalTexture
 BlockedRequestFinishedSignal
+BlockFormat
 BlockState
 BlockUserData
 BlockUserSignal
@@ -4424,6 +4427,7 @@ BVSystemAddress
 BVTextureId
 BW4AlphaMode
 BWGradient.png
+BWZXHNopIZQ0iVj86nkNw3rmZSwfRBxxu6
 ByCongestionControl
 ByDatacenter_
 ByIPForDatacenterId_
@@ -4435,7 +4439,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405147
+ByVersion_0.434.0.405180
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -4662,6 +4666,7 @@ CAtlModule
 CAtlModuleT
 CAtlValidateModuleConfiguration
 CaughtException
+CavOjLV3l6R0aN2bv21
 CAXHW4TimerType
 CAXPEAV123
 CB_JW4FriendService_FriendStatus
@@ -5806,6 +5811,7 @@ ComputeShadowMask
 ComputeSmoothPathAsync
 ComputeSolverDisplacementForWake
 ComputeWait
+ComWindowCallback
 ConcertHall
 Concrete.png
 CONCRT140.dll
@@ -6160,6 +6166,7 @@ CountryRegionCode
 CountryRegionCodeReplicate
 CountShifted
 CountWidth
+CPvjbdVz4jh5oL3zuJVRkCAwEAAQ
 CrackedLava
 CrashDumpFileName
 CrashEvent
@@ -6192,7 +6199,7 @@ CreateAccount
 CreateAffinityDCNV
 CreateAndSetRenderMeshHelper
 CreateAndShowIDEDocFromPlaceSessionConfigSuccess
-CreateAndUpdateDataReplicationCache2
+CreateAndUpdateDataReplicationCache3
 CreateAngularVelocityActuatorConstraintVerb
 CreateAssociatedContextAMD
 CreateAssociatedContextAttribsAMD
@@ -7584,7 +7591,6 @@ DialogOpened
 DialogPurpose
 DialogRejected
 DialogRoot
-DialogToAcceptUserAgreements
 DialogTone
 DialogType
 Diamondplate
@@ -8336,6 +8342,7 @@ ElevatedPhysicsFPSDetected_80
 ElevatedPhysicsFPSDetected_90
 ElevatedPhysicsFPSDetected_SetMinimum
 ElevatedPhysicsFPSReportThresholdTenths
+ElFpcSUblhndsD1Cbkal7A8Yi5uMSc
 Elimination
 EmbeddedFindInTextBadPattern
 EmbeddedFindPosition
@@ -8357,6 +8364,8 @@ EmbeddedFindReplaceWidgetListener
 EmbeddedInsertObject
 EmbeddedInsertWidget
 EmbeddedOutputFindWidget
+EmbeddedWebBrowser
+EmbeddedWebBrowserWindows
 EmergencyMessageForChineseStudio
 EmissionDirection
 EmitHybridEvent
@@ -8965,7 +8974,6 @@ FB64AAAED11E38B9D871882A8E559
 FB6CE584711E29A3DBD856014A660
 FB6CF584711E29A3DBD856014A660
 FB8E4A9E79B
-FBoYauEQE8KwAFB1QwrWSKSY
 FbPnXNTBBz2CM47ldc6zPnp04Gg1Ch1zQNrS9Q0fLcTp94XeqG0DjA42Iq0M3ZDg
 FbxAMatrix
 FbxAnimation
@@ -9047,7 +9055,7 @@ FetchUserId
 FetchUsername
 FF65B11E38470F846885BB6FB
 FFFPFZFdFnFxF
-FFlagCreateAndUpdateDataReplicationCache2Adding
+FFlagCreateAndUpdateDataReplicationCache3Adding
 FFlagDebugStartPageRefreshOnF5
 FFlagSpecular
 FFlagStudioPlainTextLabel
@@ -9618,6 +9626,7 @@ FrontSurface
 FrontSurfaceInput
 FrustumOrdered
 FrustumRenderQueue
+FTEDHRfVCcsNC
 FullRenderObjects
 Fullscreen
 FullScreen
@@ -10452,6 +10461,8 @@ GetUniformLocation
 GetUniformuiv
 GetUpvalues
 GetUserAgent
+GetUserAgreementsToAcceptFailure
+GetUserAgreementsToAcceptSuccess
 GetUserCategories
 GetUserCFrame
 GetUserCFrameEnabled
@@ -10602,6 +10613,7 @@ GoogleAnalyticsTracking
 GothamBlack
 GothamBold
 GothamSemibold
+GotLatestVersions
 GoToDialog
 GoToDialog_CancelButton
 GoToDialog_LineNumberEditor
@@ -10613,7 +10625,6 @@ GoToNextScriptLocation
 GoToPreviousScriptLocation
 GoToSourceCodeTB
 GoToVersionFailed
-GpRbcCf9EyXdLCa3vVXx
 GpuVariance
 GrabCursor.png
 GrabRotateCursor
@@ -10791,7 +10802,6 @@ GvEphfEUiHHoD6hYFI4xWGpAnIHcklKQCxrf46kAhDGeZnqIgeGszlGdWafunGE8
 GVKUTS[BXIWH\KbHi
 GXGfGkGpGuG
 GyroscopeEnabled
-GZ3WESAcW1EUW
 H_Key_dn.png
 H_NAEBVQString
 H`CeIkHq7v4
@@ -10863,6 +10873,8 @@ HandleMissingThread
 HandlesBase
 HandlesStyle
 HandleWidth
+HandlingFailure
+HandlingSuccess
 HandMiddleToWrist
 HandOutToWrist
 HangDetection
@@ -10934,7 +10946,7 @@ HelpForSelectionAction
 HelpWindow
 HelpWindow.style[
 HFbxVector4
-HFTg4zZ6S2xv3rkr45WIwVCfXuOQWIFWHZPyKDZlAf5W4EpbsDJoqVkdU
+HG7uJgbKVQnZE
 HHAEBVQModelIndex
 HHHHHAEBVQString
 HHPEAVQObject
@@ -11294,7 +11306,6 @@ HybridEvent
 Iacutesmall
 IAutocompleter
 IBusyStateModel
-IBvKIBtO7quqpcLb3sy7NkZ3B7cm7y7tfukggzO
 ICCProfile
 ICharacterSubject
 Icircumflex
@@ -11365,6 +11376,7 @@ IFindListener
 IfLastDocInLastAppInstance
 IfPurchased
 IGameIconsStore
+IGimDsV73FUq8cbIGj
 IgnoreGuiInset
 IgnoreIA5StringSyntax
 IgnoreLocaleInJoinScriptData
@@ -12007,6 +12019,7 @@ IVRScreenshots_001
 IVRSettings_002
 IVRSystem_017
 IVRTrackedCamera_003
+IWebBrowser2
 IWorldStage
 IXMLHTTPRequest2
 J_Key_dn.png
@@ -12085,7 +12098,9 @@ JointsService
 JointStepSingleArrayBroadphaseFix
 JointTime_TextureCooldown
 JointToolHelpDialogVerb
+JP4qkUctMBHGCjL6vlehtynZxd2kzjyfh1te3Xq7Tk6N8L3UKZy1D5MP0l3XnksS
 JPEBUSG_INDEX_TRIANGLE
+JRWqw1jAd35torhZNAJK
 JSON.parse
 JSON.stringify
 JSON_Parser
@@ -12261,6 +12276,7 @@ LDLProgramOpsReportingMinOpCount
 LDLProgramOpsReportingRate
 LDLStasisCacheMaxAge
 LDLStasisCachePurgeRate
+LDsq9uxSRt2wX2iWYAZbszL6nAK5li
 LeafBodies
 LeafLeftArmRoll1
 LeafLeftArmRoll1Mode
@@ -12416,6 +12432,7 @@ LeftUpLegRollExMode
 LeftUpLegRollMode
 LeftUpperArm
 LeftUpperLeg
+Leg5Ga5JDhMk03am0hhIrUmRqmxeM64LyV
 LEGACY_GOST_PKCS12
 LegacyController
 LegacyControllers
@@ -12429,6 +12446,7 @@ LegacySolverMinutes
 LegacySolverOverrideDeserialize
 LegacySolverOverrideUi
 LegColorId
+LENfxSjN4lal
 LessThan10
 LetterOrNumber
 LevelChanged
@@ -13496,7 +13514,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEA36RONQacukMF0WgA5EDr
+MIICCgKCAgEAw0ice
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -13760,7 +13778,6 @@ MSVCP140.dll
 MSWSOCK.dll
 MTU_Country_
 MTU_Platform_
-MtVI4pS0rJGvH58o5aZZ30VgovRv1fJU3qjsM9he8LXN4X
 Mtx_current_owns
 Mtx_destroy
 Mtx_destroy_in_situ
@@ -13837,6 +13854,7 @@ NAME_ENTRY_set_object
 NAME_INTERNAL
 NAME_oneline
 NAME_print
+NameCaseSensitive
 NamedAssetModified
 NamedAssetsLoaded
 NamedBufferStorageEXT
@@ -13977,7 +13995,6 @@ NetworkStreamingGCUrgentMaxMicroSecondLimit
 NetworkTest
 NetworkTrace
 NetworkType
-NEUfgC1M5uStahHQFf7dZQ39nHBt3
 NeverUseJoinBlobRobloxLocaleEvenAsDefault
 New_Locimp
 NewAsset.ashx
@@ -14044,6 +14061,7 @@ NfXf`fhfzf
 NHDHVQChar
 NHVVariant
 NinjaMask.mesh
+NmHl66D4SPD3hprN4rXCAr0XWozMDGAJG01AFkFma3eIleZmPErycEnINao
 NNW4SizeMode
 NoCacheForLocalContent
 NoCollisionConstraint
@@ -14087,6 +14105,7 @@ NormalSmoothing
 NoSoundNRT
 NoSuggestions
 NoSupports
+NotAccepted
 NotAccessibleSecurity
 NotBrowsable
 NotCacheableInstances
@@ -14302,9 +14321,11 @@ OGRE_VIEW_UPDATE
 OgreWidget
 OgreWidgetForGameState
 OgreWidgetShowEvent
+OGryZyhCb82ChfNZfkr4p
 Oh44\h44\Q
 Ohungarumlaut
 OiCCPPhotoshop
+OKpVDYres8UN4CK
 OldActiveElement
 OldMessagesFetched
 OldServers
@@ -14501,7 +14522,6 @@ OSSL_STORE_SEARCH_by_alias
 OSSL_STORE_SEARCH_by_issuer_serial
 OSSL_STORE_SEARCH_by_key_fingerprint
 OSSL_STORE_SEARCH_by_name
-OTAbDONhSLWcg
 OtherBlues
 OtherDisconnect
 OtherMechanismsAnchored
@@ -15608,7 +15628,6 @@ PersistentEditor
 PersistentFifoComboBox
 PerThreadTimer
 PerThreadTimerTotal
-Pg5WAbDO25qSNP
 PGSAlign2AxesCorrectionDamping
 PGSAlign2AxesPStageFrictionConstant
 PGSAlign2AxesVStageFrictionConstant
@@ -16188,6 +16207,8 @@ PostMessageA
 PostMessageW
 PostPremiumUpsells
 PostQueuedCompletionStatus
+PostUserAgreementsAcceptanceFailure
+PostUserAgreementsAcceptanceSuccess
 PotentialShadowCasters
 POWRPROF.dll
 PPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPA
@@ -16662,8 +16683,10 @@ QEAAXAEBVQSslConfiguration
 QEAAXAEBVQString
 QEAAXAEBVQStringList
 QEAAXAEBVQSurfaceFormat
+QEAAXAEBVQTextBlockFormat
 QEAAXAEBVQTextCharFormat
 QEAAXAEBVQTextCursor
+QEAAXAEBVQTextImageFormat
 QEAAXAEBVQTextOption
 QEAAXAEBVQTextTableFormat
 QEAAXAEBVQUrl
@@ -17153,6 +17176,7 @@ QTextDocument
 QTextDocumentFragment
 QTextFormat
 QTextFragment
+QTextImageFormat
 QTextLayout
 QTextOption
 QTextStream
@@ -17208,6 +17232,7 @@ QuantumGuiText
 QUdpSocket
 Query_perf_counter
 Query_perf_frequency
+QueryControl
 QueryCounter
 QueryCurrentContextNV
 QueryFrameCountNV
@@ -17215,6 +17240,7 @@ QueryFrameLockMasterI3D
 QueryFrameTrackingI3D
 QueryFrustumAndUpdateRange
 QueryGenlockMaxSourceDelayI3D
+QueryInterface
 QueryMaxSwapGroupsNV
 QueryPbufferARB
 QueryPbufferEXT
@@ -18619,6 +18645,7 @@ RSA_verify_PKCS1_PSS_mgf1
 RSAPrivateKey
 RSAPublicKey
 RTDynamicCast
+RTKTCQjXQuGL4S
 RtlCaptureContext
 RtlLookupFunctionEntry
 RtlVirtualUnwind
@@ -20781,6 +20808,7 @@ Studio.App.LoginManager.
 Studio.App.LoginManager.CaptchaClosed
 Studio.App.LoginManager.CaptchaError
 Studio.App.LoginManager.ClosingDownAllOpenPlacesElps
+Studio.App.LoginManager.GetUserAgreementsFailure
 Studio.App.LoginManager.LocaleFetchError1
 Studio.App.LoginManager.LoggedOut
 Studio.App.LoginManager.LogOut
@@ -20789,6 +20817,7 @@ Studio.App.LoginManager.ToSIAgree
 Studio.App.LoginManager.ToSMessage1
 Studio.App.LoginManager.ToSMessage3
 Studio.App.LoginManager.ToSTitle
+Studio.App.LoginManager.UserAgreementsAcceptanceFailure
 Studio.App.LoginRequest.InternalServerError
 Studio.App.LoginRequest.NetworkConnection
 Studio.App.LoginRequest.ParseError
@@ -21957,7 +21986,8 @@ StudioDebugBTID
 StudioDebugger
 StudioDebuggerLazyLoadVariables
 StudioDebugLog
-StudioDebugUserAgreementsEndpoint
+StudioDebugUserAgreementsDummyUserId
+StudioDebugUserAgreementsUsingSimulpong
 StudioDefaultNewTemplatePlaceId
 StudioDelayModificationCheck
 StudioDeprecateQuickFindScriptStep
@@ -22336,6 +22366,7 @@ StudioUrlSaveToCloudV2
 StudioUrlSetInstanceDefaults
 StudioUrlSupportPluginDebugging
 StudioUrlSurfaceJoinChange
+StudioUseCaptchaDialog
 StudioUseCJVAppName
 StudioUseDevelopAPIForPackages
 StudioUseInternalScriptDescendantForAllCases
@@ -22429,8 +22460,7 @@ SUPERSCRIPT_Y
 Superseded
 Supplement
 SupportEncryptedAssets
-SupportJoinDataItemV2
-SupportJoinDataItemV2ii
+SupportJoinDataItemV2iii
 SupportMeshLOD
 SupportMeshPartHeads
 SupportMeshV4Read
@@ -22464,7 +22494,6 @@ SurfacesDefault.png
 SurfaceSelection
 SurfaceTransparency
 SurfaceType
-SuSf5ZwrtSlx9JfuBb85i3BtOdIp1ni7qAP8DtASiZ9RsJCsO
 Suspension
 SUVATAUAVAW
 SUVATAUAVAWH
@@ -22487,7 +22516,6 @@ SUWATAUAVH
 SUWATAUAWH
 SUWATAVAWH
 SUWAUAVAWH
-SuXgz3pDcYx8n01Ai6Nar2VPJ9JNq
 SVATAUAVAWH
 SVWATAUAVAW
 SVWATAUAVAWH
@@ -23127,6 +23155,7 @@ TitleBarProgress
 TitlebarText
 TitleBarVisible
 TJNLerU][Wr
+TKMmyvW8RyTvthwCEb
 TLS_AES_128_CCM_8_SHA256
 TLS_AES_128_CCM_SHA256
 TLS_AES_128_GCM_SHA256
@@ -23664,8 +23693,10 @@ TS_TST_INFO_set_serial
 TS_TST_INFO_set_time
 TS_TST_INFO_set_tsa
 TS_VERIFY_CTX_new
+TSMDuog3dRfjGsKFa4rA
 TSMk2ThrottleStreamJob
 TTUUEDDsss
+Tu2Gil3NTjIwT8apw0
 TurboBuildersClub
 TurnOffAction
 TurnOffManualJointCreation
@@ -23724,7 +23755,7 @@ Typesetter
 TypeString
 TypeToImport
 Typewriter
-Tzwkb6JbhIEfNVkwwHEmlElvccKFX
+TzEX3kEMucNt
 U_ContinuationTaskHandleBase
 U_ExceptionHolder
 U_Key_dn.png
@@ -23877,7 +23908,6 @@ UGlobalResult
 Ugravesmall
 UGroupRolesResult
 UGuiClusterRT
-UH2p9HTk21
 UHttpApiRequest
 UHttpRequest
 UHttpResult
@@ -24313,7 +24343,7 @@ USER32.dll
 UserAbove13
 UserAccountInfoAcquired
 UserAgentStr
-UserAgreements
+UserAgreementsHandler
 UserAndAuthenticate
 UserAnimateScriptEmoteHook
 UserBreakpoint
@@ -24461,6 +24491,7 @@ UUID_UdriTagTables
 UUID_WMDRMTagTables
 Uunspecified
 UUntranslatedSourceContexts
+UUserAgreementData
 UUUUUUUUUUUa
 UUUUUUUUUUUUUU
 UUUUUUUUUUUUUUUU3333333333333333
@@ -24482,7 +24513,6 @@ UWindowInputState
 UWindowShowMessageNotification
 UWindowShowMessageRequest
 UWindowShowMessageResponse
-UZLDGyivjt9gEUEjAJv7LFq5xAR7hfo
 V_http_request
 V_http_response
 VABTestEnrollmentsRequest
@@ -25870,6 +25900,7 @@ WidthArray
 WidthArray[i
 WidthArray[i]
 WidthScale
+Window.Invoke1
 Window.push
 WindowContainer
 WindowFlags
@@ -26059,6 +26090,7 @@ XboxUseNewValidUsernameCheck2
 XFbxAMatrix
 XFREE86_GLYPH_RANGES
 XGetLastError
+XHW4Status_e
 XInputGetBatteryInformation
 XInputGetCapabilities
 XInputGetState
@@ -26089,6 +26121,7 @@ XPEAVFileSyncItem
 XPEAVICHull
 XPEAVQNetworkReply
 XPEAVRobloxScriptDiffDoc
+XpQ9HMebJCAFYBC
 XQColorDialog
 Xregex_error
 XResolution
@@ -26180,7 +26213,6 @@ XW4HttpErrorCode
 XW4ResultCode
 XW4websocket_close_status
 XwhvcEikuIaqb7nHhEJ
-XYGMLONVz6C
 XZP8CoreGuiService
 XZP8CRenderSettingsItem
 XZP8GuiObject
