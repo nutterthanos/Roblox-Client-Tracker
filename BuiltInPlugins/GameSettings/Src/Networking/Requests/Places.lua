@@ -83,6 +83,7 @@ function Places.Patch(placeId, values)
 		warn("Game Settings: Could not change Place settings.")
 		Analytics.onSaveError("PlacesPatch")
 		return Promise.reject()
-end)
+	end)
+end
 
 return Places

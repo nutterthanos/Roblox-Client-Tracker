@@ -46,6 +46,7 @@ local AddChange = require(Plugin.Src.Actions.AddChange)
 local AddErrors = require(Plugin.Src.Actions.AddErrors)
 local AddWarning = require(Plugin.Src.Actions.AddWarning)
 local DiscardWarning = require(Plugin.Src.Actions.DiscardWarning)
+local SetEditPlaceId = require(Plugin.Src.Actions.SetEditPlaceId)
 
 local createSettingsPage = require(Plugin.Src.Components.SettingsPages.DEPRECATED_createSettingsPage)
 
@@ -57,14 +58,21 @@ local StudioService = game:GetService("StudioService")
 --Loads settings values into props by key
 local function loadValuesToProps(getValue, state)
 	local loadedProps = {
-		Places = getValue("places")
+		Places = getValue("places"),
+		EditPlaceId = state.EditAsset.editPlaceId,
 	}
 	return loadedProps
 end
 
 --Implements dispatch functions for when the user changes values
 local function dispatchChanges(setValue, dispatch)
+	local dispatchFuncs = {
+		dispatchSetEditPlaceId = function(placeId)
+			dispatch(SetEditPlaceId(placeId))
+		end,
+	}
 
+	return dispatchFuncs
 end
 
 local function displayPlaceListPage(props, localization)
@@ -84,7 +92,7 @@ local function displayPlaceListPage(props, localization)
 	local placesData = {}
 	for _, place in pairs(props.Places) do
 		local row = { place.id, place.name, place.universeId }
-		table.insert(placesData, row)
+		placesData[place.id] = row
 	end
 
 	return
@@ -115,10 +123,9 @@ local function displayPlaceListPage(props, localization)
 				{ Key = "EditKey", Text = localization:getText("General", "ButtonEdit") },
 				{ Key = "VerisonHistoryKey", Text = localization:getText("Places", "VersionHistory") },
 			},
-			OnItemClicked = function(key, row)
+			OnItemClicked = function(key, id)
 				if key == "EditKey" then
-					--TODO: Switch to Edit Page behavior
-					print(row)
+					props.dispatchSetEditPlaceId(id)
 				elseif key == "VerisonHistoryKey" then
 					StudioService:ShowPlaceHistoryVersionDialog()
 				end
@@ -154,7 +161,7 @@ local function displayEditPlacePage(props, localization)
 				BackgroundTransparency = 1,
 
 				[Roact.Event.Activated] = function()
-					--TODO: back functionality
+					props.dispatchSetEditPlaceId(0)
 				end,
 			}, {
 				Roact.createElement(HoverArea, {Cursor = "PointingHand"}),
@@ -253,7 +260,13 @@ end
 local function displayContents(page, localization)
 	local props = page.props
 
-	return displayPlaceListPage(props, localization)
+	local editPlaceId = props.EditPlaceId
+
+	if editPlaceId == 0 then
+		return displayPlaceListPage(props, localization)
+	else
+		return displayEditPlacePage(props, localization)
+	end
 end
 
 local SettingsPage = createSettingsPage(PageName, loadValuesToProps, dispatchChanges)

@@ -335,7 +335,7 @@ local function openGameSettings(gameId, dataModel)
 		}),
 	})
 
-	if game:GetFastFlag("StudioGameSettingsResetStoreAction") then
+	if game:GetFastFlag("StudioGameSettingsResetStoreAction2") then
 		settingsStore:dispatch(ResetStore())
 	else
 		settingsStore:dispatch(SetCurrentSettings({}))

@@ -11,7 +11,7 @@ local PermissionsConstants = require(Plugin.Src.Components.Permissions.Permissio
 
 local DEFAULT_STATE = {[PermissionsConstants.UserSubjectKey] = {}, [PermissionsConstants.GroupSubjectKey] = {}}
 
-if game:GetFastFlag("StudioGameSettingsResetStoreAction") then
+if game:GetFastFlag("StudioGameSettingsResetStoreAction2") then
 	return Rodux.createReducer(DEFAULT_STATE, {
 		ResetStore = function(state, action)
 			return DEFAULT_STATE

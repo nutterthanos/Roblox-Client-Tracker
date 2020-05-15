@@ -68,7 +68,7 @@ local function getTableValue(table, tableName, tableKey, valueKey)
 	return nil
 end
 
-if game:GetFastFlag("StudioGameSettingsResetStoreAction") then
+if game:GetFastFlag("StudioGameSettingsResetStoreAction2") then
 	-- TODO In the future this should be a constant but we don't have enough testing against this file
 	-- and it's extremely easy for someone to directly modify the store and dirty the default
 	local function getDefaultState()

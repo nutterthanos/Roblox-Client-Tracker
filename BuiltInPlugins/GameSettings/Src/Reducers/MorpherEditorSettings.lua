@@ -19,7 +19,7 @@ local function getDefaultState()
 	}
 end
 
-if game:GetFastFlag("StudioGameSettingsResetStoreAction") then
+if game:GetFastFlag("StudioGameSettingsResetStoreAction2") then
 	return Rodux.createReducer(getDefaultState(), {
 		ResetStore = function(state, action)
 			return getDefaultState()
@@ -27,13 +27,17 @@ if game:GetFastFlag("StudioGameSettingsResetStoreAction") then
 
 		SettingsSetFetchingScaleBoundaries = function(state, action)
 			return Cryo.Dictionary.join(state, {
-				isFetching = action.currentlyFetching,
+				scaleBoundaries = Cryo.Dictionary.join(state.scaleBoundaries, {
+					isFetching = action.currentlyFetching,
+				}),
 			})
 		end,
 
 		SettingsSaveScaleBoundaries = function(state, action)
 			return Cryo.Dictionary.join(state, {
-				boundaries = action.rulesData.scales,
+				scaleBoundaries = Cryo.Dictionary.join(state.scaleBoundaries, {
+					boundaries = action.rulesData.scales,
+				}),
 			})
 		end
 	})
