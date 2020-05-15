@@ -202,7 +202,6 @@ ACTUAL_BYTES_RECEIVED
 ActuatorRelativeTo
 ActuatorType
 Acutesmall
-AD0uqiuSZMrQ6QtQtIOFPc4Ud0vZJQq6
 AdapterDesc
 ADD_STYLE_NAME
 AddAccessory
@@ -494,6 +493,7 @@ AlwaysLogTcDisco
 AlwaysLongStep
 AlwaysOnTop
 AlwaysSelectOnInsertPart
+AlzMFhYYq3gYojpiDn
 AM_INTERFACESETID_Standard
 AM_KSCATEGORY_AUDIO
 AM_KSCATEGORY_CAPTURE
@@ -1264,6 +1264,7 @@ AV_RefCounter
 AV_Root_node
 AV_System_error
 AV_System_error_category
+AV7wYgJXLPWmfV30SgSrsLuhKbWJZVxg00EZgMG26iAg12dY0EpJikQKKH2xEr
 AVabstract_variables_map
 AVAbstractBitStream
 AVAbstractSocketMessageStream
@@ -4033,6 +4034,7 @@ BFSupportPluginDebuggingRoleSet
 BgUpdateRedirectsDisable
 BgUpdateRedirectsHttpErrInfluxHundredthsPercentage
 BgUpdateRedirectsRejectInfluxHundredthsPercentage
+BHqoQ2IzpxIOD9Xtbk1Yqgl3BASwGIz81IwyVbVoorswl8LlD2S8gcCAwEAAQ
 BillboardGui
 BillboardGuiDistanceStepping2
 BinaryData
@@ -4433,7 +4435,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405135
+ByVersion_0.434.0.405147
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -6709,7 +6711,6 @@ CWindowImpl
 CWindowImplBaseT
 CWindowImplRoot
 CWinTraits
-Cx2DNKhlXHHLFNMhlfv1HioJpVGcOXC
 CxxFrameHandler3
 CxxThrowException
 CycleOffset
@@ -6775,10 +6776,18 @@ DataModelMenuOptionClicked
 DataModelMesh
 DataModelPatch
 DataModelPatch.rbxm
+DataModelPatchAnalytics
+DataModelPatchConfig
 DataModelPatcher
+DataModelPatcherConfigurerEnabled
+DataModelPatcherConfigurerPercentage
+DataModelPatcherDevelopmentOTAEnabled
+DataModelPatcherDevelopmentOTAPercentage
 DataModelPatcherError
 DataModelPatcherErrorInfluxHundredthsPercentage
 DataModelPatcherEventPercentage
+DataModelPatcherForceLocal
+DataModelPatcherForceLocalPercentage
 DataModelPatcherFunnel
 DataModelPatcherFunnelInfluxHundredthsPercentage
 DataModelPatcherReportToInflux
@@ -8956,6 +8965,7 @@ FB64AAAED11E38B9D871882A8E559
 FB6CE584711E29A3DBD856014A660
 FB6CF584711E29A3DBD856014A660
 FB8E4A9E79B
+FBoYauEQE8KwAFB1QwrWSKSY
 FbPnXNTBBz2CM47ldc6zPnp04Gg1Ch1zQNrS9Q0fLcTp94XeqG0DjA42Iq0M3ZDg
 FbxAMatrix
 FbxAnimation
@@ -9046,7 +9056,6 @@ FFlagStudioSaveToCloudV2
 FFlagStudioSaveToCloudV3
 FFlagToolboxJointMigrationApi
 FFoRLVHHHHoTJVF
-Fgxiztd2x6kpK
 FHFRF\FfFpFzF
 FidelityRequestTriggered
 FieldOfView
@@ -10604,6 +10613,7 @@ GoToNextScriptLocation
 GoToPreviousScriptLocation
 GoToSourceCodeTB
 GoToVersionFailed
+GpRbcCf9EyXdLCa3vVXx
 GpuVariance
 GrabCursor.png
 GrabRotateCursor
@@ -10781,6 +10791,7 @@ GvEphfEUiHHoD6hYFI4xWGpAnIHcklKQCxrf46kAhDGeZnqIgeGszlGdWafunGE8
 GVKUTS[BXIWH\KbHi
 GXGfGkGpGuG
 GyroscopeEnabled
+GZ3WESAcW1EUW
 H_Key_dn.png
 H_NAEBVQString
 H`CeIkHq7v4
@@ -10923,6 +10934,7 @@ HelpForSelectionAction
 HelpWindow
 HelpWindow.style[
 HFbxVector4
+HFTg4zZ6S2xv3rkr45WIwVCfXuOQWIFWHZPyKDZlAf5W4EpbsDJoqVkdU
 HHAEBVQModelIndex
 HHHHHAEBVQString
 HHPEAVQObject
@@ -11282,6 +11294,7 @@ HybridEvent
 Iacutesmall
 IAutocompleter
 IBusyStateModel
+IBvKIBtO7quqpcLb3sy7NkZ3B7cm7y7tfukggzO
 ICCProfile
 ICharacterSubject
 Icircumflex
@@ -11391,7 +11404,6 @@ IKCollisionsMode
 IkDragCollisionsMode
 IkDraggerAnchorMode
 IkDraggerSolveIterations
-Il5CmHiBXz94i875GCx6h0d6q9IgwnJjCmDeVXd4AGP
 IllegalTeleport
 ILoggedInUser
 Image.Loading
@@ -12015,7 +12027,6 @@ JIRA_RIDE_711
 JJJBBB\\\xx
 JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
 JKLMNOPQRSTU
-JmhFVODIQP1LZKokrjUVnogpW7g
 JoinBlobInvalidateThresholdPercent
 JoinCommand
 JoinDataCacheChecksClientOwnedParts
@@ -12101,7 +12112,6 @@ JW4HttpRequestResult
 JW4InfoType
 JW4TextFilterContext
 JW4ThumbnailType
-JXBHBmvnr8wZB7J7pXW525YV0O
 K\7IxU..UxI7\K
 K_Key_dn.png
 KaiTi_GB2312
@@ -12165,7 +12175,6 @@ KickByDatacenter_
 KiDszBCYB0gyp03Pc
 KillPtClicked
 KillSurfaceJointsPart1
-KLnBt7PRQ9lO5Rva4veg5Vuw8p8DvrHwCcA3CBtbF9D2ODKvWW4k6dr3O0FtHvn5
 KnownHeaders
 KodchiangUPC
 KPEAVICHull
@@ -12233,7 +12242,6 @@ LayoutInfo
 LayoutNode
 LayoutOrder
 LazySubmitTask
-LBiJMAp5NgOx
 LC_MESSAGES
 LCMapStringW
 LDLBuildProgramTimeReportEnabled
@@ -13488,7 +13496,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEAsbro4lpn37zZX9D8kSwFMqvTJtjPQguiEFaSVnie7F04CqhVzdJV
+MIICCgKCAgEA36RONQacukMF0WgA5EDr
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -13752,6 +13760,7 @@ MSVCP140.dll
 MSWSOCK.dll
 MTU_Country_
 MTU_Platform_
+MtVI4pS0rJGvH58o5aZZ30VgovRv1fJU3qjsM9he8LXN4X
 Mtx_current_owns
 Mtx_destroy
 Mtx_destroy_in_situ
@@ -13968,6 +13977,7 @@ NetworkStreamingGCUrgentMaxMicroSecondLimit
 NetworkTest
 NetworkTrace
 NetworkType
+NEUfgC1M5uStahHQFf7dZQ39nHBt3
 NeverUseJoinBlobRobloxLocaleEvenAsDefault
 New_Locimp
 NewAsset.ashx
@@ -14303,7 +14313,6 @@ OLEAUT32.dll
 OleInitialize
 OleLockRunning
 OleUninitialize
-OmVS9DddG3LNGhugD0e50RewZJwkBxnVgsCAwEAAQ
 OnAllScriptErrorsAction
 OnBadgeAwarded
 OnboardingsCompleted
@@ -14492,6 +14501,7 @@ OSSL_STORE_SEARCH_by_alias
 OSSL_STORE_SEARCH_by_issuer_serial
 OSSL_STORE_SEARCH_by_key_fingerprint
 OSSL_STORE_SEARCH_by_name
+OTAbDONhSLWcg
 OtherBlues
 OtherDisconnect
 OtherMechanismsAnchored
@@ -14575,7 +14585,6 @@ PA_A^A]A\_^
 PA_A^A]A\_^[
 PA_A^A]A\_^]
 PA_A^A]A\_^]H
-PA2c3XMxjH2jdukkovkgfj1UhQUqS
 PackageAction
 PackageAlwaysPublish
 PackageAlwaysUpdate
@@ -15599,6 +15608,7 @@ PersistentEditor
 PersistentFifoComboBox
 PerThreadTimer
 PerThreadTimerTotal
+Pg5WAbDO25qSNP
 PGSAlign2AxesCorrectionDamping
 PGSAlign2AxesPStageFrictionConstant
 PGSAlign2AxesVStageFrictionConstant
@@ -16995,10 +17005,8 @@ QGridLayout
 QGuiApplication
 QHBoxLayout
 QHeaderView
-QhOBL25zArMTwb
 QHostAddress
 QHoverEvent
-QhSW3hEwsEgL8jPGYbprogZnnMWL7xlaf6ZGbFXDYIeqnQmW
 QInputDialog
 QIntValidator
 QItemDelegate
@@ -17563,6 +17571,7 @@ ReadConversation
 ReadCookie
 ReadDirectoryChangesW
 ReadMarker
+ReadOnlyScriptDocuments
 ReadPluginSettingsFile
 ReadSettingsFileRetries
 ReadTopReplicationContainerStateFromStream
@@ -22455,6 +22464,7 @@ SurfacesDefault.png
 SurfaceSelection
 SurfaceTransparency
 SurfaceType
+SuSf5ZwrtSlx9JfuBb85i3BtOdIp1ni7qAP8DtASiZ9RsJCsO
 Suspension
 SUVATAUAVAW
 SUVATAUAVAWH
@@ -22477,6 +22487,7 @@ SUWATAUAVH
 SUWATAUAWH
 SUWATAVAWH
 SUWAUAVAWH
+SuXgz3pDcYx8n01Ai6Nar2VPJ9JNq
 SVATAUAVAWH
 SVWATAUAVAW
 SVWATAUAVAWH
@@ -23713,6 +23724,7 @@ Typesetter
 TypeString
 TypeToImport
 Typewriter
+Tzwkb6JbhIEfNVkwwHEmlElvccKFX
 U_ContinuationTaskHandleBase
 U_ExceptionHolder
 U_Key_dn.png
@@ -23848,7 +23860,6 @@ UEBAXW4ComplexControl
 UEBAXW4ControlElement
 UEBAXW4PrimitiveElement
 UEditionEntry
-UeofXpuHLapZRZoL
 UEventInfo
 UEventInstance
 UEventSlot
@@ -23866,6 +23877,7 @@ UGlobalResult
 Ugravesmall
 UGroupRolesResult
 UGuiClusterRT
+UH2p9HTk21
 UHttpApiRequest
 UHttpRequest
 UHttpResult
@@ -24394,7 +24406,6 @@ UseUniqueProfilePorts
 UseVelocityGateForMoment
 UseWidthBasedFormFactorRule
 UseWorkspaceJoinToOutsiders
-USgZFxPgVrYoU0KHERrP
 Ushared_state_base
 USharedState
 USimpleBlock
@@ -24471,6 +24482,7 @@ UWindowInputState
 UWindowShowMessageNotification
 UWindowShowMessageRequest
 UWindowShowMessageResponse
+UZLDGyivjt9gEUEjAJv7LFq5xAR7hfo
 V_http_request
 V_http_response
 VABTestEnrollmentsRequest
@@ -25163,7 +25175,6 @@ Vlength_error
 VLineForce
 VLineHandleAdornment
 VLinkedSourceInstance
-VlLORIoEbKqmqamA0vfdzhgfuFk8uu
 VLocalizationService
 VLocalizationTable
 VLocalPlacePublishRequestMediator
@@ -25939,7 +25950,6 @@ WithSHA224
 WithSHA256
 WithSHA384
 WithSHA512
-Wk1esqG9Wt9gFrJ9aZw5pa
 WM_ATLGETCONTROL
 WM_ATLGETHOST
 WMCreateProfileManager
@@ -26170,6 +26180,7 @@ XW4HttpErrorCode
 XW4ResultCode
 XW4websocket_close_status
 XwhvcEikuIaqb7nHhEJ
+XYGMLONVz6C
 XZP8CoreGuiService
 XZP8CRenderSettingsItem
 XZP8GuiObject
@@ -26215,7 +26226,6 @@ YieldFuncDesc
 YieldFunction
 YQByteArray
 YResolution
-YTT1EPiovxkP
 YwBBvY55YvBBwY5
 Z_KPEIBX_K_KPEIAU1
 Zcaronsmall
