@@ -4444,7 +4444,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405297
+ByVersion_0.434.0.405301
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -6895,7 +6895,6 @@ DB33D2AAF011E38B9D871882A8E559
 DB33D3AAF011E38B9D871882A8E559
 DB33D6AAF011E38B9D871882A8E559
 DB33D7AAF011E38B9D871882A8E559
-DBAEH0xUQcBa
 DBD856014A660
 DBSAES_ASM
 Dconst_iterator
@@ -8160,6 +8159,7 @@ EBAPEAVTeam
 EBAPEAVWorkspace
 EbDgxvvfGb
 EBELEVE`EjEtE
+Ebh7wpTo77tM69ZjrAXQ
 EC_GROUP_check
 EC_GROUP_check_discriminant
 EC_GROUP_copy
@@ -8329,6 +8329,7 @@ EFrontVector
 Egravesmall
 EHERE\EfEpEzE
 EJTU\^bcfguw
+EJwoqhG98MKnNCCU8w09fbXPJgEpLUua8aV
 ElapsedSeconds
 ElapsedTime
 ElasticBehavior
@@ -8645,7 +8646,7 @@ EqualizerSoundEffect
 EquippedEmotes
 EquippedEmotesChanged
 EquippedEmotesDataInternal
-EraMfjtlgCVtSaY0GYpd
+EqX6i6Ur69pqaagIeieVWfWg6D
 ErrDontRetry
 Error_AlreadyConnected
 Error_ConnectionAttemptFailed
@@ -8808,7 +8809,6 @@ EVRConfig_ForceBob
 EVRConfig_ForceHalfInterlace
 EVRConfig_ForceScaling
 EVRConfig_ForceThrottle
-EwgIQx8LnKgsKZHMz05PpYK6csSdU
 ExactMatch
 ExceptionAddress
 ExceptionCode
@@ -9489,7 +9489,6 @@ FoundItems
 FoundThread
 FpFramebuffer
 FpsVariance
-FQgLO2OiNjgqA6
 Fractional
 Frame_.frameend
 Frame_.frameendgpu
@@ -9637,6 +9636,7 @@ FrontSurface
 FrontSurfaceInput
 FrustumOrdered
 FrustumRenderQueue
+FsmxDVLKf3s2JV
 FullRenderObjects
 Fullscreen
 FullScreen
@@ -9822,6 +9822,7 @@ GCReducesQuota2
 GCReducesQuotaCriticalPercent
 GCReducesQuotaPercent
 Gdotaccent
+GDz9dZCgxpj1KGoshAE
 GE_package.png
 GE_packagefolder.png
 GearAction
@@ -10574,6 +10575,7 @@ GImpactCompound
 GImpactCompoundShape
 GiveFocusBackAfterClickingTextbox
 GizmoRaycast
+GkqtRxsq7vPhmJY0kJN2m5nNwGSgHylig
 GL_ARB_texture_storage
 GL_EXT_texture_compression_s3tc
 Glass[0]VS
@@ -10638,8 +10640,8 @@ GoToNextScriptLocation
 GoToPreviousScriptLocation
 GoToSourceCodeTB
 GoToVersionFailed
-GOtZiUh8OmLkR7vH
 GpuVariance
+GQMJT5AbWVHgeKXQJoW9KdDt
 GrabCursor.png
 GrabRotateCursor
 GrabRotateCursor.png
@@ -11301,6 +11303,7 @@ HumanoidRootPart.
 HumanoidStateType
 HumanoidWithPGSConstraintsUsePhysicsState
 Hungarumlautsmall
+Hv5w8CRNgtC
 HVChangeHistoryService
 HVQByteArray
 HVQRegularExpression
@@ -11361,7 +11364,6 @@ Idieresis.a
 Idieresissmall
 IDispatchImpl
 IdleAnimation
-IDnWWxRCvxYYHCsjn
 IDocHostUIHandlerDispatch
 Idotaccent
 Idotaccent.a
@@ -11431,7 +11433,6 @@ IKCollisionsMode
 IkDragCollisionsMode
 IkDraggerAnchorMode
 IkDraggerSolveIterations
-IlaFEeSFU3YTeFa01gZ
 IllegalTeleport
 ILoggedInUser
 Image.Loading
@@ -11502,7 +11503,6 @@ ImportToggleButton
 ImportUnused
 ImportWidget
 ImprovedAutoJump
-IN7ADWDBBEiBiLU6MSMDheZATSXr4chRJLt8rrAlyi1xZHjegqCgJ6LfElTNTi1
 Inaccessible
 InAddBuffer
 Inappropriate
@@ -11891,6 +11891,7 @@ IsAnimationAssetUploadEnabled
 IsAutoJoint
 IsBaseFont
 IsBestFriendsWith
+ISbJvzlMUxMNVG6A5
 IsCategory
 IsCategoryActive
 IsCloudEditSessionChanged
@@ -12022,7 +12023,6 @@ ItemWidget
 Iterations
 ITRedirect
 IUserDataStoreServiceBase
-IvF1Ghvb7iNBocPDe5bqeFBmhjIOQJ6Nh
 IViewportFrameMaxSize
 IVRApplications_006
 IVRChaperone_003
@@ -12052,6 +12052,7 @@ Jcircumflex
 JDJNJXJbJlJvJ
 JHJRJ\JfJpJxJ
 JHW4MembershipType
+JIJ7ttyI0p
 JIRA_RIDE_192
 JIRA_RIDE_630
 JIRA_RIDE_697
@@ -12118,6 +12119,7 @@ JointStepSingleArrayBroadphaseFix
 JointTime_TextureCooldown
 JointToolHelpDialogVerb
 JPEBUSG_INDEX_TRIANGLE
+JSMCAwEAAQ
 JSON.parse
 JSON.stringify
 JSON_Parser
@@ -12139,6 +12141,7 @@ JumpScares
 JumpScaresP2
 JumpToIndex
 JustEndedBusy
+JVrysNeSTIg2aWAIViLaUbSd2b9fehPOTnf2pfyXrExBUlrLDgUh
 JW4FriendService_FriendStatus
 JW4HttpRequestResult
 JW4InfoType
@@ -12531,7 +12534,6 @@ LiveCoding
 LiveScript
 LiveThreadRef
 LivingRoom
-LiwKoQVcD5j
 LLEo6Soxvx2
 LOAD_CERT_CTRL
 LoadAnimation
@@ -12899,6 +12901,8 @@ LuauWarnOnUtf8
 LuauWatchdog
 LuaWebService
 LVvuOx39]O
+LYDLhdsv48kAL
+Lz6Q3BKo0YpOvxqS
 M_NVWeakFunctionRef
 MachineAddress
 MachineConfig
@@ -13515,6 +13519,7 @@ MethodQuery
 Metrics.width
 MetricsSets
 MetricType
+MGczLvzUdf7gvrj4yJNa2Qr02Wcl2h7Iv6Ob8bF7m
 MHapV7R8MxA953
 MicroProfile
 MicroProfileFlip
@@ -13531,7 +13536,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEAx
+MIICCgKCAgEAupvC3E
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -14075,6 +14080,7 @@ NextSelectionRight
 NextSelectionUp
 NextSpawnLocation
 NextTabPage
+NFI3Ba4ibX
 NfXf`fhfzf
 NHDHVQChar
 NHVVariant
@@ -14164,7 +14170,6 @@ NPCUnequipTools
 NPEAVInstance
 NPEAVQString
 NPEAVQWidget
-NQwVjiQaJh8E4SNEx86vcIlwFcj578Z4
 Ntildesmall
 NullPassword
 NUMBER_OF_ORDERED_STREAMS
@@ -14217,6 +14222,7 @@ NVWorkspace
 NW4FileSystemDir
 NW4PenStyle
 NW4UserInputType
+NXTKbPpcvG11v
 Oacutesmall
 OAEPEncryptionSET
 OAUTHBEARER
@@ -14298,6 +14304,7 @@ OCSP_SINGLERESP
 OCSPResponse
 OCSPSigning
 OCTETSTRING
+OCTY5EpZi4zwXEg4mkhgtEFzaE
 Odieresissmall
 OfA9HPuHfA9H`uAfA9Hpu
 OfAdmissions
@@ -16236,7 +16243,6 @@ PpjEtrFill
 PpjEtrThreshold
 PpjPmThreshold
 PPLTaskHandle
-PPZMipxSucX9Lu02qWayMMj
 Prc.length
 Prc[MouseGraphX]
 Precertificate
@@ -16569,6 +16575,7 @@ QAWNcgRdAzOKj8pi5wAlnsdoumgAtB1J7d
 QBoxLayout
 QButtonGroup
 QByteArray
+QBzeUrQsE8vVPLzjgVhqWa2JHiqm8Z5O
 QChildEvent
 QClipboard
 QColorDialog
@@ -17336,7 +17343,6 @@ QWheelEvent
 QWidgetAction
 QWidgetPluginGui
 QWidgetWindow
-QZcNF2unpL0kFIvQzQUpcCiqXfuJaH0wPBcrCauMTFng
 RadialBlurFS
 RagdollDefaultTimerTenthSecond
 RagdollEarlyExitTimeTenthSecond
@@ -17479,7 +17485,6 @@ RawJoinData
 RaycastFilterType
 RaycastParams
 RaycastResult
-RB2cJiUeaE
 RBX_CHECK_EQUAL
 RBX_CHECK_GE
 RBX_CHECK_GT
@@ -18466,7 +18471,6 @@ RigidBodyLazyUpdating
 RigidityEnabled
 RiseVelocity
 Rj0isQcnqX
-RMGXRW6RpxFabyL6VymC17dW21Hm
 Roact.createElement
 ROBLOSECURITY
 Roblox.Hybrid
@@ -19502,7 +19506,6 @@ SetWindowLongPtrA
 SetWindowPos
 SetWindowsHookExA
 SetWindowTextA
-SgezOTCOV0SEv
 ShaderManagerHotloadsShadersInStudio
 ShaderSource
 ShadingLanguage
@@ -23737,7 +23740,6 @@ TutorialId
 TutorialsDockAction
 TutorialWidgetBackground.png
 TVijpW8m8aLsreZebWfEl5y9RFS7x6WZ555Z6MtZy
-Tw50B8SKczQshyLjsZoIYzAbyaK
 TweenEasingDirection
 TweenEasingStyle
 TweenInfo.new
@@ -25022,6 +25024,7 @@ VGeometryVulkan
 VGetAssetVersionNumberRequest
 VGetDevForumPageRequest
 VGetLatestPlacePersistanceLocationForVersionRequest
+VGIHKgWNKbTJy2soeeAt3Q2FUKxKN9jCg
 VGlobalAdvancedSettings
 VGlobalBasicSettings
 VGlyphRenderer
@@ -25407,6 +25410,7 @@ VQNetworkCookie
 VQNetworkInterface
 VQNetworkReply
 VQPersistentModelIndex
+VQrdXdAq8rYh
 VQRegularExpression
 VQSequentialIterableImpl
 VQSslError
@@ -25665,7 +25669,6 @@ VUnsecuredStudioGame
 VUpdateTask
 VUploadMeshComponentRequestResult
 VUploadRequestResult
-VurKi2VBRKKtl2iI6n13dOFeBCVa1fRtdRH
 VUserInputService
 VUsernameHandler
 VUserService
@@ -25835,7 +25838,6 @@ WeldCursor
 WeldPermyriad
 WeldReport
 WeldsAction
-WGBIsr7Tt55kOKUCAwEAAQ
 WGL_3DFX_multisample
 WGL_3DL_stereo_control
 WGL_AMD_gpu_association
@@ -26289,14 +26291,12 @@ YffYZefYDNNDCOO
 YieldEvent
 YieldFuncDesc
 YieldFunction
-YMG1AE6EPQYFLm7ooRYXmBEDmGu2KdH4Q
+YOyGY5SB835tSH4
 YQByteArray
 YResolution
-YVKYyXbXdAarE5xmP3HRM
 YwBBvY55YvBBwY5
 Z_KPEIBX_K_KPEIAU1
 Zcaronsmall
-ZcvOYP9ITDUb9Rn8BaUG8
 Zdotaccent
 ZgnhKhWhci
 ZIndexBehavior
@@ -26311,6 +26311,6 @@ ZP6APEAX1PEBX
 ZP6AX1PEAX
 ZPEAVRBXMessageBox
 ZRZZZbZt[.[
-ZskejGXz2ZxN8Te2GtY9jR1YUBnCTSUaDF
+ZVBzLA0fmfGgNbj1PcqVURxz4x52fE6sabIk6yVOay1nz
 ZVspecial_equipped_signal
 ZVTouchedSignal
