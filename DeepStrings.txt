@@ -771,7 +771,6 @@ AreWorldCoordsShown
 Aringsmall
 Arithmetic
 ArmColorId
-ARR2l06DcCAwEAAQ
 ArrayIndex
 ArrowCursor
 ArrowCursor.png
@@ -4044,7 +4043,6 @@ BFSupportPluginDebuggingRoleSet
 BgUpdateRedirectsDisable
 BgUpdateRedirectsHttpErrInfluxHundredthsPercentage
 BgUpdateRedirectsRejectInfluxHundredthsPercentage
-BI4sp8ZF1k
 BillboardGui
 BillboardGuiDistanceStepping2
 BinaryData
@@ -4257,7 +4255,6 @@ BPuVfD9B`uOfD9BpuH
 BQByteArray
 BQJsonValueRef
 BQPersistentModelIndex
-Br2tmpPzsVN4ssaRXPecbDvTeu5uDGqcBFOKj6
 BranchIcon
 BreakGroup
 BreakJoints
@@ -4431,6 +4428,7 @@ BuyDeveloperProduct
 BuyDeveloperProduct_AutoAccepted
 BvBvBvBvBvBvBvBv
 BVCoordinateFrame
+BVerifySliceCenterOnRenderNotSet
 BVQVariant
 BVRegion3int16
 BVSystemAddress
@@ -4448,7 +4446,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405311
+ByVersion_0.434.0.405315
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -6560,7 +6558,6 @@ CubeFramebuffer
 CubeMipGen
 CullByDistanceToPOI
 CullDistance
-CUN7K4VuQUCD8q3629gQwM9dT
 CURL_SSL_BACKEND
 CURL_SSLVERSION
 CURL_SSLVERSION_MAX
@@ -6801,12 +6798,14 @@ DataModelPatcherDevelopmentOTAEnabled
 DataModelPatcherDevelopmentOTAPercentage
 DataModelPatcherError
 DataModelPatcherErrorInfluxHundredthsPercentage
+DataModelPatcherErrorInfluxPriorityHundredthsPercentage
 DataModelPatcherEventPercentage
 DataModelPatcherForceLocal
 DataModelPatcherForceLocalPercentage
 DataModelPatcherFunnel
 DataModelPatcherFunnelInfluxHundredthsPercentage
-DataModelPatcherReportToInflux
+DataModelPatcherFunnelInfluxPriorityHundredthsPercentage
+DataModelPatcherReportToInflux2
 DataModelPatcherRevokedPublicKeyIds
 DataModelPatcherRevokedSignatureTypes
 DataModelPlaceVersion
@@ -7788,6 +7787,7 @@ Distribution
 DistributionPoint
 DistributionPoints
 DistToShowBufferCountSqr
+Dk5gnircR6M
 DKECCAK1600_ASM
 DlcVersion
 DListenerAttributes
@@ -8101,6 +8101,7 @@ Easing.InOutQuad
 EasingCurve
 EasingDirection
 EasingStyle
+EAxEkCoFXp
 EB0BF11E395B6E5DB6211F344
 EB1C70A811E28987EB530EBA4742
 EB1D70A811E28987EB530EBA4742
@@ -8333,6 +8334,7 @@ EFrontVector
 Egravesmall
 EHERE\EfEpEzE
 EJTU\^bcfguw
+EjuRtXshecdCdG
 ElapsedSeconds
 ElapsedTime
 ElasticBehavior
@@ -9324,6 +9326,7 @@ FixUsingGameIdInsteadOfJobId
 FixWeldConstraintTeamCreateReplication
 FixZeroNormalInDecompositeGeometry
 FJFTF^FhFrF
+FKd1z3gm0P9NG3QcQGeLI6NKr2S
 FlagCaptured
 FlagCreated
 FlagCursor.png
@@ -9358,7 +9361,6 @@ FlushMappedMemoryRanges
 FlushModifiedScriptsRetry
 FlyweightService
 FlyweightServiceDataRecievedCallbackCrashFixEnabled
-FMlRwvUYbqOY1zc6PwvCK6SIeGzcL4dyg5bVl7XoYsT9Lnx0uQx
 FMOD_CREATECOMPRESSEDSAMPLE
 FMOD_OPENMEMORY_POINT
 FMOD_OUTPUT_NOSOUND
@@ -10786,7 +10788,6 @@ GroupTeleportLog
 GroupTeleportStarted
 GroupTeleportSuccess
 GroupTime.Sum.toFixed
-Gs4tgNUT8olsTrDpfqmNH3qzCm
 GSSolverActive
 GSSS466FSSS455
 GTInfluxDB
@@ -10816,6 +10817,7 @@ GunCursor.png
 GunWaitCursor.png
 GvEphfEUiHHoD6hYFI4xWGpAnIHcklKQCxrf46kAhDGeZnqIgeGszlGdWafunGE8
 GVKUTS[BXIWH\KbHi
+GWhyjrfWKrC
 GXGfGkGpGuG
 GyroscopeEnabled
 H_Key_dn.png
@@ -11388,6 +11390,7 @@ IEBAPEAVQTextBlockUserData
 IEBAPEAVQTreeWidgetItem
 IEBAXPEAVQStyleOptionComboBox
 IEBAXPEAVQStyleOptionSlider
+IebLdR0ClTpSnSuOhBl2HhqECuXD0UCAwEAAQ
 Ierusalimschy
 IEventTarget
 IFindListener
@@ -11428,7 +11431,6 @@ IID_IVPObject
 IID_IVPVBIConfig
 IID_IVPVBINotify
 IID_IVPVBIObject
-IiK8iSuDqlmbi1MZlsBW7wIdE
 IIMAEBVInstanceIdentifier
 IKCollisionsMode
 IkDragCollisionsMode
@@ -12050,6 +12052,7 @@ JavaScriptCallback
 Jba5qWkYU5nARYZm1gQVP
 Jcircumflex
 JDJNJXJbJlJvJ
+JGpWRVJl82y1sbv
 JHJRJ\JfJpJxJ
 JHW4MembershipType
 JIRA_RIDE_192
@@ -12149,6 +12152,7 @@ K_Key_dn.png
 KaiTi_GB2312
 KAXPEBDHAEAPEAVQChar
 KBytesPerSec
+KdE6TKgvrSk7dgWpaLL50mKBX3f
 KeepAliveTimeout
 KeepPositionOnInsert
 KERNEL32.dll
@@ -12211,7 +12215,6 @@ KnownHeaders
 KodchiangUPC
 KPEAVICHull
 KPEIBX_K_KPEIAU_iobuf
-KtYcy3cGrenKZtQdSYiFFba41bMjXIGNbGqMmriopmedA7V8
 KVScriptContext
 KYULPhCBFoD3mw5mygYqAeFlHdSL2k3MnDG
 LabelArray
@@ -12765,6 +12768,7 @@ LowQMaterialFS
 LowQMaterialWangFallbackFS
 LowQMaterialWangFS
 LowResolution
+LPxnoo0q4e19XGd5NTNKsPW5qzSHXFtPHP5cI
 Lslashsmall
 LSPManager
 LSPWarning
@@ -12899,7 +12903,6 @@ LuauWarnOnUtf8
 LuauWatchdog
 LuaWebService
 LVvuOx39]O
-LxfFXIse59
 M_NVWeakFunctionRef
 MachineAddress
 MachineConfig
@@ -13532,7 +13535,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEAxTjrSF7Rjbvg8zINimduao2achZUfEmO6YnIe2XiJS2qZbQBrj
+MIICCgKCAgEApvgQcDs4CBtYM
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -13572,7 +13575,6 @@ Miscellaneous
 Mismatched
 MissingCoreScript
 MissingDumpFile
-MjtFNlZD7UtYuJiGItoIJAedfqw3g4wUyOUEjflJxeITXS8v1LGG
 MMW4IkDragCollisionsMode
 MMW4PartMaterial
 MMW4UserInputState
@@ -14081,7 +14083,6 @@ NfXf`fhfzf
 NHDHVQChar
 NHVVariant
 NinjaMask.mesh
-NK7Sl5tGZCiepRBjM
 NNW4SizeMode
 NoCacheForLocalContent
 NoCollisionConstraint
@@ -14610,6 +14611,7 @@ OverrideSendRakNetStatsThrottleCountries
 OverrideStarterScript
 OverrideToMyBranch
 OverwriteMode
+OWjMYCjcOKrYIDABwKW6dwe3j
 OwnProperty
 Ozs8xYCf2Q05p4gHyX
 PA^A]A\_^]
@@ -15649,6 +15651,7 @@ PersistentEditor
 PersistentFifoComboBox
 PerThreadTimer
 PerThreadTimerTotal
+PEYjjNhW8QdFVoAaIVKBmMy4Au
 PGSAlign2AxesCorrectionDamping
 PGSAlign2AxesPStageFrictionConstant
 PGSAlign2AxesVStageFrictionConstant
@@ -16140,6 +16143,7 @@ PluginWidgetRelay
 PluginWidgetRelayForPluginGui
 PluginWriteTemp
 PlusButtonPressed
+PMPHLMzWQ3
 POINT_SIZE
 PointBalanceCacheInvalidateTimeMs
 PointDataChanged
@@ -16238,6 +16242,7 @@ PpjEtrFill
 PpjEtrThreshold
 PpjPmThreshold
 PPLTaskHandle
+Pq6rdSobVp2jOVYETApgyp2PXsiJcBkPgQ
 Prc.length
 Prc[MouseGraphX]
 Precertificate
@@ -19738,6 +19743,7 @@ SizeToFourAction
 SizeToSixteenAction
 SizeToTwoAction
 SizingMode
+SJowMWmP05jxGch26vqUJd
 SkateboardController
 SkateboardPlatform
 SkipFirstMechanismChangeReport
@@ -24307,7 +24313,6 @@ UResultDetail
 UrlFormattingOption
 URLRequest
 URobloxApiGame
-URZPooiZWXY
 UsageFeatures
 USATAUAVAW
 USATAUAVAWH
@@ -25832,6 +25837,7 @@ WeldCursor
 WeldPermyriad
 WeldReport
 WeldsAction
+WErqqo3qfM5BfIWwvZO2jDyOqfk6QfuInhs
 WGL_3DFX_multisample
 WGL_3DL_stereo_control
 WGL_AMD_gpu_association
@@ -26052,7 +26058,6 @@ WorldToScreenPoint
 WorldToViewportPoint
 WP1Lk7UmX3No0NAVVrlNv8vM1TKYodC60fXpXkwOnxGMHelMkfu58xsxIB9tXB4U
 WPACKET_start_sub_packet_len__
-WQzWNW5fVF8yBqKHMBqT8V0YUBWewylovvHQa1hREZ5pvch
 WristDisplacementDamping
 WristDisplacementDampingMode
 WriteArray
@@ -26076,7 +26081,7 @@ WSAStartup
 WSAStringToAddressW
 WTHelperGetProvSignerFromChain
 WTHelperProvDataFromStateData
-WZpZXikXStpscYHBFV9rsB
+WXOljUwpH58hGySqXi6OXzAn0N3Ef2oMlaaFzwKNCTvHUx6GABTI
 X_deprecated
 X_Fullscreen
 X_JW4AssetType
@@ -26122,7 +26127,7 @@ XboxUseNewValidUsernameCheck2
 XFbxAMatrix
 XFREE86_GLYPH_RANGES
 XGetLastError
-XGTha3ceV1eZs2kUZFCyupSQk62RyArt
+XHomV8NNiXI9xEQK7lhwHgQm1vqk5eZgEM5RDXbHjyoeGeyiJ6Gj
 XHW4Status_e
 XInputGetBatteryInformation
 XInputGetCapabilities
@@ -26150,12 +26155,12 @@ XP6AXVVariant
 XP6AXVWeakFunctionRef
 XP6AXW4HttpRequestResult
 XP6AXXZVlist0
+XPD1GF4MCATp
 XPEAVFileSyncItem
 XPEAVICHull
 XPEAVQNetworkReply
 XPEAVRobloxScriptDiffDoc
 XQColorDialog
-XqmBbSqygGiKVdg34IIMUOFD
 Xregex_error
 XResolution
 Xtime_get_ticks
@@ -26295,8 +26300,8 @@ YwBBvY55YvBBwY5
 Z_KPEIBX_K_KPEIAU1
 Zcaronsmall
 Zdotaccent
-ZDyGQLKHdb
 ZgnhKhWhci
+ZicT0kD4xuIVovCujohYeZhSU7nrFGsQ5544Su22A
 ZIndexBehavior
 ZLcJhLcGhM
 ZNjlXiODrHUcaGRYt
