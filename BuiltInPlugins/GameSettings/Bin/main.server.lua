@@ -43,6 +43,7 @@ local Networking = require(Plugin.Src.ContextServices.Networking)
 local WorldRootPhysics = require(Plugin.Src.Components.SettingsPages.WorldPage.ContextServices.WorldRootPhysics)
 local GameInfoController = require(Plugin.Src.Controllers.GameInfoController)
 local GameOptionsController = require(Plugin.Src.Components.SettingsPages.OptionsPage.Controllers.GameOptionsController)
+local UniverseAvatarController = require(Plugin.Src.Components.SettingsPages.AvatarPage.Controllers.UniverseAvatarController)
 
 local CurrentStatus = require(Plugin.Src.Util.CurrentStatus)
 
@@ -77,11 +78,13 @@ if game:GetFastFlag("StudioThunkWithArgsMiddleware") then
 		local networking = Networking.new()
 		local gameInfoController = GameInfoController.new(networking:get())
 		local gameOptionsController = GameOptionsController.new()
+		local universeAvatarController = UniverseAvatarController.new(networking:get())
 
 		thunkContextItems.networking = networking:get()
 		thunkContextItems.worldRootPhysicsController = worldRootPhysics:get()
 		thunkContextItems.gameInfoController = gameInfoController
 		thunkContextItems.gameOptionsController = gameOptionsController
+		thunkContextItems.universeAvatarController = universeAvatarController
 	end
 
 	local thunkWithArgsMiddleware = FrameworkUtil.ThunkWithArgsMiddleware(thunkContextItems)

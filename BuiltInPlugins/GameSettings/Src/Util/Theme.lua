@@ -273,8 +273,7 @@ function Theme.createValues(theme, getColor)
 					padding = 5,
 				},
 				menu = {
-					--TODO: add image
-					image = "",
+					image = "rbxasset://textures/ui/Menu/Hamburger.png",
 					itemPadding = 30,
 					buttonSize = 32,
 					buttonPaddingY = 10,

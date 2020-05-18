@@ -2,7 +2,7 @@ local Plugin = script.Parent.Parent.Parent
 
 local AvatarWebAPI = require(Plugin.Src.Networking.AvatarWebAPI)
 local SettingsSaveScaleBoundaries = require(Plugin.Src.Actions.SettingsSaveScaleBoundaries)
-local SettingsSetFetchingScaleBoundaries = require(Plugin.Src.Actions.SettingsSetFetchingScaleBoundaries)
+local SettingsSetFetchingScaleBoundaries = require(Plugin.Src.Actions.DEPRECATED_SettingsSetFetchingScaleBoundaries)
 
 return function()
 	return function(store)

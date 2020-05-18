@@ -3,7 +3,7 @@
 	Modules for each SettingsPage are required here.
 ]]
 
-local Avatar = require(script.Parent.Avatar)
+local Avatar = require(script.Parent.DEPRECATED_Avatar)
 local Options = require(script.Parent.DEPRECATED_Options)
 local BasicInfo = require(script.Parent.BasicInfo)
 local DeveloperSubscriptions = require(script.Parent.DeveloperSubscriptions)

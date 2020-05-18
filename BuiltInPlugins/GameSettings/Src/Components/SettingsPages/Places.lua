@@ -53,6 +53,10 @@ local SetEditPlaceId = require(Plugin.Src.Actions.SetEditPlaceId)
 local createSettingsPage = require(Plugin.Src.Components.SettingsPages.DEPRECATED_createSettingsPage)
 
 local MAX_NAME_LENGTH = 50
+local MIN_PLAYER_COUNT = 0
+local MAX_PLAYER_COUNT = 100
+local MIN_SOCIAL_SLOT_COUNT = 0
+local MAX_SOCIAL_SLOT_COUNT = 10
 
 local AssetManagerService = game:GetService("AssetManagerService")
 local StudioService = game:GetService("StudioService")
@@ -105,7 +109,7 @@ local function dispatchChanges(setValue, dispatch)
 
 			if not numberPlayerCount then
 				dispatch(AddErrors({placePlayerCount = "Error"}))
-			elseif numberPlayerCount and (numberPlayerCount < 0 or numberPlayerCount > 100) then
+			elseif numberPlayerCount and (numberPlayerCount < MIN_PLAYER_COUNT or numberPlayerCount > MAX_PLAYER_COUNT) then
 				dispatch(AddErrors({placePlayerCount = "Error"}))
 			else
 				local newPlaces = deepJoin(places, {
@@ -132,7 +136,8 @@ local function dispatchChanges(setValue, dispatch)
 
 			if not numberCustomSocialSlotsCount then
 				dispatch(AddErrors({placeCustomSocialSlotsCount = "Error"}))
-			elseif numberCustomSocialSlotsCount and (numberCustomSocialSlotsCount < 0 or numberCustomSocialSlotsCount > 10) then
+			elseif numberCustomSocialSlotsCount and
+			(numberCustomSocialSlotsCount < MIN_SOCIAL_SLOT_COUNT or numberCustomSocialSlotsCount > MAX_SOCIAL_SLOT_COUNT) then
 				dispatch(AddErrors({placeCustomSocialSlotsCount = "Error"}))
 			else
 				local newPlaces = deepJoin(places, {

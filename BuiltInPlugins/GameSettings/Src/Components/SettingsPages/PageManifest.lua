@@ -1,5 +1,5 @@
 local AccessPermissions = require(script.Parent.AccessPermissions)
-local Avatar = require(script.Parent.Avatar)
+local Avatar = require(script.Parent.AvatarPage.Avatar)
 local BasicInfo = require(script.Parent.BasicInfo)
 local DeveloperSubscriptions = require(script.Parent.DeveloperSubscriptions)
 local LocalizationPage = require(script.Parent.LocalizationPage)
@@ -19,7 +19,7 @@ return {
 	--AccessPermissions,
   --FFlagStudioAddMonetizationToGameSettings and Monetization or nil,
 	--FFlagGameSettingsPlaceSettings and Places or nil,
-	--Avatar,
+	Avatar,
 	--DFFlagDeveloperSubscriptionsEnabled and DeveloperSubscriptions or nil,
 	World,
 	--FFlagStudioLocalizationInGameSettingsEnabled and LocalizationPage or nil,

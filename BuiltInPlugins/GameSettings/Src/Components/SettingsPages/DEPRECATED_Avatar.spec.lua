@@ -11,7 +11,7 @@ return function()
 	local MainReducer = require(Plugin.Src.Reducers.MainReducer)
 	local Localization = require(Plugin.Src.Localization.Localization)
 
-	local Avatar = require(Plugin.Src.Components.SettingsPages.Avatar)
+	local Avatar = require(Plugin.Src.Components.SettingsPages.DEPRECATED_Avatar)
 
 	local settingsImpl = SettingsImpl_mock.new()
 	local theme = Theme.newDummyTheme()
