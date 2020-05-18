@@ -21,7 +21,7 @@ local StandaloneSelectionBox = require(DraggerFramework.Components.StandaloneSel
 
 local RotateHandleView = require(Plugin.Src.RotateHandleView)
 
-local getFFlagImprovedHandleParams = require(DraggerFramework.Flags.getFFlagImprovedHandleParams)
+local getFFlagImprovedHandleParams2 = require(DraggerFramework.Flags.getFFlagImprovedHandleParams2)
 local getFFlagDisallowFloatingPointErrorMove = require(DraggerFramework.Flags.getFFlagDisallowFloatingPointErrorMove)
 
 -- The difference from exactly touching to try to bring the parts within when
@@ -148,7 +148,7 @@ function RotateToolImpl:render(hoveredHandleId)
 	local children = {}
 	if self._draggingHandleId then
 		local handleProps = self._handles[self._draggingHandleId]
-		if getFFlagImprovedHandleParams() then
+		if getFFlagImprovedHandleParams2() then
 			children[self._draggingHandleId] = Roact.createElement(RotateHandleView, {
 				HandleCFrame = handleProps.HandleCFrame,
 				Color = handleProps.Color,
@@ -194,7 +194,7 @@ function RotateToolImpl:render(hoveredHandleId)
 			if not hovered then
 				color = Colors.makeDimmed(color)
 			end
-			if getFFlagImprovedHandleParams() then
+			if getFFlagImprovedHandleParams2() then
 				children[handleId] = Roact.createElement(RotateHandleView, {
 					HandleCFrame = handleProps.HandleCFrame,
 					Color = color,
@@ -430,7 +430,7 @@ function RotateToolImpl:_updateHandles()
 		self._handles = {}
 	else
 		for handleId, handleDefinition in pairs(RotateHandleDefinitions) do
-			if getFFlagImprovedHandleParams() then
+			if getFFlagImprovedHandleParams2() then
 				self._handles[handleId] = {
 					HandleCFrame = self._boundingBox.CFrame * handleDefinition.Offset,
 					Color = handleDefinition.Color,

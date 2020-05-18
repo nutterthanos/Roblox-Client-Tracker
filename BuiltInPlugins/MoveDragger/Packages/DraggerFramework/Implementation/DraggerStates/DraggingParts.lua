@@ -15,6 +15,7 @@ local AttachmentMover = require(Framework.Utility.AttachmentMover)
 local setInsertPoint = require(Framework.Utility.setInsertPoint)
 local StandardCursor = require(Framework.Utility.StandardCursor)
 
+local getFFlagMinCursorChange = require(Framework.Flags.getFFlagMinCursorChange)
 local getFFlagMoveViaSelectionCenter = require(Framework.Flags.getFFlagMoveViaSelectionCenter)
 local getFFlagHandleNoRotateTarget = require(Framework.Flags.getFFlagHandleNoRotateTarget)
 local getFFlagFixDraggerCursors = require(Framework.Flags.getFFlagFixDraggerCursors)
@@ -78,7 +79,11 @@ end
 
 function DraggingParts:render(draggerTool)
 	if getFFlagFixDraggerCursors() then
-		draggerTool.props.Mouse.Icon = StandardCursor.getClosedHand()
+		if getFFlagMinCursorChange() then
+			draggerTool:setMouseCursor(StandardCursor.getClosedHand())
+		else
+			draggerTool.props.Mouse.Icon = StandardCursor.getClosedHand()
+		end
 	else
 		draggerTool.props.Mouse.Icon = "rbxasset://SystemCursors/ClosedHand"
 	end

@@ -6,6 +6,7 @@ local SelectionHelper = require(Framework.Utility.SelectionHelper)
 local setInsertPoint = require(Framework.Utility.setInsertPoint)
 local StandardCursor = require(Framework.Utility.StandardCursor)
 
+local getFFlagMinCursorChange = require(Framework.Flags.getFFlagMinCursorChange)
 local getFFlagFixDraggerCursors = require(Framework.Flags.getFFlagFixDraggerCursors)
 
 local NO_COLLISIONS_TRANSPARENCY = 0.4
@@ -54,7 +55,11 @@ end
 
 function DraggingHandle:render(draggerTool)
     if getFFlagFixDraggerCursors() then
-        draggerTool.props.Mouse.Icon = StandardCursor.getClosedHand()
+        if getFFlagMinCursorChange() then
+            draggerTool:setMouseCursor(StandardCursor.getClosedHand())
+        else
+            draggerTool.props.Mouse.Icon = StandardCursor.getClosedHand()
+        end
     else
         draggerTool.props.Mouse.Icon = "rbxasset://SystemCursors/ClosedHand"
     end

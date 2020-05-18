@@ -16,7 +16,7 @@ local Colors = require(DraggerFramework.Utility.Colors)
 local getHandleScale = require(DraggerFramework.Utility.getHandleScale)
 
 local getFFlagSmoothAttachmentMovement = require(DraggerFramework.Flags.getFFlagSmoothAttachmentMovement)
-local getFFlagImprovedHandleParams = require(DraggerFramework.Flags.getFFlagImprovedHandleParams)
+local getFFlagImprovedHandleParams2 = require(DraggerFramework.Flags.getFFlagImprovedHandleParams2)
 local getFFlagDisallowFloatingPointErrorMove = require(DraggerFramework.Flags.getFFlagDisallowFloatingPointErrorMove)
 
 local MoveHandleView = require(Plugin.Src.MoveHandleView)
@@ -132,7 +132,7 @@ function MoveToolImpl:render(hoveredHandleId)
 	local children = {}
 	if self._draggingHandleId then
 		local handleProps = self._handles[self._draggingHandleId]
-		if getFFlagImprovedHandleParams() then
+		if getFFlagImprovedHandleParams2() then
 			children[self._draggingHandleId] = Roact.createElement(MoveHandleView, {
 				Axis = handleProps.Axis,
 				AxisOffset = handleProps.AxisOffset,
@@ -175,7 +175,7 @@ function MoveToolImpl:render(hoveredHandleId)
 			if not hovered then
 				color = Colors.makeDimmed(color)
 			end
-			if getFFlagImprovedHandleParams() then
+			if getFFlagImprovedHandleParams2() then
 				children[handleId] = Roact.createElement(MoveHandleView, {
 					Axis = handleProps.Axis,
 					AxisOffset = handleProps.AxisOffset,

@@ -15,6 +15,7 @@ local getFaceInstance = require(Framework.Utility.getFaceInstance)
 local HoverTracker = require(Framework.Implementation.HoverTracker)
 local StandardCursor = require(Framework.Utility.StandardCursor)
 
+local getFFlagMinCursorChange = require(Framework.Flags.getFFlagMinCursorChange)
 local getFFlagStudioServiceHoverInstance = require(Framework.Flags.getFFlagStudioServiceHoverInstance)
 local getFFlagFixDraggerCursors = require(Framework.Flags.getFFlagFixDraggerCursors)
 
@@ -66,13 +67,21 @@ function Ready:render(draggerTool)
 
 	if hoverSelectable or self._hoverTracker:getHoverHandleId() then
 		if getFFlagFixDraggerCursors() then
-			draggerTool.props.Mouse.Icon = StandardCursor.getOpenHand()
+			if getFFlagMinCursorChange() then
+				draggerTool:setMouseCursor(StandardCursor.getOpenHand())
+			else
+				draggerTool.props.Mouse.Icon = StandardCursor.getOpenHand()
+			end
 		else
 			draggerTool.props.Mouse.Icon = "rbxasset://SystemCursors/OpenHand"
 		end
 	else
 		if getFFlagFixDraggerCursors() then
-			draggerTool.props.Mouse.Icon = StandardCursor.getArrow()
+			if getFFlagMinCursorChange() then
+				draggerTool:setMouseCursor(StandardCursor.getArrow())
+			else
+				draggerTool.props.Mouse.Icon = StandardCursor.getArrow()
+			end
 		else
 			draggerTool.props.Mouse.Icon = "rbxasset://SystemCursors/Default"
 		end

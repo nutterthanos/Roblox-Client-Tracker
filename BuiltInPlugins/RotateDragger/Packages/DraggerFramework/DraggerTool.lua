@@ -15,6 +15,8 @@ local plugin = Library.Parent
 local Roact = require(Library.Packages.Roact)
 
 -- Flags
+local getFFlagMinCursorChange = require(Framework.Flags.getFFlagMinCursorChange)
+local getFFlagBatchBoundsChanged = require(Framework.Flags.getFFlagBatchBoundsChanged)
 local getFFlagHandleCanceledToolboxDrag = require(Framework.Flags.getFFlagHandleCanceledToolboxDrag)
 local getFFlagHandleFlakeyMouseEvents = require(Framework.Flags.getFFlagHandleFlakeyMouseEvents)
 
@@ -77,11 +79,29 @@ function DraggerTool:init()
 	self._isMounted = false
 	self._isMouseDown = false
 
+	if getFFlagMinCursorChange() then
+		self._mouseCursor = ""
+		self.props.Mouse.Icon = ""
+	end
+
 	self._derivedWorldState = DerivedWorldState.new()
 
-	self._boundsChangedTracker = BoundsChangedTracker.new(function(part)
-		self:_processPartBoundsChanged(part)
-	end)
+	if getFFlagBatchBoundsChanged() then
+		-- We defer handling part bounds changes to the render step, as the
+		-- changes that are happening to the selection may be happening to many
+		-- objects in the selection. Without deferring we could end up with
+		-- N^2 behavior if the whole selection is being updated (N part bounds
+		-- changes x each bounds change requires looking at all N parts in
+		-- the selection to calculate the new bounds)
+		self._selectionBoundsAreDirty = false
+		self._boundsChangedTracker = BoundsChangedTracker.new(function(part)
+			self._selectionBoundsAreDirty = true
+		end)
+	else
+		self._boundsChangedTracker = BoundsChangedTracker.new(function(part)
+			self:_processPartBoundsChanged(part)
+		end)
+	end
 
 	self:_updateSelectionInfo()
 
@@ -135,6 +155,13 @@ function DraggerTool:didMount()
 
 		if viewChange:poll() then
 			shouldUpdateView = true
+		end
+
+		if getFFlagBatchBoundsChanged() then
+			if self._selectionBoundsAreDirty then
+				self._selectionBoundsAreDirty = false
+				shouldUpdateSelection = true
+			end
 		end
 
 		if StudioService.UseLocalSpace ~= lastUseLocalSpace then
@@ -216,7 +243,6 @@ function DraggerTool:willUpdate(nextProps, nextState)
 end
 
 function DraggerTool:render()
-	local mouse = self.props.Mouse
 	local selection = SelectionWrapper:Get()
 
 	local coreGuiContent = {}
@@ -238,6 +264,20 @@ function DraggerTool:render()
 	return Roact.createElement(Roact.Portal, {
 		target = CoreGui
 	}, coreGuiContent)
+end
+
+--[[
+	Called by the DraggerTool main states to set the mouse cursor.
+
+	* To not interfere with other parts of studio which set the mouse cursor,
+	  we have to only set the cursor when we think it should change. This is the
+	  abstraction layer that guarantees this.
+]]
+function DraggerTool:setMouseCursor(cursor)
+	if self._mouseCursor ~= cursor then
+		self._mouseCursor = cursor
+		self.props.Mouse.Icon = cursor
+	end
 end
 
 --[[
