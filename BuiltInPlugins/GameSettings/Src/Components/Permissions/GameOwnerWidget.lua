@@ -17,7 +17,7 @@ local Roact = require(Plugin.Roact)
 local Cryo = require(Plugin.Cryo)
 
 local ContextServices = require(Plugin.Framework.ContextServices)
-local ThumbnailLoader = require(Plugin.Src.Providers.ThumbnailLoaderContextItem)
+local ThumbnailLoader = require(Plugin.Src.Providers.DEPRECATED_ThumbnailLoaderContextItem)
 
 local UILibrary = require(Plugin.UILibrary)
 local withTheme = require(Plugin.Src.Consumers.withTheme)

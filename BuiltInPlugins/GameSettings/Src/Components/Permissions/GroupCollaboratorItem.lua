@@ -30,7 +30,7 @@ local UILibrary = require(Plugin.UILibrary)
 local withLocalization = require(Plugin.Src.Consumers.withLocalization)
 local withTheme = require(Plugin.Src.Consumers.withTheme)
 local getMouse = require(Plugin.Src.Consumers.getMouse)
-local ThumbnailLoader = require(Plugin.Src.Providers.ThumbnailLoaderContextItem)
+local ThumbnailLoader = require(Plugin.Src.Providers.DEPRECATED_ThumbnailLoaderContextItem)
 
 local PermissionsConstants = require(Plugin.Src.Components.Permissions.PermissionsConstants)
 local ExpandableList = UILibrary.Component.ExpandableList

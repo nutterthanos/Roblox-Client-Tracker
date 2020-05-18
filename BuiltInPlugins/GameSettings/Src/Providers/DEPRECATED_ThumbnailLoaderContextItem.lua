@@ -1,3 +1,5 @@
+-- TODO (awarwick) 5/17/2020 Remove with FFlagGameSettingsNetworkRefactor
+
 local ContentProvider = game:GetService("ContentProvider")
 local GroupService = game:GetService("GroupService")
 local Players = game:GetService("Players")
@@ -9,7 +11,7 @@ local Framework = Plugin.Framework
 local ContextItem = require(Framework.ContextServices.ContextItem)
 local Provider = require(Framework.ContextServices.Provider)
 
-local AddLoadedThumbnail = require(Plugin.Src.Actions.AddLoadedThumbnail)
+local AddLoadedThumbnail = require(Plugin.Src.Actions.DEPRECATED_AddLoadedThumbnail)
 
 local PermissionsConstants = require(Plugin.Src.Components.Permissions.PermissionsConstants)
 
@@ -38,10 +40,8 @@ function ThumbnailLoader.new(store)
             elseif subjectType == PermissionsConstants.GroupSubjectKey then
                 asset = GroupService:GetGroupInfoAsync(subjectId).EmblemUrl
             end
-
             ContentProvider:PreloadAsync({asset})
             pendingPreloads[subjectType][subjectId] = nil
-
             store:dispatch(AddLoadedThumbnail(subjectType, asset, subjectId))
         end)
     end

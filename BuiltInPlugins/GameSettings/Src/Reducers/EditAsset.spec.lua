@@ -1,10 +1,11 @@
 local Plugin = script.Parent.Parent.Parent
-local Cryo = require(Plugin.Packages.Cryo)
-local Rodux = require(Plugin.Packages.Rodux)
+local Cryo = require(Plugin.Cryo)
+local Rodux = require(Plugin.Rodux)
 
 local EditAsset = require(script.parent.EditAsset)
 
 local SetEditPlaceId = require(Plugin.Src.Actions.SetEditPlaceId)
+local SetEditDevProductId = require(Plugin.Src.Actions.SetEditDevProductId)
 
 local testImmutability = require(Plugin.Src.Util.testImmutability)
 
@@ -13,7 +14,7 @@ return function()
 		local state = EditAsset(nil, {})
 
 		expect(type(state)).to.equal("table")
-		expect(state.editingPlaceId).to.ok()
+		expect(state.editPlaceId).to.ok()
 	end)
 
 	describe("SetEditPlaceId action", function()
@@ -43,14 +44,46 @@ return function()
 		it("should set places", function()
 			local r = Rodux.Store.new(EditAsset)
 			local state = r:getState()
-			expect(state.editingPlaceId).to.equal(0)
+			expect(state.editPlaceId).to.equal(0)
 
 			state = EditAsset(state, SetEditPlaceId(1337))
-			expect(#state.editingPlaceId).to.equal(1337)
+			expect(state.editPlaceId).to.equal(1337)
 
 			state = EditAsset(state, SetEditPlaceId(0))
-			expect(state.editingPlaceId).to.equal(0)
+			expect(state.editPlaceId).to.equal(0)
 		end)
 	end)
 
+	describe("SetEditDevProductId action", function()
+		it("should validate its inputs", function()
+			expect(function()
+				SetEditDevProductId(nil)
+			end).to.be.ok()
+
+			expect(function()
+				SetEditDevProductId(111)
+			end).to.be.ok()
+
+			expect(function()
+				SetEditDevProductId("222")
+			end).to.be.throw()
+
+			expect(function()
+				SetEditDevProductId({})
+			end).to.be.throw()
+		end)
+
+		it("should set edit dev product id", function()
+			local r = Rodux.Store.new(EditAsset)
+			local state = r:getState()
+
+			expect(state.editDevProductId).to.equal(nil)
+
+			state = EditAsset(state, SetEditDevProductId(111))
+			expect(state.editDevProductId).to.equal(111)
+
+			state = EditAsset(state, SetEditDevProductId(nil))
+			expect(state.editDevProductId).to.equal(nil)
+		end)
+	end)
 end

@@ -52,6 +52,8 @@ local Requests = {
 	AutoTranslationSettings = FFlagStudioLocalizationInGameSettingsEnabled and
 		require(RequestsFolder.LocalizationSettings.AutoTranslationSettings) or nil,
 	Places = FFlagGameSettingsPlaceSettings and require(RequestsFolder.Places) or nil,
+	DeveloperProducts = FFlagStudioAddMonetizationToGameSettings and require(RequestsFolder.DeveloperProducts) or nil,
+	Economy = FFlagStudioAddMonetizationToGameSettings and require(RequestsFolder.Economy) or nil,
 }
 
 local SettingsImpl = {}
@@ -159,7 +161,9 @@ function SettingsImpl:GetSettings()
 
 				if FFlagStudioAddMonetizationToGameSettings then
 					table.insert(getRequests, Requests.Universes.GetVIPServers(gameId))
-        end
+					table.insert(getRequests, Requests.DeveloperProducts.Get(gameId))
+					table.insert(getRequests, Requests.Economy.GetTaxRate())
+				end
 
 				if FFlagGameSettingsPlaceSettings then
 					table.insert(getRequests, Requests.Places.Get())
@@ -260,21 +264,27 @@ function SettingsImpl:SaveAll(state)
 			saveInfo.ScriptVersionHistoryEnabled = settings.Changed.ScriptVersionHistoryEnabled
 		end
 
+		if FFlagStudioAddMonetizationToGameSettings then
+			if settings.Changed.vipServersIsEnabled ~= nil then
+				if not saveInfo.Configuration then
+					saveInfo.Configuration = {}
+				end
+				saveInfo.Configuration.allowPrivateServers = settings.Changed.vipServersIsEnabled
+			end
 
-		-- TODO 5/13/2020 (mwang) Finish save portion of VIPServers when https://jira.rbx.com/browse/STUDIOBE-360 is done.
-		-- if FFlagStudioAddMonetizationToGameSettings then
-		-- 	if state.Changed.vipServersIsEnabled ~= nil then
-		-- 		saveInfo.PlaceInfo.allowPrivateServers = state.Changed.vipServersIsEnabled
-		-- 	else
-		-- 		saveInfo.PlaceInfo.allowPrivateServers = state.Current.vipServersIsEnabled
-		-- 	end
+			if settings.Changed.vipServersPrice ~= nil then
+				if not saveInfo.Configuration then
+					saveInfo.Configuration = {}
+				end
+				saveInfo.Configuration.privateServerPrice = settings.Changed.vipServersPrice
+			end
+		end
 
-		-- 	if state.Changed.vipServersPrice ~= nil then
-		-- 		saveInfo.PlaceInfo.privateServerPrice = state.Changed.vipServersPrice
-		-- 	else
-		-- 		saveInfo.PlaceInfo.privateServerPrice = state.Current.vipServersPrice
-		-- 	end
-		-- end
+		if FFlagStudioAddMonetizationToGameSettings and settings.Changed.developerProducts and settings.Changed.developerProducts[0] ~= nil then
+			saveInfo.NewDevProduct = settings.Changed.developerProducts[0]
+		elseif FFlagStudioAddMonetizationToGameSettings and settings.Changed.developerProducts ~= nil then
+			saveInfo.UpdateDevProducts = settings.Changed.developerProducts
+		end
 
 		WorkspaceSettings.saveAllAvatarSettings(saveInfo)
 		local universeId = game.GameId
@@ -323,10 +333,15 @@ function SettingsImpl:SaveAll(state)
 			table.insert(setRequests, Requests.ScriptVersionHistoryEnabled.Set(saveInfo.ScriptVersionHistoryEnabled))
 		end
 
-		-- TODO 5/13/2020 (mwang) Finish save portion of VIPServers when https://jira.rbx.com/browse/STUDIOBE-360 is done.
-		-- if FFlagStudioAddMonetizationToGameSettings then
-		-- 	table.insert(setRequests, Requests.Places.Patch(state.Current.rootPlaceId, saveInfo.PlaceInfo))
-		-- end
+		if FFlagStudioAddMonetizationToGameSettings and saveInfo.NewDevProduct then
+			table.insert(setRequests, Requests.DeveloperProducts.Create(universeId, saveInfo.NewDevProduct))
+		end
+
+		if FFlagStudioAddMonetizationToGameSettings and saveInfo.UpdateDevProducts then
+			for _, devProduct in pairs(saveInfo.UpdateDevProducts) do
+				table.insert(setRequests, Requests.DeveloperProducts.Update(universeId, devProduct.id, devProduct))
+			end
+		end
 
 		if FFlagGameSettingsPlaceSettings then
 			if saveInfo.place ~= nil then

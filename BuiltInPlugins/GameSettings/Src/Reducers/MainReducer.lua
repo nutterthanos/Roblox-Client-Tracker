@@ -11,7 +11,10 @@ local PageLoadState = require(Plugin.Src.Reducers.PageLoadState)
 local PageSaveState = require(Plugin.Src.Reducers.PageSaveState)
 local Settings = require(Plugin.Src.Reducers.Settings)
 local Status = require(Plugin.Src.Reducers.Status)
-local Thumbnails = require(Plugin.Src.Reducers.Thumbnails)
+local Thumbnails
+if not game:GetFastFlag("GameSettingsNetworkRefactor") then
+	Thumbnails = require(Plugin.Src.Reducers.DEPRECATED_Thumbnails)
+end
 local CollaboratorSearch = require(Plugin.Src.Reducers.CollaboratorSearch)
 local DevSubModeration = require(Plugin.Src.Reducers.DevSubModeration)
 local AutoTranslationMetaData = require(Plugin.Src.Reducers.AutoTranslationMetaData)

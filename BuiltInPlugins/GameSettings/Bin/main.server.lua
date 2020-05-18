@@ -52,6 +52,7 @@ local SetCurrentStatus = require(Plugin.Src.Actions.SetCurrentStatus)
 local DiscardChanges = require(Plugin.Src.Actions.DiscardChanges)
 local DiscardErrors = require(Plugin.Src.Actions.DiscardErrors)
 local SetCurrentSettings = require(Plugin.Src.Actions.SetCurrentSettings)
+local SetEditDevProductId = require(Plugin.Src.Actions.SetEditDevProductId)
 local SetEditPlaceId = require(Plugin.Src.Actions.SetEditPlaceId)
 local SetGameId = require(Plugin.Src.Actions.SetGameId)
 local SetGame = require(Plugin.Src.Actions.SetGame)
@@ -343,6 +344,9 @@ local function openGameSettings(gameId, dataModel)
 		settingsStore:dispatch(ResetStore())
 	else
 		settingsStore:dispatch(SetCurrentSettings({}))
+		if FFlagStudioAddMonetizationToGameSettings then
+			settingsStore:dispatch(SetEditDevProductId(nil))
+		end
 		if FFlagGameSettingsPlaceSettings then
 			settingsStore:dispatch(SetEditPlaceId(0))
 		end

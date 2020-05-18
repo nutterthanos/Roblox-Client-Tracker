@@ -5,6 +5,8 @@
 
     Necessary props:
         Price = number, the initial price to be shown in the text field.
+        TaxRate = number, the percentage of the price that is taken as a fee.
+        MinimumFee = number, is the minimum fee that will be levied.
         Enabled = boolean, whether or not this component is enabled.
         Selected = boolean, "true" if On button should be selected, "false" if the off button should be selected.
         LayoutOrder = number, order in which this component should appear under its parent.
@@ -25,6 +27,9 @@
                 Description = "Lorem ipsum",
             }
         OnVipServersPriceChanged = function(price), this is a callback to be invoked when the price field changes values
+
+    Optional props:
+        PriceError = string, error message to be shown for this component
 ]]
 
 local Plugin = script.Parent.Parent.Parent
@@ -56,6 +61,9 @@ function PaidAccess:render()
 
     local enabled = props.Enabled
 
+    local taxRate = props.TaxRate
+    local minimumFee = props.MinimumFee
+
     local selected = vipServersData.isEnabled
     local price =  vipServersData.price
     local serversCount = vipServersData.activeServersCount
@@ -64,13 +72,19 @@ function PaidAccess:render()
     local onVipServersToggled = props.OnVipServersToggled
     local onVipServersPriceChanged = props.OnVipServersPriceChanged
 
-    local disabledSubText = localization:getText("Monetization", "VIPServersHint")
-
     local subscriptionsText = localization:getText("Monetization", "Subscriptions", { numOfSubscriptions = subsCount })
 
     local totalVIPServersText = localization:getText("Monetization", "TotalVIPServers", { totalVipServers = serversCount })
 
     local transparency = enabled and theme.robuxFeeBase.transparency.enabled or theme.robuxFeeBase.transparency.disabled
+
+    local subText
+    local priceError = props.PriceError
+    if enabled and priceError then
+        subText = priceError
+    elseif not enabled then
+        subText = localization:getText("Monetization", "VIPServersHint")
+    end
 
     local buttons = {
         {
@@ -79,7 +93,9 @@ function PaidAccess:render()
             Children = {
                 RobuxFeeBase = Roact.createElement(RobuxFeeBase, {
                     Price = price,
-                    DisabledSubText = disabledSubText,
+                    TaxRate = taxRate,
+                    MinimumFee = minimumFee,
+                    SubText = subText,
 
                     Enabled = enabled,
 
