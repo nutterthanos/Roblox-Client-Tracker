@@ -1,5 +1,13 @@
 RBX
 {
+	ABTestController
+	{
+		ChangedListener
+	}
+	ABTestService
+	{
+		ChangedListener
+	}
 	Analytics
 	{
 		Settings
@@ -619,7 +627,6 @@ RBX
 	{
 		GridListener
 	}
-	ABTestService
 	Accessory
 	Accoutrement
 	Adorn

@@ -853,6 +853,39 @@
                 },
                 {
                     "MemberType": "Function",
+                    "Name": "GetBrowserTrackerABTestLoadingStatus",
+                    "Parameters": [
+                    ],
+                    "ReturnType": {
+                        "Category": "Enum",
+                        "Name": "ABTestLoadingStatus"
+                    },
+                    "Security": "LocalUserSecurity"
+                },
+                {
+                    "MemberType": "Function",
+                    "Name": "GetPendingOrInitializedUserId",
+                    "Parameters": [
+                    ],
+                    "ReturnType": {
+                        "Category": "Primitive",
+                        "Name": "int64"
+                    },
+                    "Security": "LocalUserSecurity"
+                },
+                {
+                    "MemberType": "Function",
+                    "Name": "GetUserABTestLoadingStatus",
+                    "Parameters": [
+                    ],
+                    "ReturnType": {
+                        "Category": "Enum",
+                        "Name": "ABTestLoadingStatus"
+                    },
+                    "Security": "LocalUserSecurity"
+                },
+                {
+                    "MemberType": "Function",
                     "Name": "GetVariant",
                     "Parameters": [
                         {
@@ -914,6 +947,41 @@
                     "Tags": [
                         "Yields"
                     ]
+                },
+                {
+                    "MemberType": "Event",
+                    "Name": "OnBrowserTrackerABTestLoadingStatusChanged",
+                    "Parameters": [
+                        {
+                            "Name": "status",
+                            "Type": {
+                                "Category": "Enum",
+                                "Name": "ABTestLoadingStatus"
+                            }
+                        }
+                    ],
+                    "Security": "LocalUserSecurity"
+                },
+                {
+                    "MemberType": "Event",
+                    "Name": "OnUserABTestLoadingStatusChanged",
+                    "Parameters": [
+                        {
+                            "Name": "status",
+                            "Type": {
+                                "Category": "Enum",
+                                "Name": "ABTestLoadingStatus"
+                            }
+                        },
+                        {
+                            "Name": "userId",
+                            "Type": {
+                                "Category": "Primitive",
+                                "Name": "int64"
+                            }
+                        }
+                    ],
+                    "Security": "LocalUserSecurity"
                 }
             ],
             "MemoryCategory": "Instances",
@@ -60508,6 +60576,35 @@
         }
     ],
     "Enums": [
+        {
+            "Items": [
+                {
+                    "Name": "None",
+                    "Value": 0
+                },
+                {
+                    "Name": "Pending",
+                    "Value": 1
+                },
+                {
+                    "Name": "Initialized",
+                    "Value": 2
+                },
+                {
+                    "Name": "Error",
+                    "Value": 3
+                },
+                {
+                    "Name": "TimedOut",
+                    "Value": 4
+                },
+                {
+                    "Name": "ShutOff",
+                    "Value": 5
+                }
+            ],
+            "Name": "ABTestLoadingStatus"
+        },
         {
             "Items": [
                 {
