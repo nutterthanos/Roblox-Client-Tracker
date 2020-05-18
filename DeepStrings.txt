@@ -4444,7 +4444,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405294
+ByVersion_0.434.0.405297
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -6895,6 +6895,7 @@ DB33D2AAF011E38B9D871882A8E559
 DB33D3AAF011E38B9D871882A8E559
 DB33D6AAF011E38B9D871882A8E559
 DB33D7AAF011E38B9D871882A8E559
+DBAEH0xUQcBa
 DBD856014A660
 DBSAES_ASM
 Dconst_iterator
@@ -8644,6 +8645,7 @@ EqualizerSoundEffect
 EquippedEmotes
 EquippedEmotesChanged
 EquippedEmotesDataInternal
+EraMfjtlgCVtSaY0GYpd
 ErrDontRetry
 Error_AlreadyConnected
 Error_ConnectionAttemptFailed
@@ -8806,6 +8808,7 @@ EVRConfig_ForceBob
 EVRConfig_ForceHalfInterlace
 EVRConfig_ForceScaling
 EVRConfig_ForceThrottle
+EwgIQx8LnKgsKZHMz05PpYK6csSdU
 ExactMatch
 ExceptionAddress
 ExceptionCode
@@ -8917,7 +8920,6 @@ ExtraSelections
 ExtraSelectionStore
 ExtrudedPartInstance
 EXtSoftware
-EY6iVJQg2RDcjbnWvhbDaFq5ubo2BP2a5qygpj
 EyeAccessory
 F_ObjectHasComponents
 F`JXKXWJYB[Cd
@@ -9487,6 +9489,7 @@ FoundItems
 FoundThread
 FpFramebuffer
 FpsVariance
+FQgLO2OiNjgqA6
 Fractional
 Frame_.frameend
 Frame_.frameendgpu
@@ -10602,7 +10605,6 @@ GlobalUniverse17sIds
 GlobalUnlock
 GlobalUsedAsLocal
 GlobalUsers.GameSorts.GameGrid
-GLPF0YUj0pmm4B4Ox
 GLSL.std.450
 Glsles3Mediump1
 GlslesMediump1
@@ -10636,6 +10638,7 @@ GoToNextScriptLocation
 GoToPreviousScriptLocation
 GoToSourceCodeTB
 GoToVersionFailed
+GOtZiUh8OmLkR7vH
 GpuVariance
 GrabCursor.png
 GrabRotateCursor
@@ -11358,6 +11361,7 @@ Idieresis.a
 Idieresissmall
 IDispatchImpl
 IdleAnimation
+IDnWWxRCvxYYHCsjn
 IDocHostUIHandlerDispatch
 Idotaccent
 Idotaccent.a
@@ -11427,6 +11431,7 @@ IKCollisionsMode
 IkDragCollisionsMode
 IkDraggerAnchorMode
 IkDraggerSolveIterations
+IlaFEeSFU3YTeFa01gZ
 IllegalTeleport
 ILoggedInUser
 Image.Loading
@@ -11497,6 +11502,7 @@ ImportToggleButton
 ImportUnused
 ImportWidget
 ImprovedAutoJump
+IN7ADWDBBEiBiLU6MSMDheZATSXr4chRJLt8rrAlyi1xZHjegqCgJ6LfElTNTi1
 Inaccessible
 InAddBuffer
 Inappropriate
@@ -12016,6 +12022,7 @@ ItemWidget
 Iterations
 ITRedirect
 IUserDataStoreServiceBase
+IvF1Ghvb7iNBocPDe5bqeFBmhjIOQJ6Nh
 IViewportFrameMaxSize
 IVRApplications_006
 IVRChaperone_003
@@ -12200,12 +12207,10 @@ KickByDatacenter_
 KiDszBCYB0gyp03Pc
 KillPtClicked
 KillSurfaceJointsPart1
-KJpkyXQcsPPLqjdaGFY05Ql5pp8GauxMHPG5NbScxurIEOFOFR2ZBuOj1D2aP4
 KnownHeaders
 KodchiangUPC
 KPEAVICHull
 KPEIBX_K_KPEIAU_iobuf
-KrLMSuGxsW2
 KVScriptContext
 KYULPhCBFoD3mw5mygYqAeFlHdSL2k3MnDG
 LabelArray
@@ -12276,7 +12281,6 @@ LCMapStringW
 LDLBuildProgramTimeReportEnabled
 LDLBuildProgramTimeReportRate
 LDLComponents
-LDlcqFKudY
 LDLEliminationPerformanceFixEnabled
 LDLMaxBundleDimension
 LDLMxVProgram
@@ -12527,6 +12531,7 @@ LiveCoding
 LiveScript
 LiveThreadRef
 LivingRoom
+LiwKoQVcD5j
 LLEo6Soxvx2
 LOAD_CERT_CTRL
 LoadAnimation
@@ -13526,7 +13531,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEA1VPtweh3GFySMo6BFycmyFSRqUSppHTiWbiB2r8opl
+MIICCgKCAgEAx
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -13846,7 +13851,6 @@ MultTransposeMatrixd
 MultTransposeMatrixf
 MusicalInstruments
 MutexLifetime
-MVit9bQmhNPg0f0JSEPVOsmvHlOpZCdRL
 MW4PartMaterial
 MyModelsAction
 NAEAVHttpResponse
@@ -13933,7 +13937,6 @@ NCONF_load
 NCONF_load_bio
 NCONF_load_fp
 NdnuScpeLkclOiiaVruaSilaKgnjRicyLiraCidyLmahCanaLtvaTtsvApygErmaSusiLumaBavaJietMimrAbraSitrPilhPhkrOihtKktaBharBdnaMmkaCcreMoreMdrlPdrhSaroSrkaTzzzZssaBbhgAlpuDablEnarGjohKdniSaniLjhaMinaMdneMidoMoorMtabNbraNmrePgnmHmlaPcuaPplhPddiShriTaraWmohAwulHrtaHtluMgn
-NduJ1ZEWIwpWqXx9jQL9VQMibQypgVDuLRdeXw2fjm4Krm
 NE9F0uHE9F4uBE9F8u
 NearIntensity
 NearPlaneZ
@@ -14161,6 +14164,7 @@ NPCUnequipTools
 NPEAVInstance
 NPEAVQString
 NPEAVQWidget
+NQwVjiQaJh8E4SNEx86vcIlwFcj578Z4
 Ntildesmall
 NullPassword
 NUMBER_OF_ORDERED_STREAMS
@@ -14213,7 +14217,6 @@ NVWorkspace
 NW4FileSystemDir
 NW4PenStyle
 NW4UserInputType
-NXgj59MRSx22AaSe
 Oacutesmall
 OAEPEncryptionSET
 OAUTHBEARER
@@ -14605,7 +14608,6 @@ OverrideSendRakNetStatsThrottleCountries
 OverrideStarterScript
 OverrideToMyBranch
 OverwriteMode
-OwKXd7zMsN8WMUf8eVmEVA2nk3Fh
 OwnProperty
 Ozs8xYCf2Q05p4gHyX
 PA^A]A\_^]
@@ -16234,6 +16236,7 @@ PpjEtrFill
 PpjEtrThreshold
 PpjPmThreshold
 PPLTaskHandle
+PPZMipxSucX9Lu02qWayMMj
 Prc.length
 Prc[MouseGraphX]
 Precertificate
@@ -16539,7 +16542,6 @@ PushPixels
 PVAdornment
 PVInstance
 PVK_header
-PWd839z15VKPbv1iTA7ieObpT
 PyJlf7IHZQpFHohBe
 QAbstractAnimation
 QAbstractButton
@@ -17050,7 +17052,6 @@ QHostAddress
 QHoverEvent
 QInputDialog
 QIntValidator
-QIpVojqV70
 QItemDelegate
 QItemSelection
 QItemSelectionModel
@@ -17335,6 +17336,7 @@ QWheelEvent
 QWidgetAction
 QWidgetPluginGui
 QWidgetWindow
+QZcNF2unpL0kFIvQzQUpcCiqXfuJaH0wPBcrCauMTFng
 RadialBlurFS
 RagdollDefaultTimerTenthSecond
 RagdollEarlyExitTimeTenthSecond
@@ -17477,6 +17479,7 @@ RawJoinData
 RaycastFilterType
 RaycastParams
 RaycastResult
+RB2cJiUeaE
 RBX_CHECK_EQUAL
 RBX_CHECK_GE
 RBX_CHECK_GT
@@ -18030,6 +18033,7 @@ RenderType
 RenderUseTexturePackColor
 RenderVideo
 RenderView
+RenderVulkanSyncCompute
 RenderWorkspaceAdorns
 RenewalUrl
 RepeatCount
@@ -18462,6 +18466,7 @@ RigidBodyLazyUpdating
 RigidityEnabled
 RiseVelocity
 Rj0isQcnqX
+RMGXRW6RpxFabyL6VymC17dW21Hm
 Roact.createElement
 ROBLOSECURITY
 Roblox.Hybrid
@@ -19497,6 +19502,7 @@ SetWindowLongPtrA
 SetWindowPos
 SetWindowsHookExA
 SetWindowTextA
+SgezOTCOV0SEv
 ShaderManagerHotloadsShadersInStudio
 ShaderSource
 ShadingLanguage
@@ -19747,7 +19753,6 @@ SkylightRGBA
 SkyLinearFS
 SkyVertex2
 SleepConditionVariableCS
-SLfICtvRJyvIlAvXD0JXZAu2R74nuFJsBeY
 SliceCenter
 SliceScale
 SliderChanged
@@ -23732,6 +23737,7 @@ TutorialId
 TutorialsDockAction
 TutorialWidgetBackground.png
 TVijpW8m8aLsreZebWfEl5y9RFS7x6WZ555Z6MtZy
+Tw50B8SKczQshyLjsZoIYzAbyaK
 TweenEasingDirection
 TweenEasingStyle
 TweenInfo.new
@@ -24019,7 +24025,6 @@ ULuaCallbacks
 UMasteringMetadata
 UMeshResource
 UMessageAndSenderId
-UMmzpFSJzb41pCrrVJa9yvgvuYt9eqNaOqghqRIBhdzQDNzTvxUnjp5KQv
 UMouseDownCaptureInfo
 Unaccounted
 UnAnchorCursor
@@ -25660,6 +25665,7 @@ VUnsecuredStudioGame
 VUpdateTask
 VUploadMeshComponentRequestResult
 VUploadRequestResult
+VurKi2VBRKKtl2iI6n13dOFeBCVa1fRtdRH
 VUserInputService
 VUsernameHandler
 VUserService
@@ -25829,6 +25835,7 @@ WeldCursor
 WeldPermyriad
 WeldReport
 WeldsAction
+WGBIsr7Tt55kOKUCAwEAAQ
 WGL_3DFX_multisample
 WGL_3DL_stereo_control
 WGL_AMD_gpu_association
@@ -26123,7 +26130,6 @@ XInputGetCapabilities
 XInputGetState
 XInputSetState
 Xinvalid_argument
-XL4NEqUXap8dzmMaMr5yloSSfXkKrHT3LtPouCRQ7VrpcqH
 Xlength_error
 Xout_of_range
 XP6AXAEBUTextFilterResult
@@ -26245,7 +26251,6 @@ XZP8CRenderSettingsItem
 XZP8GuiObject
 XZP8PlayerGui
 XZP8ScrollingFrame
-XZUp37VGKB8gVvS
 XZZyexQCL071UIVBQhYMgNB2TrXKT9o9bq8IpYJ
 YA_NAEBVQString
 YA_NHPEBE00
@@ -26280,18 +26285,18 @@ YAXPEBVQObject
 YAXW4error_type
 Ycircumflex
 Ydieresissmall
-YDW0VjV7rQbx
 YffYZefYDNNDCOO
-YH8CAwEAAQ
 YieldEvent
 YieldFuncDesc
 YieldFunction
+YMG1AE6EPQYFLm7ooRYXmBEDmGu2KdH4Q
 YQByteArray
 YResolution
-YtE6Ivk3DZIFRxMUXFA7tj7FyNve1g566KzTm6LbR2j00qMeaxsuoTVei
+YVKYyXbXdAarE5xmP3HRM
 YwBBvY55YvBBwY5
 Z_KPEIBX_K_KPEIAU1
 Zcaronsmall
+ZcvOYP9ITDUb9Rn8BaUG8
 Zdotaccent
 ZgnhKhWhci
 ZIndexBehavior
@@ -26306,5 +26311,6 @@ ZP6APEAX1PEBX
 ZP6AX1PEAX
 ZPEAVRBXMessageBox
 ZRZZZbZt[.[
+ZskejGXz2ZxN8Te2GtY9jR1YUBnCTSUaDF
 ZVspecial_equipped_signal
 ZVTouchedSignal
