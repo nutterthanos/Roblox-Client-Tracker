@@ -1,6 +1,8 @@
 --[[
 	A container of CollaboratorItems for the group and its rolesets
 
+	TODO: convert this component to use HoverArea
+
 	Props:
 		string CollaboratorName - Name of the group
 		number CollaboratorId - Id of the group
@@ -28,6 +30,7 @@ local UILibrary = require(Plugin.UILibrary)
 local withLocalization = require(Plugin.Src.Consumers.withLocalization)
 local withTheme = require(Plugin.Src.Consumers.withTheme)
 local getMouse = require(Plugin.Src.Consumers.getMouse)
+local ThumbnailLoader = require(Plugin.Src.Providers.ThumbnailLoaderContextItem)
 
 local PermissionsConstants = require(Plugin.Src.Components.Permissions.PermissionsConstants)
 local ExpandableList = UILibrary.Component.ExpandableList
@@ -102,8 +105,16 @@ end
 local function getRolesetItems(props, localized)
 	if next(props.Items) == nil then return {} end
 
+	local noAccessLabel = FFlagStudioConvertGameSettingsToDevFramework
+		and localized:getText("AccessPermissions", "NoAccessLabel")
+		or localized.AccessPermissions.ActionDropdown.NoAccessLabel
+
+	local NoAccessDescription = FFlagStudioConvertGameSettingsToDevFramework
+		and localized:getText("AccessPermissions", "NoAccessDescription")
+		or localized.AccessPermissions.ActionDropdown.NoAccessDescription
+
 	local permissions = Cryo.List.join(
-		{Cryo.Dictionary.join({Key = PermissionsConstants.NoAccessKey, Display = localized.AccessPermissions.ActionDropdown.NoAccessLabel, Description = localized.AccessPermissions.ActionDropdown.NoAccessDescription})},
+		{Cryo.Dictionary.join({Key = PermissionsConstants.NoAccessKey, Display = noAccessLabel, Description = NoAccessDescription})},
 		props.Items
 	)
 	
@@ -312,16 +323,9 @@ function GroupCollaboratorItem:render()
 	end
 
 	local props = self.props
-	local thumbnailLoader = getThumbnailLoader(self)
+	local thumbnailLoader = props.ThumbnailLoader
 	local theme = props.Theme:get("Plugin")
 	local localization = props.Localization
-
-
-	if props.Enabled and self.state.hovered then
-		getMouse(self).setHoverIcon("PointingHand", self.state.hovered)
-	else
-		getMouse(self).resetMouse()
-	end
 
 	local rolesetCollaboratorItems = {}
 	local anyLocked = false
@@ -478,6 +482,7 @@ if FFlagStudioConvertGameSettingsToDevFramework then
 	ContextServices.mapToProps(GroupCollaboratorItem, {
 		Theme = ContextServices.Theme,
 		Localization = ContextServices.Localization,
+		ThumbnailLoader = ThumbnailLoader,
 	})
 end
 

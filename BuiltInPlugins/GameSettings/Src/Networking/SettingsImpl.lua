@@ -182,19 +182,25 @@ end
 	endpoints or setting properties in the datamodel.
 ]]
 function SettingsImpl:SaveAll(state)
-	if state.Changed.HttpEnabled ~= nil then
-		HttpService:SetHttpEnabled(state.Changed.HttpEnabled)
+	local settings
+	if FFlagGameSettingsPlaceSettings then
+		settings = state.Settings
+	else
+		settings = state
 	end
-	WorkspaceSettings.saveAllWorldSettings(state.Changed)
+	if settings.Changed.HttpEnabled ~= nil then
+		HttpService:SetHttpEnabled(settings.Changed.HttpEnabled)
+	end
+	WorkspaceSettings.saveAllWorldSettings(settings.Changed)
 
 	return self:CanManagePlace():andThen(function(canManage)
 		local saveInfo = {}
 
-		for setting, value in pairs(state.Changed) do
+		for setting, value in pairs(settings.Changed) do
 			if Requests.Configuration.AcceptsValue(setting) then
 				saveInfo.Configuration = saveInfo.Configuration or {}
 				if "universeAvatarAssetOverrides" == setting then
-					saveInfo.Configuration[setting] = AssetOverrides.processSaveData(state.Current[setting], value)
+					saveInfo.Configuration[setting] = AssetOverrides.processSaveData(settings.Current[setting], value)
 				else
 					saveInfo.Configuration[setting] = value
 				end
@@ -206,8 +212,8 @@ function SettingsImpl:SaveAll(state)
 			elseif Requests.Thumbnails.AcceptsValue(setting) then
 				if setting == "thumbnails" then
 					saveInfo[setting] = {
-						Current = state.Current.thumbnails,
-						Changed = state.Changed.thumbnails,
+						Current = settings.Current.thumbnails,
+						Changed = settings.Changed.thumbnails,
 					}
 				else
 					saveInfo[setting] = value
@@ -221,13 +227,13 @@ function SettingsImpl:SaveAll(state)
 
 			elseif DFFlagDeveloperSubscriptionsEnabled and Requests.DeveloperSubscriptions.AcceptsValue(setting) then
 				saveInfo[setting] = {
-					Current = state.Current.DeveloperSubscriptions,
-					Changed = state.Changed.DeveloperSubscriptions,
+					Current = settings.Current.DeveloperSubscriptions,
+					Changed = settings.Changed.DeveloperSubscriptions,
 				}
 			elseif Requests.GamePermissions.AcceptsValue(setting) then
 				saveInfo[setting] = {
-					Current = {permissions=state.Current.permissions, groupMetadata=state.Current.groupMetadata},
-					Changed = {permissions=state.Changed.permissions, groupMetadata=state.Changed.groupMetadata or state.Current.groupMetadata},
+					Current = {permissions=settings.Current.permissions, groupMetadata=settings.Current.groupMetadata},
+					Changed = {permissions=settings.Changed.permissions, groupMetadata=settings.Changed.groupMetadata or settings.Current.groupMetadata},
 				}
 			elseif FFlagStudioLocalizationInGameSettingsEnabled then
 				if Requests.SourceLanguage.AcceptsValue(setting) then
@@ -236,19 +242,22 @@ function SettingsImpl:SaveAll(state)
 					saveInfo[setting] = value
 				elseif Requests.AutoTranslationSettings.AcceptsValue(setting) then
 					saveInfo[setting] = {
-						Current = state.Current.AutoTranslationSettings,
-						Changed = state.Changed.AutoTranslationSettings,
+						Current = settings.Current.AutoTranslationSettings,
+						Changed = settings.Changed.AutoTranslationSettings,
 					}
 				end
 			end
+			if FFlagGameSettingsPlaceSettings and Requests.Places.AcceptsValue(setting) then
+				saveInfo.place = value[state.EditAsset.editPlaceId]
+			end
 		end
 
-		if FFlagVersionControlServiceScriptCollabEnabled and state.Changed.ScriptCollabEnabled ~= nil then
-			saveInfo.ScriptCollabEnabled = state.Changed.ScriptCollabEnabled
+		if FFlagVersionControlServiceScriptCollabEnabled and settings.Changed.ScriptCollabEnabled ~= nil then
+			saveInfo.ScriptCollabEnabled = settings.Changed.ScriptCollabEnabled
 		end
 
-		if FFlagsEnableVersionHistorySetting and  state.Changed.ScriptVersionHistoryEnabled ~= nil then
-			saveInfo.ScriptVersionHistoryEnabled = state.Changed.ScriptVersionHistoryEnabled
+		if FFlagsEnableVersionHistorySetting and settings.Changed.ScriptVersionHistoryEnabled ~= nil then
+			saveInfo.ScriptVersionHistoryEnabled = settings.Changed.ScriptVersionHistoryEnabled
 		end
 
 
@@ -318,6 +327,12 @@ function SettingsImpl:SaveAll(state)
 		-- if FFlagStudioAddMonetizationToGameSettings then
 		-- 	table.insert(setRequests, Requests.Places.Patch(state.Current.rootPlaceId, saveInfo.PlaceInfo))
 		-- end
+
+		if FFlagGameSettingsPlaceSettings then
+			if saveInfo.place ~= nil then
+				table.insert(setRequests, Requests.Places.Patch(state.EditAsset.editPlaceId, saveInfo.place))
+			end
+		end
 
 		return Promise.all(setRequests):andThen(function()
 			if saveInfo.Configuration and saveInfo.Configuration.name then

@@ -182,6 +182,14 @@ if game:GetFastFlag("StudioGameSettingsResetStoreAction2") then
 			})
 		end,
 
+		DiscardError = function(state, action)
+			return Cryo.Dictionary.join(state, {
+				Errors = Cryo.Dictionary.join(state.Errors, {
+					[action.error] = Cryo.None,
+				}),
+			})
+		end,
+
 		AddTableKeyErrors = DFFlagDeveloperSubscriptionsEnabled and function(state, action)
 			return Cryo.Dictionary.join(state, {
 				Errors = DeepMergeTables.Merge(state.Errors, {
@@ -308,6 +316,7 @@ else
 	local AddChange = require(Plugin.Src.Actions.AddChange)
 	local AddErrors = require(Plugin.Src.Actions.AddErrors)
 	local DiscardChanges = require(Plugin.Src.Actions.DiscardChanges)
+	local DiscardError = require(Plugin.Src.Actions.DiscardError)
 	local DiscardErrors = require(Plugin.Src.Actions.DiscardErrors)
 
 	local AddTableChange = require(Plugin.Src.Actions.AddTableChange)
@@ -438,6 +447,13 @@ else
 			return Cryo.Dictionary.join(state, {
 				Changed = {},
 			})
+
+		elseif action.type == DiscardError.name then
+				return Cryo.Dictionary.join(state, {
+					Errors = Cryo.Dictionary.join(state.Errors, {
+						[action.error] = Cryo.None,
+					}),
+				})
 
 		elseif action.type == DiscardErrors.name then
 			return Cryo.Dictionary.join(state, {

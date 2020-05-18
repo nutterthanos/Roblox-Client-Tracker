@@ -7,7 +7,7 @@ game:DefineFastFlag("UseRBXThumbInToolbox", false)
 game:DefineFastFlag("EnableAssetConfigVersionCheckForModels", false)
 game:DefineFastFlag("FixAssetConfigManageableGroups", false)
 game:DefineFastFlag("UseDevelopFetchPluginVersionId", false)
-game:DefineFastFlag("ShowAssetConfigReasons", false)
+game:DefineFastFlag("ShowAssetConfigReasons2", false)
 game:DefineFastFlag("DebugAssetConfigNetworkError", false)
 game:DefineFastFlag("FixAssetConfigIcon", false)
 game:DefineFastFlag("EnableAssetConfigFreeFix2", false)
@@ -39,5 +39,7 @@ game:DefineFastFlag("CMSPremiumBenefitsLink", false)
 game:DefineFastFlag("CMSFixAssetPreviewForThumbnailConfig", false)
 
 game:DefineFastFlag("ToolboxUseNewAssetType", false)
+
+game:DefineFastFlag("StudioToolboxSearchOverflowFix", false)
 
 return nil

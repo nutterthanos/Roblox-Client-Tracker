@@ -6,6 +6,11 @@
         Enabled = boolean, whether or not this component is enabled.
         Selected = string, corresponds to ID of button to be selected
         LayoutOrder = number, order in which this component should appear under its parent.
+
+        CustomSocialSlotsCount = number, number of custom social slots
+        ErrorState = string, used to change border of input on error
+        OnSocialSlotTypeChanged = function(button) callback for when radio button is selected
+        OnCustomSocialSlotsCountChanged = function(text) callback for when text inside custom social slot input is changed
 ]]
 
 local Plugin = script.Parent.Parent.Parent
@@ -34,6 +39,11 @@ function ServerFill:render()
 
     local enabled = props.Enabled
     local selected = props.Selected
+
+    local customSocialSlotsCount = props.CustomSocialSlotsCount
+    local errorState = props.ErrorState
+    local onSocialSlotTypeChanged = props.OnSocialSlotTypeChanged
+    local onCustomSocialSlotsCountChanged = props.OnCustomSocialSlotsCountChanged
 
     local hasInputField = selected == "Custom"
 
@@ -69,8 +79,6 @@ function ServerFill:render()
 
             Enabled = enabled,
             Selected = selected,
-            SelectionChanged = function()
-            end,
 
             RenderItem = function(index, button)
                 if button.Id == "Custom" then
@@ -91,7 +99,7 @@ function ServerFill:render()
                             Enabled = props.Enabled,
                             LayoutOrder = 1,
                             OnClicked = function()
-                                props.SelectionChanged(button)
+                                onSocialSlotTypeChanged(button)
                             end,
                         }),
 
@@ -100,10 +108,11 @@ function ServerFill:render()
                             LayoutOrder = 2,
                             ShowToolTip = false,
                             Size = UDim2.new(0, theme.placePage.textBox.length, 0, theme.textBox.height),
-                            Text = "",
+                            Text = customSocialSlotsCount,
+                            ErrorMessage = errorState,
                             TextSize = theme.fontStyle.Normal.TextSize,
 
-                            SetText = props.InputChanged,
+                            SetText = onCustomSocialSlotsCountChanged,
                         }),
                     })
                 else
@@ -116,7 +125,7 @@ function ServerFill:render()
                         Enabled = props.Enabled,
                         LayoutOrder = index,
                         OnClicked = function()
-                            props.SelectionChanged(button)
+                            onSocialSlotTypeChanged(button)
                         end,
                     })
                 end

@@ -16,7 +16,12 @@ local PLACES_REQUEST_TYPE = "develop"
   
 local Places = {}
 
+local RELEVANT_ENTRIES = {
+	places = true,
+}
+
 function Places.AcceptsValue(key)
+	return RELEVANT_ENTRIES[key]
 end
 
 local function GetPlaces()
@@ -30,6 +35,7 @@ local function GetPlaces()
 			limit = 25,
 			sortOrder = "Asc",
 			cursor = cursor,
+			extendedSettings = true,
 		}
 
 		-- construct the request

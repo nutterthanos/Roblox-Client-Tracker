@@ -31,7 +31,7 @@ function FrameworkStyles.new()
 		RadioButtonList = newDefaults(),
 		RangeSlider = newDefaults(),
 		RoundBox = newDefaults(),
-
+		ScrollingFrame = newDefaults(),
 		Separator = newDefaults(),
 
 		TextLabel = newDefaults(),

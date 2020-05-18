@@ -28,7 +28,7 @@
 local FFlagFixToolboxEmptyRender = game:DefineFastFlag("FixToolboxEmptyRender", false)
 local FFlagStudioToolboxEnabledDevFramework = game:GetFastFlag("StudioToolboxEnabledDevFramework")
 local FFlagEnableAudioPreview = settings():GetFFlag("EnableAudioPreview")
-local FFlagStudioToolboxShowNoPluginResultsDetail = game:DefineFastFlag("StudioToolboxShowNoPluginResultsDetail", false)
+local FFlagStudioShowNoPluginResultsDetailFix = game:DefineFastFlag("StudioShowNoPluginResultsDetailFix", false)
 local FFlagStudioToolboxFixWidthCalculation = game:DefineFastFlag("StudioToolboxFixWidthCalculation", false)
 
 local GuiService = game:GetService("GuiService")
@@ -288,10 +288,10 @@ function MainView:render()
 
 		local noResultsDetailProps = nil
 
-		if FFlagStudioToolboxShowNoPluginResultsDetail then
+		if FFlagStudioShowNoPluginResultsDetailFix then
 			if showInfoBanner and Category.categoryIsPlugin(props.currentTab, categoryIndex) then
 				noResultsDetailProps = {
-					onLinkActivated = function()
+					onLinkClicked = function()
 						GuiService:OpenBrowserWindow(Constants.PLUGIN_LIBRARY_URL)
 					end,
 					content = localizedContent.NoPluginsFound
@@ -345,6 +345,11 @@ function MainView:render()
 					onTagsCleared = self.onTagsCleared,
 				}),
 
+				NoResultsDetail = noResultsDetailProps and Roact.createElement(NoResultsDetail, Cryo.Dictionary.join({
+					Position = UDim2.new(0, 0, 0, 66 + headerHeight),
+					ZIndex = 2
+				}, noResultsDetailProps)),
+
 				AssetGridContainer = Roact.createElement(AssetGridContainer, {
 					Position = UDim2.new(0, 0, 0, headerHeight + headerToBodyPadding + gridContainerOffset),
 
@@ -373,11 +378,6 @@ function MainView:render()
 				Position = UDim2.new(0, 0, 0, 16 + headerHeight),
 				Text = localizedContent.InfoBannerText,
 			}),
-
-			NoResultsDetail = noResultsDetailProps and Roact.createElement(NoResultsDetail, Cryo.Dictionary.join({
-				Position = UDim2.new(0, 0, 0, 66 + headerHeight),
-				ZIndex = 2
-			}, noResultsDetailProps)),
 
 			LoadingIndicator = isLoading and Roact.createElement(LoadingIndicator, {
 				AnchorPoint = Vector2.new(0.5, 1),

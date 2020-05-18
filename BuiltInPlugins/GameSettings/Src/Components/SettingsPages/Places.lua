@@ -35,6 +35,7 @@ local FitFrameOnAxis = FrameworkUtil.FitFrame.FitFrameOnAxis
 
 local UILibrary = require(Plugin.UILibrary)
 local GetTextSize = UILibrary.Util.GetTextSize
+local deepJoin = UILibrary.Util.deepJoin
 local TitledFrame = UILibrary.Component.TitledFrame
 local RoundTextBox = UILibrary.Component.RoundTextBox
 
@@ -44,8 +45,9 @@ local TableWithMenu = require(Plugin.Src.Components.TableWithMenu)
 
 local AddChange = require(Plugin.Src.Actions.AddChange)
 local AddErrors = require(Plugin.Src.Actions.AddErrors)
-local AddWarning = require(Plugin.Src.Actions.AddWarning)
-local DiscardWarning = require(Plugin.Src.Actions.DiscardWarning)
+local DiscardChanges = require(Plugin.Src.Actions.DiscardChanges)
+local DiscardError = require(Plugin.Src.Actions.DiscardError)
+local DiscardErrors = require(Plugin.Src.Actions.DiscardErrors)
 local SetEditPlaceId = require(Plugin.Src.Actions.SetEditPlaceId)
 
 local createSettingsPage = require(Plugin.Src.Components.SettingsPages.DEPRECATED_createSettingsPage)
@@ -55,11 +57,21 @@ local MAX_NAME_LENGTH = 50
 local AssetManagerService = game:GetService("AssetManagerService")
 local StudioService = game:GetService("StudioService")
 
+local nameErrors = {
+	Moderated = "ErrorNameModerated",
+	Empty = "ErrorNameEmpty",
+}
+
 --Loads settings values into props by key
 local function loadValuesToProps(getValue, state)
+	local errors = state.Settings.Errors
 	local loadedProps = {
 		Places = getValue("places"),
 		EditPlaceId = state.EditAsset.editPlaceId,
+
+		PlaceNameError = errors.placeName,
+		PlacePlayerCountError = errors.placePlayerCount,
+		PlaceCustomSocialSlotCountError = errors.placeCustomSocialSlotsCount,
 	}
 	return loadedProps
 end
@@ -69,6 +81,76 @@ local function dispatchChanges(setValue, dispatch)
 	local dispatchFuncs = {
 		dispatchSetEditPlaceId = function(placeId)
 			dispatch(SetEditPlaceId(placeId))
+		end,
+
+		dispatchSetPlaceName = function(places, placeId, placeName)
+			local nameLength = utf8.len(placeName)
+			if nameLength == 0 then
+				dispatch(AddErrors({placeName = "Empty"}))
+			elseif nameLength > MAX_NAME_LENGTH then
+				dispatch(AddErrors({placeName = "TooLong"}))
+			else
+				local newPlaces = deepJoin(places, {
+					[placeId] = {
+						name = placeName,
+					}
+				})
+				dispatch(AddChange("places", newPlaces))
+				dispatch(DiscardError("placeName"))
+			end
+		end,
+
+		dispatchSetPlaceMaxPlayerCount = function(places, placeId, maxPlayerCount)
+			local numberPlayerCount = tonumber(maxPlayerCount)
+
+			if not numberPlayerCount then
+				dispatch(AddErrors({placePlayerCount = "Error"}))
+			elseif numberPlayerCount and (numberPlayerCount < 0 or numberPlayerCount > 100) then
+				dispatch(AddErrors({placePlayerCount = "Error"}))
+			else
+				local newPlaces = deepJoin(places, {
+					[placeId] = {
+						maxPlayerCount = numberPlayerCount,
+					}
+				})
+				dispatch(AddChange("places", newPlaces))
+				dispatch(DiscardError("placePlayerCount"))
+			end
+		end,
+
+		dispatchSetSocialSlotType = function(places, placeId, socialSlotType)
+			local newPlaces = deepJoin(places, {
+				[placeId] = {
+					socialSlotType = socialSlotType,
+				}
+			})
+			dispatch(AddChange("places", newPlaces))
+		end,
+
+		dispatchSetCustomSocialSlotsCount = function(places, placeId, customSocialSlotsCount)
+			local numberCustomSocialSlotsCount = tonumber(customSocialSlotsCount)
+
+			if not numberCustomSocialSlotsCount then
+				dispatch(AddErrors({placeCustomSocialSlotsCount = "Error"}))
+			elseif numberCustomSocialSlotsCount and (numberCustomSocialSlotsCount < 0 or numberCustomSocialSlotsCount > 10) then
+				dispatch(AddErrors({placeCustomSocialSlotsCount = "Error"}))
+			else
+				local newPlaces = deepJoin(places, {
+					[placeId] = {
+						customSocialSlotsCount = numberCustomSocialSlotsCount,
+					}
+				})
+				dispatch(AddChange("places", newPlaces))
+				dispatch(DiscardError("placeCustomSocialSlotsCount"))
+			end
+		end,
+
+		dispatchDiscardChanges = function()
+			dispatch(DiscardChanges())
+		end,
+
+		dispatchDiscardErrors = function()
+			dispatch(DiscardErrors())
 		end,
 	}
 
@@ -91,7 +173,7 @@ local function displayPlaceListPage(props, localization)
 
 	local placesData = {}
 	for _, place in pairs(props.Places) do
-		local row = { place.id, place.name, place.universeId }
+		local row = { place.currentSavedVersion , place.name, place.maxPlayerCount }
 		placesData[place.id] = row
 	end
 
@@ -142,7 +224,34 @@ local function displayEditPlacePage(props, localization)
 	local maxPlayersSubText = localization:getText("Places", "MaxPlayersSubText")
 	local maxPlayersSubTextSize = GetTextSize(maxPlayersSubText, theme.fontStyle.Subtext.TextSize, theme.fontStyle.Subtext.Font)
 	local viewButtonText = localization:getText("General", "ButtonView")
-    local viewButtonTextExtents = GetTextSize(viewButtonText, theme.fontStyle.Header.TextSize, theme.fontStyle.Header.Font)
+	local viewButtonTextExtents = GetTextSize(viewButtonText, theme.fontStyle.Header.TextSize, theme.fontStyle.Header.Font)
+
+	local places = props.Places
+	local editPlaceId = props.EditPlaceId
+
+	local placeName = places[editPlaceId].name
+	local placeNameError
+	if props.PlaceNameError and nameErrors[props.PlaceNameError] then
+		placeNameError = localization:getText("General", nameErrors[props.PlaceNameError])
+	end
+
+	local maxPlayerCount = places[editPlaceId].maxPlayerCount
+	local placePlayerCountError
+	if props.PlacePlayerCountError then
+		placePlayerCountError = ""
+	end
+
+	local serverFill = places[editPlaceId].socialSlotType
+	local customSocialSlotsCount = places[editPlaceId].customSocialSlotsCount
+	local placeCustomSocialSlotCountError
+	if props.PlaceCustomSocialSlotCountError then
+		placeCustomSocialSlotCountError = ""
+	end
+
+	local dispatchSetPlaceName = props.dispatchSetPlaceName
+	local dispatchSetPlaceMaxPlayerCount = props.dispatchSetPlaceMaxPlayerCount
+	local dispatchSetSocialSlotType = props.dispatchSetSocialSlotType
+	local dispatchSetCustomSocialSlotsCount = props.dispatchSetCustomSocialSlotsCount
 
 	return {
 		HeaderFrame = Roact.createElement(FitFrameOnAxis, {
@@ -161,6 +270,8 @@ local function displayEditPlacePage(props, localization)
 				BackgroundTransparency = 1,
 
 				[Roact.Event.Activated] = function()
+					props.dispatchDiscardChanges()
+					props.dispatchDiscardErrors()
 					props.dispatchSetEditPlaceId(0)
 				end,
 			}, {
@@ -186,8 +297,13 @@ local function displayEditPlacePage(props, localization)
 			TextBox = Roact.createElement(RoundTextBox, {
 				Active = true,
 				MaxLength = MAX_NAME_LENGTH,
-				Text = "",
+				ErrorMessage = placeNameError,
+				Text = placeName,
 				TextSize = theme.fontStyle.Normal.TextSize,
+
+				SetText = function(name)
+					dispatchSetPlaceName(places, editPlaceId, name)
+				end,
 			}),
 		}),
 
@@ -209,8 +325,13 @@ local function displayEditPlacePage(props, localization)
 				LayoutOrder = 1,
 				ShowToolTip = false,
 				Size = UDim2.new(0, theme.placePage.textBox.length, 0, theme.textBox.height),
-				Text = "",
+				Text = maxPlayerCount,
+				ErrorMessage = placePlayerCountError,
 				TextSize = theme.fontStyle.Normal.TextSize,
+
+				SetText = function(playerCount)
+					dispatchSetPlaceMaxPlayerCount(places, editPlaceId, playerCount)
+				end,
 			}),
 
 			MaxPlayersSubText = Roact.createElement("TextLabel", Cryo.Dictionary.join(theme.fontStyle.Subtext, {
@@ -230,8 +351,18 @@ local function displayEditPlacePage(props, localization)
 
 		ServerFill = Roact.createElement(ServerFill, {
             LayoutOrder = layoutIndex:getNextOrder(),
-            Enabled = true,
-            Selected = "Custom",
+			Enabled = true,
+
+			CustomSocialSlotsCount = customSocialSlotsCount,
+			Selected = serverFill,
+			ErrorState = placeCustomSocialSlotCountError,
+
+			OnSocialSlotTypeChanged = function(button)
+				dispatchSetSocialSlotType(places, editPlaceId, button.Id)
+			end,
+			OnCustomSocialSlotsCountChanged = function(customSocialSlotsCount)
+				dispatchSetCustomSocialSlotsCount(places, editPlaceId, customSocialSlotsCount)
+			end,
         }),
 
 		VersionHistory = Roact.createElement(TitledFrame, {

@@ -11,6 +11,7 @@
 		function OnClearTags = A callback when the user wants to clear all tags.
 ]]
 local FFlagEnableAudioPreview = settings():GetFFlag("EnableAudioPreview")
+local FFlagStudioToolboxSearchOverflowFix = game:GetFastFlag("StudioToolboxSearchOverflowFix")
 
 local Plugin = script.Parent.Parent.Parent.Parent
 
@@ -90,7 +91,16 @@ function SearchTags:createPrompt(searchTerm, theme, localizedContent)
 		})
 	else
 		local prompt = localizedContent.SearchResults.SearchResultsKeyword
-		local promptWidth = Constants.getTextSize(prompt).X
+		local promptWidth
+		local searchTermSize
+
+		if FFlagStudioToolboxSearchOverflowFix then
+			promptWidth = Constants.getTextSize(prompt, nil, Constants.FONT_BOLD).X
+			searchTermSize = UDim2.new(1, -promptWidth, 0, ITEM_HEIGHT)
+		else
+			promptWidth = Constants.getTextSize(prompt).X
+			searchTermSize = UDim2.new(1, 0, 0, ITEM_HEIGHT)
+		end
 
 		return Roact.createElement("Frame", {
 			Size = UDim2.new(1, 0, 0, ITEM_HEIGHT),
@@ -119,7 +129,8 @@ function SearchTags:createPrompt(searchTerm, theme, localizedContent)
 				TextXAlignment = Enum.TextXAlignment.Left,
 				TextSize = Constants.FONT_SIZE_MEDIUM,
 				TextColor3 = theme.searchTag.textColor,
-				Size = UDim2.new(1, 0, 0, ITEM_HEIGHT),
+				Size = searchTermSize,
+				TextTruncate = FFlagStudioToolboxSearchOverflowFix and Enum.TextTruncate.AtEnd or nil,
 				BackgroundTransparency = 1,
 			}),
 		})
