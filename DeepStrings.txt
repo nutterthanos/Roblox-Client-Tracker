@@ -406,6 +406,7 @@ AggregateInfo.Frames
 AggregateInfo.Time.toFixed
 AggrFrames
 Agravesmall
+AH4kvnFo17LaUmBq9t16sAcGk1IfJ99e
 AHPEAU_iobuf
 AHPEAX1PEAPEAX
 AHW4DataStoreRequestType
@@ -763,6 +764,7 @@ AreModelCoordsShown
 AreOwnersShown
 ArePaidRandomItemsRestricted
 ArePartCoordsShown
+ArePartsTouchingOthers
 AreRegionsShown
 AreScriptStartsReported
 AreTerrainReplicationRegionsShown
@@ -910,6 +912,7 @@ AsyncTaskWorker
 AsyncUrlPathContainsDomain
 AT_KEYEXCHANGE
 AT_SIGNATURE
+At3r2bmHDW3M
 ATAUAVAWIc
 ATAUAVAWLcT
 AtEndChanged
@@ -4446,7 +4449,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405326
+ByVersion_0.434.0.405335
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -4934,7 +4937,6 @@ ChoosePixelFormatARB
 ChoosePixelFormatEXT
 ChorusSoundEffect
 Chromecast
-CHRvhCtxM538Ic5bo3S90
 CIDFontName
 CIDFontType
 CIDFontVersion
@@ -5439,7 +5441,6 @@ CLSID_WSTDecoder
 CLSID_WstDecoderPropertyPage
 CLSIDFromProgID
 CLSIDFromString
-ClspO6pT6BcWcoLFdDzRbDpQAC5P0
 ClusterCompressionLevel
 ClusterDeltas
 ClusterEstimatedCompressionRatioHundredths
@@ -6560,6 +6561,7 @@ CubeFramebuffer
 CubeMipGen
 CullByDistanceToPOI
 CullDistance
+CUorNYey8CfC2VT9yv6TT
 CURL_SSL_BACKEND
 CURL_SSLVERSION
 CURL_SSLVERSION_MAX
@@ -7795,7 +7797,6 @@ DListenerAttributes
 DMinMaxDistance
 DnsResolve
 DNSResponseMS
-DNVrrUI9zbb5iiqS8kQ7G15mf0oETOY2KiN9rTI44sd
 DocChanged
 DocCreated
 DocDockManager
@@ -9245,6 +9246,7 @@ FirstPersonTransition
 FirstTimeOpenLocation
 FirstTimePopUpQuickView
 FitWithinMaxSize
+FixActivatedEventDoubleFire
 FixAdvancedObjectsDragDropAssert
 FixAnalyticsServiceSetApiKey
 FixAnchoredConveyors
@@ -9655,7 +9657,6 @@ FunctionUnused
 FunctionVar
 FutureIsBrightPhase2GL3
 FutureIsBrightPhase2GLES3
-FwWElm7SYr4FDfQBh
 FXCompositing
 FXCompositingFS
 FXCompositingLinearFS
@@ -10572,7 +10573,6 @@ GfxClusters
 GfxClustersFull
 GfxPartInvalidationBudgetMs
 GfxPartInvalidationLimitToTime2
-GHXHod9c0kgkZo34utkaNYmhPes
 GIM_ShapeRetriever
 GImpactCollisionAlgorithm
 GImpactCompound
@@ -11392,7 +11392,6 @@ IEBAXPEAVQStyleOptionComboBox
 IEBAXPEAVQStyleOptionSlider
 Ierusalimschy
 IEventTarget
-IF12RO2XMecX6gXrdyQtqD8uK6Mjh2DG6uaIBnmvFxeP2AAaVsby9HUCAwEAAQ
 IFindListener
 IfLastDocInLastAppInstance
 IfPurchased
@@ -11432,6 +11431,7 @@ IID_IVPVBIConfig
 IID_IVPVBINotify
 IID_IVPVBIObject
 IIMAEBVInstanceIdentifier
+IiqXavs1sR4GEEZyASNmWqNffs9LveC9ks50ojhQ3N3ud7c5sR5cKXEzYWddxa
 IKCollisionsMode
 IkDragCollisionsMode
 IkDraggerAnchorMode
@@ -12025,7 +12025,6 @@ ItemWidget
 Iterations
 ITRedirect
 IUserDataStoreServiceBase
-IuslWy7P4WlNWNMEtgfONUwzvff7F4QO8M3UVoXmm
 IViewportFrameMaxSize
 IVRApplications_006
 IVRChaperone_003
@@ -12054,8 +12053,8 @@ Jba5qWkYU5nARYZm1gQVP
 Jcircumflex
 JDJNJXJbJlJvJ
 JHJRJ\JfJpJxJ
+JHMhKOzyYAPO
 JHW4MembershipType
-JIkhT4cu0yIqPPhxM
 JIRA_RIDE_192
 JIRA_RIDE_630
 JIRA_RIDE_697
@@ -12150,6 +12149,7 @@ JW4TextFilterContext
 JW4ThumbnailType
 K\7IxU..UxI7\K
 K_Key_dn.png
+Kae0badpfRLmFS
 KaiTi_GB2312
 KAXPEBDHAEAPEAVQChar
 KBytesPerSec
@@ -12211,13 +12211,13 @@ KickByDatacenter_
 KiDszBCYB0gyp03Pc
 KillPtClicked
 KillSurfaceJointsPart1
-KJiPtLSP0TtZz
 KnownHeaders
 KodchiangUPC
 KPEAVICHull
 KPEIBX_K_KPEIAU_iobuf
 KVScriptContext
 KYULPhCBFoD3mw5mygYqAeFlHdSL2k3MnDG
+KyYRXJ59MCAwEAAQ
 LabelArray
 LabelArray.push
 LabelArray[globstart]
@@ -12679,7 +12679,6 @@ LocationOffset
 LocationOrLastSeen
 LocationType
 Locimp_Addfac
-LoCJWyIfMXShHyVOtrkVVVlUw
 LockCenter
 LockCurrentPosition
 LockCursor
@@ -13536,7 +13535,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEAxa8mkg7EYKYxjhXoq458m0qnyVyEPy6QjV8KgUddDTapaLY2VcLf
+MIICCgKCAgEAvY
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -13933,6 +13932,7 @@ NavigationServiceTimingAnalytics
 NavigationServiceWorker
 NavigationType
 NavMeshTiles
+NbgKWtlX89Vc07gKRJH74G3UAK
 NCONF_dump_bio
 NCONF_dump_fp
 NCONF_get_number_e
@@ -14221,11 +14221,9 @@ NVWorkspace
 NW4FileSystemDir
 NW4PenStyle
 NW4UserInputType
-OAcTTQj4d7cVMhCKy
 Oacutesmall
 OAEPEncryptionSET
 OAUTHBEARER
-OAYn2nnOidyhTgV8tLjI26nr4
 Obj.GroupColors
 Obj.GroupsActive
 Obj.GroupsAllActive
@@ -14338,7 +14336,6 @@ OfPlayerWhoOwnsTheLock
 OfRawBytes
 OfResidence
 OfTimesLooped
-OftJajuxWHQG4e4
 OfTopLevelItem
 Ogoneksmall
 Ogravesmall
@@ -14357,7 +14354,6 @@ OLEAUT32.dll
 OleInitialize
 OleLockRunning
 OleUninitialize
-OME006CljUf7BsewSkittvoo3Tfjd5GBGvlfXBjZUs8BIRJ9MZhQ
 OnAllScriptErrorsAction
 OnBadgeAwarded
 OnboardingsCompleted
@@ -14511,6 +14507,7 @@ Organization
 OrganizationDomain
 OrganizationName
 Organizations
+ORGhD39mVJrR70psHaCwaQpEayxTBbG42tivpnqDbkw5Y626WfEcyzfmWWxM3
 Orientation
 OrientationChanged
 OrientationConstraint
@@ -14599,6 +14596,7 @@ OutrageousBuildersClub
 OutsideStreamedArea
 OutTouches
 OutUnprepareHeader
+OV4dTBKOCRyINDQl8l0N
 OverAction
 OverallHitRate
 OverflowToken
@@ -16146,6 +16144,7 @@ PluginWidgetRelay
 PluginWidgetRelayForPluginGui
 PluginWriteTemp
 PlusButtonPressed
+PmaNsoIZMzXDlN3AojURcCAZy0
 POINT_SIZE
 PointBalanceCacheInvalidateTimeMs
 PointDataChanged
@@ -16238,7 +16237,6 @@ PostUserAgreementsAcceptanceSuccess
 PotentialShadowCasters
 POWRPROF.dll
 PPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPA
-PpfSXzgamlVS0
 PpjCapacity
 PpjClientBreak
 PpjEtrFill
@@ -17032,6 +17030,7 @@ QEntityIconLoaded
 QEntityType
 QEventLoop
 QeYuIZ19oaUCFnjkmV3u
+QFGUjLqQ1pG8s6x2Pgi7hp
 QFileDevice
 QFileDialog
 QFileSystemWatcher
@@ -17044,6 +17043,7 @@ QFutureInterface
 QFutureInterfaceBase
 QFutureWatcher
 QFutureWatcherBase
+QGeKxYvlxk4iu7fC44MX
 QGenericArgument
 QGenericReturnArgument
 QGraphicsDropShadowEffect
@@ -17064,6 +17064,7 @@ QItemDelegate
 QItemSelection
 QItemSelectionModel
 QItemSelectionRange
+QIvyvCLntAbTYqnonc87
 QJsonArray
 QJsonDocument
 QJsonObject
@@ -18249,7 +18250,6 @@ RequiredHttpHeaders
 RequirePostHandshake
 RequiresHandle
 RequiresNeck
-RErKIf9c78CRSgW5d4Kg6He8iahvD0834kKCjCi6aSg8AokWrgVwjkkfUR7UwTP
 Reserved.Source
 ReservedServer
 ReservedServerAccessCode
@@ -18729,6 +18729,7 @@ SA_NAEBVQUrl
 SA_NPEAVQObject
 SA_NPEAVQTranslator
 SA_NPEBUAbstractConverterFunction
+SA2nH7IbkZaWDaRqJv4OKmVkzIV2laZTTcQAnF9
 SafeZoneOffsetsChanged
 SafeZoneOffsetsInputWidget
 SAHAEBVQByteArray
@@ -19854,7 +19855,6 @@ Software\Roblox\RobloxStudio\OpenStudioProcesses\
 SoftwareFormat
 SoftwareFormat.
 SoftwareSound
-SojGPGhszQPlcVQ9fl
 SolidFloorMassMultTenth
 SolidFloorPercentForceApplication
 SolidModel
@@ -24534,6 +24534,7 @@ UUUUUUUUUUUUUUUU3333333333333333
 UVATAUAVAWH
 UVersionHistoryItem
 UVoxelImportInfo
+UVs0QBzYwbrfo2AHLOxj
 UVWATAUAVAW
 UVWATAUAVAWH
 UVWATAUAVD
@@ -24756,7 +24757,6 @@ VCylinderDecalTexture
 VCylinderHandleAdornment
 VCylinderMesh
 VCylindricalConstraint
-VcYzIHoiNLzZ593
 VDataModel
 VDataModelMesh
 VDataModelPackageManager
@@ -26098,6 +26098,7 @@ XA_A^A]A\_^[]H
 XA_A^A]A\_^]
 XA_A^A]A\_^][
 XA_A^A]A\_^][H
+XA9YPYqYa2Q7UrrudOLGu
 XAEAVFormatUpdater
 XAEAVGraph
 XAEAVHttpClient
@@ -26289,13 +26290,16 @@ YAXPEAXPEBX
 YAXPEAXPEBX1
 YAXPEBVQObject
 YAXW4error_type
+YBeOIp5szu6LBVkb2RRj2alzM9bo5vji
 Ycircumflex
 Ydieresissmall
 YffYZefYDNNDCOO
 YieldEvent
 YieldFuncDesc
 YieldFunction
+YJ5lntd1VJGOQ2nQzNT9fSxBQt6MK5LlJWzh3zTZpd5wQ8eUaFstQ5
 YQByteArray
+YrD4rywGW3zPKEK
 YResolution
 YwBBvY55YvBBwY5
 Z_KPEIBX_K_KPEIAU1
