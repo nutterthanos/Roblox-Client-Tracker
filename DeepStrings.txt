@@ -9,6 +9,7 @@ A_A^A\_^][
 A_A^A\_^][H
 A_A^A]_^[]
 A_A^A]_^][
+A_A^A]_^][H
 A_A^A]A\[]
 A_A^A]A\][
 A_A^A]A\][_^
@@ -770,6 +771,7 @@ AreWorldCoordsShown
 Aringsmall
 Arithmetic
 ArmColorId
+ARR2l06DcCAwEAAQ
 ArrayIndex
 ArrowCursor
 ArrowCursor.png
@@ -4042,6 +4044,7 @@ BFSupportPluginDebuggingRoleSet
 BgUpdateRedirectsDisable
 BgUpdateRedirectsHttpErrInfluxHundredthsPercentage
 BgUpdateRedirectsRejectInfluxHundredthsPercentage
+BI4sp8ZF1k
 BillboardGui
 BillboardGuiDistanceStepping2
 BinaryData
@@ -4254,6 +4257,7 @@ BPuVfD9B`uOfD9BpuH
 BQByteArray
 BQJsonValueRef
 BQPersistentModelIndex
+Br2tmpPzsVN4ssaRXPecbDvTeu5uDGqcBFOKj6
 BranchIcon
 BreakGroup
 BreakJoints
@@ -4444,7 +4448,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405301
+ByVersion_0.434.0.405311
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -6556,6 +6560,7 @@ CubeFramebuffer
 CubeMipGen
 CullByDistanceToPOI
 CullDistance
+CUN7K4VuQUCD8q3629gQwM9dT
 CURL_SSL_BACKEND
 CURL_SSLVERSION
 CURL_SSLVERSION_MAX
@@ -8159,7 +8164,6 @@ EBAPEAVTeam
 EBAPEAVWorkspace
 EbDgxvvfGb
 EBELEVE`EjEtE
-Ebh7wpTo77tM69ZjrAXQ
 EC_GROUP_check
 EC_GROUP_check_discriminant
 EC_GROUP_copy
@@ -8329,7 +8333,6 @@ EFrontVector
 Egravesmall
 EHERE\EfEpEzE
 EJTU\^bcfguw
-EJwoqhG98MKnNCCU8w09fbXPJgEpLUua8aV
 ElapsedSeconds
 ElapsedTime
 ElasticBehavior
@@ -8646,7 +8649,6 @@ EqualizerSoundEffect
 EquippedEmotes
 EquippedEmotesChanged
 EquippedEmotesDataInternal
-EqX6i6Ur69pqaagIeieVWfWg6D
 ErrDontRetry
 Error_AlreadyConnected
 Error_ConnectionAttemptFailed
@@ -9356,6 +9358,7 @@ FlushMappedMemoryRanges
 FlushModifiedScriptsRetry
 FlyweightService
 FlyweightServiceDataRecievedCallbackCrashFixEnabled
+FMlRwvUYbqOY1zc6PwvCK6SIeGzcL4dyg5bVl7XoYsT9Lnx0uQx
 FMOD_CREATECOMPRESSEDSAMPLE
 FMOD_OPENMEMORY_POINT
 FMOD_OUTPUT_NOSOUND
@@ -9636,7 +9639,6 @@ FrontSurface
 FrontSurfaceInput
 FrustumOrdered
 FrustumRenderQueue
-FsmxDVLKf3s2JV
 FullRenderObjects
 Fullscreen
 FullScreen
@@ -9822,7 +9824,6 @@ GCReducesQuota2
 GCReducesQuotaCriticalPercent
 GCReducesQuotaPercent
 Gdotaccent
-GDz9dZCgxpj1KGoshAE
 GE_package.png
 GE_packagefolder.png
 GearAction
@@ -10575,7 +10576,6 @@ GImpactCompound
 GImpactCompoundShape
 GiveFocusBackAfterClickingTextbox
 GizmoRaycast
-GkqtRxsq7vPhmJY0kJN2m5nNwGSgHylig
 GL_ARB_texture_storage
 GL_EXT_texture_compression_s3tc
 Glass[0]VS
@@ -10641,7 +10641,6 @@ GoToPreviousScriptLocation
 GoToSourceCodeTB
 GoToVersionFailed
 GpuVariance
-GQMJT5AbWVHgeKXQJoW9KdDt
 GrabCursor.png
 GrabRotateCursor
 GrabRotateCursor.png
@@ -10787,6 +10786,7 @@ GroupTeleportLog
 GroupTeleportStarted
 GroupTeleportSuccess
 GroupTime.Sum.toFixed
+Gs4tgNUT8olsTrDpfqmNH3qzCm
 GSSolverActive
 GSSS466FSSS455
 GTInfluxDB
@@ -11303,12 +11303,12 @@ HumanoidRootPart.
 HumanoidStateType
 HumanoidWithPGSConstraintsUsePhysicsState
 Hungarumlautsmall
-Hv5w8CRNgtC
 HVChangeHistoryService
 HVQByteArray
 HVQRegularExpression
 HVQVariant
 HVSoundService
+HVStringView
 HVWeakFunctionRef
 HW4AccessMode
 HW4CaretMode
@@ -11428,6 +11428,7 @@ IID_IVPObject
 IID_IVPVBIConfig
 IID_IVPVBINotify
 IID_IVPVBIObject
+IiK8iSuDqlmbi1MZlsBW7wIdE
 IIMAEBVInstanceIdentifier
 IKCollisionsMode
 IkDragCollisionsMode
@@ -11891,7 +11892,6 @@ IsAnimationAssetUploadEnabled
 IsAutoJoint
 IsBaseFont
 IsBestFriendsWith
-ISbJvzlMUxMNVG6A5
 IsCategory
 IsCategoryActive
 IsCloudEditSessionChanged
@@ -12052,7 +12052,6 @@ Jcircumflex
 JDJNJXJbJlJvJ
 JHJRJ\JfJpJxJ
 JHW4MembershipType
-JIJ7ttyI0p
 JIRA_RIDE_192
 JIRA_RIDE_630
 JIRA_RIDE_697
@@ -12119,7 +12118,6 @@ JointStepSingleArrayBroadphaseFix
 JointTime_TextureCooldown
 JointToolHelpDialogVerb
 JPEBUSG_INDEX_TRIANGLE
-JSMCAwEAAQ
 JSON.parse
 JSON.stringify
 JSON_Parser
@@ -12141,7 +12139,6 @@ JumpScares
 JumpScaresP2
 JumpToIndex
 JustEndedBusy
-JVrysNeSTIg2aWAIViLaUbSd2b9fehPOTnf2pfyXrExBUlrLDgUh
 JW4FriendService_FriendStatus
 JW4HttpRequestResult
 JW4InfoType
@@ -12214,6 +12211,7 @@ KnownHeaders
 KodchiangUPC
 KPEAVICHull
 KPEIBX_K_KPEIAU_iobuf
+KtYcy3cGrenKZtQdSYiFFba41bMjXIGNbGqMmriopmedA7V8
 KVScriptContext
 KYULPhCBFoD3mw5mygYqAeFlHdSL2k3MnDG
 LabelArray
@@ -12901,8 +12899,7 @@ LuauWarnOnUtf8
 LuauWatchdog
 LuaWebService
 LVvuOx39]O
-LYDLhdsv48kAL
-Lz6Q3BKo0YpOvxqS
+LxfFXIse59
 M_NVWeakFunctionRef
 MachineAddress
 MachineConfig
@@ -13519,7 +13516,6 @@ MethodQuery
 Metrics.width
 MetricsSets
 MetricType
-MGczLvzUdf7gvrj4yJNa2Qr02Wcl2h7Iv6Ob8bF7m
 MHapV7R8MxA953
 MicroProfile
 MicroProfileFlip
@@ -13536,7 +13532,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEAupvC3E
+MIICCgKCAgEAxTjrSF7Rjbvg8zINimduao2achZUfEmO6YnIe2XiJS2qZbQBrj
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -13576,6 +13572,7 @@ Miscellaneous
 Mismatched
 MissingCoreScript
 MissingDumpFile
+MjtFNlZD7UtYuJiGItoIJAedfqw3g4wUyOUEjflJxeITXS8v1LGG
 MMW4IkDragCollisionsMode
 MMW4PartMaterial
 MMW4UserInputState
@@ -14080,11 +14077,11 @@ NextSelectionRight
 NextSelectionUp
 NextSpawnLocation
 NextTabPage
-NFI3Ba4ibX
 NfXf`fhfzf
 NHDHVQChar
 NHVVariant
 NinjaMask.mesh
+NK7Sl5tGZCiepRBjM
 NNW4SizeMode
 NoCacheForLocalContent
 NoCollisionConstraint
@@ -14222,7 +14219,6 @@ NVWorkspace
 NW4FileSystemDir
 NW4PenStyle
 NW4UserInputType
-NXTKbPpcvG11v
 Oacutesmall
 OAEPEncryptionSET
 OAUTHBEARER
@@ -14304,7 +14300,6 @@ OCSP_SINGLERESP
 OCSPResponse
 OCSPSigning
 OCTETSTRING
-OCTY5EpZi4zwXEg4mkhgtEFzaE
 Odieresissmall
 OfA9HPuHfA9H`uAfA9Hpu
 OfAdmissions
@@ -16575,7 +16570,6 @@ QAWNcgRdAzOKj8pi5wAlnsdoumgAtB1J7d
 QBoxLayout
 QButtonGroup
 QByteArray
-QBzeUrQsE8vVPLzjgVhqWa2JHiqm8Z5O
 QChildEvent
 QClipboard
 QColorDialog
@@ -17993,6 +17987,7 @@ RenderScreenshotFB
 RenderSettings
 RenderShadowIntensity
 RenderShadowmapAlphaRef
+RenderShadowmapBatchUpdates
 RenderShadowmapBias
 RenderShadowUseLastLOD
 RenderStats
@@ -24312,6 +24307,7 @@ UResultDetail
 UrlFormattingOption
 URLRequest
 URobloxApiGame
+URZPooiZWXY
 UsageFeatures
 USATAUAVAW
 USATAUAVAWH
@@ -25024,7 +25020,6 @@ VGeometryVulkan
 VGetAssetVersionNumberRequest
 VGetDevForumPageRequest
 VGetLatestPlacePersistanceLocationForVersionRequest
-VGIHKgWNKbTJy2soeeAt3Q2FUKxKN9jCg
 VGlobalAdvancedSettings
 VGlobalBasicSettings
 VGlyphRenderer
@@ -25410,7 +25405,6 @@ VQNetworkCookie
 VQNetworkInterface
 VQNetworkReply
 VQPersistentModelIndex
-VQrdXdAq8rYh
 VQRegularExpression
 VQSequentialIterableImpl
 VQSslError
@@ -26058,6 +26052,7 @@ WorldToScreenPoint
 WorldToViewportPoint
 WP1Lk7UmX3No0NAVVrlNv8vM1TKYodC60fXpXkwOnxGMHelMkfu58xsxIB9tXB4U
 WPACKET_start_sub_packet_len__
+WQzWNW5fVF8yBqKHMBqT8V0YUBWewylovvHQa1hREZ5pvch
 WristDisplacementDamping
 WristDisplacementDampingMode
 WriteArray
@@ -26081,6 +26076,7 @@ WSAStartup
 WSAStringToAddressW
 WTHelperGetProvSignerFromChain
 WTHelperProvDataFromStateData
+WZpZXikXStpscYHBFV9rsB
 X_deprecated
 X_Fullscreen
 X_JW4AssetType
@@ -26126,6 +26122,7 @@ XboxUseNewValidUsernameCheck2
 XFbxAMatrix
 XFREE86_GLYPH_RANGES
 XGetLastError
+XGTha3ceV1eZs2kUZFCyupSQk62RyArt
 XHW4Status_e
 XInputGetBatteryInformation
 XInputGetCapabilities
@@ -26158,6 +26155,7 @@ XPEAVICHull
 XPEAVQNetworkReply
 XPEAVRobloxScriptDiffDoc
 XQColorDialog
+XqmBbSqygGiKVdg34IIMUOFD
 Xregex_error
 XResolution
 Xtime_get_ticks
@@ -26291,13 +26289,13 @@ YffYZefYDNNDCOO
 YieldEvent
 YieldFuncDesc
 YieldFunction
-YOyGY5SB835tSH4
 YQByteArray
 YResolution
 YwBBvY55YvBBwY5
 Z_KPEIBX_K_KPEIAU1
 Zcaronsmall
 Zdotaccent
+ZDyGQLKHdb
 ZgnhKhWhci
 ZIndexBehavior
 ZLcJhLcGhM
@@ -26311,6 +26309,5 @@ ZP6APEAX1PEBX
 ZP6AX1PEAX
 ZPEAVRBXMessageBox
 ZRZZZbZt[.[
-ZVBzLA0fmfGgNbj1PcqVURxz4x52fE6sabIk6yVOay1nz
 ZVspecial_equipped_signal
 ZVTouchedSignal
