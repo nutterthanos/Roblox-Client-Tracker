@@ -380,7 +380,6 @@ AEFA2AAED11E38B9D871882A8E559
 AEFA3AAED11E38B9D871882A8E559
 AesSettingsCipherMode
 AF1224888D11E18561866242201959
-AF9JSGjWZN5QVEwhu2FTsi
 Affiliation
 AfterBufferedHandling
 AfterDisconnectChecks
@@ -667,9 +666,7 @@ AnthroStandardPartIds
 AntiReplay
 AntiSpamSpamLimit
 AnyWayYouHashItOut4
-ApBwGD1M4Lvi
 APEAU_iobuf
-APEgFQQ9Xcp
 ApiGamesChanged
 ApiKeyResult
 ApiRateLimit
@@ -3786,7 +3783,6 @@ AW4ZIndexBehavior
 AwardBadge
 AwardPoints
 AwareCompare
-AwaXf9MGmF5n5s3oXoemmyIfBmwwcH5MzuQ2G7ZpcSgWOBmDQc5aDoFBup3sI3
 AX_J0W4FriendService_FriendEventType
 AX_J0W4FriendService_FriendStatus
 AX_JW4FriendService_FriendEventType
@@ -4029,7 +4025,6 @@ BetaFeaturesController
 BetaFeaturesDialog
 BetaTester
 BetterAddInstance
-BEZWgfGoQxK
 BF11E395B6E5DB6211F344
 BF5757DAAEA11E38B9D871882A8E559
 BF5757EAAEA11E38B9D871882A8E559
@@ -4164,7 +4159,6 @@ BlueValues
 BlurAxisXYZScratch
 BlurEffect
 BlurRadius
-Bms7sCAwEAAQ
 BN_BLINDING_convert_ex
 BN_BLINDING_create_param
 BN_BLINDING_invert_ex
@@ -4452,7 +4446,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405317
+ByVersion_0.434.0.405326
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -4708,7 +4702,6 @@ Ccedillasmall
 CCEEFFIIJJLLOOQQRRTTWWXX[[]]^^aabbddgghhkkmmnnppssuuvvyyzz
 Ccircumflex
 CCJJAAJJCCmcckkccmCCJJAAJJC
-CCMaRGCLUkZZYLAZ0I
 CComCoClass
 CComContainedObject
 CComEnumImpl
@@ -4941,6 +4934,7 @@ ChoosePixelFormatARB
 ChoosePixelFormatEXT
 ChorusSoundEffect
 Chromecast
+CHRvhCtxM538Ic5bo3S90
 CIDFontName
 CIDFontType
 CIDFontVersion
@@ -5445,6 +5439,7 @@ CLSID_WSTDecoder
 CLSID_WstDecoderPropertyPage
 CLSIDFromProgID
 CLSIDFromString
+ClspO6pT6BcWcoLFdDzRbDpQAC5P0
 ClusterCompressionLevel
 ClusterDeltas
 ClusterEstimatedCompressionRatioHundredths
@@ -6745,7 +6740,6 @@ CyclicExecutiveThrottling
 CyclicExecutiveThrottlingCancelWorldStepAccum
 CyclicExecutiveTiming
 CyclicExecutiveWorldSteps
-CykfwhXCMQfR1vHJZVjUdRpZU4
 CylinderDecal
 CylinderDecalTexture
 CylinderHandleAdornment
@@ -7801,6 +7795,7 @@ DListenerAttributes
 DMinMaxDistance
 DnsResolve
 DNSResponseMS
+DNVrrUI9zbb5iiqS8kQ7G15mf0oETOY2KiN9rTI44sd
 DocChanged
 DocCreated
 DocDockManager
@@ -9645,7 +9640,6 @@ FrontSurface
 FrontSurfaceInput
 FrustumOrdered
 FrustumRenderQueue
-FseyuW28cIhTQ1xDoKcJdFMhzJjMtJy
 FullRenderObjects
 Fullscreen
 FullScreen
@@ -9661,7 +9655,7 @@ FunctionUnused
 FunctionVar
 FutureIsBrightPhase2GL3
 FutureIsBrightPhase2GLES3
-FxBe2fyFRzftHMeA79pgVu5NNuTmLkjKKZcXO
+FwWElm7SYr4FDfQBh
 FXCompositing
 FXCompositingFS
 FXCompositingLinearFS
@@ -9837,7 +9831,6 @@ GE_packagefolder.png
 GearAction
 GearGenreSetting
 GearVersionIds
-GeMBdYFv5OgwRSY1ohSovBzGcQYRJQ7l61xRL8GJt1wxBlNblgjtA5ADeXWeiBv
 GenAlgorithm
 GenBuffers
 GenCryptgrm
@@ -10579,6 +10572,7 @@ GfxClusters
 GfxClustersFull
 GfxPartInvalidationBudgetMs
 GfxPartInvalidationLimitToTime2
+GHXHod9c0kgkZo34utkaNYmhPes
 GIM_ShapeRetriever
 GImpactCollisionAlgorithm
 GImpactCompound
@@ -10650,7 +10644,6 @@ GoToPreviousScriptLocation
 GoToSourceCodeTB
 GoToVersionFailed
 GpuVariance
-GqiuNrTYK8xQWnTQpI549dnt0yGxt8SE71fPFlThoKut3G
 GrabCursor.png
 GrabRotateCursor
 GrabRotateCursor.png
@@ -11399,6 +11392,7 @@ IEBAXPEAVQStyleOptionComboBox
 IEBAXPEAVQStyleOptionSlider
 Ierusalimschy
 IEventTarget
+IF12RO2XMecX6gXrdyQtqD8uK6Mjh2DG6uaIBnmvFxeP2AAaVsby9HUCAwEAAQ
 IFindListener
 IfLastDocInLastAppInstance
 IfPurchased
@@ -12031,6 +12025,7 @@ ItemWidget
 Iterations
 ITRedirect
 IUserDataStoreServiceBase
+IuslWy7P4WlNWNMEtgfONUwzvff7F4QO8M3UVoXmm
 IViewportFrameMaxSize
 IVRApplications_006
 IVRChaperone_003
@@ -12060,6 +12055,7 @@ Jcircumflex
 JDJNJXJbJlJvJ
 JHJRJ\JfJpJxJ
 JHW4MembershipType
+JIkhT4cu0yIqPPhxM
 JIRA_RIDE_192
 JIRA_RIDE_630
 JIRA_RIDE_697
@@ -12215,6 +12211,7 @@ KickByDatacenter_
 KiDszBCYB0gyp03Pc
 KillPtClicked
 KillSurfaceJointsPart1
+KJiPtLSP0TtZz
 KnownHeaders
 KodchiangUPC
 KPEAVICHull
@@ -12682,6 +12679,7 @@ LocationOffset
 LocationOrLastSeen
 LocationType
 Locimp_Addfac
+LoCJWyIfMXShHyVOtrkVVVlUw
 LockCenter
 LockCurrentPosition
 LockCursor
@@ -12772,7 +12770,6 @@ LowQMaterialFS
 LowQMaterialWangFallbackFS
 LowQMaterialWangFS
 LowResolution
-LRZgVQ2v6yx
 Lslashsmall
 LSPManager
 LSPWarning
@@ -13539,7 +13536,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEApIeysphUBR5FUG2GM0clIThEm5PrEEaLAJC8FVLoisSVcZ8LTu8X
+MIICCgKCAgEAxa8mkg7EYKYxjhXoq458m0qnyVyEPy6QjV8KgUddDTapaLY2VcLf
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -14224,9 +14221,11 @@ NVWorkspace
 NW4FileSystemDir
 NW4PenStyle
 NW4UserInputType
+OAcTTQj4d7cVMhCKy
 Oacutesmall
 OAEPEncryptionSET
 OAUTHBEARER
+OAYn2nnOidyhTgV8tLjI26nr4
 Obj.GroupColors
 Obj.GroupsActive
 Obj.GroupsAllActive
@@ -14339,6 +14338,7 @@ OfPlayerWhoOwnsTheLock
 OfRawBytes
 OfResidence
 OfTimesLooped
+OftJajuxWHQG4e4
 OfTopLevelItem
 Ogoneksmall
 Ogravesmall
@@ -14357,6 +14357,7 @@ OLEAUT32.dll
 OleInitialize
 OleLockRunning
 OleUninitialize
+OME006CljUf7BsewSkittvoo3Tfjd5GBGvlfXBjZUs8BIRJ9MZhQ
 OnAllScriptErrorsAction
 OnBadgeAwarded
 OnboardingsCompleted
@@ -16237,6 +16238,7 @@ PostUserAgreementsAcceptanceSuccess
 PotentialShadowCasters
 POWRPROF.dll
 PPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPA
+PpfSXzgamlVS0
 PpjCapacity
 PpjClientBreak
 PpjEtrFill
@@ -17342,7 +17344,6 @@ QWheelEvent
 QWidgetAction
 QWidgetPluginGui
 QWidgetWindow
-QXrPeWQuqz86o
 RadialBlurFS
 RagdollDefaultTimerTenthSecond
 RagdollEarlyExitTimeTenthSecond
@@ -18248,6 +18249,7 @@ RequiredHttpHeaders
 RequirePostHandshake
 RequiresHandle
 RequiresNeck
+RErKIf9c78CRSgW5d4Kg6He8iahvD0834kKCjCi6aSg8AokWrgVwjkkfUR7UwTP
 Reserved.Source
 ReservedServer
 ReservedServerAccessCode
@@ -18640,7 +18642,6 @@ RowsInserted
 RowsToContents
 RowStretch
 RPCServers
-RPPFpRZyq2ldsmD9hrk5yP3gjxakvUAJq61ipJgtG2qpGVhO1S
 RRReceiptFail
 RRReceiptTotal
 RSA_check_key
@@ -19853,6 +19854,7 @@ Software\Roblox\RobloxStudio\OpenStudioProcesses\
 SoftwareFormat
 SoftwareFormat.
 SoftwareSound
+SojGPGhszQPlcVQ9fl
 SolidFloorMassMultTenth
 SolidFloorPercentForceApplication
 SolidModel
@@ -22726,7 +22728,6 @@ TeamTestDisconnect
 TeamTestGame
 Technologies
 Technology
-TEfo9bP1r0FiJ3J36nP6vzBPglA
 TelegrafAddress
 TelegrafPriorityThrottleHundredthsPercent
 TelegrafTCPPort
@@ -24526,7 +24527,6 @@ UUID_UdriTagTables
 UUID_WMDRMTagTables
 Uunspecified
 UUntranslatedSourceContexts
-UurtvTnfZyNxIYiCOoL1UrEgee5m
 UUserAgreementData
 UUUUUUUUUUUa
 UUUUUUUUUUUUUU
@@ -24549,7 +24549,6 @@ UWindowInputState
 UWindowShowMessageNotification
 UWindowShowMessageRequest
 UWindowShowMessageResponse
-UzSPWNHgGd8
 V_http_request
 V_http_response
 VABTestEnrollmentsRequest
@@ -24757,6 +24756,7 @@ VCylinderDecalTexture
 VCylinderHandleAdornment
 VCylinderMesh
 VCylindricalConstraint
+VcYzIHoiNLzZ593
 VDataModel
 VDataModelMesh
 VDataModelPackageManager
@@ -25098,6 +25098,7 @@ VideoEnableDeviceTuning
 VideoEnableGetInfo
 VideoFixDeviceTuningForAudioOnlyFiles
 VideoFixSeekingBeyondTheEnd
+VideoFixServerClientRemoteEvents
 VideoFixServerTimekeeping
 VideoFixTextureLeak
 VideoFixWebmParsing
@@ -26294,7 +26295,6 @@ YffYZefYDNNDCOO
 YieldEvent
 YieldFuncDesc
 YieldFunction
-YltqLTOFca8qkPRLxJwFsCJr7eaKym0FkS5QJRHq9
 YQByteArray
 YResolution
 YwBBvY55YvBBwY5
