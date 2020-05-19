@@ -406,6 +406,7 @@ AggregateInfo.Frames
 AggregateInfo.Time.toFixed
 AggrFrames
 Agravesmall
+AgRRYEGtRg9l31qUNFEiAay
 AHPEAU_iobuf
 AHPEAX1PEAPEAX
 AHW4DataStoreRequestType
@@ -4308,7 +4309,6 @@ Brightness
 BrightText
 BroadcastNotification
 Broadphase
-BroadPhaseIslandAcceleratedFilterStep
 BroadPhaseIslandAlwaysSimulateDepth
 BroadPhaseIslandAssemblyFilter
 BroadPhaseIslandBufferZoneMinPartLimit
@@ -4450,7 +4450,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405372
+ByVersion_0.434.0.405379
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -4673,6 +4673,7 @@ CategoryItem
 CategoryName
 CategorySelected
 CategoryString
+CATHhk50OdiJ
 CAtlExeModuleT
 CAtlModule
 CAtlModuleT
@@ -4905,7 +4906,6 @@ Checkpoints
 CheckpointsWithDebounce
 CheckPVCachedRotVelThresholdPercent
 CheckPVCachedVelThresholdPercent
-CheckPVDifferencesForInterpolationChoice
 CheckPVDifferencesForInterpolationMinRotVelThresholdRadsPerSecHundredth
 CheckPVDifferencesForInterpolationMinVelThresholdStudsPerSecHundredth
 CheckPVLinearVelocityIntegrateVsDeltaPositionThresholdPercent
@@ -6516,6 +6516,7 @@ CSwitchThreads[ThreadId]
 CSwitchTime
 CSwitchTime.length
 CSwitchTime[i]
+CSWIwb8EE91TLLjjlxWo6qO7I9l9XL0qL8UdOcXUYirCzwUt0vo23m2O5ItL7
 CT_POLICY_EVAL_CTX_new
 CtctStageCtcts
 CTLOG_new_from_base64
@@ -7852,18 +7853,15 @@ DoNotRepeatRedundantVideoPlayingEvents
 DoNotRunAnimationEditorInPlayMode
 DontCallOnMovingAssemblyRoot
 DontClearForwardRefMapOnGC
-DontClearTouchEventsDuringInterpolation
 DontDisconnectJointUpdateUnlessNecessary
 DontHandlePlayerReplicationDataAsSpecialCase
 DontImmediatelyDeparentReplicator
-DontInsertGroundJoints
 DontLoadCoreScriptsForEditDM
 DontLoadEmotesInventoryInThumbnails
 DontRepeatMyself
 DontStoreCharacterModelBeingLoadedInPlayer2
 DontWalkOnReparent
 DontWhitelistUserInputConnectionCounts
-DoParallelInterpolationFixUnguardedBufferClear
 DoParallelInterpolationSetPV2
 DOPENSSL_BN_ASM_GF2m
 DOPENSSL_BN_ASM_MONT
@@ -8380,7 +8378,6 @@ EmbeddedOutputFindWidget
 EmbeddedWebBrowser
 EmbeddedWebBrowserWindows
 EmergencyMessageForChineseStudio
-EmIivHDDYUuaT7
 EmissionDirection
 EmitHybridEvent
 EmitPlacePublishedSignal
@@ -9301,13 +9298,11 @@ FixNoTimeHudOnTeleport
 FixOutOfBoundsMouseLocation
 FixOverriddenDragAssert
 FixPackageDragSlow
-FixParallelCoarseMovementCallbacks
 FixPerSecDivideStats
 FixPlayerGetTeamNeutral
 FixPluginInvoke
 FixPointerActionPosition
 FixPreferredSoundDeviceVR
-FixPVSpaceTransform
 FixR6AccessoryScaling
 FixR6AppearanceLoadTracking2
 FixRaysInWedges
@@ -9320,10 +9315,8 @@ FixShiftScrolling
 FixSmallSurfaceGuiMouseInput
 FixSurfaceGuisBreakingAfterRespawn
 FixTableLayoutMinorAxisSortOrder
-FixTerrainStreamOutOptOrder
 FixTextSelectionForHighDpi
 FixTextureCompositorFramebufferManagement2
-FixThrottlingCalculationForRot
 FixToolboxInitLoad
 FixUpCoCFS
 FixUsingGameIdInsteadOfJobId
@@ -9828,7 +9821,6 @@ GCNotAlwaysMemory
 GCReducesQuota2
 GCReducesQuotaCriticalPercent
 GCReducesQuotaPercent
-GCRoc8urKbmteEMgDGL
 Gdotaccent
 GE_package.png
 GE_packagefolder.png
@@ -10576,7 +10568,6 @@ GfxClusters
 GfxClustersFull
 GfxPartInvalidationBudgetMs
 GfxPartInvalidationLimitToTime2
-GG3qBqX9zt2xU5am1X9e8ucxMxO2bwkz3NDqtfFKr4UzShE82D4L47pRCPSP
 GIM_ShapeRetriever
 GImpactCollisionAlgorithm
 GImpactCompound
@@ -10795,7 +10786,6 @@ GroupTeleportSuccess
 GroupTime.Sum.toFixed
 GSSolverActive
 GSSS466FSSS455
-GsWq15VWrrEJasHYpruTHMqqAya8TPMq18DmnJ
 GTInfluxDB
 Guaranteed
 GuestFriendCheckFailImmediate
@@ -11328,7 +11318,6 @@ HW4PacketPriority
 HwngSmldAskhBcraMaweNegsOgnaT
 HWYGOTH.ttf
 HybridEvent
-Hz4PAEA8zpNVsiwE94iU2iU
 Iacutesmall
 IAutocompleter
 IBusyStateModel
@@ -11888,7 +11877,6 @@ IPAddressRange
 IPHLPAPI.DLL
 IPlaceSessionModel
 IPluginElementHost
-IPNUcKSA3N1K38wlxdf7flhDTKKooO8TtFxsyaXVE
 IPTypeAndDataCenter
 IPublishedGamesStore
 IPV6RobloxStudioCleanUp1
@@ -12051,6 +12039,7 @@ IVRTrackedCamera_003
 IWebBrowser2
 IWorldStage
 IXMLHTTPRequest2
+IzyCiQ4KUKt8rsHcCAwEAAQ
 J_Key_dn.png
 J_NW4CurrencyType
 JasmineUPC
@@ -12066,12 +12055,12 @@ JIRA_RIDE_192
 JIRA_RIDE_630
 JIRA_RIDE_697
 JIRA_RIDE_711
+JIs3J2VywbIbMMHRjKXTvXIJnesQIsUENSLDZihOA9SzH3VBBKh44y4mY6s4mJ2L
 JJJBBB\\\xx
 JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
 JKLMNOPQRSTU
 JoinBlobInvalidateThresholdPercent
 JoinCommand
-JoinDataCacheChecksClientOwnedParts
 JoinDataCacheCompressionImprovement
 JoinDataCompressionLevel
 JoinDataItem
@@ -12217,11 +12206,13 @@ KickByDatacenter_
 KiDszBCYB0gyp03Pc
 KillPtClicked
 KillSurfaceJointsPart1
+KlAuDFCjT0Ar6vV6fZrOJditH
 KnownHeaders
 KodchiangUPC
 KPEAVICHull
 KPEIBX_K_KPEIAU_iobuf
 KVScriptContext
+KxXIlUVZkTTw12CIoYGnqW1vGpO6ocSjV6X6bl6fTLvtjIvJtujfZ7fdPjQO
 KYULPhCBFoD3mw5mygYqAeFlHdSL2k3MnDG
 LabelArray
 LabelArray.push
@@ -13170,7 +13161,6 @@ MEBAXPEAVQStyleOptionViewItem
 MEBAXPEBVQStyleOption
 MechanicalJointsInUse
 MechanismInBufferZone
-MechanismInterpolationLikesLocalSpace
 MechanismsAddedDuringGameplay
 MechanismSendByteSize
 MechanismsRemovedDuringGameplay
@@ -13540,7 +13530,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEAvZ5oQe0Jt9
+MIICCgKCAgEA2IrWcXMTr
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -13811,6 +13801,7 @@ Mtx_destroy_in_situ
 Mtx_init_in_situ
 Mtx_trylock
 Mtx_unlock
+MuKo0elK1EHzYf3DgTXl
 MULE_BASELINE_OFFSET
 MULE_RELATIVE_COMPOSE
 MultiByteToWideChar
@@ -14085,10 +14076,10 @@ NextSelectionUp
 NextSpawnLocation
 NextTabPage
 NfXf`fhfzf
-NGCIQyHvoFSorFdKL6yY7g3KK3U
 NHDHVQChar
 NHVVariant
 NinjaMask.mesh
+Nn6dxnk9IUYAgiLz0zbWNttCZeCzUaSXLYveeAlq8NTzze0eda0t8dTfvGm
 NNW4SizeMode
 NoCacheForLocalContent
 NoCollisionConstraint
@@ -17116,7 +17107,6 @@ QPropertyAnimation
 QProxyStyle
 QPushButton
 QPushButton[default
-QqBYEuQ8WmvuVh6Fuufppo8F8G4odnKD0AM3HsrlQ
 QQmlContext
 QQmlEngine
 QQmlImageProviderBase
@@ -17129,7 +17119,6 @@ QQuickView
 QQuickWindow
 QRadialGradient
 QRadioButton
-QrAIqFaCQBbrPdegatfjjcH10Quov1hlTwOX2f3PVZVwz7MHeuOB
 QRegularExpression
 QRegularExpressionMatch
 QRegularExpressionMatchIterator
@@ -18367,7 +18356,6 @@ RevocationList
 RevocationRefs
 RevocationUrl
 RevokeFriendship
-Ri69VYo4km
 RibbonButton
 RibbonButtonControl
 RibbonGallery
@@ -19753,6 +19741,7 @@ SizeToTwoAction
 SizingMode
 SkateboardController
 SkateboardPlatform
+Skh0pPb5NoXOTX7TEeSpM1PZSW0aSfVRpHCC1MHIfs42e
 SkipFirstMechanismChangeReport
 Sky.SkyboxBk
 Sky.SkyboxDn
@@ -20395,6 +20384,7 @@ StringsInstanceCounters
 StringSyntax
 StringValue
 StrokeWidth
+StSgN6aPUgVpejqmaXkeg28qOryxywGIStkU0hcK7SS4OA8u2dsDMisf5F4DLGVg
 Studio.App
 Studio.App.
 Studio.App.AddEmulationDeviceDialog.BottomSafeZoneOffset
@@ -22814,7 +22804,6 @@ TerrainPart
 TerrainPartition
 TerrainPerform
 TerrainPhysics
-TerrainPhysicsDataDeferredSquared
 TerrainPhysicsDataDeferredSquaredBudgetMinPercent
 TerrainPhysicsDataDeferredSquaredBudgetTimeMicroSec
 TerrainPhysicsDeferredSquaredTimerCheckInverse
@@ -22962,7 +22951,6 @@ TextWrapped
 TextXAlignment
 TextXmlParser
 TextYAlignment
-TFGa6izn1EsFMDy8Gos8IbrOHokfrHnbAcwuQRz2edSmaFwhIGhHj80
 TGenericSlotWrapper
 TGenericSlotWrapper.
 ThatCausedFocusLoss
@@ -23745,6 +23733,7 @@ TS_TST_INFO_set_time
 TS_TST_INFO_set_tsa
 TS_VERIFY_CTX_new
 TSMk2ThrottleStreamJob
+Tt1LyuipxAesUzcvTwn85lh2kvGp4XM8
 TTUUEDDsss
 TurboBuildersClub
 TurnOffAction
@@ -24026,6 +24015,7 @@ UINumTicks
 UIPageLayout
 UIQuadTree
 UIQuadTreeCellAreaMin
+UirUNAiHs9QOh2ppR0bmXRQkB4TBvcw4n
 Uis_continuation_if_running
 UISizeConstraint
 UITableLayout
@@ -24215,7 +24205,6 @@ UntranslatedStrings
 UntranslatedStringsCsvAction
 UntranslatedStringsHeader
 UntranslatedStringsHeaderAction
-UNuKD1v5j6OClc71yq7iJBjQid4oKbAkLdpvVB24iizag
 Unull_deleter
 Unverified
 Up_key.png
@@ -24544,6 +24533,7 @@ UUUUUUUUUUUa
 UUUUUUUUUUUUUU
 UUUUUUUUUUUUUUUU3333333333333333
 UVATAUAVAWH
+UVBOFWcRzwnz7
 UVersionHistoryItem
 UVoxelImportInfo
 UVWATAUAVAW
@@ -25740,6 +25730,7 @@ VWXYZ[\]^_`a
 VXmlElement
 VYieldFunctions
 VYieldFunctionStateObject
+VYLorM5ou8OsM4VPdNvESdF71C0zmSUleVu0
 W_Key_dn.png
 WaistAccessory
 WaistBack_Att
@@ -25813,6 +25804,7 @@ WaterViscosityDragFudgeFactor
 WaterWaveSize
 WaterWaveSpeed
 WaypointIdx
+WC5wN3m8XThRtJV7maRRmFKk
 WCharArray
 Wcircumflex
 WDU_Mbstatet
@@ -26094,7 +26086,6 @@ WSASocketW
 WSAstartup
 WSAStartup
 WSAStringToAddressW
-WSSL1gqG9koFjefV
 WTHelperGetProvSignerFromChain
 WTHelperProvDataFromStateData
 X_deprecated
@@ -26126,7 +26117,6 @@ XAlignment
 Xbad_alloc
 Xbad_function_call
 XbbXXbbXGSSGGSS
-XBHnk02jmMevBtRHLWgdLikW
 Xbox.AllUsers.PlayNextGame
 XboxAvatarPaneRefreshInterval
 XboxDisableTextChat
@@ -26176,7 +26166,6 @@ XPEAVRobloxScriptDiffDoc
 XQColorDialog
 Xregex_error
 XResolution
-XsVwpSwducNTUIuicpOPIBKTciop
 Xtime_get_ticks
 XUnegotiation_response
 XvAAuY44YuAAvX4
@@ -26305,14 +26294,11 @@ YAXW4error_type
 Ycircumflex
 Ydieresissmall
 YffYZefYDNNDCOO
-YicNYWeWbtVaightqDj4373
 YieldEvent
 YieldFuncDesc
 YieldFunction
-YmHBZQmx06uo9VokIB
 YQByteArray
 YResolution
-YS4Bia3mgHgenb7ttcUTQp2YcCG
 YwBBvY55YvBBwY5
 Z_KPEIBX_K_KPEIAU1
 Zcaronsmall
