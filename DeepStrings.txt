@@ -64,6 +64,7 @@ AAEE11E38B9D871882A8E559
 AAF011E38B9D871882A8E559
 AAF111E38B9D871882A8E559
 AAF511E38B9D871882A8E559
+AAhKehVhJpkpTz
 AB0BF11E395B6E5DB6211F344
 AB0DC85B11
 ABAllUsers
@@ -2055,6 +2056,7 @@ AVExplosionEmitter
 AVExportPlaceVerb
 AVExportSelectionVerb
 AVExpressionEvaluatorEdit
+AVExternalLoginDialog
 AVExtrudedPartInstance
 AVFaceComponentItem
 AVFaceFacePair
@@ -3392,6 +3394,7 @@ AVTeleportService
 AVTemplatePageController
 AVTemplatePageModel
 AVTemplatePageProxyModel
+AVTencentLoginDialog
 AVTerrainColorsItem
 AVTerrainRegion
 AVTestService
@@ -3533,6 +3536,7 @@ AVUploadRequest
 AVUploadRequestResult
 AVUploadTextureRequest
 AVuri_exception
+AVUserAgreementsHandler
 AVUserDataStoreService
 AVUserFile
 AVUserInputBase
@@ -3859,7 +3863,6 @@ AXW4UiMessageType
 AXW4UserCFrame
 AXW4UserInputType
 AXW4VRTouchpad
-AYm7YDaq9J7qqmbHMWxCwLM43Ya1MNm
 BA447F42A91111E2B410EF351327957B
 BA886F11E18561866242201959
 BAA3C620681180838E23F0DC6224
@@ -3975,6 +3978,7 @@ BBBA91111E2B410EF351327957B
 BBCA91111E2B410EF351327957B
 BbEcJYG[I[NYVP\B]
 BBFA91111E2B410EF351327957B
+BbnJCAYJ9fcZbNvhTu0
 BBxZ55ZxBBx[5D
 BC0A91111E2B410EF351327957B
 BC0DAEAAF011E38B9D871882A8E559
@@ -4196,6 +4200,8 @@ BN_rand_range
 BN_RECP_CTX_new
 BN_STACK_push
 BN_to_felem
+BNcXXgyJiUzwjHwCfAOefx6uTCL61txNePF2dauPuuP0aJVeELCxARzl6
+BNmRWDwpvr0OpXO7knQEzy
 BodyAngularVelocity
 BodyBack_Att
 BodyBackAttachment
@@ -4252,7 +4258,6 @@ BoxContainer
 BoxHandleAdornment
 BoxMappedMeshLODFix_v2
 BoxSelectCommand
-BP35sxPccm0O
 BPEAUIUnknown
 BPuVfD9B`uOfD9BpuH
 BQByteArray
@@ -4449,7 +4454,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405341
+ByVersion_0.434.0.405366
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -4947,6 +4952,7 @@ CipherString
 Ciphersuites
 CircularList
 Circumflexsmall
+CJLIqHqmIOLpzd
 CJVNotFallbackToEnglishForCoreGuiEnabled
 CJVNotFallbackToEnglishForUGCEnabled
 ClampColor
@@ -8428,7 +8434,6 @@ EnableAnalyticsServiceSetApiKeyEventSteam
 EnableAnimationEditorBeta
 EnableAppPolicyDefaultsFile
 EnableAssetPreviewDynamicVote
-EnableAudioPreview
 EnableAudioPreviewWhiteList
 EnableAuthV2Login
 EnableAutoUpgradeDev
@@ -8693,7 +8698,6 @@ ESGamePerfMonitorReportDetails
 ESGamePerfMonitorReportTimerInSeconds
 ESGamePerfMonitorUseRandomSelection
 ESocialService
-ESOgeAgoyzLZ72uInR
 EstimateEmitterBBox
 Estrangelo
 EThrottleType
@@ -8910,6 +8914,8 @@ ExternalCaptchaUrl
 ExternalHandlerAdded
 ExternalHandlerFound
 ExternalHttpRequestSizeLimitKB
+ExternalLoginDialog
+ExternalLoginEnabled
 ExternalRefCountData
 ExtraAssetFolder
 ExtraCollarRatio
@@ -9385,7 +9391,6 @@ FocusDistance
 FocusedDataModelSession
 FocusPolicy
 FocusProxy
-FoE2uF59uulbQ
 FogCoorddv
 FogCoordfv
 FogCoordPointer
@@ -9643,6 +9648,7 @@ FrontSurface
 FrontSurfaceInput
 FrustumOrdered
 FrustumRenderQueue
+FUK9LjDD07mx77C
 FullRenderObjects
 Fullscreen
 FullScreen
@@ -11036,7 +11042,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\DellBackupandRecovery
 HKEY_PERFORMANCE_DATA
 HKEY_PERFORMANCE_NLSTEXT
 HKEY_PERFORMANCE_TEXT
-HKP26skOVSxpBXXIgTc8pWIhPFsbWdgTZ
 HMACGostR3411
 HomeClicked
 HomePageLoaded
@@ -11088,6 +11093,7 @@ HPEAVQAction
 HPEBDHW4CaseSensitivity
 HPEBDPEBDV
 HPEBVQMimeData
+Hpobo7xdOwV
 HQEAPEAVQGraphicsItem
 HQFSShadowed
 HQVSShadowed
@@ -11404,7 +11410,6 @@ IgnoreLocaleInJoinScriptData
 IgnoreSSLErros
 IgnoreWater
 Igravesmall
-IHY54DcPb9kwwSGzRTiggLrESpAmI40
 IIAEBVInstanceIdentifier
 IID_IAMDirectSound
 IID_IAMLine21Decoder
@@ -11811,6 +11816,7 @@ InternalTaskEnd
 International
 InternetConnection
 InternetGetConnectedState
+InternetGetCookieExW
 Interpolate
 InterpolateCullDistance
 Interpolated
@@ -11831,6 +11837,7 @@ IntoFromFileComplete
 IntoIslands
 IntoViewBase
 InUnprepareHeader
+InUsingExternalDialog
 InvalidAccess
 Invalidate
 InvalidateBufferData
@@ -11875,7 +11882,6 @@ InvokePreloadCallbackFromDMJob
 InvokeServer
 InWithTheNew
 IObjectWithSiteImpl
-IolIcedBnyjB
 IPAddrBlocks
 IPAddressChoice
 IPAddressFamily
@@ -12054,6 +12060,7 @@ JavaScript
 JavaScriptCallback
 Jba5qWkYU5nARYZm1gQVP
 Jcircumflex
+JD4xZzUjHELVERg3WSeT
 JDJNJXJbJlJvJ
 JHJRJ\JfJpJxJ
 JHW4MembershipType
@@ -12064,6 +12071,7 @@ JIRA_RIDE_711
 JJJBBB\\\xx
 JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
 JKLMNOPQRSTU
+JKxuSLgFunM6JA3dm3BFns4dlf1kdhgSUkpQKpcIg6hgNplu0c
 JoinBlobInvalidateThresholdPercent
 JoinCommand
 JoinDataCacheChecksClientOwnedParts
@@ -12152,6 +12160,7 @@ JW4ThumbnailType
 K\7IxU..UxI7\K
 K_Key_dn.png
 KaiTi_GB2312
+KASKyNY8SmeWMz7df491t40CAwEAAQ
 KAXPEBDHAEAPEAVQChar
 KBytesPerSec
 KeepAliveTimeout
@@ -12216,7 +12225,7 @@ KnownHeaders
 KodchiangUPC
 KPEAVICHull
 KPEIBX_K_KPEIAU_iobuf
-KtZh2mEz0afSBvkdV5QNDyOKVDMiFRz
+KpVicUGkRrMGDfJo6pu6WakQUspUSFrkao
 KVScriptContext
 KYULPhCBFoD3mw5mygYqAeFlHdSL2k3MnDG
 LabelArray
@@ -12903,6 +12912,7 @@ LuauTypeInferTypePackLoopLimit
 LuauWarnOnUtf8
 LuauWatchdog
 LuaWebService
+LVDgPie0ZJ
 LVvuOx39]O
 M_NVWeakFunctionRef
 MachineAddress
@@ -13536,7 +13546,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEAsjE28HnAdPpYZt3m0wSFrimx1h3g94YebbQvhR9
+MIICCgKCAgEAqPtfJVb6W1IfKPFZemZu3RohLDbnCRW4mlu2G7zBS0vz58fThAjg
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -14082,6 +14092,7 @@ NextSpawnLocation
 NextTabPage
 NfXf`fhfzf
 NHDHVQChar
+NhQuXXEKqt
 NHVVariant
 NinjaMask.mesh
 NNW4SizeMode
@@ -14221,7 +14232,6 @@ NVWorkspace
 NW4FileSystemDir
 NW4PenStyle
 NW4UserInputType
-NW6fX3LDTpWQ6a1SsM2UNA8pA9NHnQHEIDASBW7QOC7LK3i8uz
 Oacutesmall
 OAEPEncryptionSET
 OAUTHBEARER
@@ -14346,7 +14356,6 @@ OgreWidgetForGameState
 OgreWidgetShowEvent
 Oh44\h44\Q
 Ohungarumlaut
-Oi7GaRDoLYDjR
 OiCCPPhotoshop
 OldActiveElement
 OldMessagesFetched
@@ -14356,7 +14365,6 @@ OLEAUT32.dll
 OleInitialize
 OleLockRunning
 OleUninitialize
-OM085Ys6tydtud5rOQOkgQb8CAwEAAQ
 OnAllScriptErrorsAction
 OnBadgeAwarded
 OnboardingsCompleted
@@ -14398,6 +14406,7 @@ OnPublishDialog
 OnPublishDialogController
 OnPublishPlaceToRoblox
 OnPublishWindow
+ONQ33JFuU0FFTgr
 OnRemoteSysStats
 OnSaveToRoblox
 OnScreenKeyboardAnimationDuration
@@ -14694,11 +14703,13 @@ PageController
 PageController.getTemplatePageProxyModel
 PageController.onTemplateClicked
 PageCursor
+PageLoaded
 PageLostFocus
 PageModelsInitialized
 PageRecentFile
 PageTabController
 PageTabController.getLastTabOnPageIndex
+PahUORHbs5P
 PaintballGunTex128.png
 PaintballIcon.png
 PaintButton.png
@@ -16237,6 +16248,7 @@ PostUserAgreementsAcceptanceFailure
 PostUserAgreementsAcceptanceSuccess
 PotentialShadowCasters
 POWRPROF.dll
+POxzOCxBJX
 PPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPA
 PpjCapacity
 PpjClientBreak
@@ -17059,7 +17071,6 @@ QHostAddress
 QHoverEvent
 QInputDialog
 QIntValidator
-QIrQj5Rhm0UboZ6lnZ06cDcya4IVgA
 QItemDelegate
 QItemSelection
 QItemSelectionModel
@@ -17069,7 +17080,6 @@ QJsonDocument
 QJsonObject
 QJsonValue
 QJsonValueRef
-QJwzZ3NWS84jNwK
 QKeySequence
 QLayoutItem
 QLinearGradient
@@ -18474,7 +18484,6 @@ RigidBodyLazyUpdating
 RigidityEnabled
 RiseVelocity
 Rj0isQcnqX
-RlZW3q4d1xBMtFW00LvvhlHJl5i7JjUBvx0LDFvbTbIlbYXDtH
 Roact.createElement
 ROBLOSECURITY
 Roblox.Hybrid
@@ -20266,6 +20275,7 @@ StepVerificationRequired
 StepVerificationStartingOver
 StepVerificationStartOverClicked
 StereoMode
+STHdrZz1kG2niD0iwxB6rMXnBw3mXJfu4nJX1vYXLQ9BjyRd
 StickyWheels
 StoneCorridor
 StopAllSounds
@@ -21725,6 +21735,7 @@ Studio.App.VersionHistoryDialog.FailedToOpenScriptErrorMessage
 Studio.App.VersionHistoryDialog.NoScriptChanges
 Studio.App.VersionHistoryDialog.NoScriptHistoryWarning
 Studio.App.VersionHistoryDialog.OpenDialog
+Studio.App.VersionHistoryDialog.OpenScriptsLabel
 Studio.App.VersionHistoryDialog.PlaceVersionColumnTitle
 Studio.App.VersionHistoryDialog.PlaceVersionLabel1
 Studio.App.VersionHistoryDialog.ShowBatchContentsLink
@@ -21800,6 +21811,9 @@ Studio.Emulation.v002.Phone
 Studio.Emulation.v002.Tablet
 Studio.fetchClientFailure.Https
 Studio.IkDragger.EnabledSession
+Studio.Internal.ExternalLoginDialog.GenericErrorMessage
+Studio.Internal.ExternalLoginDialog.MessageOnDialogClose
+Studio.Internal.ExternalLoginDialog.WindowTitle
 Studio.Internal.RobloxMainWindow.ChooseAPlaceInGameExplorer1
 Studio.Internal.RobloxMainWindow.NewScriptTab
 Studio.Internal.RobloxMainWindow.OnlySaveToEditDM
@@ -22064,6 +22078,7 @@ StudioEncodeEmergencyMessage
 StudioError
 StudioExplorerEraseAfterDeleteCrashFix
 StudioExportRetryRequestLimit
+StudioExternalLoginEnabled
 StudioFancyPrintVariants
 StudioFavorites.json
 StudioFavoritesJSON
@@ -22414,6 +22429,7 @@ StudioUseProdBaseUrlForStartPage
 StudioUseQTextEditOutputWidget
 StudioUseQtNetworkReplyForUserAgreements
 StudioUserAction
+StudioUserAgreementCheckEnabled
 StudioUserAgreements
 StudioUserNotificationMaxReconnectTimerMs
 StudioUserNotificationMinReconnectTimerMs
@@ -24025,6 +24041,7 @@ UITransformedLitVS
 UITransformedVS
 UIViewportFrameCollectFrames
 UIViewportFrameWorkspace
+UJAFaYUc2u8x48Lmu8L8IRzwT7dwXZka
 ULinkedScriptLoadData
 ULoadedImage
 ULuaCallbacks
@@ -24304,7 +24321,6 @@ UProjection
 Uproxy_data
 UpSampleTentFS
 UPublishDiagnosticsNotification
-UQbDaBNp6CgemiyJG9Xegwl71uNrnw1ZdbnnXlBOwA3DFmQTGr4m
 UQByteArrayDataPtr
 UQLatin1Char
 UQMetaObject
@@ -25727,7 +25743,6 @@ Vwspp_callback_client
 VWSUATAUAVAW
 VWXYZ[\]^_`a
 VXmlElement
-VyChSuNPlFEvy0sja0hmZOsG5OCo
 VYieldFunctions
 VYieldFunctionStateObject
 W_Key_dn.png
@@ -26063,6 +26078,7 @@ WorldToScreenPoint
 WorldToViewportPoint
 WP1Lk7UmX3No0NAVVrlNv8vM1TKYodC60fXpXkwOnxGMHelMkfu58xsxIB9tXB4U
 WPACKET_start_sub_packet_len__
+WQZZH3TvK1g6JUaGGssZlN1fuuyrNksO
 WristDisplacementDamping
 WristDisplacementDampingMode
 WriteArray
@@ -26098,7 +26114,6 @@ XA_A^A]A\_^[]
 XA_A^A]A\_^[]H
 XA_A^A]A\_^]
 XA_A^A]A\_^][
-XA_A^A]A\_^][H
 XAEAVFormatUpdater
 XAEAVGraph
 XAEAVHttpClient
@@ -26296,13 +26311,14 @@ YffYZefYDNNDCOO
 YieldEvent
 YieldFuncDesc
 YieldFunction
+YOMnQqzXfY18863s9CLnaPMosMzs1ZPFqPEpWTGK0cqVwFzd49RyU
 YQByteArray
 YResolution
-YRYl1wMqurT9UImmkAedCn2S
 YwBBvY55YvBBwY5
 Z_KPEIBX_K_KPEIAU1
 Zcaronsmall
 Zdotaccent
+ZF1IZapnhafAZlbhiJ4r84
 ZgnhKhWhci
 ZIndexBehavior
 ZLcJhLcGhM
@@ -26315,7 +26331,6 @@ ZoomToHighlight
 ZP6APEAX1PEBX
 ZP6AX1PEAX
 ZPEAVRBXMessageBox
-ZqeObRIM5iVzSA4QmVaZJw
 ZRZZZbZt[.[
 ZVspecial_equipped_signal
 ZVTouchedSignal
