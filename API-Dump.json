@@ -42020,6 +42020,7 @@
                     },
                     "Security": "PluginSecurity",
                     "Tags": [
+                        "Deprecated",
                         "CustomLuaState"
                     ]
                 },

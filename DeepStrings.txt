@@ -406,7 +406,6 @@ AggregateInfo.Frames
 AggregateInfo.Time.toFixed
 AggrFrames
 Agravesmall
-AH4kvnFo17LaUmBq9t16sAcGk1IfJ99e
 AHPEAU_iobuf
 AHPEAX1PEAPEAX
 AHW4DataStoreRequestType
@@ -912,7 +911,6 @@ AsyncTaskWorker
 AsyncUrlPathContainsDomain
 AT_KEYEXCHANGE
 AT_SIGNATURE
-At3r2bmHDW3M
 ATAUAVAWIc
 ATAUAVAWLcT
 AtEndChanged
@@ -1100,6 +1098,7 @@ AURequireFinder
 AURequireTracer
 AUResponse
 AUResponseError
+AuRjlpwMXLIlUb115dMN5UyTdLVnPlIRZmUZ4Ebu
 AUscheduler_interface
 AUScriptPerformanceViewData
 AUshared_state_base
@@ -4258,6 +4257,7 @@ BPuVfD9B`uOfD9BpuH
 BQByteArray
 BQJsonValueRef
 BQPersistentModelIndex
+BqTpqn9PP3KcvqmXHI1vqlkVha3SSPS2LTElJSjDpS8IoIk1YYE0oKaQPa
 BranchIcon
 BreakGroup
 BreakJoints
@@ -4449,7 +4449,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405335
+ByVersion_0.434.0.405340
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -6561,7 +6561,6 @@ CubeFramebuffer
 CubeMipGen
 CullByDistanceToPOI
 CullDistance
-CUorNYey8CfC2VT9yv6TT
 CURL_SSL_BACKEND
 CURL_SSLVERSION
 CURL_SSLVERSION_MAX
@@ -7588,6 +7587,7 @@ DH_new_method
 DHBasedMac
 DHParameters
 DHparams_print_fp
+DHSzxAHRRF95R2HGd2PntzZrmhAB0D
 DhufyEeFO7U33Tv7vk
 Diagnostic
 Diagnostics
@@ -9495,6 +9495,7 @@ FoundItems
 FoundThread
 FpFramebuffer
 FpsVariance
+FQ7yZ34GzG83gPiJM2APmHjmj1dlYvcW
 Fractional
 Frame_.frameend
 Frame_.frameendgpu
@@ -10920,6 +10921,7 @@ HB_OPTIONS
 HB_SHAPER_LIST
 HBRenderDXT_KTX
 Hcircumflex
+HCqVRgUPnRTP6NJ9NxIOZlO5A5bHyneI7nJwzDSeqwCaJbMR2qxPP3rLCeNBMV
 HDCacheLock
 HeadColor3
 HeaderCheckBoxClicked
@@ -11086,6 +11088,7 @@ HPEAVQAction
 HPEBDHW4CaseSensitivity
 HPEBDPEBDV
 HPEBVQMimeData
+HPvEabVC0dZY29xvR8lbL9Ki0
 HQEAPEAVQGraphicsItem
 HQFSShadowed
 HQVSShadowed
@@ -11431,7 +11434,6 @@ IID_IVPVBIConfig
 IID_IVPVBINotify
 IID_IVPVBIObject
 IIMAEBVInstanceIdentifier
-IiqXavs1sR4GEEZyASNmWqNffs9LveC9ks50ojhQ3N3ud7c5sR5cKXEzYWddxa
 IKCollisionsMode
 IkDragCollisionsMode
 IkDraggerAnchorMode
@@ -12053,7 +12055,6 @@ Jba5qWkYU5nARYZm1gQVP
 Jcircumflex
 JDJNJXJbJlJvJ
 JHJRJ\JfJpJxJ
-JHMhKOzyYAPO
 JHW4MembershipType
 JIRA_RIDE_192
 JIRA_RIDE_630
@@ -12133,6 +12134,7 @@ JSONObject
 JSONOverflowAbort
 JSONOverflowDepth
 JUGroupRolesRequestRecord
+JuHk4Gn3oUWHDSJDkmMuYBlnR
 JumpAnimation
 JumpHeight
 JumpPowerInstantControllerMultiplierPercent
@@ -12149,7 +12151,6 @@ JW4TextFilterContext
 JW4ThumbnailType
 K\7IxU..UxI7\K
 K_Key_dn.png
-Kae0badpfRLmFS
 KaiTi_GB2312
 KAXPEBDHAEAPEAVQChar
 KBytesPerSec
@@ -12217,7 +12218,6 @@ KPEAVICHull
 KPEIBX_K_KPEIAU_iobuf
 KVScriptContext
 KYULPhCBFoD3mw5mygYqAeFlHdSL2k3MnDG
-KyYRXJ59MCAwEAAQ
 LabelArray
 LabelArray.push
 LabelArray[globstart]
@@ -12537,6 +12537,7 @@ LiveScript
 LiveThreadRef
 LivingRoom
 LLEo6Soxvx2
+LnHL1uszz5izqML0Uj7EtZnoHAawUCLkFB7GrjttzPOsmh5tO8kLRw
 LOAD_CERT_CTRL
 LoadAnimation
 LoadAssetVersion
@@ -12902,6 +12903,7 @@ LuauTypeInferTypePackLoopLimit
 LuauWarnOnUtf8
 LuauWatchdog
 LuaWebService
+Lv3RjiWPwpvwt5t4Uk
 LVvuOx39]O
 M_NVWeakFunctionRef
 MachineAddress
@@ -13535,7 +13537,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEAvY
+MIICCgKCAgEAwLQpd3Bzk
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -13570,6 +13572,7 @@ MinuterIntervalOnTimer
 MinutesAfterMidnight
 MinuteTimer
 MinWidthPan
+MIoe8JPlGBcCd9bV57GENDTjXGrHj60Sxtn6kdv1rSkfnLI9qZdTyAwGVu
 MirrorMode
 Miscellaneous
 Mismatched
@@ -13932,7 +13935,6 @@ NavigationServiceTimingAnalytics
 NavigationServiceWorker
 NavigationType
 NavMeshTiles
-NbgKWtlX89Vc07gKRJH74G3UAK
 NCONF_dump_bio
 NCONF_dump_fp
 NCONF_get_number_e
@@ -14507,7 +14509,6 @@ Organization
 OrganizationDomain
 OrganizationName
 Organizations
-ORGhD39mVJrR70psHaCwaQpEayxTBbG42tivpnqDbkw5Y626WfEcyzfmWWxM3
 Orientation
 OrientationChanged
 OrientationConstraint
@@ -14596,7 +14597,6 @@ OutrageousBuildersClub
 OutsideStreamedArea
 OutTouches
 OutUnprepareHeader
-OV4dTBKOCRyINDQl8l0N
 OverAction
 OverallHitRate
 OverflowToken
@@ -15628,6 +15628,7 @@ PerformanceSendMeasurementAPISubdomain
 PerformanceStats
 PerformanceStatsVisible
 PerformanceStatsVisibleChanged
+PerformAssetDecryptionOnAnAsyncTask
 PerformAverage
 PerformPurchase
 PerformPurchaseAcceptsGamePassInfoType
@@ -16144,7 +16145,6 @@ PluginWidgetRelay
 PluginWidgetRelayForPluginGui
 PluginWriteTemp
 PlusButtonPressed
-PmaNsoIZMzXDlN3AojURcCAZy0
 POINT_SIZE
 PointBalanceCacheInvalidateTimeMs
 PointDataChanged
@@ -17030,7 +17030,6 @@ QEntityIconLoaded
 QEntityType
 QEventLoop
 QeYuIZ19oaUCFnjkmV3u
-QFGUjLqQ1pG8s6x2Pgi7hp
 QFileDevice
 QFileDialog
 QFileSystemWatcher
@@ -17043,7 +17042,6 @@ QFutureInterface
 QFutureInterfaceBase
 QFutureWatcher
 QFutureWatcherBase
-QGeKxYvlxk4iu7fC44MX
 QGenericArgument
 QGenericReturnArgument
 QGraphicsDropShadowEffect
@@ -17064,7 +17062,6 @@ QItemDelegate
 QItemSelection
 QItemSelectionModel
 QItemSelectionRange
-QIvyvCLntAbTYqnonc87
 QJsonArray
 QJsonDocument
 QJsonObject
@@ -17333,6 +17330,7 @@ QValidator
 QVariantAnimation
 QVBoxLayout
 QVersionNumber
+QvM97C1JHj9MY
 QWebElement
 QWebHitTestResult
 QWebSettings
@@ -17345,6 +17343,7 @@ QWheelEvent
 QWidgetAction
 QWidgetPluginGui
 QWidgetWindow
+QxdCNugDEP1uWIiTQlbSnYWrMB9oLsQfKw8IxvmKcTLQVt
 RadialBlurFS
 RagdollDefaultTimerTenthSecond
 RagdollEarlyExitTimeTenthSecond
@@ -17587,6 +17586,8 @@ RCCUnthrottledWorldStepRealTimePerc_Datacenter_
 RCCUpdateBroadphaseDtAverage
 RCCUpdateBroadphaseDtAverage_Datacenter_
 RcpReferenceTime
+RDb99mfgjLVsV5xpnz6I6vTOvRtP4fY6NRYUpM4v1oj4sX3VyZDqUELOp6yApf
+RdGsJa2HoBehHQneBbVBm
 ReachActorChest
 ReachActorChestRotation
 ReachActorHead
@@ -18729,7 +18730,6 @@ SA_NAEBVQUrl
 SA_NPEAVQObject
 SA_NPEAVQTranslator
 SA_NPEBUAbstractConverterFunction
-SA2nH7IbkZaWDaRqJv4OKmVkzIV2laZTTcQAnF9
 SafeZoneOffsetsChanged
 SafeZoneOffsetsInputWidget
 SAHAEBVQByteArray
@@ -23743,6 +23743,7 @@ TurnOnManualJointCreation
 TutorialId
 TutorialsDockAction
 TutorialWidgetBackground.png
+TUX4cCAwEAAQ
 TVijpW8m8aLsreZebWfEl5y9RFS7x6WZ555Z6MtZy
 TweenEasingDirection
 TweenEasingStyle
@@ -24534,7 +24535,6 @@ UUUUUUUUUUUUUUUU3333333333333333
 UVATAUAVAWH
 UVersionHistoryItem
 UVoxelImportInfo
-UVs0QBzYwbrfo2AHLOxj
 UVWATAUAVAW
 UVWATAUAVAWH
 UVWATAUAVD
@@ -26098,7 +26098,6 @@ XA_A^A]A\_^[]H
 XA_A^A]A\_^]
 XA_A^A]A\_^][
 XA_A^A]A\_^][H
-XA9YPYqYa2Q7UrrudOLGu
 XAEAVFormatUpdater
 XAEAVGraph
 XAEAVHttpClient
@@ -26290,16 +26289,14 @@ YAXPEAXPEBX
 YAXPEAXPEBX1
 YAXPEBVQObject
 YAXW4error_type
-YBeOIp5szu6LBVkb2RRj2alzM9bo5vji
 Ycircumflex
 Ydieresissmall
 YffYZefYDNNDCOO
 YieldEvent
 YieldFuncDesc
 YieldFunction
-YJ5lntd1VJGOQ2nQzNT9fSxBQt6MK5LlJWzh3zTZpd5wQ8eUaFstQ5
+YJL2dvkXXYEhwAuG28pecXAO
 YQByteArray
-YrD4rywGW3zPKEK
 YResolution
 YwBBvY55YvBBwY5
 Z_KPEIBX_K_KPEIAU1
@@ -26314,6 +26311,7 @@ ZoomActive
 ZoomOutDistance
 ZoomToExtents
 ZoomToHighlight
+ZoWbIkBas4Pf52U9wD6iRyJG8
 ZP6APEAX1PEBX
 ZP6AX1PEAX
 ZPEAVRBXMessageBox

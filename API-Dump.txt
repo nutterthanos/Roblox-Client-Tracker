@@ -2325,7 +2325,7 @@ Class PluginDragEvent : Instance [NotCreatable] [NotReplicated]
 	Property string PluginDragEvent.Sender  [ReadOnly] [NotReplicated]
 Class PluginGuiService : Instance [NotCreatable] [Service] [NotReplicated]
 Class PluginManager : Instance [NotCreatable]
-	Function Instance PluginManager:CreatePlugin() {PluginSecurity} [CustomLuaState]
+	Function Instance PluginManager:CreatePlugin() {PluginSecurity} [Deprecated] [CustomLuaState]
 	Function void PluginManager:ExportPlace(string filePath = "") {PluginSecurity}
 	Function void PluginManager:ExportSelection(string filePath = "") {PluginSecurity}
 Class PluginMenu : Instance [NotCreatable] [NotReplicated]
