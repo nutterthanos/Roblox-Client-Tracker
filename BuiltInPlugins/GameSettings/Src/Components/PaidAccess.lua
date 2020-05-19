@@ -41,7 +41,7 @@ function PaidAccess:render()
     local localization = props.Localization
 
     local title = localization:getText("Monetization", "TitlePaidAccess")
-    local price = props.Price
+    local price = props.Price and props.Price or 0
     local taxRate = props.TaxRate
     local minimumFee = props.MinimumFee
     local layoutOrder = props.LayoutOrder

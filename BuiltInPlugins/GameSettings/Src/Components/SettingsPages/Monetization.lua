@@ -150,7 +150,7 @@ local function displayMonetizationPage(props, localization)
 
     local vipServers = props.VIPServers
 
-    local devProducts = props.DevProducts
+    local devProducts = props.DevProducts and props.DevProducts or {}
     local devProductsForTable = convertDeveloperProductsForTable(devProducts)
 
     local paidAccessToggled = props.PaidAccessToggled
@@ -174,6 +174,11 @@ local function displayMonetizationPage(props, localization)
         priceError = localization:getText("Errors", priceErrors[props.PriceError], {errorValue})
     end
 
+    if not taxRate then
+        paidAccessEnabled = nil
+        vipServers.isEnabled = nil
+    end
+
     return {
         Header = Roact.createElement(Header, {
             Title = localization:getText("General", "Category"..PageName),
@@ -188,7 +193,7 @@ local function displayMonetizationPage(props, localization)
             PriceError = paidAccessEnabled and priceError or nil,
 
             LayoutOrder = layoutIndex:getNextOrder(),
-            Enabled = not vipServers.isEnabled,
+            Enabled = vipServers.isEnabled == false,
             Selected = paidAccessEnabled,
 
             OnPaidAccessToggle = paidAccessToggled,
@@ -203,7 +208,7 @@ local function displayMonetizationPage(props, localization)
             PriceError = vipServers.isEnabled and priceError or nil,
 
             LayoutOrder = layoutIndex:getNextOrder(),
-            Enabled = not paidAccessEnabled,
+            Enabled = paidAccessEnabled == false,
 
             OnVipServersToggled = vipServersToggled,
             OnVipServersPriceChanged = vipServersPriceChanged,

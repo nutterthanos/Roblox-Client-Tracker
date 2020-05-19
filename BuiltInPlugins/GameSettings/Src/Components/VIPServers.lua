@@ -57,7 +57,7 @@ function PaidAccess:render()
     local title = localization:getText("Monetization", "TitleVIPServers")
 
     local layoutOrder = props.LayoutOrder
-    local vipServersData = props.VIPServersData
+    local vipServersData = props.VIPServersData and props.VIPServersData or {}
 
     local enabled = props.Enabled
 
@@ -65,9 +65,9 @@ function PaidAccess:render()
     local minimumFee = props.MinimumFee
 
     local selected = vipServersData.isEnabled
-    local price =  vipServersData.price
-    local serversCount = vipServersData.activeServersCount
-    local subsCount = vipServersData.activeSubscriptionsCount
+    local price =  vipServersData.price and vipServersData.price or 0
+    local serversCount = vipServersData.activeServersCount and vipServersData.activeServersCount or 0
+    local subsCount = vipServersData.activeSubscriptionsCount and vipServersData.activeSubscriptionsCount or 0
 
     local onVipServersToggled = props.OnVipServersToggled
     local onVipServersPriceChanged = props.OnVipServersPriceChanged
