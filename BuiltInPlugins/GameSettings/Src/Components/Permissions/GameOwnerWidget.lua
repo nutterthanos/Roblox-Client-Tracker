@@ -9,7 +9,6 @@
 		bool Enabled - Whether the component is enabled or not
 ]]
 
-local FFlagStudioGameSettingsRestrictPermissions = game:GetFastFlag("StudioGameSettingsRestrictPermissions")
 local FFlagStudioConvertGameSettingsToDevFramework = game:GetFastFlag("StudioConvertGameSettingsToDevFramework")
 
 local Plugin = script.Parent.Parent.Parent.Parent
@@ -67,15 +66,6 @@ local function getGroupOwnerPermissions(props, localized)
 		Cryo.Dictionary.join({Key = PermissionsConstants.PlayKey, Display = playDisplayLabel, Description = playDescriptionLabel}),
 		Cryo.Dictionary.join({Key = PermissionsConstants.EditKey, Display = editDisplayLabel, Description = editDescriptionLabel}),
 	}
-	
-	if not FFlagStudioGameSettingsRestrictPermissions then
-		if props.GroupOwnerUserId and props.GroupOwnerUserId == props.StudioUserId then
-			permissions = Cryo.List.join(
-				permissions,
-				{{Key = PermissionsConstants.AdminKey, Display = adminDisplayLabel, Description = adminDescriptionLabel}}
-			)
-		end
-	end
 	
 	return permissions
 end

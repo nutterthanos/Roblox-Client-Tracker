@@ -47,7 +47,7 @@ function RobuxFeeBase:render()
 
     local layoutOrder = props.LayoutOrder
 
-    local feeText = localization:getText("Monetization", "FeeLabel")
+    local feeText = localization:getText("Monetization", "FeeLabel", {string.format("%2d", taxRate * 100)})
     local feeTextSize = GetTextSize(feeText, theme.fontStyle.Normal.TextSize, theme.fontStyle.Normal.Font)
 
     local feeAmount = string.format("%.f", tostring(math.max(minimumFee, math.ceil(price * taxRate))))

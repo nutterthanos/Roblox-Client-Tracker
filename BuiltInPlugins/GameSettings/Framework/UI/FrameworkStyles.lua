@@ -21,6 +21,7 @@ function FrameworkStyles.new()
 		-- UI Styles
 		Box = newDefaults(),
 		Button = newDefaults(),
+		DropShadow = newDefaults(),
 		Image = newDefaults(),
 
 		LoadingBar = newDefaults(),

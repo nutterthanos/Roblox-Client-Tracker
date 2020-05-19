@@ -73,7 +73,7 @@ function PaidAccess:render()
 
                     OnPriceChanged = onPaidAccessPriceChanged,
 
-                    Enabled = enabled,
+                    Enabled = selected,
                 }),
             },
         },

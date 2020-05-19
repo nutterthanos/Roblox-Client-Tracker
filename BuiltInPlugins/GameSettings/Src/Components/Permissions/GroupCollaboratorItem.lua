@@ -17,7 +17,6 @@
 		table Permissions - Permissions prop
 ]]
 
-local FFlagStudioGameSettingsRestrictPermissions = game:GetFastFlag("StudioGameSettingsRestrictPermissions")
 local FFlagStudioConvertGameSettingsToDevFramework = game:GetFastFlag("StudioConvertGameSettingsToDevFramework")
 
 local Plugin = script.Parent.Parent.Parent.Parent
@@ -67,11 +66,7 @@ local function getLabelForAction(localized, action)
 		elseif action == PermissionsConstants.EditKey then
 			return localized:getText("AccessPermissions", "EditLabel")
 		elseif action == PermissionsConstants.AdminKey then
-			if FFlagStudioGameSettingsRestrictPermissions then
-				return localized:getText("AccessPermissions", "EditLabel")
-			else
-				return localized:getText("AccessPermissions", "AdminLabel")
-			end
+			return localized:getText("AccessPermissions", "EditLabel")
 		else
 			return ""
 		end
@@ -83,11 +78,7 @@ local function getLabelForAction(localized, action)
 		elseif action == PermissionsConstants.EditKey then
 			return localized.AccessPermissions.ActionDropdown.EditLabel
 		elseif action == PermissionsConstants.AdminKey then
-			if FFlagStudioGameSettingsRestrictPermissions then
-				return localized.AccessPermissions.ActionDropdown.EditLabel
-			else
-				return localized.AccessPermissions.ActionDropdown.AdminLabel
-			end
+			return localized.AccessPermissions.ActionDropdown.EditLabel
 		else
 			return ""
 		end

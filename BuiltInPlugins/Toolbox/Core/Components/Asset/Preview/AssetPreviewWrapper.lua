@@ -14,6 +14,7 @@
 			preview to close it.
 ]]
 local FFlagEnableDefaultSortFix = game:GetFastFlag("EnableDefaultSortFix2")
+local FFlagUseCategoryNameInToolbox = game:GetFastFlag("UseCategoryNameInToolbox")
 
 local StudioService = game:GetService("StudioService")
 
@@ -75,7 +76,6 @@ local FFlagStudioHideSuccessDialogWhenFree = game:GetFastFlag("StudioHideSuccess
 local FFlagPluginAccessAndInstallationInStudio = settings():GetFFlag("PluginAccessAndInstallationInStudio")
 local FFlagStudioFixAssetPreviewTreeView = settings():GetFFlag("StudioFixAssetPreviewTreeView")
 local FFlagStudioToolboxEnabledDevFramework = game:GetFastFlag("StudioToolboxEnabledDevFramework")
-local FFlagEnableAudioPreview = settings():GetFFlag("EnableAudioPreview")
 local FFlagStudioFixAssetPreviewCloseButton = settings():GetFFlag("StudioFixAssetPreviewCloseButton")
 
 local FFlagToolboxUseNewAssetType = game:GetFastFlag("ToolboxUseNewAssetType")
@@ -348,7 +348,8 @@ function AssetPreviewWrapper:init(props)
 		local assetName = asset.Name
 		local assetTypeId = asset.TypeId
 
-		local categoryIndex = self.props.categoryIndex
+		local categoryIndex = (not FFlagUseCategoryNameInToolbox) and (self.props.categoryIndex)
+		local categoryName = self.props.categoryName
 
 		if FFlagStudioToolboxPluginPurchaseFlow then
 			local owned = self.props.Owned
@@ -366,13 +367,13 @@ function AssetPreviewWrapper:init(props)
 		end
 
 		local success = InsertAsset.tryInsert({
-			plugin = plugin,
 			assetId = assetId,
 			assetVersionId = assetVersionId,
 			assetName = assetName,
 			assetTypeId = assetTypeId,
-			currentTab = self.props.currentTab,
-			categoryIndex = FFlagEnableDefaultSortFix and categoryIndex or nil,
+			currentTab = (not FFlagUseCategoryNameInToolbox) and (self.props.currentTab),
+			categoryIndex = (not FFlagUseCategoryNameInToolbox) and (FFlagEnableDefaultSortFix and categoryIndex or nil),
+			categoryName = FFlagEnableDefaultSortFix and categoryName or nil,
 		})
 		if success then
 			self:setState({
@@ -498,7 +499,7 @@ function AssetPreviewWrapper:render()
 					MaxPreviewHeight = maxPreviewHeight,
 
 					AssetData = assetData,
-					PreviewModel = FFlagEnableAudioPreview and previewModel or nil,
+					PreviewModel = previewModel,
 					CurrentPreview = currentPreview,
 
 					ActionBarText = purchaseFlow.ActionBarText,
@@ -588,9 +589,10 @@ local function mapStateToProps(state, props)
 	local voting = state.voting or {}
 
 	local stateToProps = {
-		categoryIndex = FFlagEnableDefaultSortFix and (pageInfo.categoryIndex or 1) or nil,
+		categoryIndex =  (not FFlagUseCategoryNameInToolbox) and (FFlagEnableDefaultSortFix and (pageInfo.categoryIndex or 1) or nil),
+		categoryName = pageInfo.categoryName,
 		previewModel = previewModel or nil,
-		currentTab = pageInfo.currentTab or Category.MARKETPLACE_KEY,
+		currentTab =  (not FFlagUseCategoryNameInToolbox) and (pageInfo.currentTab or Category.MARKETPLACE_KEY),
 		assetVersionId = assetVersionId,
 		canManage = canManage,
 		previewPluginData = assets.previewPluginData,

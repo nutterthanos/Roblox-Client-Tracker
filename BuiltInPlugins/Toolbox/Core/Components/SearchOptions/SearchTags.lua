@@ -10,7 +10,6 @@
 			function Tags.onDelete(table tag) = A callback when the user wants to delete a tag.
 		function OnClearTags = A callback when the user wants to clear all tags.
 ]]
-local FFlagEnableAudioPreview = settings():GetFFlag("EnableAudioPreview")
 local FFlagStudioToolboxSearchOverflowFix = game:GetFastFlag("StudioToolboxSearchOverflowFix")
 
 local Plugin = script.Parent.Parent.Parent.Parent
@@ -30,26 +29,15 @@ local TEXT_PADDING = UDim.new(0, 3)
 local SearchTags = Roact.PureComponent:extend("SearchTags")
 
 function SearchTags:createTag(tag, index)
-	local name, prefix
-	if FFlagEnableAudioPreview then
-		name = tag.text
-		prefix = tag.prefix
-	else
-		name = tag
-	end
+	local name = tag.text
+	local prefix = tag.prefix
 
 	return Roact.createElement(SearchTag, {
 		Name = name,
 		LayoutOrder = index,
 		onDelete = function()
-			if FFlagEnableAudioPreview then
-				if tag.onDelete then
-					tag.onDelete(tag)
-				end
-			else
-				if self.props.onDeleteTag then
-					self.props.onDeleteTag(tag)
-				end
+			if tag.onDelete then
+				tag.onDelete(tag)
 			end
 		end,
 		prefix = prefix,

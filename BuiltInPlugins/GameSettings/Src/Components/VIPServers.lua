@@ -97,7 +97,7 @@ function PaidAccess:render()
                     MinimumFee = minimumFee,
                     SubText = subText,
 
-                    Enabled = enabled,
+                    Enabled = selected,
 
                     OnPriceChanged = onVipServersPriceChanged,
 
@@ -111,7 +111,11 @@ function PaidAccess:render()
 
                     LayoutOrder = layoutIndex:getNextOrder(),
                 }, {
-                    Subscriptions = Roact.createElement("TextLabel", Cryo.Dictionary.join(theme.fontStyle.Normal, {
+                    Subscriptions = Roact.createElement("TextLabel", {
+                        Font = theme.fontStyle.Normal.Font,
+                        TextSize = theme.fontStyle.Normal.TextSize,
+                        TextColor3 = selected and theme.fontStyle.Normal.TextColor3 or theme.fontStyle.Subtext.TextColor3,
+
                         Text = subscriptionsText,
                         Size = UDim2.new(1, 0, 0, theme.rowHeight),
                         BackgroundTransparency = 1,
@@ -121,9 +125,12 @@ function PaidAccess:render()
                         TextTransparency = transparency,
 
                         LayoutOrder = 1,
-                    })),
+                    }),
 
-                    TotalVIPServers = Roact.createElement("TextLabel", Cryo.Dictionary.join(theme.fontStyle.Normal, {
+                    TotalVIPServers = Roact.createElement("TextLabel", {
+                        Font = theme.fontStyle.Normal.Font,
+                        TextSize = theme.fontStyle.Normal.TextSize,
+                        TextColor3 = selected and theme.fontStyle.Normal.TextColor3 or theme.fontStyle.Subtext.TextColor3,
                         Text = totalVIPServersText,
                         Size = UDim2.new(1, 0, 0, theme.rowHeight),
                         BackgroundTransparency = 1,
@@ -133,7 +140,7 @@ function PaidAccess:render()
                         TextTransparency = transparency,
 
                         LayoutOrder = 2,
-                    })),
+                    }),
                 }),
             }
         },
