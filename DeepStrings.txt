@@ -406,7 +406,6 @@ AggregateInfo.Frames
 AggregateInfo.Time.toFixed
 AggrFrames
 Agravesmall
-AgRRYEGtRg9l31qUNFEiAay
 AHPEAU_iobuf
 AHPEAX1PEAPEAX
 AHW4DataStoreRequestType
@@ -4450,7 +4449,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405379
+ByVersion_0.434.0.405384
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -4673,7 +4672,6 @@ CategoryItem
 CategoryName
 CategorySelected
 CategoryString
-CATHhk50OdiJ
 CAtlExeModuleT
 CAtlModule
 CAtlModuleT
@@ -6516,7 +6514,6 @@ CSwitchThreads[ThreadId]
 CSwitchTime
 CSwitchTime.length
 CSwitchTime[i]
-CSWIwb8EE91TLLjjlxWo6qO7I9l9XL0qL8UdOcXUYirCzwUt0vo23m2O5ItL7
 CT_POLICY_EVAL_CTX_new
 CtctStageCtcts
 CTLOG_new_from_base64
@@ -8512,7 +8509,6 @@ EnableRoactAnimationEditor2
 EnableRobuxHexIcon
 EnableRobuxHexIconV2
 EnableSafeUpdateBeta
-EnableScaleIndependentBulletCollision5
 EnableScriptCollabByDefaultOnLoad
 EnableScriptCollabOnLoad
 EnableScriptCollabVersionHistoryOnLoad
@@ -8645,6 +8641,7 @@ EnvironmentSpecularScale
 EnviroSpeed
 EoOoZoaozo
 EphemeralCounter
+EQ25N4NtOYi38rvHslW5k
 EqualizerSoundEffect
 EquippedEmotes
 EquippedEmotesChanged
@@ -8693,6 +8690,7 @@ ESGamePerfMonitorUseRandomSelection
 ESocialService
 EstimateEmitterBBox
 Estrangelo
+ETerrainRaycastsRespectCollisionGroups
 EThrottleType
 EucrosiaUPC
 EulerAnglesXYZ
@@ -9357,6 +9355,7 @@ FlushMappedMemoryRanges
 FlushModifiedScriptsRetry
 FlyweightService
 FlyweightServiceDataRecievedCallbackCrashFixEnabled
+Fm7e6jjmWTbgXjli
 FMOD_CREATECOMPRESSEDSAMPLE
 FMOD_OPENMEMORY_POINT
 FMOD_OUTPUT_NOSOUND
@@ -9827,6 +9826,7 @@ GE_packagefolder.png
 GearAction
 GearGenreSetting
 GearVersionIds
+GeKGzZJCHXPjp9ouHRINxPNVMTV2bEFPiIyQuFgVAHoRGemfu5KUGA4gqDisPA93
 GenAlgorithm
 GenBuffers
 GenCryptgrm
@@ -10815,6 +10815,7 @@ GvEphfEUiHHoD6hYFI4xWGpAnIHcklKQCxrf46kAhDGeZnqIgeGszlGdWafunGE8
 GVKUTS[BXIWH\KbHi
 GXGfGkGpGuG
 GyroscopeEnabled
+GzKPZ18WsgfZC4Lb4HAmK2Cq9ZgkhPoOGBsCAwEAAQ
 H_Key_dn.png
 H_NAEBVQString
 H`CeIkHq7v4
@@ -11360,6 +11361,7 @@ IdeStateRestorationStatusChanged
 Idieresis.a
 Idieresissmall
 IDispatchImpl
+IdjMMDjFPT16egJtPFBJewZ9YsuCYNWTH61IomeewWhah5Uv1
 IdleAnimation
 IDocHostUIHandlerDispatch
 Idotaccent
@@ -12039,7 +12041,7 @@ IVRTrackedCamera_003
 IWebBrowser2
 IWorldStage
 IXMLHTTPRequest2
-IzyCiQ4KUKt8rsHcCAwEAAQ
+IxWOMClFeDvXLc9x
 J_Key_dn.png
 J_NW4CurrencyType
 JasmineUPC
@@ -12048,6 +12050,7 @@ JavaScript
 JavaScriptCallback
 Jba5qWkYU5nARYZm1gQVP
 Jcircumflex
+JDDb4z1qLAvJoTWo6qZq40tqQoPFA5xfjs
 JDJNJXJbJlJvJ
 JHJRJ\JfJpJxJ
 JHW4MembershipType
@@ -12055,10 +12058,10 @@ JIRA_RIDE_192
 JIRA_RIDE_630
 JIRA_RIDE_697
 JIRA_RIDE_711
-JIs3J2VywbIbMMHRjKXTvXIJnesQIsUENSLDZihOA9SzH3VBBKh44y4mY6s4mJ2L
 JJJBBB\\\xx
 JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
 JKLMNOPQRSTU
+Jo3PBEKR8WP048s5mGNoP
 JoinBlobInvalidateThresholdPercent
 JoinCommand
 JoinDataCacheCompressionImprovement
@@ -12206,13 +12209,11 @@ KickByDatacenter_
 KiDszBCYB0gyp03Pc
 KillPtClicked
 KillSurfaceJointsPart1
-KlAuDFCjT0Ar6vV6fZrOJditH
 KnownHeaders
 KodchiangUPC
 KPEAVICHull
 KPEIBX_K_KPEIAU_iobuf
 KVScriptContext
-KxXIlUVZkTTw12CIoYGnqW1vGpO6ocSjV6X6bl6fTLvtjIvJtujfZ7fdPjQO
 KYULPhCBFoD3mw5mygYqAeFlHdSL2k3MnDG
 LabelArray
 LabelArray.push
@@ -12470,6 +12471,7 @@ LevelChanged
 LevelItemCount
 LevelOfDetailSetting
 LevelQuality
+Li8fTouprvZ1bmArvsMd
 Liberation
 LIBOVR_DLL_DIR
 LibsodiumDRG
@@ -13530,7 +13532,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEA2IrWcXMTr
+MIICCgKCAgEA9oP6efsd8kUc2
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -13573,6 +13575,7 @@ MissingDumpFile
 MMW4IkDragCollisionsMode
 MMW4PartMaterial
 MMW4UserInputState
+MNrQbPVqcmnWxXaAxvhtY0Lq
 MobileDevelopmentDeployer
 MobileWebsite
 MockAndroidBackButtonPressed
@@ -13801,7 +13804,6 @@ Mtx_destroy_in_situ
 Mtx_init_in_situ
 Mtx_trylock
 Mtx_unlock
-MuKo0elK1EHzYf3DgTXl
 MULE_BASELINE_OFFSET
 MULE_RELATIVE_COMPOSE
 MultiByteToWideChar
@@ -14079,7 +14081,6 @@ NfXf`fhfzf
 NHDHVQChar
 NHVVariant
 NinjaMask.mesh
-Nn6dxnk9IUYAgiLz0zbWNttCZeCzUaSXLYveeAlq8NTzze0eda0t8dTfvGm
 NNW4SizeMode
 NoCacheForLocalContent
 NoCollisionConstraint
@@ -14407,6 +14408,7 @@ OnTeleportInternal
 OnTopOfCoreBlur
 OnUnhandledScriptErrorsAction
 OnUserABTestLoadingStatusChanged
+OOU3iFudAxb0D5JMBE922NQjP
 OpacityMask
 OpaqueUseMaterialAndDistanceSort
 OPEN_BUILDERS_CLUB
@@ -17069,6 +17071,7 @@ QListWidget
 QListWidgetItem
 QLocalServer
 QLocalSocket
+QLR9Hn6JUbED8JQHTyCb078rLHlb
 QMainWindow
 QMapDataBase
 QMapNodeBase
@@ -18712,7 +18715,9 @@ RunUpdateCycle.
 RVideoInternal
 RVideoMemLogging
 RVideoTrace
+RvOPRU2nGq3x
 RxRlReport
+RzXEpn70l1yYbDA7nHvlU0m4ARILGt3fKNJi7WlXneNvbgg6czdviaW26qdbQnQi
 S_Key_dn.png
 SA_KPEAPEBV123
 SA_KPEAPEBVfacet
@@ -19741,7 +19746,6 @@ SizeToTwoAction
 SizingMode
 SkateboardController
 SkateboardPlatform
-Skh0pPb5NoXOTX7TEeSpM1PZSW0aSfVRpHCC1MHIfs42e
 SkipFirstMechanismChangeReport
 Sky.SkyboxBk
 Sky.SkyboxDn
@@ -20384,7 +20388,6 @@ StringsInstanceCounters
 StringSyntax
 StringValue
 StrokeWidth
-StSgN6aPUgVpejqmaXkeg28qOryxywGIStkU0hcK7SS4OA8u2dsDMisf5F4DLGVg
 Studio.App
 Studio.App.
 Studio.App.AddEmulationDeviceDialog.BottomSafeZoneOffset
@@ -22554,6 +22557,7 @@ SUWATAUAWH
 SUWATAVAWH
 SUWAUAVAWH
 SVATAUAVAWH
+SvvN8OilifIjAvuoJV7HEx85q9kXjrzm92d
 SVWATAUAVAW
 SVWATAUAVAWH
 SVWATAUAVAWUH
@@ -22809,7 +22813,6 @@ TerrainPhysicsDataDeferredSquaredBudgetTimeMicroSec
 TerrainPhysicsDeferredSquaredTimerCheckInverse
 TerrainPrepare
 TerrainProgressUpdate
-TerrainRaycastsRespectCollisionGroups
 TerrainRegion
 TerrainReplicationUseLargerChunks
 TerrainSolid
@@ -22822,7 +22825,6 @@ TerrainToolsImproveColorImport
 TerrainToolsV2.rbxm
 TerrainToolsV2.rbxm_TerrainToolsLuaToolbarName
 TerrainToolsV2.rbxm_TerrainToolsLuaToolbarName_Editor
-TerrainUseClumpedPhysicsData
 TerrainVoxels
 TerrainWater
 TerrainWeldsFixed
@@ -23190,6 +23192,7 @@ TipTimer.stop
 TitleBarProgress
 TitlebarText
 TitleBarVisible
+Tjfb3v4iDtH1Lsoa4DhYHlDU8B4mVa3
 TJNLerU][Wr
 TLS_AES_128_CCM_8_SHA256
 TLS_AES_128_CCM_SHA256
@@ -23733,7 +23736,6 @@ TS_TST_INFO_set_time
 TS_TST_INFO_set_tsa
 TS_VERIFY_CTX_new
 TSMk2ThrottleStreamJob
-Tt1LyuipxAesUzcvTwn85lh2kvGp4XM8
 TTUUEDDsss
 TurboBuildersClub
 TurnOffAction
@@ -24015,7 +24017,6 @@ UINumTicks
 UIPageLayout
 UIQuadTree
 UIQuadTreeCellAreaMin
-UirUNAiHs9QOh2ppR0bmXRQkB4TBvcw4n
 Uis_continuation_if_running
 UISizeConstraint
 UITableLayout
@@ -24033,6 +24034,7 @@ UMasteringMetadata
 UMeshResource
 UMessageAndSenderId
 UMouseDownCaptureInfo
+UMxJw2v870znXBrW3rNLsj
 Unaccounted
 UnAnchorCursor
 UNASSIGNED_SYSTEM_ADDRESS
@@ -24533,7 +24535,6 @@ UUUUUUUUUUUa
 UUUUUUUUUUUUUU
 UUUUUUUUUUUUUUUU3333333333333333
 UVATAUAVAWH
-UVBOFWcRzwnz7
 UVersionHistoryItem
 UVoxelImportInfo
 UVWATAUAVAW
@@ -25730,7 +25731,6 @@ VWXYZ[\]^_`a
 VXmlElement
 VYieldFunctions
 VYieldFunctionStateObject
-VYLorM5ou8OsM4VPdNvESdF71C0zmSUleVu0
 W_Key_dn.png
 WaistAccessory
 WaistBack_Att
@@ -25804,7 +25804,6 @@ WaterViscosityDragFudgeFactor
 WaterWaveSize
 WaterWaveSpeed
 WaypointIdx
-WC5wN3m8XThRtJV7maRRmFKk
 WCharArray
 Wcircumflex
 WDU_Mbstatet
@@ -25899,6 +25898,7 @@ WGL_NV_vertex_array_range
 WGL_NV_video_capture
 WGL_NV_video_output
 WGL_OML_sync_control
+WgQjPKzplbV69bUXnQdO2FVacsLd3fiGxJa5
 WhatsNewAction
 WhatsNewFirstTimePopup.qml
 WhatsNewNumEntries
@@ -26259,6 +26259,7 @@ XZP8CRenderSettingsItem
 XZP8GuiObject
 XZP8PlayerGui
 XZP8ScrollingFrame
+XzqipjPHb3XoG2cJdLtDSIfXEFGd
 XZZyexQCL071UIVBQhYMgNB2TrXKT9o9bq8IpYJ
 YA_NAEBVQString
 YA_NHPEBE00
