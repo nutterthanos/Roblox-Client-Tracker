@@ -1962,6 +1962,7 @@ FFlagRenderDXT_KTX
 FFlagRenderEmitterRecomputeOnChange2
 FFlagRenderEnableDepthClamp
 FFlagRenderFixEmojiPadding
+FFlagRenderFixGrassUpdates
 FFlagRenderFixSun3TimesRender
 FFlagRenderFixTerrainAtlas
 FFlagRenderGetLastLODErrorFix
