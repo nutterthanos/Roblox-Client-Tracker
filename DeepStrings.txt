@@ -1098,7 +1098,6 @@ AURequireFinder
 AURequireTracer
 AUResponse
 AUResponseError
-AuRjlpwMXLIlUb115dMN5UyTdLVnPlIRZmUZ4Ebu
 AUscheduler_interface
 AUScriptPerformanceViewData
 AUshared_state_base
@@ -3860,6 +3859,7 @@ AXW4UiMessageType
 AXW4UserCFrame
 AXW4UserInputType
 AXW4VRTouchpad
+AYm7YDaq9J7qqmbHMWxCwLM43Ya1MNm
 BA447F42A91111E2B410EF351327957B
 BA886F11E18561866242201959
 BAA3C620681180838E23F0DC6224
@@ -4252,12 +4252,12 @@ BoxContainer
 BoxHandleAdornment
 BoxMappedMeshLODFix_v2
 BoxSelectCommand
+BP35sxPccm0O
 BPEAUIUnknown
 BPuVfD9B`uOfD9BpuH
 BQByteArray
 BQJsonValueRef
 BQPersistentModelIndex
-BqTpqn9PP3KcvqmXHI1vqlkVha3SSPS2LTElJSjDpS8IoIk1YYE0oKaQPa
 BranchIcon
 BreakGroup
 BreakJoints
@@ -4449,7 +4449,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405340
+ByVersion_0.434.0.405341
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -7587,7 +7587,6 @@ DH_new_method
 DHBasedMac
 DHParameters
 DHparams_print_fp
-DHSzxAHRRF95R2HGd2PntzZrmhAB0D
 DhufyEeFO7U33Tv7vk
 Diagnostic
 Diagnostics
@@ -8694,6 +8693,7 @@ ESGamePerfMonitorReportDetails
 ESGamePerfMonitorReportTimerInSeconds
 ESGamePerfMonitorUseRandomSelection
 ESocialService
+ESOgeAgoyzLZ72uInR
 EstimateEmitterBBox
 Estrangelo
 EThrottleType
@@ -9385,6 +9385,7 @@ FocusDistance
 FocusedDataModelSession
 FocusPolicy
 FocusProxy
+FoE2uF59uulbQ
 FogCoorddv
 FogCoordfv
 FogCoordPointer
@@ -9495,7 +9496,6 @@ FoundItems
 FoundThread
 FpFramebuffer
 FpsVariance
-FQ7yZ34GzG83gPiJM2APmHjmj1dlYvcW
 Fractional
 Frame_.frameend
 Frame_.frameendgpu
@@ -10921,7 +10921,6 @@ HB_OPTIONS
 HB_SHAPER_LIST
 HBRenderDXT_KTX
 Hcircumflex
-HCqVRgUPnRTP6NJ9NxIOZlO5A5bHyneI7nJwzDSeqwCaJbMR2qxPP3rLCeNBMV
 HDCacheLock
 HeadColor3
 HeaderCheckBoxClicked
@@ -11037,6 +11036,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\DellBackupandRecovery
 HKEY_PERFORMANCE_DATA
 HKEY_PERFORMANCE_NLSTEXT
 HKEY_PERFORMANCE_TEXT
+HKP26skOVSxpBXXIgTc8pWIhPFsbWdgTZ
 HMACGostR3411
 HomeClicked
 HomePageLoaded
@@ -11088,7 +11088,6 @@ HPEAVQAction
 HPEBDHW4CaseSensitivity
 HPEBDPEBDV
 HPEBVQMimeData
-HPvEabVC0dZY29xvR8lbL9Ki0
 HQEAPEAVQGraphicsItem
 HQFSShadowed
 HQVSShadowed
@@ -11405,6 +11404,7 @@ IgnoreLocaleInJoinScriptData
 IgnoreSSLErros
 IgnoreWater
 Igravesmall
+IHY54DcPb9kwwSGzRTiggLrESpAmI40
 IIAEBVInstanceIdentifier
 IID_IAMDirectSound
 IID_IAMLine21Decoder
@@ -11875,6 +11875,7 @@ InvokePreloadCallbackFromDMJob
 InvokeServer
 InWithTheNew
 IObjectWithSiteImpl
+IolIcedBnyjB
 IPAddrBlocks
 IPAddressChoice
 IPAddressFamily
@@ -12134,7 +12135,6 @@ JSONObject
 JSONOverflowAbort
 JSONOverflowDepth
 JUGroupRolesRequestRecord
-JuHk4Gn3oUWHDSJDkmMuYBlnR
 JumpAnimation
 JumpHeight
 JumpPowerInstantControllerMultiplierPercent
@@ -12216,6 +12216,7 @@ KnownHeaders
 KodchiangUPC
 KPEAVICHull
 KPEIBX_K_KPEIAU_iobuf
+KtZh2mEz0afSBvkdV5QNDyOKVDMiFRz
 KVScriptContext
 KYULPhCBFoD3mw5mygYqAeFlHdSL2k3MnDG
 LabelArray
@@ -12537,7 +12538,6 @@ LiveScript
 LiveThreadRef
 LivingRoom
 LLEo6Soxvx2
-LnHL1uszz5izqML0Uj7EtZnoHAawUCLkFB7GrjttzPOsmh5tO8kLRw
 LOAD_CERT_CTRL
 LoadAnimation
 LoadAssetVersion
@@ -12903,7 +12903,6 @@ LuauTypeInferTypePackLoopLimit
 LuauWarnOnUtf8
 LuauWatchdog
 LuaWebService
-Lv3RjiWPwpvwt5t4Uk
 LVvuOx39]O
 M_NVWeakFunctionRef
 MachineAddress
@@ -13537,7 +13536,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEAwLQpd3Bzk
+MIICCgKCAgEAsjE28HnAdPpYZt3m0wSFrimx1h3g94YebbQvhR9
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -13572,7 +13571,6 @@ MinuterIntervalOnTimer
 MinutesAfterMidnight
 MinuteTimer
 MinWidthPan
-MIoe8JPlGBcCd9bV57GENDTjXGrHj60Sxtn6kdv1rSkfnLI9qZdTyAwGVu
 MirrorMode
 Miscellaneous
 Mismatched
@@ -14223,6 +14221,7 @@ NVWorkspace
 NW4FileSystemDir
 NW4PenStyle
 NW4UserInputType
+NW6fX3LDTpWQ6a1SsM2UNA8pA9NHnQHEIDASBW7QOC7LK3i8uz
 Oacutesmall
 OAEPEncryptionSET
 OAUTHBEARER
@@ -14347,6 +14346,7 @@ OgreWidgetForGameState
 OgreWidgetShowEvent
 Oh44\h44\Q
 Ohungarumlaut
+Oi7GaRDoLYDjR
 OiCCPPhotoshop
 OldActiveElement
 OldMessagesFetched
@@ -14356,6 +14356,7 @@ OLEAUT32.dll
 OleInitialize
 OleLockRunning
 OleUninitialize
+OM085Ys6tydtud5rOQOkgQb8CAwEAAQ
 OnAllScriptErrorsAction
 OnBadgeAwarded
 OnboardingsCompleted
@@ -17058,6 +17059,7 @@ QHostAddress
 QHoverEvent
 QInputDialog
 QIntValidator
+QIrQj5Rhm0UboZ6lnZ06cDcya4IVgA
 QItemDelegate
 QItemSelection
 QItemSelectionModel
@@ -17067,6 +17069,7 @@ QJsonDocument
 QJsonObject
 QJsonValue
 QJsonValueRef
+QJwzZ3NWS84jNwK
 QKeySequence
 QLayoutItem
 QLinearGradient
@@ -17330,7 +17333,6 @@ QValidator
 QVariantAnimation
 QVBoxLayout
 QVersionNumber
-QvM97C1JHj9MY
 QWebElement
 QWebHitTestResult
 QWebSettings
@@ -17343,7 +17345,6 @@ QWheelEvent
 QWidgetAction
 QWidgetPluginGui
 QWidgetWindow
-QxdCNugDEP1uWIiTQlbSnYWrMB9oLsQfKw8IxvmKcTLQVt
 RadialBlurFS
 RagdollDefaultTimerTenthSecond
 RagdollEarlyExitTimeTenthSecond
@@ -17586,8 +17587,6 @@ RCCUnthrottledWorldStepRealTimePerc_Datacenter_
 RCCUpdateBroadphaseDtAverage
 RCCUpdateBroadphaseDtAverage_Datacenter_
 RcpReferenceTime
-RDb99mfgjLVsV5xpnz6I6vTOvRtP4fY6NRYUpM4v1oj4sX3VyZDqUELOp6yApf
-RdGsJa2HoBehHQneBbVBm
 ReachActorChest
 ReachActorChestRotation
 ReachActorHead
@@ -18475,6 +18474,7 @@ RigidBodyLazyUpdating
 RigidityEnabled
 RiseVelocity
 Rj0isQcnqX
+RlZW3q4d1xBMtFW00LvvhlHJl5i7JjUBvx0LDFvbTbIlbYXDtH
 Roact.createElement
 ROBLOSECURITY
 Roblox.Hybrid
@@ -23743,7 +23743,6 @@ TurnOnManualJointCreation
 TutorialId
 TutorialsDockAction
 TutorialWidgetBackground.png
-TUX4cCAwEAAQ
 TVijpW8m8aLsreZebWfEl5y9RFS7x6WZ555Z6MtZy
 TweenEasingDirection
 TweenEasingStyle
@@ -24305,6 +24304,7 @@ UProjection
 Uproxy_data
 UpSampleTentFS
 UPublishDiagnosticsNotification
+UQbDaBNp6CgemiyJG9Xegwl71uNrnw1ZdbnnXlBOwA3DFmQTGr4m
 UQByteArrayDataPtr
 UQLatin1Char
 UQMetaObject
@@ -25727,6 +25727,7 @@ Vwspp_callback_client
 VWSUATAUAVAW
 VWXYZ[\]^_`a
 VXmlElement
+VyChSuNPlFEvy0sja0hmZOsG5OCo
 VYieldFunctions
 VYieldFunctionStateObject
 W_Key_dn.png
@@ -26295,9 +26296,9 @@ YffYZefYDNNDCOO
 YieldEvent
 YieldFuncDesc
 YieldFunction
-YJL2dvkXXYEhwAuG28pecXAO
 YQByteArray
 YResolution
+YRYl1wMqurT9UImmkAedCn2S
 YwBBvY55YvBBwY5
 Z_KPEIBX_K_KPEIAU1
 Zcaronsmall
@@ -26311,10 +26312,10 @@ ZoomActive
 ZoomOutDistance
 ZoomToExtents
 ZoomToHighlight
-ZoWbIkBas4Pf52U9wD6iRyJG8
 ZP6APEAX1PEBX
 ZP6AX1PEAX
 ZPEAVRBXMessageBox
+ZqeObRIM5iVzSA4QmVaZJw
 ZRZZZbZt[.[
 ZVspecial_equipped_signal
 ZVTouchedSignal
