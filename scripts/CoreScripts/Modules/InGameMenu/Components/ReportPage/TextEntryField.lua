@@ -205,6 +205,7 @@ function TextEntryField:render()
 				Size = UDim2.new(1, 0, 0, 32),
 				SliceCenter = FFlagFixInGameMenuMissingAssets and Rect.new(halfImageWidth - 1, 0, halfImageWidth + 1, 1)
 					or Assets.Images.BottomRoundedRect.SliceCenter,
+				SliceScale = FFlagFixInGameMenuMissingAssets and 1 / Images.ImagesResolutionScale or nil,
 				ImageRectSize = FFlagFixInGameMenuMissingAssets and Vector2.new(imageWidth, halfImageWidth) or nil,
 				ImageRectOffset = FFlagFixInGameMenuMissingAssets and (imageOffset + Vector2.new(0, halfImageWidth)) or nil,
 			}, {
