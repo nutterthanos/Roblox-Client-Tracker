@@ -257,8 +257,9 @@ Studio.GameSettings.Places.MaximumWarning,Choosing this option could cause you t
 Studio.GameSettings.Places.CustomizeSlotsTitle,Customize Reserved Server Slots, ,Customize Reserved Server Slots
 Studio.GameSettings.Places.CustomizeSlotsDescription,Friends are more likely to join players in your game if you reserve slots., ,Friends are more likely to join players in your game if you reserve slots.
 Studio.GameSettings.Places.VersionHistory,Version History, ,Version History
+Studio.GameSettings.Places.NumberError,Please enter a number betwen {minRange:int} and {maxRange:int}., ,Please enter a number betwen {minRange:int} and {maxRange:int}.
 Studio.GameSettings.General.CategoryMonetization,Monetization, ,Monetization
-Studio.GameSettings.Monetization.FeeLabel,30% Fee:, ,30% Fee:
+Studio.GameSettings.Monetization.FeeLabel,{1}% Fee:, ,{1}% Fee:
 Studio.GameSettings.Monetization.TitlePaidAccess,Paid Access, ,Paid Access
 Studio.GameSettings.Monetization.TitleVIPServers,VIP Servers, ,VIP Servers
 Studio.GameSettings.Monetization.Price,Price:, ,Price:
@@ -273,3 +274,6 @@ Studio.GameSettings.Monetization.ProductIcon,Product Icon, ,Product Icon
 Studio.GameSettings.Monetization.PriceTitle,Price, ,Price
 Studio.GameSettings.Monetization.EditDeveloperProduct,Edit Developer Product, ,Edit Developer Product
 Studio.GameSettings.Monetization.DevProducts,Developer Products, ,Developer Products
+Studio.GameSettings.Errors.ErrorPriceBelowMin,Price must be greater than {1}., ,Price must be greater than {1}.
+Studio.GameSettings.Errors.ErrorPriceAboveMax,Price must be less than {1}., ,Price must be less than {1}.
+Studio.GameSettings.Errors.ErrorPriceInvalid,Enter a valid price (e.g. 1000), ,Enter a valid price (e.g. 1000)

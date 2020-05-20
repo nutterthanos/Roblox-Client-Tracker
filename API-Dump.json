@@ -853,6 +853,39 @@
                 },
                 {
                     "MemberType": "Function",
+                    "Name": "GetBrowserTrackerABTestLoadingStatus",
+                    "Parameters": [
+                    ],
+                    "ReturnType": {
+                        "Category": "Enum",
+                        "Name": "ABTestLoadingStatus"
+                    },
+                    "Security": "LocalUserSecurity"
+                },
+                {
+                    "MemberType": "Function",
+                    "Name": "GetPendingOrInitializedUserId",
+                    "Parameters": [
+                    ],
+                    "ReturnType": {
+                        "Category": "Primitive",
+                        "Name": "int64"
+                    },
+                    "Security": "LocalUserSecurity"
+                },
+                {
+                    "MemberType": "Function",
+                    "Name": "GetUserABTestLoadingStatus",
+                    "Parameters": [
+                    ],
+                    "ReturnType": {
+                        "Category": "Enum",
+                        "Name": "ABTestLoadingStatus"
+                    },
+                    "Security": "LocalUserSecurity"
+                },
+                {
+                    "MemberType": "Function",
                     "Name": "GetVariant",
                     "Parameters": [
                         {
@@ -914,6 +947,41 @@
                     "Tags": [
                         "Yields"
                     ]
+                },
+                {
+                    "MemberType": "Event",
+                    "Name": "OnBrowserTrackerABTestLoadingStatusChanged",
+                    "Parameters": [
+                        {
+                            "Name": "status",
+                            "Type": {
+                                "Category": "Enum",
+                                "Name": "ABTestLoadingStatus"
+                            }
+                        }
+                    ],
+                    "Security": "LocalUserSecurity"
+                },
+                {
+                    "MemberType": "Event",
+                    "Name": "OnUserABTestLoadingStatusChanged",
+                    "Parameters": [
+                        {
+                            "Name": "status",
+                            "Type": {
+                                "Category": "Enum",
+                                "Name": "ABTestLoadingStatus"
+                            }
+                        },
+                        {
+                            "Name": "userId",
+                            "Type": {
+                                "Category": "Primitive",
+                                "Name": "int64"
+                            }
+                        }
+                    ],
+                    "Security": "LocalUserSecurity"
                 }
             ],
             "MemoryCategory": "Instances",
@@ -34968,6 +35036,32 @@
             "Members": [
                 {
                     "MemberType": "Function",
+                    "Name": "ArePartsTouchingOthers",
+                    "Parameters": [
+                        {
+                            "Name": "partList",
+                            "Type": {
+                                "Category": "DataType",
+                                "Name": "Objects"
+                            }
+                        },
+                        {
+                            "Default": "0.000199999995",
+                            "Name": "overlapIgnored",
+                            "Type": {
+                                "Category": "Primitive",
+                                "Name": "float"
+                            }
+                        }
+                    ],
+                    "ReturnType": {
+                        "Category": "Primitive",
+                        "Name": "bool"
+                    },
+                    "Security": "None"
+                },
+                {
+                    "MemberType": "Function",
                     "Name": "FindPartOnRay",
                     "Parameters": [
                         {
@@ -41926,6 +42020,7 @@
                     },
                     "Security": "PluginSecurity",
                     "Tags": [
+                        "Deprecated",
                         "CustomLuaState"
                     ]
                 },
@@ -60508,6 +60603,35 @@
         }
     ],
     "Enums": [
+        {
+            "Items": [
+                {
+                    "Name": "None",
+                    "Value": 0
+                },
+                {
+                    "Name": "Pending",
+                    "Value": 1
+                },
+                {
+                    "Name": "Initialized",
+                    "Value": 2
+                },
+                {
+                    "Name": "Error",
+                    "Value": 3
+                },
+                {
+                    "Name": "TimedOut",
+                    "Value": 4
+                },
+                {
+                    "Name": "ShutOff",
+                    "Value": 5
+                }
+            ],
+            "Name": "ABTestLoadingStatus"
+        },
         {
             "Items": [
                 {
