@@ -1741,7 +1741,9 @@ Studio.App.RobloxMouseConfig.RightClickAlt,,Right Click + Alt,Right Click + Alt
 Studio.App.RobloxMouseConfig.RightClickCtrl,,Right Click + Ctrl,Right Click + Ctrl
 Studio.App.RobloxMouseConfig.RightClickShift,,Right Click + Shift,Right Click + Shift
 Studio.App.RobloxOutputRibbonDropdown.All,,All,All
+Studio.App.RobloxOutputRibbonDropdown.AllMessages,,All Messages,All Messages
 Studio.App.RobloxOutputRibbonDropdown.Client,,Client,Client
+Studio.App.RobloxOutputRibbonDropdown.Context,,Context,Context
 Studio.App.RobloxOutputRibbonDropdown.CopyFullContext,,Copy Full Context,Copy Full Context
 Studio.App.RobloxOutputRibbonDropdown.Edit,,Edit,Edit
 Studio.App.RobloxOutputRibbonDropdown.Error,,Error,Error

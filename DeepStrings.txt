@@ -241,6 +241,7 @@ AddSeparator
 AddSpecialKey
 AddSubPose
 AddToBlockList
+AdFlHEijunq5lLy
 Adieresissmall
 Adjustment
 AdjustSpeed
@@ -410,8 +411,6 @@ AHPEAU_iobuf
 AHPEAX1PEAPEAX
 AHW4DataStoreRequestType
 AHW4UserInputType
-Ai2PDeZBhxBSHqObSmYr1jdTK6
-AK1y1Z3FXo8yiZ5QL7WS
 Algorithms
 AliasRequestResult
 ALIGN_TYPE
@@ -426,6 +425,7 @@ AllBreakpointsStateAction
 AllButtonPressed
 AllCanSelect
 AllChannels
+AllClicked
 AllClients
 AllColumnsShowFocus
 AllDefaults
@@ -2148,6 +2148,7 @@ AVGamePassService
 AVGameSettings
 AVGamesPageController
 AVGamesPageModel
+AVGameStateTypeTableUserData
 AVGameTool
 AVgeneric_error_category
 AVGenericJob
@@ -2546,6 +2547,7 @@ AVMeshUploadRequest
 AVMeshWebFactory
 AVMessageStream
 AVMessageStreamDecorator
+AVMessageTypeTableUserData
 AVMessagingService
 AVMessagingServiceAnalysisJob
 AVMetadataParseException
@@ -2636,7 +2638,6 @@ AVout_of_range
 AVOutfitChangedSignalData
 AVOutputEmulated
 AVOutputSoftware
-AVOutputTableUserData
 AVoverflow_error
 AVOverridePropertyItem
 AVPackageLink
@@ -3553,6 +3554,7 @@ AVValueBase
 AVvariables_map
 AVVariablesModel
 AVVariablesTreeWidget
+AVVariantTableUserData
 AVVarIntParser
 AVVector2PropertyItem
 AVVector3int16
@@ -4165,7 +4167,6 @@ BlueValues
 BlurAxisXYZScratch
 BlurEffect
 BlurRadius
-BlVjfkowgczhOKvhtL3yznWykMXnjWgK0dd
 BN_BLINDING_convert_ex
 BN_BLINDING_create_param
 BN_BLINDING_invert_ex
@@ -4452,7 +4453,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405423
+ByVersion_0.434.0.405437
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -4690,7 +4691,6 @@ CB27CB58AAF011E38B9D871882A8E559
 CB27CB59AAF011E38B9D871882A8E559
 CB27CB5CAAF011E38B9D871882A8E559
 CB583B11E29A3DBD856014A660
-CBAWkrtC9bWaB
 CBUGroupRolesResult
 CBUHttpTarget
 CBUPathData
@@ -4785,6 +4785,7 @@ CFrame.new
 CFrameDecal
 CFrameOnly
 CFrameValue
+CghObYS1awP1TErs3
 ChainCAFile
 ChainCAPath
 Chalkboard
@@ -6918,6 +6919,7 @@ DD71FC886F11E18561866242201959
 DD71FD886F11E18561866242201959
 DD7204886F11E18561866242201959
 DD7205886F11E18561866242201959
+DDD0nn1t4wgpVSmRA
 DDDE3BCA91511E2B410EF351327957B
 DDDE3BFA91511E2B410EF351327957B
 DDDE3C0A91511E2B410EF351327957B
@@ -8336,10 +8338,9 @@ EffectBoundings
 EffectiveRetryCount
 EFrontVector
 Egravesmall
+Ehc1BcaE3ezRqjUhs7KuidhfDca9G
 EHERE\EfEpEzE
-EjMnlHlFmHBfLUk8BN1dokeS8Yk4WCX0
 EJTU\^bcfguw
-EKZNMBVPRml2XkgY5RS468ioipCaOR7IeaMGU2A9VSYSW0AjQHbLKH579Gs7E9YY
 ElapsedSeconds
 ElapsedTime
 ElasticBehavior
@@ -9496,6 +9497,7 @@ ForwardRefCheckMegaReplicator
 ForwardScroll
 FoundItems
 FoundThread
+FOx9HE1swwfw6qriBXI9XM3i6fy8eDYkEcR4gSbN5zxLiSr
 FpFramebuffer
 FpsVariance
 Fractional
@@ -10613,6 +10615,7 @@ GlobalUniverse17sIds
 GlobalUnlock
 GlobalUsedAsLocal
 GlobalUsers.GameSorts.GameGrid
+GlobalUsers.GameSorts.GameGridV2
 GLSL.std.450
 Glsles3Mediump1
 GlslesMediump1
@@ -11038,6 +11041,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\DellBackupandRecovery
 HKEY_PERFORMANCE_DATA
 HKEY_PERFORMANCE_NLSTEXT
 HKEY_PERFORMANCE_TEXT
+HKrbyORLgWpZmD8ugQFQrhnN80
 HMACGostR3411
 HomeClicked
 HomePageLoaded
@@ -11089,10 +11093,10 @@ HPEAVQAction
 HPEBDHW4CaseSensitivity
 HPEBDPEBDV
 HPEBVQMimeData
+HpWImoGI6GGj6XAzEZYu9hUyTW7ovDOj
 HQEAPEAVQGraphicsItem
 HQFSShadowed
 HQVSShadowed
-HRWmM3Mo2XTBDCBO0iGJ6WS
 HtmlEscaped
 HTTPAccumulatedBytes
 HttpAdditionalBandwidthMetrics
@@ -11327,6 +11331,7 @@ HW4PacketPriority
 HwngSmldAskhBcraMaweNegsOgnaT
 HWYGOTH.ttf
 HybridEvent
+HzV6Fd7Dp6f4mWnPTRV6hR7R1QYd
 Iacutesmall
 IAutocompleter
 IBusyStateModel
@@ -12214,7 +12219,6 @@ KiDszBCYB0gyp03Pc
 KillPtClicked
 KillSurfaceJointsPart1
 KnownHeaders
-KnqFUVeo14POvx
 KodchiangUPC
 KPEAVICHull
 KPEIBX_K_KPEIAU_iobuf
@@ -12501,6 +12505,7 @@ LimitedByCongestionControl
 LimitedByOutgoingBandwidthLimit
 LimitReplicatorState
 LimitsEnabled
+LineAppended
 LinearizeDepthAAFS
 LinearizeDepthFS
 LinearSquare
@@ -12538,6 +12543,7 @@ LiveCoding
 LiveScript
 LiveThreadRef
 LivingRoom
+LK4inQbwshxrU0zi2Is0UGDrJ01vncKvi3VWbQzy5UCGGsheLo3Hcqo0JGGM6GXu
 LLEo6Soxvx2
 LOAD_CERT_CTRL
 LoadAnimation
@@ -13536,7 +13542,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEAuNzwq02OieWcwXzEASWrtZkgyHNqHG3je8qNyCLYm5g1xvDJAtBs
+MIICCgKCAgEApT0s4
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -13576,6 +13582,7 @@ Miscellaneous
 Mismatched
 MissingCoreScript
 MissingDumpFile
+Ml8hr1byPfpN04B
 MMW4IkDragCollisionsMode
 MMW4PartMaterial
 MMW4UserInputState
@@ -13799,7 +13806,6 @@ MsgWaitForMultipleObjectsEx
 MsToScreen
 MSVCP140.dll
 MSWSOCK.dll
-MSX4rnVnO3FRGgedXtqM40hr
 MTU_Country_
 MTU_Platform_
 Mtx_current_owns
@@ -14355,7 +14361,6 @@ OLEAUT32.dll
 OleInitialize
 OleLockRunning
 OleUninitialize
-OlniMDGVFKyJrc1bLbkVp2cRcAyxZE5uSVMuxCOH6KPK0Fax27
 OnAllScriptErrorsAction
 OnBadgeAwarded
 OnboardingsCompleted
@@ -14495,7 +14500,6 @@ OptionsMenu
 OptionState
 OPUS_ARCHMASK
 OpusCustomMode
-OQZLnSuAHmpU0cwRmQb
 OrCharacter
 OrCreateFileSyncItemClient
 OrderArray
@@ -14520,6 +14524,7 @@ OriginalDocumentID
 OriginalPosition
 OriginalSize
 OrIncrementCounterForOutputText
+ORizhivlQ5w6ZyT38zEng9YaptgxfJymNAP1MHx6T
 OrProvinceName
 OS.Authentication.LuaLoginAndSignup3
 OscillateMotor
@@ -14615,8 +14620,8 @@ OverrideSendRakNetStatsThrottleCountries
 OverrideStarterScript
 OverrideToMyBranch
 OverwriteMode
+OvHZgFH6LnuJ
 OwnProperty
-OwosqUA5lVAaWd
 Ozs8xYCf2Q05p4gHyX
 PA^A]A\_^]
 PA^A]A\_^][
@@ -14671,6 +14676,7 @@ PackageRequestWebCopyStart
 PackageResourceMenu
 PackageRootObject
 Packages_AutoUpdateLength_
+PackageSavedTime
 PackageService
 PackagesService
 PackageUtilities
@@ -16590,7 +16596,6 @@ QDebuggerClient
 QDesktopServices
 QDesktopWidget
 QDialogButtonBox
-QdnUFYMCroWjhLfPJfCNkJSgayiWttDYsxmDlF26thPpvzHc
 QDockWidget
 QDomDocument
 QDomElement
@@ -17346,6 +17351,8 @@ QWheelEvent
 QWidgetAction
 QWidgetPluginGui
 QWidgetWindow
+QyLq5xv16CPwUMWNp53oBt3Ttwg1dKdnriKttOJxKem4S4q4
+RaA4WF7KAgQFQIHOonaPYe4S8raTIzY0hzT395VQHfFZGCUEeBxaYvrkMLOYyHP
 RadialBlurFS
 RagdollDefaultTimerTenthSecond
 RagdollEarlyExitTimeTenthSecond
@@ -17927,6 +17934,7 @@ RENAME_ABTEST_AllUsers_LuaChat_ShareGameToChatFromChat
 RENAME_ABTEST_Android_Authentication_LuaLoginAndSignup3
 RENAME_ABTEST_Avatar_Experience_Landing_Page
 RENAME_ABTEST_GlobalUsers_GameSorts_GameGrid
+RENAME_ABTEST_GlobalUsers_GameSorts_GameGridV2
 RENAME_ABTEST_InGameMenuABTestName
 RENAME_ABTEST_iOS_Authentication_LuaLoginAndSignup3
 RenameAlias
@@ -18475,6 +18483,7 @@ RigidBodyLazyUpdating
 RigidityEnabled
 RiseVelocity
 Rj0isQcnqX
+RlZOwn0u6ngFbfvTMoprKM7R9dLZJQ0enULXMvw4eTCy9ptBRks9870CAwEAAQ
 Roact.createElement
 ROBLOSECURITY
 Roblox.Hybrid
@@ -18645,6 +18654,7 @@ RowStretch
 RPCServers
 RRReceiptFail
 RRReceiptTotal
+RrRxGTxYcU
 RSA_check_key
 RSA_check_key_ex
 RSA_meth_dup
@@ -19510,7 +19520,6 @@ SetWindowLongPtrA
 SetWindowPos
 SetWindowsHookExA
 SetWindowTextA
-SgbaBX7WB6UfGzAbnThqLA4sbf0CAwEAAQ
 ShaderManagerHotloadsShadersInStudio
 ShaderSource
 ShadingLanguage
@@ -19987,6 +19996,7 @@ Src.YBegin
 SrcPlaceId
 SrcUniverseId
 SRGBToLinearFS
+Srkof0QPmLb
 SRTP_AEAD_AES_128_GCM
 SRTP_AEAD_AES_256_GCM
 SRTP_AES128_CM_SHA1_32
@@ -21474,7 +21484,9 @@ Studio.App.RobloxMouseConfig.RightClickAlt
 Studio.App.RobloxMouseConfig.RightClickCtrl
 Studio.App.RobloxMouseConfig.RightClickShift
 Studio.App.RobloxOutputRibbonDropdown.All
+Studio.App.RobloxOutputRibbonDropdown.AllMessages
 Studio.App.RobloxOutputRibbonDropdown.Client
+Studio.App.RobloxOutputRibbonDropdown.Context
 Studio.App.RobloxOutputRibbonDropdown.CopyFullContext
 Studio.App.RobloxOutputRibbonDropdown.Edit
 Studio.App.RobloxOutputRibbonDropdown.Error
@@ -21915,7 +21927,6 @@ StudioAddMonetizationToGameSettings
 StudioAddResetDefaultInstanceProperties
 StudioAddSetAsDefaultContextMenuOption
 StudioAddTeamCreateDisconnectionLogs
-StudioAllowCorePackagesAndStarterScriptDebugOnStart
 StudioAllowCoreScriptReloads2
 StudioAlwaysSaveLocalPluginAsRbxm
 StudioAnalytics
@@ -22694,6 +22705,7 @@ TattletaleShuffleCount
 TattletaleUseNewWordListFeatures
 TattletaleUseOriginalWordList
 TattletaleUseStrstr
+TbWgJSAEwzQGTXi1y
 Tcommaaccent
 TCP_NODELAY
 TeamCreate
@@ -24810,6 +24822,7 @@ VDetachedSoundPlayback
 VDeveloperProductResourceController
 VDialogChoice
 VDialogRoot
+VDIaPYaX7ezLQJbAk9Jz4
 VDiffProcessor
 VDistortionSoundEffect
 VDockWidgetPluginGui
@@ -25682,7 +25695,6 @@ VUserService
 VUserStorage
 VUVUVUVUVUVU
 VUVUVUVUVUVUVUVUVUVUVUVUVUVU
-Vv5nuSyHrsVQTroC48vCEHGFi
 Vvalidation_error
 VValueBase
 Vvariable_value
@@ -26026,6 +26038,7 @@ WithSHA384
 WithSHA512
 WM_ATLGETCONTROL
 WM_ATLGETHOST
+Wm1rAzj2QIQKM
 WMCreateProfileManager
 WMCreateSyncReader
 Wmvcore.dll
@@ -26131,7 +26144,6 @@ XboxSaleAvatarPackageIds
 XboxUseCuratedGameSort2
 XboxUseNewValidUsernameCheck2
 XFbxAMatrix
-XfqBajJVpEvnGBUyi2xbrTnyXsgPuSbrKuZ3egk6iXZJFgGoX4QftgpNVvxqe7Q4
 XFREE86_GLYPH_RANGES
 XGetLastError
 XHW4Status_e
@@ -26140,7 +26152,6 @@ XInputGetCapabilities
 XInputGetState
 XInputSetState
 Xinvalid_argument
-XItNZKIlgLVK
 Xlength_error
 Xout_of_range
 XP6AXAEBUTextFilterResult
@@ -26170,7 +26181,6 @@ XQColorDialog
 Xregex_error
 XResolution
 Xtime_get_ticks
-XtrmmIvRcBXrAQ
 XUnegotiation_response
 XvAAuY44YuAAvX4
 XVAddImageDialog
@@ -26295,14 +26305,12 @@ YAXPEAXPEBX
 YAXPEAXPEBX1
 YAXPEBVQObject
 YAXW4error_type
-YBnJk7iMBw2
 Ycircumflex
 Ydieresissmall
 YffYZefYDNNDCOO
 YieldEvent
 YieldFuncDesc
 YieldFunction
-YnJC0P5vgzuwR2T8h7TR9x7
 YQByteArray
 YResolution
 YwBBvY55YvBBwY5
