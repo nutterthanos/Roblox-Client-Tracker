@@ -6171,7 +6171,7 @@ cebaeb9da972cef0628725146652a648
 ExtraContent\LuaPackages\AppTempCommon\LuaApp\Style\Themes\getThemeFromName.spec.lua
 23383b0eb25fb60f6352ec8a963de8d3
 ExtraContent\LuaPackages\AppTempCommon\LuaApp\Style\Themes\LightTheme.lua
-429e7ffa98ce929371f03e6d8e2e7305
+9a6780ae0eb2af67e4955da0ca30895c
 ExtraContent\LuaPackages\AppTempCommon\LuaApp\Style\Themes\LightTheme.spec.lua
 d3edec0a98e6ace51b985a78b8ca1b61
 ExtraContent\LuaPackages\AppTempCommon\LuaApp\TableUtilities.lua
