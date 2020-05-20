@@ -43,6 +43,7 @@ local Networking = require(Plugin.Src.ContextServices.Networking)
 local WorldRootPhysics = require(Plugin.Src.Components.SettingsPages.WorldPage.ContextServices.WorldRootPhysics)
 local GameInfoController = require(Plugin.Src.Controllers.GameInfoController)
 local GameOptionsController = require(Plugin.Src.Components.SettingsPages.OptionsPage.Controllers.GameOptionsController)
+local UniverseAvatarController = require(Plugin.Src.Components.SettingsPages.AvatarPage.Controllers.UniverseAvatarController)
 
 local CurrentStatus = require(Plugin.Src.Util.CurrentStatus)
 
@@ -51,6 +52,8 @@ local SetCurrentStatus = require(Plugin.Src.Actions.SetCurrentStatus)
 local DiscardChanges = require(Plugin.Src.Actions.DiscardChanges)
 local DiscardErrors = require(Plugin.Src.Actions.DiscardErrors)
 local SetCurrentSettings = require(Plugin.Src.Actions.SetCurrentSettings)
+local SetEditDevProductId = require(Plugin.Src.Actions.SetEditDevProductId)
+local SetEditPlaceId = require(Plugin.Src.Actions.SetEditPlaceId)
 local SetGameId = require(Plugin.Src.Actions.SetGameId)
 local SetGame = require(Plugin.Src.Actions.SetGame)
 local LoadAllSettings = require(Plugin.Src.Thunks.LoadAllSettings)
@@ -76,11 +79,13 @@ if game:GetFastFlag("StudioThunkWithArgsMiddleware") then
 		local networking = Networking.new()
 		local gameInfoController = GameInfoController.new(networking:get())
 		local gameOptionsController = GameOptionsController.new()
+		local universeAvatarController = UniverseAvatarController.new(networking:get())
 
 		thunkContextItems.networking = networking:get()
 		thunkContextItems.worldRootPhysicsController = worldRootPhysics:get()
 		thunkContextItems.gameInfoController = gameInfoController
 		thunkContextItems.gameOptionsController = gameOptionsController
+		thunkContextItems.universeAvatarController = universeAvatarController
 	end
 
 	local thunkWithArgsMiddleware = FrameworkUtil.ThunkWithArgsMiddleware(thunkContextItems)
@@ -335,10 +340,16 @@ local function openGameSettings(gameId, dataModel)
 		}),
 	})
 
-	if game:GetFastFlag("StudioGameSettingsResetStoreAction") then
+	if game:GetFastFlag("StudioGameSettingsResetStoreAction2") then
 		settingsStore:dispatch(ResetStore())
 	else
 		settingsStore:dispatch(SetCurrentSettings({}))
+		if FFlagStudioAddMonetizationToGameSettings then
+			settingsStore:dispatch(SetEditDevProductId(nil))
+		end
+		if FFlagGameSettingsPlaceSettings then
+			settingsStore:dispatch(SetEditPlaceId(0))
+		end
 		settingsStore:dispatch(DiscardChanges())
 		settingsStore:dispatch(DiscardErrors())
 	end

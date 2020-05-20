@@ -105,6 +105,10 @@ function Theme.createValues(theme, getColor)
 			scrollBar = isDark and theme:getColor(StyleColor.ScrollBar) or theme:getColor(StyleColor.Border),
 			scrollBarBackground = isDark and theme:getColor(StyleColor.ScrollBarBackground) or Color3.fromRGB(245, 245, 245),
 
+			header = {
+				height = 45,
+			},
+
 			menuBar = {
 				backgroundColor = isDark and theme:getColor(StyleColor.ScrollBarBackground) or theme:getColor(StyleColor.MainBackground),
 			},
@@ -121,7 +125,7 @@ function Theme.createValues(theme, getColor)
 					width = 150,
 				},
 
-				disabledSubText = {
+				subText = {
 					width = 475,
 				},
 
@@ -198,6 +202,10 @@ function Theme.createValues(theme, getColor)
 				title = theme:getColor(StyleColor.BrightText),
 			},
 
+			devProducts = {
+				headerPadding = 20,
+			},
+
 			dropDown = {
 				background = theme:getColor(StyleColor.Button),
 				hover = theme:getColor(StyleColor.Button, StyleModifier.Hover),
@@ -222,6 +230,14 @@ function Theme.createValues(theme, getColor)
 
 			subjectThumbnail = {
 				background = theme:getColor(StyleColor.TableItem),
+				maskImage = "rbxasset://textures/StudioSharedUI/avatarMask.png", 
+				loadingImage = "rbxasset://textures/StudioSharedUI/default_user.png",
+				loadFailureImage = "rbxasset://textures/GameSettings/ModeratedAsset.jpg",
+			},
+
+			groupThumbnail = {
+				loadingImage = "rbxasset://textures/StudioSharedUI/default_group.png",
+				loadFailureImage = "rbxasset://textures/GameSettings/ModeratedAsset.jpg",
 			},
 
 			thumbnail = {
@@ -273,8 +289,7 @@ function Theme.createValues(theme, getColor)
 					padding = 5,
 				},
 				menu = {
-					--TODO: add image
-					image = "",
+					image = "rbxasset://textures/ui/Menu/Hamburger.png",
 					itemPadding = 30,
 					buttonSize = 32,
 					buttonPaddingY = 10,

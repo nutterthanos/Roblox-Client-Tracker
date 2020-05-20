@@ -6,8 +6,6 @@ local PageName = FFlagStudioConvertGameSettingsToDevFramework and "AccessPermiss
 
 local FFlagStudioGameSettingsDisablePlayabilityForDrafts = settings():GetFFlag("StudioGameSettingsDisablePlayabilityForDrafts")
 
-local FFlagStudioGameSettingsRestrictPermissions = game:DefineFastFlag("StudioGameSettingsRestrictPermissions", false)
-
 local Plugin = script.Parent.Parent.Parent.Parent
 local Roact = require(Plugin.Roact)
 local Cryo = require(Plugin.Cryo)
