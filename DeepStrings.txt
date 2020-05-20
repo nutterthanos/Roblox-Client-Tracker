@@ -64,7 +64,6 @@ AAEE11E38B9D871882A8E559
 AAF011E38B9D871882A8E559
 AAF111E38B9D871882A8E559
 AAF511E38B9D871882A8E559
-AaLk1MQGM9vzkXTRNlEkzmGt3JvyXGfim0qUh7evwBToIB0Ypwj
 AB0BF11E395B6E5DB6211F344
 AB0DC85B11
 ABAllUsers
@@ -411,6 +410,8 @@ AHPEAU_iobuf
 AHPEAX1PEAPEAX
 AHW4DataStoreRequestType
 AHW4UserInputType
+Ai2PDeZBhxBSHqObSmYr1jdTK6
+AK1y1Z3FXo8yiZ5QL7WS
 Algorithms
 AliasRequestResult
 ALIGN_TYPE
@@ -3969,7 +3970,6 @@ BatchThumbnailMinWaitMs
 BatchThumbnailResultsSizeCap
 BatchThumbnailRetryQuickWaitMs
 BatchThumbnailRetrySlowWaitMs
-BaxpXcCPochp7ncq4bIVMIlH0G1qGedhc1VcRWPxSaF0fvol0
 BB0BF11E395B6E5DB6211F344
 BB11E2B957D88B167DEF15
 BB285C520681180838E23F0DC6224
@@ -4165,6 +4165,7 @@ BlueValues
 BlurAxisXYZScratch
 BlurEffect
 BlurRadius
+BlVjfkowgczhOKvhtL3yznWykMXnjWgK0dd
 BN_BLINDING_convert_ex
 BN_BLINDING_create_param
 BN_BLINDING_invert_ex
@@ -4261,7 +4262,6 @@ BPuVfD9B`uOfD9BpuH
 BQByteArray
 BQJsonValueRef
 BQPersistentModelIndex
-BqTmdHTpcb
 BranchIcon
 BreakGroup
 BreakJoints
@@ -4452,7 +4452,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405418
+ByVersion_0.434.0.405423
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -4690,6 +4690,7 @@ CB27CB58AAF011E38B9D871882A8E559
 CB27CB59AAF011E38B9D871882A8E559
 CB27CB5CAAF011E38B9D871882A8E559
 CB583B11E29A3DBD856014A660
+CBAWkrtC9bWaB
 CBUGroupRolesResult
 CBUHttpTarget
 CBUPathData
@@ -4949,7 +4950,6 @@ CipherString
 Ciphersuites
 CircularList
 Circumflexsmall
-CJ9Px9raL2z1NiOjfdmYt
 CJVNotFallbackToEnglishForCoreGuiEnabled
 CJVNotFallbackToEnglishForUGCEnabled
 ClampColor
@@ -7038,6 +7038,7 @@ DebugLaunchTimeByCountryPlaceSpecific
 DebugLaunchTimeByCountryPlaceSpecificAddPlatform
 DebugLocalRccServerConnection
 DebugLogAvatarLoadTimeStatsByPlace
+DebugLuauMagicTypes
 DebugMarkerSetObjectNameEXT
 DebugMarkerSetObjectTagEXT
 DebugMassPackageUpdaterSimulateSleep
@@ -7873,7 +7874,6 @@ DOPENSSL_CPUID_OBJ
 DOPENSSL_IA32_SSE2
 DOPENSSL_PIC
 DopplerScale
-DOPYfpZOuqwy5Gg1rWaOIZsInnJCeCW
 Dotaccentsmall
 DotProduct
 DoubleClick
@@ -7903,7 +7903,6 @@ DPERF_BeginEvent
 DPERF_EndEvent
 DPERF_GetStatus
 DPOLY1305_ASM
-DQh2kzcUGm
 Dqlqlqlqlql
 DraftAdded
 DraftCommitted
@@ -8015,7 +8014,6 @@ DSO_new_method
 DSO_pathbyaddr
 DSO_set_filename
 DSO_up_ref
-DsscCakC2LK9nJJxeUOsh
 Dst.Thread
 Dst.YBegin
 DSVideoCaptureEngine
@@ -8339,7 +8337,9 @@ EffectiveRetryCount
 EFrontVector
 Egravesmall
 EHERE\EfEpEzE
+EjMnlHlFmHBfLUk8BN1dokeS8Yk4WCX0
 EJTU\^bcfguw
+EKZNMBVPRml2XkgY5RS468ioipCaOR7IeaMGU2A9VSYSW0AjQHbLKH579Gs7E9YY
 ElapsedSeconds
 ElapsedTime
 ElasticBehavior
@@ -8887,7 +8887,6 @@ ExportSelectionVerb
 ExposureCompensation
 Expression
 ExpSolverEnabled_Replicate
-Exr91bwiJlT13YnTBujzA5
 EXT_add_alias
 ExtAdmission
 EXtComment
@@ -9063,7 +9062,6 @@ FeatureHitRatio
 FeatureLevel
 FeaturesAction
 FeaturesWindow
-FEbhxhkMxyFxUhUc9KBP4ZesLzcv5Aa09pwL84vcRZDLnw7zaaoivhL0Dqo
 FetchAndLoadSettingsFromCdn
 FetchCachedKeys
 FetchComplete
@@ -10649,7 +10647,6 @@ GoToPreviousScriptLocation
 GoToSourceCodeTB
 GoToVersionFailed
 GpuVariance
-Gr82qV7EkMdCFHtmQj2emhFV4AzgasXoLWX9v
 GrabCursor.png
 GrabRotateCursor
 GrabRotateCursor.png
@@ -11095,6 +11092,7 @@ HPEBVQMimeData
 HQEAPEAVQGraphicsItem
 HQFSShadowed
 HQVSShadowed
+HRWmM3Mo2XTBDCBO0iGJ6WS
 HtmlEscaped
 HTTPAccumulatedBytes
 HttpAdditionalBandwidthMetrics
@@ -12216,6 +12214,7 @@ KiDszBCYB0gyp03Pc
 KillPtClicked
 KillSurfaceJointsPart1
 KnownHeaders
+KnqFUVeo14POvx
 KodchiangUPC
 KPEAVICHull
 KPEIBX_K_KPEIAU_iobuf
@@ -13537,7 +13536,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEAqqUYnRopeHZJ1zZq3L
+MIICCgKCAgEAuNzwq02OieWcwXzEASWrtZkgyHNqHG3je8qNyCLYm5g1xvDJAtBs
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -13800,6 +13799,7 @@ MsgWaitForMultipleObjectsEx
 MsToScreen
 MSVCP140.dll
 MSWSOCK.dll
+MSX4rnVnO3FRGgedXtqM40hr
 MTU_Country_
 MTU_Platform_
 Mtx_current_owns
@@ -13934,7 +13934,6 @@ NavigationServiceTimingAnalytics
 NavigationServiceWorker
 NavigationType
 NavMeshTiles
-NcnIy0gY1hRwowoenXTOO0DchgyhAAHpyDuMpupoG
 NCONF_dump_bio
 NCONF_dump_fp
 NCONF_get_number_e
@@ -14356,6 +14355,7 @@ OLEAUT32.dll
 OleInitialize
 OleLockRunning
 OleUninitialize
+OlniMDGVFKyJrc1bLbkVp2cRcAyxZE5uSVMuxCOH6KPK0Fax27
 OnAllScriptErrorsAction
 OnBadgeAwarded
 OnboardingsCompleted
@@ -14495,6 +14495,7 @@ OptionsMenu
 OptionState
 OPUS_ARCHMASK
 OpusCustomMode
+OQZLnSuAHmpU0cwRmQb
 OrCharacter
 OrCreateFileSyncItemClient
 OrderArray
@@ -14615,6 +14616,7 @@ OverrideStarterScript
 OverrideToMyBranch
 OverwriteMode
 OwnProperty
+OwosqUA5lVAaWd
 Ozs8xYCf2Q05p4gHyX
 PA^A]A\_^]
 PA^A]A\_^][
@@ -16146,7 +16148,6 @@ PluginWidgetRelay
 PluginWidgetRelayForPluginGui
 PluginWriteTemp
 PlusButtonPressed
-PnZWsthvn4nB02bNqAP4bTqFitWREOQqD
 POINT_SIZE
 PointBalanceCacheInvalidateTimeMs
 PointDataChanged
@@ -16589,6 +16590,7 @@ QDebuggerClient
 QDesktopServices
 QDesktopWidget
 QDialogButtonBox
+QdnUFYMCroWjhLfPJfCNkJSgayiWttDYsxmDlF26thPpvzHc
 QDockWidget
 QDomDocument
 QDomElement
@@ -19508,6 +19510,7 @@ SetWindowLongPtrA
 SetWindowPos
 SetWindowsHookExA
 SetWindowTextA
+SgbaBX7WB6UfGzAbnThqLA4sbf0CAwEAAQ
 ShaderManagerHotloadsShadersInStudio
 ShaderSource
 ShadingLanguage
@@ -22573,7 +22576,6 @@ SwapLayerBuffersMscOML
 SwapToShareWithFriends
 SWATAUAVAW
 SWATAUAVAWH
-SwgqTc7vDNrrQJ0bG22CbBHQ
 SwimAnimation
 SwipeDirection
 SWITCH3.mp3
@@ -25417,7 +25419,6 @@ VQNetworkInterface
 VQNetworkReply
 VQPersistentModelIndex
 VQRegularExpression
-VQsbauB2y9ndGFRo3xbEHFV
 VQSequentialIterableImpl
 VQSslError
 VQtContainerInterface
@@ -25681,6 +25682,7 @@ VUserService
 VUserStorage
 VUVUVUVUVUVU
 VUVUVUVUVUVUVUVUVUVUVUVUVUVU
+Vv5nuSyHrsVQTroC48vCEHGFi
 Vvalidation_error
 VValueBase
 Vvariable_value
@@ -25731,7 +25733,6 @@ VWXYZ[\]^_`a
 VXmlElement
 VYieldFunctions
 VYieldFunctionStateObject
-VYJo35ks7xfP5t046h9
 W_Key_dn.png
 WaistAccessory
 WaistBack_Att
@@ -26028,7 +26029,6 @@ WM_ATLGETHOST
 WMCreateProfileManager
 WMCreateSyncReader
 Wmvcore.dll
-WOGa6WNGr2E
 WoodPlanks
 WordWrapMode
 WorkersNeeded
@@ -26066,7 +26066,6 @@ WorldToScreenPoint
 WorldToViewportPoint
 WP1Lk7UmX3No0NAVVrlNv8vM1TKYodC60fXpXkwOnxGMHelMkfu58xsxIB9tXB4U
 WPACKET_start_sub_packet_len__
-WqXhu5UfCP3DPaUZkR1vl9wfjzA8UPsCAwEAAQ
 WristDisplacementDamping
 WristDisplacementDampingMode
 WriteArray
@@ -26088,7 +26087,6 @@ WSASocketW
 WSAstartup
 WSAStartup
 WSAStringToAddressW
-WtbaFqhziuWDJwCbqo4KMf09lzTLcv1CL2g9Wkw6D
 WTHelperGetProvSignerFromChain
 WTHelperProvDataFromStateData
 X_deprecated
@@ -26133,6 +26131,7 @@ XboxSaleAvatarPackageIds
 XboxUseCuratedGameSort2
 XboxUseNewValidUsernameCheck2
 XFbxAMatrix
+XfqBajJVpEvnGBUyi2xbrTnyXsgPuSbrKuZ3egk6iXZJFgGoX4QftgpNVvxqe7Q4
 XFREE86_GLYPH_RANGES
 XGetLastError
 XHW4Status_e
@@ -26141,6 +26140,7 @@ XInputGetCapabilities
 XInputGetState
 XInputSetState
 Xinvalid_argument
+XItNZKIlgLVK
 Xlength_error
 Xout_of_range
 XP6AXAEBUTextFilterResult
@@ -26170,6 +26170,7 @@ XQColorDialog
 Xregex_error
 XResolution
 Xtime_get_ticks
+XtrmmIvRcBXrAQ
 XUnegotiation_response
 XvAAuY44YuAAvX4
 XVAddImageDialog
@@ -26294,19 +26295,19 @@ YAXPEAXPEBX
 YAXPEAXPEBX1
 YAXPEBVQObject
 YAXW4error_type
+YBnJk7iMBw2
 Ycircumflex
 Ydieresissmall
 YffYZefYDNNDCOO
 YieldEvent
 YieldFuncDesc
 YieldFunction
-YL9SEkTDGd
+YnJC0P5vgzuwR2T8h7TR9x7
 YQByteArray
 YResolution
 YwBBvY55YvBBwY5
 Z_KPEIBX_K_KPEIAU1
 Zcaronsmall
-ZDIyCDc8a4FazYpvhb
 Zdotaccent
 ZgnhKhWhci
 ZIndexBehavior
@@ -26320,7 +26321,6 @@ ZoomToHighlight
 ZP6APEAX1PEBX
 ZP6AX1PEAX
 ZPEAVRBXMessageBox
-Zr3hDHCajGxZCUD
 ZRZZZbZt[.[
 ZVspecial_equipped_signal
 ZVTouchedSignal
