@@ -69,7 +69,7 @@ function DevProducts:render()
             TextSize = theme.fontStyle.Title.TextSize,
         },{
             CreateButton = Roact.createElement(Button, {
-                Style = "RoundPrimary",
+                Style = "GameSettingsPrimaryButton",
                 Text = buttonText,
                 Size = UDim2.new(0, buttonTextExtents.X + theme.createButton.PaddingX,
                 0, buttonTextExtents.Y + theme.createButton.PaddingY),

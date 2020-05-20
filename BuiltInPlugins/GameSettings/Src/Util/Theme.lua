@@ -10,7 +10,9 @@ local StudioFrameworkStyles = StudioUI.StudioFrameworkStyles
 local Util = require(Framework.Util)
 local StyleTable = Util.StyleTable
 local Style = Util.Style
-local StyleModifier = Util.StyleModifier
+
+local UIFolderData = require(Framework.UI.UIFolderData)
+local Button = require(UIFolderData.Button.style)
 
 local DEPRECATED_Constants = require(Plugin.Src.Util.DEPRECATED_Constants)
 local UILibrary = require(Plugin.UILibrary)
@@ -88,6 +90,19 @@ function Theme.createValues(theme, getColor)
 			TextColor3 = theme:getColor(StyleColor.ErrorText),
 		},
 	}
+
+	local button = Button(theme, getColor)
+
+	local gameSettingsButtons = StyleTable.new("Button", function()
+		local GameSettingsPrimaryButton = Style.extend(button.RoundPrimary, {
+			TextSize = fontStyle.Normal.TextSize,
+			Font = Enum.Font.SourceSans,
+		})
+
+		return {
+			GameSettingsPrimaryButton = GameSettingsPrimaryButton,
+		}
+	end)
 
 	return {
 		Plugin = Style.extend({
@@ -289,7 +304,6 @@ function Theme.createValues(theme, getColor)
 					padding = 5,
 				},
 				menu = {
-					image = "rbxasset://textures/ui/Menu/Hamburger.png",
 					itemPadding = 30,
 					buttonSize = 32,
 					buttonPaddingY = 10,
@@ -316,6 +330,18 @@ function Theme.createValues(theme, getColor)
 				PaddingY = 10,
 			},
 
+			mainView = {
+				publishText = {
+					offset = 70,
+					width = 250,
+				},
+				publishButton = {
+					offset = 125,
+					paddingX = 75,
+					paddingY = 15,
+				},
+			},
+
 			settingsPage = {
 				settingPadding = 32,
 				marginX = 25, -- on each side
@@ -334,7 +360,9 @@ function Theme.createValues(theme, getColor)
 			}
 		}),
 
-		Framework = Style.extend(studioStyles, {}),
+		Framework = Style.extend(studioStyles, {
+			Button = Style.extend(studioStyles.Button, gameSettingsButtons),
+		}),
 	}
 end
 
