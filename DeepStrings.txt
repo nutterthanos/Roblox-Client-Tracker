@@ -64,6 +64,7 @@ AAEE11E38B9D871882A8E559
 AAF011E38B9D871882A8E559
 AAF111E38B9D871882A8E559
 AAF511E38B9D871882A8E559
+AaLk1MQGM9vzkXTRNlEkzmGt3JvyXGfim0qUh7evwBToIB0Ypwj
 AB0BF11E395B6E5DB6211F344
 AB0DC85B11
 ABAllUsers
@@ -3968,6 +3969,7 @@ BatchThumbnailMinWaitMs
 BatchThumbnailResultsSizeCap
 BatchThumbnailRetryQuickWaitMs
 BatchThumbnailRetrySlowWaitMs
+BaxpXcCPochp7ncq4bIVMIlH0G1qGedhc1VcRWPxSaF0fvol0
 BB0BF11E395B6E5DB6211F344
 BB11E2B957D88B167DEF15
 BB285C520681180838E23F0DC6224
@@ -4259,6 +4261,7 @@ BPuVfD9B`uOfD9BpuH
 BQByteArray
 BQJsonValueRef
 BQPersistentModelIndex
+BqTmdHTpcb
 BranchIcon
 BreakGroup
 BreakJoints
@@ -4449,7 +4452,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405391
+ByVersion_0.434.0.405418
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -4946,6 +4949,7 @@ CipherString
 Ciphersuites
 CircularList
 Circumflexsmall
+CJ9Px9raL2z1NiOjfdmYt
 CJVNotFallbackToEnglishForCoreGuiEnabled
 CJVNotFallbackToEnglishForUGCEnabled
 ClampColor
@@ -6864,6 +6868,7 @@ DataStoreMaxThrottledQueue
 DataStoreMaxValueSize
 DataStoreMoreInfoForVagueError
 DataStoreMoreInfoForVagueErrorLength
+DataStoreNoSerializedDataInCache
 DataStoreOldNamingScheme
 DataStoreOrderedGetFixedRequestLimit
 DataStoreOrderedGetInitialBudget
@@ -7150,6 +7155,7 @@ DebugVersionHistoryWiremockApi_StartingStage_4
 DebugVersionHistoryWiremockApi_StartingStage_5
 DebugVersionHistoryWiremockApi_StartingStage_6
 DebugVersionHistoryWiremockApi_StartingStage_7
+DebugVideoEnableAudioOnlyFiles
 DebugVideoSimulateAudioCodecLoad
 DebugVideoSimulatedAudioCodecLoadMs
 DebugVideoSimulatedVideoCodecLoadMs
@@ -7867,6 +7873,7 @@ DOPENSSL_CPUID_OBJ
 DOPENSSL_IA32_SSE2
 DOPENSSL_PIC
 DopplerScale
+DOPYfpZOuqwy5Gg1rWaOIZsInnJCeCW
 Dotaccentsmall
 DotProduct
 DoubleClick
@@ -7896,6 +7903,7 @@ DPERF_BeginEvent
 DPERF_EndEvent
 DPERF_GetStatus
 DPOLY1305_ASM
+DQh2kzcUGm
 Dqlqlqlqlql
 DraftAdded
 DraftCommitted
@@ -8007,6 +8015,7 @@ DSO_new_method
 DSO_pathbyaddr
 DSO_set_filename
 DSO_up_ref
+DsscCakC2LK9nJJxeUOsh
 Dst.Thread
 Dst.YBegin
 DSVideoCaptureEngine
@@ -8162,7 +8171,6 @@ EBAPEAVTeam
 EBAPEAVWorkspace
 EbDgxvvfGb
 EBELEVE`EjEtE
-EBGr7xsrg7DwcmxRWt0vn2Y4HKqfWz7ELY90eEhXOC4
 EC_GROUP_check
 EC_GROUP_check_discriminant
 EC_GROUP_copy
@@ -8879,6 +8887,7 @@ ExportSelectionVerb
 ExposureCompensation
 Expression
 ExpSolverEnabled_Replicate
+Exr91bwiJlT13YnTBujzA5
 EXT_add_alias
 ExtAdmission
 EXtComment
@@ -9054,6 +9063,7 @@ FeatureHitRatio
 FeatureLevel
 FeaturesAction
 FeaturesWindow
+FEbhxhkMxyFxUhUc9KBP4ZesLzcv5Aa09pwL84vcRZDLnw7zaaoivhL0Dqo
 FetchAndLoadSettingsFromCdn
 FetchCachedKeys
 FetchComplete
@@ -9296,6 +9306,7 @@ FixNoTimeHudOnTeleport
 FixOutOfBoundsMouseLocation
 FixOverriddenDragAssert
 FixPackageDragSlow
+FixPackageModificationCheckForPendingState
 FixPerSecDivideStats
 FixPlayerGetTeamNeutral
 FixPluginInvoke
@@ -10638,6 +10649,7 @@ GoToPreviousScriptLocation
 GoToSourceCodeTB
 GoToVersionFailed
 GpuVariance
+Gr82qV7EkMdCFHtmQj2emhFV4AzgasXoLWX9v
 GrabCursor.png
 GrabRotateCursor
 GrabRotateCursor.png
@@ -10915,7 +10927,6 @@ HB_SHAPER_LIST
 HBRenderDXT_KTX
 Hcircumflex
 HDCacheLock
-HDzKS3yDpqhALRP8dHwjnUompoV2a
 HeadColor3
 HeaderCheckBoxClicked
 HeaderData
@@ -10970,7 +10981,6 @@ HHVQRegularExpression
 HHW4AspectRatioMode
 HHW4Format
 HHW4Policy
-Hi3ldQFG0jstUTR5pq0Cbzb
 HiddenOgreWidget
 HIDE_TAB_BAR
 HideFromPlayer
@@ -12211,7 +12221,6 @@ KPEAVICHull
 KPEIBX_K_KPEIAU_iobuf
 KVScriptContext
 KYULPhCBFoD3mw5mygYqAeFlHdSL2k3MnDG
-KYVGYksK4EpZvlmdVgce4LyNFrHdxUMN2ZNmBf2HOxccE6cRRGg
 LabelArray
 LabelArray.push
 LabelArray[globstart]
@@ -13528,7 +13537,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEA9bZKBaUfQHyIDVMCQAP
+MIICCgKCAgEAqqUYnRopeHZJ1zZq3L
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -13633,7 +13642,6 @@ Monochrome
 Montgomery
 MoonAngularSize
 MoonTextureId
-MoQw3PyR0F0CAwEAAQ
 MoreButton
 MoreColorsPressed
 MoreInfoHoverIcon
@@ -13765,7 +13773,6 @@ MovingAssemblies
 MovingNoPhysicsBase
 MovingPrimitives
 MovingPrimitivesCount
-MOwTt9RVnsk41oTZXHAD4Ae
 MP8PartInstance
 MpCehiHzreSzNTczkc9d
 MPEAVAdorn
@@ -13927,6 +13934,7 @@ NavigationServiceTimingAnalytics
 NavigationServiceWorker
 NavigationType
 NavMeshTiles
+NcnIy0gY1hRwowoenXTOO0DchgyhAAHpyDuMpupoG
 NCONF_dump_bio
 NCONF_dump_fp
 NCONF_get_number_e
@@ -14163,9 +14171,6 @@ NPCUnequipTools
 NPEAVInstance
 NPEAVQString
 NPEAVQWidget
-NPQ8GTyf9NGQXcviChOwnb66ET4nQXLZWwBLxQZJXGefKAummbz5jV7sCyyWIq1M
-NSdSd6zYhL
-NSj1yFU9AHrJwSQhowF5WkmlpKQkQOz
 Ntildesmall
 NullPassword
 NUMBER_OF_ORDERED_STREAMS
@@ -14410,7 +14415,6 @@ OnUnhandledScriptErrorsAction
 OnUserABTestLoadingStatusChanged
 OpacityMask
 OpaqueUseMaterialAndDistanceSort
-OpD5AGZBuN8nu3wqTZbFHFtcYO02RN
 OPEN_BUILDERS_CLUB
 OPEN_CAPTCHA_VIEW
 OPEN_CUSTOM_WEBVIEW
@@ -14711,7 +14715,6 @@ PanelStatusBar
 PanelTipLabel
 Pants.rbxm
 PantsTemplate
-PAoWv7sw8vdTSYzWTPZMDOjtTY
 ParabolaAdornment
 ParallelAddInstanceWhenParalleStream
 ParallelFetchInternalPermission
@@ -16143,6 +16146,7 @@ PluginWidgetRelay
 PluginWidgetRelayForPluginGui
 PluginWriteTemp
 PlusButtonPressed
+PnZWsthvn4nB02bNqAP4bTqFitWREOQqD
 POINT_SIZE
 PointBalanceCacheInvalidateTimeMs
 PointDataChanged
@@ -16546,7 +16550,6 @@ PushPixels
 PVAdornment
 PVInstance
 PVK_header
-PwZxHZg0VrWvElj
 PyJlf7IHZQpFHohBe
 QAbstractAnimation
 QAbstractButton
@@ -17696,7 +17699,6 @@ RedPlastic
 RedrawMode
 RedrawWindow
 ReducedGroup
-ReduceSendDataCriticalSection
 ReduceTrussSearchDistance2
 ReentrantBlockingLock
 Ref_count_obj
@@ -22571,6 +22573,7 @@ SwapLayerBuffersMscOML
 SwapToShareWithFriends
 SWATAUAVAW
 SWATAUAVAWH
+SwgqTc7vDNrrQJ0bG22CbBHQ
 SwimAnimation
 SwipeDirection
 SWITCH3.mp3
@@ -23623,7 +23626,6 @@ TrackServerPhysicsPerfSessionNMinutes
 TrackStencilBufferSupport
 TrackTeamCreateSaveMD5HashOutput
 TrackUnsupportedVariantUse
-TrackWindowsVideoRecording
 Traditional
 TrailClearCrashFix
 TrailFSLight
@@ -23734,7 +23736,6 @@ TS_TST_INFO_set_tsa
 TS_VERIFY_CTX_new
 TSMk2ThrottleStreamJob
 TTUUEDDsss
-TUJqVeUkCpPm9b
 TurboBuildersClub
 TurnOffAction
 TurnOffManualJointCreation
@@ -23793,7 +23794,6 @@ Typesetter
 TypeString
 TypeToImport
 Typewriter
-TzuDgzRHVMpM6ODn3JJ
 U_ContinuationTaskHandleBase
 U_ExceptionHolder
 U_Key_dn.png
@@ -23945,7 +23945,6 @@ UGeometryBatch
 UGlobalResult
 Ugravesmall
 UGroupRolesResult
-UGSWSjOEfaJl
 UGuiClusterRT
 UHttpApiRequest
 UHttpRequest
@@ -24834,7 +24833,6 @@ VeFailedWithMessage
 VehicleController
 VehiclesAction
 VehicleSeat
-VElgE33hQVXWNHEBKubsWFdNSfbFAkFa2ud9fs0C4ez2BVPJvUgEq
 Velocity_xml
 VelocityInheritance
 VelocityMotor
@@ -25098,6 +25096,7 @@ VideoDocumentationPluginEnabled
 VideoDoNotResetTimePositionOnStop
 VideoEnableDeviceTuning
 VideoEnableGetInfo
+VideoFixAudioOnlyFiles
 VideoFixDeviceTuningForAudioOnlyFiles
 VideoFixSeekingBeyondTheEnd
 VideoFixServerClientRemoteEvents
@@ -25418,6 +25417,7 @@ VQNetworkInterface
 VQNetworkReply
 VQPersistentModelIndex
 VQRegularExpression
+VQsbauB2y9ndGFRo3xbEHFV
 VQSequentialIterableImpl
 VQSslError
 VQtContainerInterface
@@ -25731,6 +25731,7 @@ VWXYZ[\]^_`a
 VXmlElement
 VYieldFunctions
 VYieldFunctionStateObject
+VYJo35ks7xfP5t046h9
 W_Key_dn.png
 WaistAccessory
 WaistBack_Att
@@ -25844,7 +25845,6 @@ WeldCursor
 WeldPermyriad
 WeldReport
 WeldsAction
-WG6XaCDijy2ZWuCauXG
 WGL_3DFX_multisample
 WGL_3DL_stereo_control
 WGL_AMD_gpu_association
@@ -26028,6 +26028,7 @@ WM_ATLGETHOST
 WMCreateProfileManager
 WMCreateSyncReader
 Wmvcore.dll
+WOGa6WNGr2E
 WoodPlanks
 WordWrapMode
 WorkersNeeded
@@ -26065,6 +26066,7 @@ WorldToScreenPoint
 WorldToViewportPoint
 WP1Lk7UmX3No0NAVVrlNv8vM1TKYodC60fXpXkwOnxGMHelMkfu58xsxIB9tXB4U
 WPACKET_start_sub_packet_len__
+WqXhu5UfCP3DPaUZkR1vl9wfjzA8UPsCAwEAAQ
 WristDisplacementDamping
 WristDisplacementDampingMode
 WriteArray
@@ -26086,9 +26088,9 @@ WSASocketW
 WSAstartup
 WSAStartup
 WSAStringToAddressW
+WtbaFqhziuWDJwCbqo4KMf09lzTLcv1CL2g9Wkw6D
 WTHelperGetProvSignerFromChain
 WTHelperProvDataFromStateData
-WvjoGiJfX81vLi
 X_deprecated
 X_Fullscreen
 X_JW4AssetType
@@ -26118,7 +26120,6 @@ XAlignment
 Xbad_alloc
 Xbad_function_call
 XbbXXbbXGSSGGSS
-XBE98JjgYI
 Xbox.AllUsers.PlayNextGame
 XboxAvatarPaneRefreshInterval
 XboxDisableTextChat
@@ -26131,7 +26132,6 @@ XboxPresencePolling
 XboxSaleAvatarPackageIds
 XboxUseCuratedGameSort2
 XboxUseNewValidUsernameCheck2
-XcofFgu9nwx1ysfa9HZ8OJSwwkRdKPNfPqUNGNrm1ejQazGex
 XFbxAMatrix
 XFREE86_GLYPH_RANGES
 XGetLastError
@@ -26300,11 +26300,13 @@ YffYZefYDNNDCOO
 YieldEvent
 YieldFuncDesc
 YieldFunction
+YL9SEkTDGd
 YQByteArray
 YResolution
 YwBBvY55YvBBwY5
 Z_KPEIBX_K_KPEIAU1
 Zcaronsmall
+ZDIyCDc8a4FazYpvhb
 Zdotaccent
 ZgnhKhWhci
 ZIndexBehavior
@@ -26318,6 +26320,7 @@ ZoomToHighlight
 ZP6APEAX1PEBX
 ZP6AX1PEAX
 ZPEAVRBXMessageBox
+Zr3hDHCajGxZCUD
 ZRZZZbZt[.[
 ZVspecial_equipped_signal
 ZVTouchedSignal
