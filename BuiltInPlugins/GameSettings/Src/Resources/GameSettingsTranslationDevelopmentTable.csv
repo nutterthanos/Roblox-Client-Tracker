@@ -14,6 +14,7 @@ Studio.GameSettings.General.ButtonDiscard,Discard, ,Discard
 Studio.GameSettings.General.ButtonCreate,Create, ,Create
 Studio.GameSettings.General.ButtonEdit,Edit, ,Edit
 Studio.GameSettings.General.ButtonView,View, ,View
+Studio.GameSettings.General.ButtonPublish,Publish, ,Publish
 Studio.GameSettings.General.CategoryBasicInfo,Basic Info, ,Basic Info
 Studio.GameSettings.General.CategoryAvatar,Avatar, ,Avatar
 Studio.GameSettings.General.CategoryWorld,World, ,World
@@ -218,6 +219,7 @@ Studio.GameSettings.General.UnitsMetersPerSecondSquared1,({1} meters/second^2), 
 Studio.GameSettings.General.UnitsMeters1,({1} meters), ,({1} meters)
 Studio.GameSettings.General.UnitsMetersPerSecond1,({1} meters/second), ,({1} meters/second)
 Studio.GameSettings.General.PublishTheGameToRoblox,Publish the game to Roblox, ,Publish the game to Roblox
+Studio.GameSettings.General.PublishText,Publish to access Game Settings., ,Publish to access Game Settings. 
 Studio.GameSettings.AccessPermissions.FriendsCollaboratorType,Friends, ,Friends
 Studio.GameSettings.AccessPermissions.UsersCollaboratorType,Users, ,Users
 Studio.GameSettings.AccessPermissions.GroupsCollaboratorType,Groups, ,Groups

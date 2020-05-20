@@ -393,6 +393,7 @@ AfterRequested
 AfterSeconds
 AfterUpdateContentFromSource
 AgainstLatestPackageAction
+AGCAm1Cz3c
 Age13OrOver
 AgeBracket
 AgentCanJump
@@ -410,7 +411,6 @@ AHPEAU_iobuf
 AHPEAX1PEAPEAX
 AHW4DataStoreRequestType
 AHW4UserInputType
-AiirxSYhRjNMgdqRs
 Algorithms
 AliasRequestResult
 ALIGN_TYPE
@@ -3866,6 +3866,7 @@ AXW4UiMessageType
 AXW4UserCFrame
 AXW4UserInputType
 AXW4VRTouchpad
+AYOGkINl93RZUzzIqvKN46KHgIBX7FNgct0s4cbOCc0ng
 BA447F42A91111E2B410EF351327957B
 BA886F11E18561866242201959
 BAA3C620681180838E23F0DC6224
@@ -4343,6 +4344,7 @@ BrowserWindow
 BrowserWindowClosed
 BrowserWindowWillNavigate
 BrushStyle
+Bs73BOKOKh
 BtYovqVKoHMDMoDd0u9Mc5CIyRqyu0IGS99A0jeEXRj7aofQ
 BU_Simplex1to4
 BubbleChat
@@ -4452,9 +4454,8 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405440
+ByVersion_0.434.0.405445
 ByVersionForPlatform_
-BzkTcoB8FNiLvKX53
 C_specific_handler
 CA_NPEAVQObject
 CA2168118C14FDE5E01E7934
@@ -6180,7 +6181,6 @@ CountryRegionCodeReplicate
 CountShifted
 CountWidth
 CrackedLava
-CRaeNIRJqS0ZbupoH6Tj
 CrashDumpFileName
 CrashEvent
 CrashReporter
@@ -7595,6 +7595,7 @@ DHBasedMac
 DHParameters
 DHparams_print_fp
 DhufyEeFO7U33Tv7vk
+Di6DWkThl6Jv
 Diagnostic
 Diagnostics
 DiagnosticsDockAction
@@ -9817,6 +9818,7 @@ GAThrottlingEventThresholdHundredthCat1
 GAThrottlingEventThresholdHundredthCat2
 GAThrottlingEventThresholdHundredthCat3
 GazeSelectionEnabled
+GbWvlVaqG71
 GCDistance
 GCHappened
 GCincremental
@@ -10539,7 +10541,6 @@ GF2m_simple_point_set_affine_coordinates
 GF2m_simple_point2oct
 GF2m_simple_points_mul
 GF2m_simple_set_compressed_coordinates
-GfH3IEzTxRERdbzS1vklm7L3uhyudmBr2g6ShGWbaDrBtVg31RsCFJJmr
 GFp_mont_field_decode
 GFp_mont_field_encode
 GFp_mont_field_inv
@@ -10820,7 +10821,9 @@ GunCursor.png
 GunWaitCursor.png
 GvEphfEUiHHoD6hYFI4xWGpAnIHcklKQCxrf46kAhDGeZnqIgeGszlGdWafunGE8
 GVKUTS[BXIWH\KbHi
+GWZkgw4z5C3a39FVOP1V1l7P9eX5lSRL3lUXYwiIQO
 GXGfGkGpGuG
+GXGV3Cwec8s4Oe6AzOFiClw5AyDExTgIQioPLFdFpVc57z9aSa0mTd3tU
 GyroscopeEnabled
 H_Key_dn.png
 H_NAEBVQString
@@ -10921,6 +10924,7 @@ HaveActiveUser
 HB_OPTIONS
 HB_SHAPER_LIST
 Hcircumflex
+HCqYEyH3OTid0KW6DIaLxsl8a6
 HDCacheLock
 HeadColor3
 HeaderCheckBoxClicked
@@ -10996,6 +11000,7 @@ HighlightUpdate
 HighPriority
 HighResolution
 HighVelocityContactThresholdHundredth
+HikWfwZ8uvWJUAVTthX550YbMSneF1RwPzA
 HingeConstraint
 HingeConstraintAction
 HingeCursor
@@ -11324,7 +11329,6 @@ HW4PacketPriority
 HwngSmldAskhBcraMaweNegsOgnaT
 HwngSmldAskhBcraMaweNegsOgnaTFontSizePadding
 HWYGOTH.ttf
-HxcejJpJcJUTBf0DSAYfZk6I2sTwrGs7b3IFTcwjOSGo3YiUMCAwEAAQ
 HybridEvent
 Iacutesmall
 IAutocompleter
@@ -12052,6 +12056,7 @@ JasmineUPC
 Javascript
 JavaScript
 JavaScriptCallback
+JaXkUI0jcRyX
 Jba5qWkYU5nARYZm1gQVP
 Jcircumflex
 JDJNJXJbJlJvJ
@@ -12064,7 +12069,6 @@ JIRA_RIDE_711
 JJJBBB\\\xx
 JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
 JKLMNOPQRSTU
-JNOc1Xv3RiagGXhA0Vp4z1
 JoinBlobInvalidateThresholdPercent
 JoinCommand
 JoinDataCacheCompressionImprovement
@@ -12212,7 +12216,6 @@ KickByDatacenter_
 KiDszBCYB0gyp03Pc
 KillPtClicked
 KillSurfaceJointsPart1
-KNeYWxkID7vLt9hfCDwvV5pohtCHveF4YamsgpTps
 KnownHeaders
 KodchiangUPC
 KPEAVICHull
@@ -12284,6 +12287,7 @@ LayoutOrder
 LazySubmitTask
 LC_MESSAGES
 LCMapStringW
+LCPWnJ5D7ic2108xU
 LDLBuildProgramTimeReportEnabled
 LDLBuildProgramTimeReportRate
 LDLComponents
@@ -12905,6 +12909,7 @@ LuauWarnOnUtf8
 LuauWatchdog
 LuaWebService
 LVvuOx39]O
+LZU0mfLW6V8Wr0
 M_NVWeakFunctionRef
 MachineAddress
 MachineConfig
@@ -13536,7 +13541,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEA1XDrY7DUe3yJ4yp2xYJsOqLuwxF58bA9kRtLdcD5YVUw5vYPFaL6
+MIICCgKCAgEAoX2oa9pl2S7o3mphogEJRvMaZAo5x8RNTFD3
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -14169,6 +14174,7 @@ NPCUnequipTools
 NPEAVInstance
 NPEAVQString
 NPEAVQWidget
+NTAu54pGxRk6UiyROb6
 Ntildesmall
 NullPassword
 NUMBER_OF_ORDERED_STREAMS
@@ -14346,6 +14352,7 @@ OgreWidgetShowEvent
 Oh44\h44\Q
 Ohungarumlaut
 OiCCPPhotoshop
+OksvqO80GOcY8
 OldActiveElement
 OldMessagesFetched
 OldServers
@@ -14521,7 +14528,6 @@ OrProvinceName
 OS.Authentication.LuaLoginAndSignup3
 OscillateMotor
 Oscillator
-OSDEv02VdX138fa
 Oslashsmall
 OsPlatform
 OSPlatform
@@ -14614,7 +14620,6 @@ OverrideStarterScript
 OverrideToMyBranch
 OverwriteMode
 OwnProperty
-OYvkJEhVz4dJ2ACKm2m3Y3yKd4VdM4Hurs4cnqqyXRHY8Z9kbP1FUp
 Ozs8xYCf2Q05p4gHyX
 PA^A]A\_^]
 PA^A]A\_^][
@@ -17069,6 +17074,7 @@ QJsonDocument
 QJsonObject
 QJsonValue
 QJsonValueRef
+QJTOY79JK6yY0J2MT0lMJbRNzc0hmSIZgEpTSkAK
 QKeySequence
 QLayoutItem
 QLinearGradient
@@ -17129,7 +17135,6 @@ QRadioButton
 QRegularExpression
 QRegularExpressionMatch
 QRegularExpressionMatchIterator
-QRfXm3DrO9KTXxD1S1JDclVr5MY8vRIRrqZV1
 QRubberBand
 QScopedPointer
 QScopedPointerDeleter
@@ -18645,7 +18650,6 @@ RowsInserted
 RowsToContents
 RowStretch
 RPCServers
-Rqce8dBCBPE5cs17ubw
 RRReceiptFail
 RRReceiptTotal
 RSA_check_key
@@ -22572,6 +22576,7 @@ SVWATAUAVH
 SVWATAUAWH
 SVWATAVAWH
 SVWAUAVAWH
+SvyAcJTT2DQmhiPyU
 SwapAttachmentsVerb
 SwapBuffers
 SwapBuffersMscOML
@@ -23600,7 +23605,6 @@ TouchTransmitter
 ToUniversalTime
 TownAndCity
 ToWorldSpace
-TQx4Hbs8rg56o
 TraceMessage
 Track2Data
 TrackAudioDriversPerSystem
@@ -23744,6 +23748,7 @@ TS_TST_INFO_set_tsa
 TS_VERIFY_CTX_new
 TSMk2ThrottleStreamJob
 TTUUEDDsss
+TUMeKqjsU83IivVq7wYr1sCAwEAAQ
 TurboBuildersClub
 TurnOffAction
 TurnOffManualJointCreation
@@ -24540,7 +24545,6 @@ UUserAgreementData
 UUUUUUUUUUUa
 UUUUUUUUUUUUUU
 UUUUUUUUUUUUUUUU3333333333333333
-UUz7cXO4J7TZq7hw6lAMoBTDTPk0mnffAXtRm
 UVATAUAVAWH
 UVersionHistoryItem
 UVoxelImportInfo
@@ -25426,6 +25430,7 @@ VQNetworkCookie
 VQNetworkInterface
 VQNetworkReply
 VQPersistentModelIndex
+VqqK4P5iI5xSCHjnI2peftLVr3mkbhNnw19cv3xMyxNuf
 VQRegularExpression
 VQSequentialIterableImpl
 VQSslError
@@ -25818,6 +25823,7 @@ Wcircumflex
 WDU_Mbstatet
 WeakFunctionRef
 WeakThreadRef
+WEaLZICoqvb6P6zy
 WeaponsAction
 WebChatFilterHttpTimeoutSeconds
 WebChatFiltering
@@ -26073,6 +26079,7 @@ WorldToScreenPoint
 WorldToViewportPoint
 WP1Lk7UmX3No0NAVVrlNv8vM1TKYodC60fXpXkwOnxGMHelMkfu58xsxIB9tXB4U
 WPACKET_start_sub_packet_len__
+WrHA9MTLDBDOcmKAUQMmuTFm21oD8zErGQJgZZPmz6m8iqy9Axfd0YeSRzgBhpv
 WristDisplacementDamping
 WristDisplacementDampingMode
 WriteArray
@@ -26096,7 +26103,6 @@ WSAStartup
 WSAStringToAddressW
 WTHelperGetProvSignerFromChain
 WTHelperProvDataFromStateData
-WtipjaeT4gBcioYw7DQhcOqezZs9haN9jNdLQwmhr5kMkpdhTqamqITq1cxe80r4
 X_deprecated
 X_Fullscreen
 X_JW4AssetType
@@ -26175,6 +26181,7 @@ XPEAVRobloxScriptDiffDoc
 XQColorDialog
 Xregex_error
 XResolution
+XRVOvGORqbEihh9ReR
 Xtime_get_ticks
 XUnegotiation_response
 XvAAuY44YuAAvX4
@@ -26313,6 +26320,7 @@ Z_KPEIBX_K_KPEIAU1
 Zcaronsmall
 Zdotaccent
 ZgnhKhWhci
+ZI3BBlL6j8h
 ZIndexBehavior
 ZLcJhLcGhM
 ZNjlXiODrHUcaGRYt
