@@ -4437,7 +4437,6 @@ BVRegion3int16
 BVSystemAddress
 BVTextureId
 BW4AlphaMode
-Bw7zqzFbFH6c5DUJwHo3S4qS8TpRZ8juyCSgEh
 BWGradient.png
 ByCongestionControl
 ByDatacenter_
@@ -4450,7 +4449,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405390
+ByVersion_0.434.0.405391
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -6917,7 +6916,6 @@ DD7205886F11E18561866242201959
 DDDE3BCA91511E2B410EF351327957B
 DDDE3BFA91511E2B410EF351327957B
 DDDE3C0A91511E2B410EF351327957B
-DDlxbMxueLq9ibGQoxMK
 DDU_Mbstatet
 DE8FD5272E11E489A6CDE46C99CA59
 DE8FD6272E11E489A6CDE46C99CA59
@@ -7588,7 +7586,6 @@ DH_new_method
 DHBasedMac
 DHParameters
 DHparams_print_fp
-DHqOHbXPjugd9yAUQSJb3nAy
 DhufyEeFO7U33Tv7vk
 Diagnostic
 Diagnostics
@@ -8165,6 +8162,7 @@ EBAPEAVTeam
 EBAPEAVWorkspace
 EbDgxvvfGb
 EBELEVE`EjEtE
+EBGr7xsrg7DwcmxRWt0vn2Y4HKqfWz7ELY90eEhXOC4
 EC_GROUP_check
 EC_GROUP_check_discriminant
 EC_GROUP_copy
@@ -10917,6 +10915,7 @@ HB_SHAPER_LIST
 HBRenderDXT_KTX
 Hcircumflex
 HDCacheLock
+HDzKS3yDpqhALRP8dHwjnUompoV2a
 HeadColor3
 HeaderCheckBoxClicked
 HeaderData
@@ -10971,6 +10970,7 @@ HHVQRegularExpression
 HHW4AspectRatioMode
 HHW4Format
 HHW4Policy
+Hi3ldQFG0jstUTR5pq0Cbzb
 HiddenOgreWidget
 HIDE_TAB_BAR
 HideFromPlayer
@@ -11082,7 +11082,6 @@ HPEAVQAction
 HPEBDHW4CaseSensitivity
 HPEBDPEBDV
 HPEBVQMimeData
-HPvZGLXKN6nRfAgEyxG8mFhwEBHms1w4f9vfQr
 HQEAPEAVQGraphicsItem
 HQFSShadowed
 HQVSShadowed
@@ -12129,7 +12128,6 @@ JSONObject
 JSONOverflowAbort
 JSONOverflowDepth
 JUGroupRolesRequestRecord
-JumoHlBopVD7S77QJyXtU1nUow85aHsouqVVidvk5bDpZvAuazindmM3
 JumpAnimation
 JumpHeight
 JumpPowerInstantControllerMultiplierPercent
@@ -12139,7 +12137,6 @@ JumpScares
 JumpScaresP2
 JumpToIndex
 JustEndedBusy
-JVTXKcUbbZSpX5GAIWYp0lxXSbv96cseVTdQDJuK8adSDRLmgfyse93d2Z
 JW4FriendService_FriendStatus
 JW4HttpRequestResult
 JW4InfoType
@@ -12212,9 +12209,9 @@ KnownHeaders
 KodchiangUPC
 KPEAVICHull
 KPEIBX_K_KPEIAU_iobuf
-KsdW7deFtlGL
 KVScriptContext
 KYULPhCBFoD3mw5mygYqAeFlHdSL2k3MnDG
+KYVGYksK4EpZvlmdVgce4LyNFrHdxUMN2ZNmBf2HOxccE6cRRGg
 LabelArray
 LabelArray.push
 LabelArray[globstart]
@@ -13531,7 +13528,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEArSJ1wnBPe4R
+MIICCgKCAgEA9bZKBaUfQHyIDVMCQAP
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -13636,6 +13633,7 @@ Monochrome
 Montgomery
 MoonAngularSize
 MoonTextureId
+MoQw3PyR0F0CAwEAAQ
 MoreButton
 MoreColorsPressed
 MoreInfoHoverIcon
@@ -13767,6 +13765,7 @@ MovingAssemblies
 MovingNoPhysicsBase
 MovingPrimitives
 MovingPrimitivesCount
+MOwTt9RVnsk41oTZXHAD4Ae
 MP8PartInstance
 MpCehiHzreSzNTczkc9d
 MPEAVAdorn
@@ -14164,6 +14163,9 @@ NPCUnequipTools
 NPEAVInstance
 NPEAVQString
 NPEAVQWidget
+NPQ8GTyf9NGQXcviChOwnb66ET4nQXLZWwBLxQZJXGefKAummbz5jV7sCyyWIq1M
+NSdSd6zYhL
+NSj1yFU9AHrJwSQhowF5WkmlpKQkQOz
 Ntildesmall
 NullPassword
 NUMBER_OF_ORDERED_STREAMS
@@ -14332,7 +14334,6 @@ OfRawBytes
 OfResidence
 OfTimesLooped
 OfTopLevelItem
-Og9csNWHdmAfoE4cpOzAuGFQwywFw8JnoLJ
 Ogoneksmall
 Ogravesmall
 OGRE_VIEW_UPDATE
@@ -14409,6 +14410,7 @@ OnUnhandledScriptErrorsAction
 OnUserABTestLoadingStatusChanged
 OpacityMask
 OpaqueUseMaterialAndDistanceSort
+OpD5AGZBuN8nu3wqTZbFHFtcYO02RN
 OPEN_BUILDERS_CLUB
 OPEN_CAPTCHA_VIEW
 OPEN_CUSTOM_WEBVIEW
@@ -14709,6 +14711,7 @@ PanelStatusBar
 PanelTipLabel
 Pants.rbxm
 PantsTemplate
+PAoWv7sw8vdTSYzWTPZMDOjtTY
 ParabolaAdornment
 ParallelAddInstanceWhenParalleStream
 ParallelFetchInternalPermission
@@ -16543,6 +16546,7 @@ PushPixels
 PVAdornment
 PVInstance
 PVK_header
+PwZxHZg0VrWvElj
 PyJlf7IHZQpFHohBe
 QAbstractAnimation
 QAbstractButton
@@ -17096,7 +17100,6 @@ QNetworkRequest
 QObjectData
 QObjectShared
 QOgreWidget
-QOxaYxJucYMn7CcpsLwnsCrIhgY31TRnCbUo6OglLzqdJljKoXHNH5uTarHyK
 QPaintDevice
 QPainterPath
 QParallelAnimationGroup
@@ -19742,7 +19745,6 @@ SizeToTwoAction
 SizingMode
 SkateboardController
 SkateboardPlatform
-SkGxJNm9qlVGFl
 SkipFirstMechanismChangeReport
 Sky.SkyboxBk
 Sky.SkyboxDn
@@ -23732,6 +23734,7 @@ TS_TST_INFO_set_tsa
 TS_VERIFY_CTX_new
 TSMk2ThrottleStreamJob
 TTUUEDDsss
+TUJqVeUkCpPm9b
 TurboBuildersClub
 TurnOffAction
 TurnOffManualJointCreation
@@ -23771,7 +23774,6 @@ TwoStepVerificationWidgetShown
 TxtArray.length
 TxtArray[j]
 TXtComment
-Ty7kXVuC2AXgIt01mrhaabI7PhofTdCUu5nKgW5s4Rt
 TypeArray.length
 TypeArray.push
 TypeArray[glob
@@ -23791,6 +23793,7 @@ Typesetter
 TypeString
 TypeToImport
 Typewriter
+TzuDgzRHVMpM6ODn3JJ
 U_ContinuationTaskHandleBase
 U_ExceptionHolder
 U_Key_dn.png
@@ -23942,6 +23945,7 @@ UGeometryBatch
 UGlobalResult
 Ugravesmall
 UGroupRolesResult
+UGSWSjOEfaJl
 UGuiClusterRT
 UHttpApiRequest
 UHttpRequest
@@ -24547,14 +24551,12 @@ UWindowInputState
 UWindowShowMessageNotification
 UWindowShowMessageRequest
 UWindowShowMessageResponse
-UYHHj2nDOqPgxKjUHsEKueisxgnUUIjD6PvrFt6J23qrD6LMuVDaaEsCAwEAAQ
 V_http_request
 V_http_response
 VABTestEnrollmentsRequest
 VABTestService
 VAccessory
 VAccoutrement
-VaCPw9ncXk0k0ZRNczrYdwxLrMHM2CRwylddIA10KgrVl9itHOpG
 VActionsQuickOpenProvider
 VActionsQuickOpenProviderWorker
 VActionsSearchContextHandler
@@ -24636,7 +24638,6 @@ VBatchThumbnailFetcher
 VBetaFeaturesController
 VBetaFeatureStruct
 VBevelMesh
-VbHXZ5GCTJ2FpQerIei
 VBillboardGui
 VBinaryString
 VBindableEvent
@@ -24833,6 +24834,7 @@ VeFailedWithMessage
 VehicleController
 VehiclesAction
 VehicleSeat
+VElgE33hQVXWNHEBKubsWFdNSfbFAkFa2ud9fs0C4ez2BVPJvUgEq
 Velocity_xml
 VelocityInheritance
 VelocityMotor
@@ -25842,6 +25844,7 @@ WeldCursor
 WeldPermyriad
 WeldReport
 WeldsAction
+WG6XaCDijy2ZWuCauXG
 WGL_3DFX_multisample
 WGL_3DL_stereo_control
 WGL_AMD_gpu_association
@@ -26020,7 +26023,6 @@ WithSHA224
 WithSHA256
 WithSHA384
 WithSHA512
-WJVi0B153dycMWX
 WM_ATLGETCONTROL
 WM_ATLGETHOST
 WMCreateProfileManager
@@ -26086,7 +26088,7 @@ WSAStartup
 WSAStringToAddressW
 WTHelperGetProvSignerFromChain
 WTHelperProvDataFromStateData
-WW2LDDDzZpU
+WvjoGiJfX81vLi
 X_deprecated
 X_Fullscreen
 X_JW4AssetType
@@ -26116,6 +26118,7 @@ XAlignment
 Xbad_alloc
 Xbad_function_call
 XbbXXbbXGSSGGSS
+XBE98JjgYI
 Xbox.AllUsers.PlayNextGame
 XboxAvatarPaneRefreshInterval
 XboxDisableTextChat
@@ -26128,6 +26131,7 @@ XboxPresencePolling
 XboxSaleAvatarPackageIds
 XboxUseCuratedGameSort2
 XboxUseNewValidUsernameCheck2
+XcofFgu9nwx1ysfa9HZ8OJSwwkRdKPNfPqUNGNrm1ejQazGex
 XFbxAMatrix
 XFREE86_GLYPH_RANGES
 XGetLastError

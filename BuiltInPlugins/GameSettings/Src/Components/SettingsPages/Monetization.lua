@@ -129,11 +129,15 @@ end
 
 local function convertDeveloperProductsForTable(devProducts)
     local result = {}
+    local index = 2
     for id, product in pairs(devProducts) do
         result[id] = {
-            id,
-            product.name,
-            product.price,
+            index = index,
+            row = {
+                id,
+                product.name,
+                product.price,
+            },
         }
     end
 

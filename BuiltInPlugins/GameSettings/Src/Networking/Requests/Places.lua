@@ -1,5 +1,25 @@
 --[[
 	Request for managing places in a universe
+
+	Response is formatted as 
+	{
+		"previousPageCursor": null,
+		"nextPageCursor": null,
+		"data": [
+			{
+				"maxPlayerCount": null,
+				"socialSlotType": null,
+				"customSocialSlotsCount": null,
+				"allowCopying": null,
+				"currentSavedVersion": null,
+				"id": 2156089039,
+				"universeId": 2156657040,
+				"name": "zDedrid's Place Number: 8",
+				"description": "",
+				"isRootPlace": true
+			}
+		]
+	}
 ]]
 
 local HttpService = game:GetService("HttpService")
@@ -26,6 +46,7 @@ end
 
 local function GetPlaces()
 	local places = {}
+	local index = 1
 
 	local function request(cursor)
 		local url = Http.BuildRobloxUrl(PLACES_REQUEST_TYPE,PLACES_URL, game.GameId)
@@ -49,8 +70,10 @@ local function GetPlaces()
 		andThen(function(response)
 			local body = HttpService:JSONDecode(response)
 
-            for _, place in pairs(body.data) do
+			for _, place in pairs(body.data) do
+				place.index = index
 				places[place.id] = place
+				index = index + 1
 			end
 
             if body.nextPageCursor then

@@ -1,5 +1,7 @@
 local Plugin = script.Parent.Parent.Parent
 
+local deepEqual = require(Plugin.Libs.Framework.Util.deepEqual)
+
 local DebugFlags = require(Plugin.Core.Util.DebugFlags)
 local AssetConfigConstants = require(Plugin.Core.Util.AssetConfigConstants)
 local Category = require(Plugin.Core.Types.Category)
@@ -116,6 +118,14 @@ end
 function PageInfoHelper.isPackagesCategory(pageInfo)
 	local currentCategory = PageInfoHelper.getCategoryForPageInfo(pageInfo)
 	return AssetConfigConstants.packagesCategoryType[currentCategory]
+end
+
+--[[
+	This is useful for checking whether pageInfo has been changed while a request was in flight.
+]]
+function PageInfoHelper.isPageInfoStale(pageInfo, store)
+	local newPageInfo = store:getState().pageInfo
+	return not deepEqual(pageInfo, newPageInfo)
 end
 
 return PageInfoHelper

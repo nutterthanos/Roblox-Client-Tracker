@@ -6,7 +6,6 @@ game:DefineFastFlag("RemoveNilInstances", false)
 game:DefineFastFlag("UseRBXThumbInToolbox", false)
 game:DefineFastFlag("EnableAssetConfigVersionCheckForModels", false)
 game:DefineFastFlag("FixAssetConfigManageableGroups", false)
-game:DefineFastFlag("UseDevelopFetchPluginVersionId", false)
 game:DefineFastFlag("ShowAssetConfigReasons2", false)
 game:DefineFastFlag("DebugAssetConfigNetworkError", false)
 game:DefineFastFlag("FixAssetConfigIcon", false)
@@ -42,5 +41,7 @@ game:DefineFastFlag("CMSFixAssetPreviewForThumbnailConfig", false)
 game:DefineFastFlag("ToolboxUseNewAssetType", false)
 
 game:DefineFastFlag("StudioToolboxSearchOverflowFix", false)
+
+game:DefineFastFlag("StudioFixComparePageInfo", false)
 
 return nil

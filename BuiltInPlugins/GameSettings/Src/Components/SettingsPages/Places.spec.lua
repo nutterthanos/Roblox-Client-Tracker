@@ -20,6 +20,7 @@ return function()
 							id = 100,
 							name = "place 1",
 							universeId = 201,
+							index = 1,
 						}
 					}
 				},

@@ -50,19 +50,20 @@ local DiscardError = require(Plugin.Src.Actions.DiscardError)
 local DiscardErrors = require(Plugin.Src.Actions.DiscardErrors)
 local SetEditPlaceId = require(Plugin.Src.Actions.SetEditPlaceId)
 
+local ReloadPlaces = require(Plugin.Src.Thunks.ReloadPlaces)
+
 local createSettingsPage = require(Plugin.Src.Components.SettingsPages.DEPRECATED_createSettingsPage)
 
 local MAX_NAME_LENGTH = 50
-local MIN_PLAYER_COUNT = 0
+local MIN_PLAYER_COUNT = 1
 local MAX_PLAYER_COUNT = 100
-local MIN_SOCIAL_SLOT_COUNT = 0
+local MIN_SOCIAL_SLOT_COUNT = 1
 local MAX_SOCIAL_SLOT_COUNT = 10
 
 local AssetManagerService = game:GetService("AssetManagerService")
 local StudioService = game:GetService("StudioService")
 
 local nameErrors = {
-	Moderated = "ErrorNameModerated",
 	Empty = "ErrorNameEmpty",
 }
 
@@ -83,6 +84,10 @@ end
 --Implements dispatch functions for when the user changes values
 local function dispatchChanges(setValue, dispatch)
 	local dispatchFuncs = {
+		dispatchReloadPlaces = function()
+			dispatch(ReloadPlaces())
+		end,
+
 		dispatchSetEditPlaceId = function(placeId)
 			dispatch(SetEditPlaceId(placeId))
 		end,
@@ -91,8 +96,6 @@ local function dispatchChanges(setValue, dispatch)
 			local nameLength = utf8.len(placeName)
 			if nameLength == 0 then
 				dispatch(AddErrors({placeName = "Empty"}))
-			elseif nameLength > MAX_NAME_LENGTH then
-				dispatch(AddErrors({placeName = "TooLong"}))
 			else
 				local newPlaces = deepJoin(places, {
 					[placeId] = {
@@ -101,6 +104,9 @@ local function dispatchChanges(setValue, dispatch)
 				})
 				dispatch(AddChange("places", newPlaces))
 				dispatch(DiscardError("placeName"))
+				if nameLength > MAX_NAME_LENGTH then
+					dispatch(AddErrors({placeName = "TooLong"}))
+				end
 			end
 		end,
 
@@ -162,6 +168,24 @@ local function dispatchChanges(setValue, dispatch)
 	return dispatchFuncs
 end
 
+local function createPlaceTableData(places)
+	local data = {}
+
+	for _, place in pairs(places) do
+		local rowData = {
+			index = place.index + 1,
+			row = {
+				place.currentSavedVersion,
+				place.name,
+				place.maxPlayerCount
+			},
+		}
+		data[place.id] = rowData
+	end
+
+	return data
+end
+
 local function displayPlaceListPage(props, localization)
 	local theme = props.Theme:get("Plugin")
 
@@ -170,17 +194,16 @@ local function displayPlaceListPage(props, localization)
 	local buttonText = localization:getText("General", "ButtonCreate")
 	local buttonTextExtents = GetTextSize(buttonText, theme.fontStyle.Header.TextSize, theme.fontStyle.Header.Font)
 
+	local dispatchReloadPlaces = props.dispatchReloadPlaces
+
 	local placeTableHeaders = {
 		localization:getText("Places", "PlaceVersion"),
 		localization:getText("Places", "PlaceName"),
 		localization:getText("Places", "MaxPlayers"),
 	}
 
-	local placesData = {}
-	for _, place in pairs(props.Places) do
-		local row = { place.currentSavedVersion , place.name, place.maxPlayerCount }
-		placesData[place.id] = row
-	end
+	local places = props.Places and props.Places or {}
+    local placesData = createPlaceTableData(places)
 
 	return
 	{
@@ -197,6 +220,7 @@ local function displayPlaceListPage(props, localization)
 			LayoutOrder = layoutIndex:getNextOrder(),
 			OnClick = function()
 				AssetManagerService:AddNewPlace()
+				dispatchReloadPlaces()
 			end,
 		}, {
 			Roact.createElement(HoverArea, {Cursor = "PointingHand"}),
@@ -243,14 +267,14 @@ local function displayEditPlacePage(props, localization)
 	local maxPlayerCount = places[editPlaceId].maxPlayerCount
 	local placePlayerCountError
 	if props.PlacePlayerCountError then
-		placePlayerCountError = ""
+		placePlayerCountError = localization:getText("Places", "NumberError", {minRange = MIN_PLAYER_COUNT, maxRange = MAX_PLAYER_COUNT, })
 	end
 
 	local serverFill = places[editPlaceId].socialSlotType
 	local customSocialSlotsCount = places[editPlaceId].customSocialSlotsCount
 	local placeCustomSocialSlotCountError
 	if props.PlaceCustomSocialSlotCountError then
-		placeCustomSocialSlotCountError = ""
+		placeCustomSocialSlotCountError = localization:getText("Places", "NumberError", {minRange = MIN_SOCIAL_SLOT_COUNT, maxRange = MAX_SOCIAL_SLOT_COUNT, })
 	end
 
 	local dispatchSetPlaceName = props.dispatchSetPlaceName
@@ -321,14 +345,13 @@ local function displayEditPlacePage(props, localization)
 			HeaderLayout = Roact.createElement("UIListLayout", {
 				FillDirection = Enum.FillDirection.Vertical,
 				HorizontalAlignment = Enum.HorizontalAlignment.Left,
-				VerticalAlignment = Enum.VerticalAlignment.Center,
 				SortOrder = Enum.SortOrder.LayoutOrder,
 			}),
 
 			TextBox = Roact.createElement(RoundTextBox, {
 				Active = true,
 				LayoutOrder = 1,
-				ShowToolTip = false,
+				ShowToolTip = placePlayerCountError and true or false,
 				Size = UDim2.new(0, theme.placePage.textBox.length, 0, theme.textBox.height),
 				Text = maxPlayerCount,
 				ErrorMessage = placePlayerCountError,
@@ -339,7 +362,7 @@ local function displayEditPlacePage(props, localization)
 				end,
 			}),
 
-			MaxPlayersSubText = Roact.createElement("TextLabel", Cryo.Dictionary.join(theme.fontStyle.Subtext, {
+			MaxPlayersSubText = not placePlayerCountError and Roact.createElement("TextLabel", Cryo.Dictionary.join(theme.fontStyle.Subtext, {
 				Size = UDim2.new(1, 0, 0, maxPlayersSubTextSize.Y),
 				LayoutOrder = 2,
 
@@ -360,7 +383,7 @@ local function displayEditPlacePage(props, localization)
 
 			CustomSocialSlotsCount = customSocialSlotsCount,
 			Selected = serverFill,
-			ErrorState = placeCustomSocialSlotCountError,
+			ErrorMessage = placeCustomSocialSlotCountError,
 
 			OnSocialSlotTypeChanged = function(button)
 				dispatchSetSocialSlotType(places, editPlaceId, button.Id)

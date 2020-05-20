@@ -69,7 +69,6 @@ local PurchaseStatus = require(Plugin.Core.Types.PurchaseStatus)
 local AssetPreviewWrapper = Roact.PureComponent:extend("AssetPreviewWrapper")
 
 local FixModelPreviewSelection = settings():GetFFlag("FixModelPreviewSelection")
-local FFlagUseDevelopFetchPluginVersionId = game:GetFastFlag("UseDevelopFetchPluginVersionId")
 local FFlagFixUseDevelopFetchPluginVersionId = game:DefineFastFlag("FixUseDevelopFetchPluginVersionId", false)
 local FFlagStudioToolboxPluginPurchaseFlow = game:GetFastFlag("StudioToolboxPluginPurchaseFlow")
 local FFlagStudioHideSuccessDialogWhenFree = game:GetFastFlag("StudioHideSuccessDialogWhenFree")
@@ -101,7 +100,7 @@ function AssetPreviewWrapper:createPurchaseFlow(localizedContent)
 	local typeId = assetData.Asset.TypeId or Enum.AssetType.Model.Value
 
 	local assetVersionId
-	if FFlagUseDevelopFetchPluginVersionId then
+	if FFlagFixUseDevelopFetchPluginVersionId then
 		local previewPluginData = self.props.previewPluginData
 		if previewPluginData then
 			assetVersionId = previewPluginData.versionId
@@ -336,7 +335,7 @@ function AssetPreviewWrapper:init(props)
 	self.tryInstall = function()
 		local assetData = self.props.assetData
 		local assetVersionId
-		if FFlagUseDevelopFetchPluginVersionId then
+		if FFlagFixUseDevelopFetchPluginVersionId then
 			local previewPluginData = self.props.previewPluginData
 			assetVersionId = previewPluginData.versionId
 		else
@@ -450,7 +449,7 @@ end
 function AssetPreviewWrapper:didMount()
 	self.props.getPreviewInstance(self.props.assetData.Asset.Id, self.props.assetData.Asset.TypeId)
 	if self.props.assetData.Asset.TypeId == Enum.AssetType.Plugin.Value then
-		if FFlagUseDevelopFetchPluginVersionId then
+		if FFlagFixUseDevelopFetchPluginVersionId then
 			self.props.getPluginInfo(getNetwork(self), self.props.assetData.Asset.Id)
 		else
 			self.props.deprecated_getAssetVersionId(getNetwork(self), self.props.assetData.Asset.Id)

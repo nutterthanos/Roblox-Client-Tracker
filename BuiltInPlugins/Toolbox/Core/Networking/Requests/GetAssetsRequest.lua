@@ -2,6 +2,7 @@ local FFlagEnablePurchasePluginFromLua2 = settings():GetFFlag("EnablePurchasePlu
 local FFlagStudioUseDevelopAPIForPackages = settings():GetFFlag("StudioUseDevelopAPIForPackages")
 local FFlagUseCategoryNameInToolbox = game:GetFastFlag("UseCategoryNameInToolbox")
 local FFlagEnableToolboxVideos = game:GetFastFlag("EnableToolboxVideos")
+local FFlagStudioFixComparePageInfo = game:GetFastFlag("StudioFixComparePageInfo")
 
 local Plugin = script.Parent.Parent.Parent.Parent
 
@@ -81,6 +82,11 @@ return function(networkInterface, pageInfoOnStart)
 		end
 
 		local errorFunc = function(result)
+			if FFlagStudioFixComparePageInfo then
+				if PageInfoHelper.isPageInfoStale(pageInfoOnStart, store) then
+					return
+				end
+			end
 			store:dispatch(NetworkError(result))
 			store:dispatch(SetLoading(false))
 		end
@@ -101,8 +107,16 @@ return function(networkInterface, pageInfoOnStart)
 			else
 				categoryOnRequestFinish = pageInfo.categories[pageInfo.categoryIndex]
 			end
+      
+			local isResponseFresh
 
-			if categoryOnStart == categoryOnRequestFinish and pageInfoOnStart.targetPage - pageInfo.currentPage == 1 then
+			if FFlagStudioFixComparePageInfo then
+				isResponseFresh = not PageInfoHelper.isPageInfoStale(pageInfoOnStart, store)
+			else
+				isResponseFresh = categoryOnStart == categoryOnRequestFinish and pageInfoOnStart.targetPage - pageInfo.currentPage == 1
+			end
+
+			if isResponseFresh then
 				if data then
 					dispatchCreatorInfo(store, extractCreatorInfo(data.Results))
 					store:dispatch(GetAssets(data.Results or {}, data.TotalResults))

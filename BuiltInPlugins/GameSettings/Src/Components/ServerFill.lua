@@ -14,8 +14,9 @@
 ]]
 
 local Plugin = script.Parent.Parent.Parent
-
 local Roact = require(Plugin.Roact)
+local Cryo = require(Plugin.Cryo)
+
 local Framework = Plugin.Framework
 local FitFrameOnAxis = require(Framework.Util).FitFrame.FitFrameOnAxis
 
@@ -41,7 +42,7 @@ function ServerFill:render()
     local selected = props.Selected
 
     local customSocialSlotsCount = props.CustomSocialSlotsCount
-    local errorState = props.ErrorState
+    local errorMessage = props.ErrorMessage
     local onSocialSlotTypeChanged = props.OnSocialSlotTypeChanged
     local onCustomSocialSlotsCountChanged = props.OnCustomSocialSlotsCountChanged
 
@@ -62,6 +63,20 @@ function ServerFill:render()
             Id = "Custom",
             Title = localization:getText("Places", "CustomizeSlotsTitle"),
             Description = localization:getText("Places", "CustomizeSlotsDescription"),
+            Children = {
+                ErrorMessage = errorMessage and Roact.createElement("TextLabel", Cryo.Dictionary.join(theme.fontStyle.SmallError, {
+                    Size = UDim2.new(1, 0, 0, theme.fontStyle.SmallError.Size),
+
+                    BackgroundTransparency = 1,
+
+                    Text = errorMessage,
+
+                    TextYAlignment = Enum.TextYAlignment.Center,
+                    TextXAlignment = Enum.TextXAlignment.Left,
+
+                    TextWrapped = true,
+                })),
+            }
         },
     }
 
@@ -91,25 +106,26 @@ function ServerFill:render()
                         LayoutOrder = index,
                     }, {
                         RadioButton = Roact.createElement(RadioButton, {
+                            LayoutOrder = 1,
                             Title = button.Title,
                             Id = button.Id,
                             Description = button.Description,
                             Selected = (button.Id == selected) or (index == selected),
                             Index = index,
                             Enabled = props.Enabled,
-                            LayoutOrder = 1,
+                            Children = button.Children,
                             OnClicked = function()
                                 onSocialSlotTypeChanged(button)
                             end,
                         }),
 
                         InputField = hasInputField and Roact.createElement(RoundTextBox, {
-                            Active = hasInputField,
                             LayoutOrder = 2,
+                            Active = hasInputField,
                             ShowToolTip = false,
                             Size = UDim2.new(0, theme.placePage.textBox.length, 0, theme.textBox.height),
                             Text = customSocialSlotsCount,
-                            ErrorMessage = errorState,
+                            ErrorMessage = errorMessage,
                             TextSize = theme.fontStyle.Normal.TextSize,
 
                             SetText = onCustomSocialSlotsCountChanged,

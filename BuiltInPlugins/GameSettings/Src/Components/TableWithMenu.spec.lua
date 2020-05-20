@@ -17,9 +17,12 @@ return function()
 
 				Data = {
 					[1] = {
-						"Roblox",
-						"San Mateo",
-						"750",
+						index = 1,
+						row = {
+							"Roblox",
+							"San Mateo",
+							"750",
+						},
 					}
 				},
 
