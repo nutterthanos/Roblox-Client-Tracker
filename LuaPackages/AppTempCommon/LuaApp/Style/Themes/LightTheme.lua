@@ -82,7 +82,7 @@ local theme = {
 		Transparency = 0.5, -- 0.5 Alpha
 	},
 	SecondaryOnHover = {
-		Color = Colors.Flint,
+		Color = Colors.White,
 		Transparency = 0,
 	},
 	SecondaryContent = {
