@@ -80,6 +80,7 @@ function DevProducts.Create(gameId, params)
             name = params.name,
             description = params.description,
             priceInRobux = params.price,
+            iconImageAssetId = params.iconImageAssetId,
         }
     }
 

@@ -213,7 +213,7 @@ local function displayPlaceListPage(props, localization)
 		}),
 
 		CreateButton = Roact.createElement(Button, {
-			Style = "RoundPrimary",
+			Style = "GameSettingsPrimaryButton",
 			Text = buttonText,
 			Size = UDim2.new(0, buttonTextExtents.X + theme.createButton.PaddingX,
 			0, buttonTextExtents.Y + theme.createButton.PaddingY),
@@ -238,7 +238,7 @@ local function displayPlaceListPage(props, localization)
 				if key == "EditKey" then
 					props.dispatchSetEditPlaceId(id)
 				elseif key == "VerisonHistoryKey" then
-					StudioService:ShowPlaceHistoryVersionDialog()
+					StudioService:ShowPlaceVersionHistoryDialog()
 				end
 			end,
 		})
@@ -406,7 +406,7 @@ local function displayEditPlacePage(props, localization)
 				0, viewButtonTextExtents.Y + theme.viewButton.PaddingY),
 				LayoutOrder = layoutIndex:getNextOrder(),
 				OnClick = function()
-					StudioService:ShowPlaceHistoryVersionDialog()
+					StudioService:ShowPlaceVersionHistoryDialog()
 				end,
 			}, {
 				Roact.createElement(HoverArea, {Cursor = "PointingHand"}),

@@ -280,8 +280,8 @@ function SettingsImpl:SaveAll(state)
 			end
 		end
 
-		if FFlagStudioAddMonetizationToGameSettings and settings.Changed.developerProducts and settings.Changed.developerProducts[0] ~= nil then
-			saveInfo.NewDevProduct = settings.Changed.developerProducts[0]
+		if FFlagStudioAddMonetizationToGameSettings and settings.Changed.unsavedDevProducts and next(settings.Changed.unsavedDevProducts) ~= nil then
+			saveInfo.NewDevProducts = settings.Changed.unsavedDevProducts
 		elseif FFlagStudioAddMonetizationToGameSettings and settings.Changed.developerProducts ~= nil then
 			saveInfo.UpdateDevProducts = settings.Changed.developerProducts
 		end
@@ -333,8 +333,10 @@ function SettingsImpl:SaveAll(state)
 			table.insert(setRequests, Requests.ScriptVersionHistoryEnabled.Set(saveInfo.ScriptVersionHistoryEnabled))
 		end
 
-		if FFlagStudioAddMonetizationToGameSettings and saveInfo.NewDevProduct then
-			table.insert(setRequests, Requests.DeveloperProducts.Create(universeId, saveInfo.NewDevProduct))
+		if FFlagStudioAddMonetizationToGameSettings and saveInfo.NewDevProducts then
+			for _, product in pairs(saveInfo.NewDevProducts) do
+				table.insert(setRequests, Requests.DeveloperProducts.Create(universeId, product))
+			end
 		end
 
 		if FFlagStudioAddMonetizationToGameSettings and saveInfo.UpdateDevProducts then

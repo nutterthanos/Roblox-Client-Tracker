@@ -37,8 +37,10 @@ function FrameworkStyles.new()
 
 		TextLabel = newDefaults(),
 		ToggleButton = newDefaults(),
+		TextInput = newDefaults(),
 
 		-- StudioUI Styles
+		SearchBar = newDefaults(),
 		StyledDialog = newDefaults(),
 	}
 end

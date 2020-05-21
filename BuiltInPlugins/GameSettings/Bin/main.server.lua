@@ -42,7 +42,11 @@ local LocalizationProvider = require(Plugin.Src.Providers.LocalizationProvider)
 local Networking = require(Plugin.Src.ContextServices.Networking)
 local WorldRootPhysics = require(Plugin.Src.Components.SettingsPages.WorldPage.ContextServices.WorldRootPhysics)
 local GameInfoController = require(Plugin.Src.Controllers.GameInfoController)
+local GameMetadataController = require(Plugin.Src.Controllers.GameMetadataController)
+local GroupMetadataController = require(Plugin.Src.Controllers.GroupMetadataController)
+local GamePermissionsController = require(Plugin.Src.Components.SettingsPages.PermissionsPage.Controllers.GamePermissionsController)
 local GameOptionsController = require(Plugin.Src.Components.SettingsPages.OptionsPage.Controllers.GameOptionsController)
+local SocialController = require(Plugin.Src.Components.SettingsPages.PermissionsPage.Controllers.SocialController)
 local UniverseAvatarController = require(Plugin.Src.Components.SettingsPages.AvatarPage.Controllers.UniverseAvatarController)
 
 local CurrentStatus = require(Plugin.Src.Util.CurrentStatus)
@@ -61,6 +65,8 @@ local LoadAllSettings = require(Plugin.Src.Thunks.LoadAllSettings)
 local isEmpty = require(Plugin.Src.Util.isEmpty)
 local Analytics = require(Plugin.Src.Util.Analytics)
 
+local FFlagStudioStandaloneGameMetadata = game:GetFastFlag("StudioStandaloneGameMetadata")
+
 local gameSettingsHandle
 local pluginGui
 local openedTimestamp
@@ -78,13 +84,21 @@ if game:GetFastFlag("StudioThunkWithArgsMiddleware") then
 	if game:GetFastFlag("GameSettingsNetworkRefactor") then
 		local networking = Networking.new()
 		local gameInfoController = GameInfoController.new(networking:get())
+		local gameMetadataController = GameMetadataController.new(networking:get())
+		local groupMetadataController = GroupMetadataController.new(networking:get())
+		local gamePermissionsController = GamePermissionsController.new(networking:get())
 		local gameOptionsController = GameOptionsController.new()
+		local socialController = SocialController.new(networking:get())
 		local universeAvatarController = UniverseAvatarController.new(networking:get())
 
 		thunkContextItems.networking = networking:get()
 		thunkContextItems.worldRootPhysicsController = worldRootPhysics:get()
 		thunkContextItems.gameInfoController = gameInfoController
+		thunkContextItems.gameMetadataController = gameMetadataController
+		thunkContextItems.groupMetadataController = groupMetadataController
+		thunkContextItems.gamePermissionsController = gamePermissionsController
 		thunkContextItems.gameOptionsController = gameOptionsController
+		thunkContextItems.socialController = socialController
 		thunkContextItems.universeAvatarController = universeAvatarController
 	end
 
@@ -354,9 +368,12 @@ local function openGameSettings(gameId, dataModel)
 		settingsStore:dispatch(DiscardErrors())
 	end
 
-	if game:GetFastFlag("GameSettingsNetworkRefactor") then
+	if FFlagStudioStandaloneGameMetadata then
 		settingsStore:dispatch(SetGameId(gameId))
 		settingsStore:dispatch(SetGame(dataModel))
+	end
+
+	if game:GetFastFlag("GameSettingsNetworkRefactor") then
 		settingsStore:dispatch(SetCurrentStatus(CurrentStatus.Open))
 	else
 		settingsStore:dispatch(LoadAllSettings(settingsImpl))
@@ -387,7 +404,7 @@ local function main()
 		settingsButton.ClickableWhenViewportHidden = true
 		settingsButton.Enabled = true
 		settingsButton.Click:connect(function()
-			if game:GetFastFlag("GameSettingsNetworkRefactor") then
+			if FFlagStudioStandaloneGameMetadata then
 				openGameSettings(game.GameId, game)
 			else
 				openGameSettings()

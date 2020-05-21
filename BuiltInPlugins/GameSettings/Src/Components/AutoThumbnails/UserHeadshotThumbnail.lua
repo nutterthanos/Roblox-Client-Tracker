@@ -86,7 +86,7 @@ function UserHeadshotThumbnail:didMount()
 	end
 
 	local mask = self.maskRef:getValue()
-	self.parentChanged = mask:GetPropertyChangedSignal("Parent"):Connect(parentChanged)
+	self.parentChanged = mask.AncestryChanged:Connect(parentChanged)
 	parentChanged()
 end
 
