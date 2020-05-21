@@ -42073,6 +42073,70 @@
         {
             "Members": [
                 {
+                    "MemberType": "Function",
+                    "Name": "CreatePlugin",
+                    "Parameters": [
+                    ],
+                    "ReturnType": {
+                        "Category": "Class",
+                        "Name": "Instance"
+                    },
+                    "Security": "PluginSecurity",
+                    "Tags": [
+                        "Deprecated",
+                        "CustomLuaState"
+                    ]
+                },
+                {
+                    "MemberType": "Function",
+                    "Name": "ExportPlace",
+                    "Parameters": [
+                        {
+                            "Default": "",
+                            "Name": "filePath",
+                            "Type": {
+                                "Category": "Primitive",
+                                "Name": "string"
+                            }
+                        }
+                    ],
+                    "ReturnType": {
+                        "Category": "Primitive",
+                        "Name": "void"
+                    },
+                    "Security": "PluginSecurity"
+                },
+                {
+                    "MemberType": "Function",
+                    "Name": "ExportSelection",
+                    "Parameters": [
+                        {
+                            "Default": "",
+                            "Name": "filePath",
+                            "Type": {
+                                "Category": "Primitive",
+                                "Name": "string"
+                            }
+                        }
+                    ],
+                    "ReturnType": {
+                        "Category": "Primitive",
+                        "Name": "void"
+                    },
+                    "Security": "PluginSecurity"
+                }
+            ],
+            "MemoryCategory": "Instances",
+            "Name": "PluginManagerInterface",
+            "Superclass": "Instance",
+            "Tags": [
+                "NotCreatable",
+                "NotReplicated"
+            ]
+        },
+        {
+            "Members": [
+                {
                     "Category": "Appearance",
                     "MemberType": "Property",
                     "Name": "Icon",

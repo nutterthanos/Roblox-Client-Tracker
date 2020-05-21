@@ -2328,6 +2328,10 @@ Class PluginManager : Instance [NotCreatable]
 	Function Instance PluginManager:CreatePlugin() {PluginSecurity} [Deprecated] [CustomLuaState]
 	Function void PluginManager:ExportPlace(string filePath = "") {PluginSecurity}
 	Function void PluginManager:ExportSelection(string filePath = "") {PluginSecurity}
+Class PluginManagerInterface : Instance [NotCreatable] [NotReplicated]
+	Function Instance PluginManagerInterface:CreatePlugin() {PluginSecurity} [Deprecated] [CustomLuaState]
+	Function void PluginManagerInterface:ExportPlace(string filePath = "") {PluginSecurity}
+	Function void PluginManagerInterface:ExportSelection(string filePath = "") {PluginSecurity}
 Class PluginMenu : Instance [NotCreatable] [NotReplicated]
 	Property string PluginMenu.Icon [<📁> LoadOnly] [NotReplicated]
 	Property string PluginMenu.Title [<📁> LoadOnly] [NotReplicated]

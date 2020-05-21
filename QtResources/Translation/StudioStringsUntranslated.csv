@@ -2437,8 +2437,10 @@ Studio.Common.Action.Value,,Value,Value
 Studio.Common.Action.Warning,,Warning,Warning
 Studio.Common.Action.Width,,Width,Width
 Studio.Common.Action.Yes,,Yes,Yes
+Studio.Internal.ExternalLoginDialog.FatalErrorMessage,,Failed to login. Please restart Studio or contact support if the problem persists.,Failed to login. Please restart Studio or contact support if the problem persists.
 Studio.Internal.ExternalLoginDialog.GenericErrorMessage,,Failed to login. Please try again or contact support if problem persists.,Failed to login. Please try again or contact support if problem persists.
 Studio.Internal.ExternalLoginDialog.MessageOnDialogClose,,Are you sure you want to close this window? This will close Roblox Studio.,Are you sure you want to close this window? This will close Roblox Studio.
+Studio.Internal.ExternalLoginDialog.NoNetworkMessage,,Please check that you are connected to the internet and try again. Please contact support if the problem persists.,Please check that you are connected to the internet and try again. Please contact support if the problem persists.
 Studio.Internal.ExternalLoginDialog.WindowTitle,,Log In,Log In
 Studio.Internal.RobloxMainWindow.ChooseAPlaceInGameExplorer1,,"Choose an instance as parent in game explorer to save %1 
 ","Choose an instance as parent in game explorer to save %1 

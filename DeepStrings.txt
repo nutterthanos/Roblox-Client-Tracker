@@ -558,6 +558,7 @@ AnalyticsService.FireEventFailure
 AnalyticsService.GetProductInfoError
 AnalyticsService.ParseProductInfoError
 AnalyticsService.SetApikeyStudio
+AnalyticsServiceAutoCreatedGetPlayFabTitleRolloutPercentage
 AnalyticsServiceEventNameMaxSize
 AnalyticsServiceEventValueMaxSize
 AnalyticsServiceJob
@@ -1237,7 +1238,6 @@ AUUndefinedLocalVisitor
 AUUniformGrid
 AUutf8_codecvt_facet
 AUVersionedTextDocumentIdentifier
-AUvtZpYcp81sBa5JEz8PShLP
 AUweb_response
 AUwebsocketpp_client
 AUwebsocketpp_client_base
@@ -2725,6 +2725,7 @@ AVPluginInstancesSourceModelFile
 AVPluginInterface2
 AVPluginLoader
 AVPluginManager
+AVPluginManagerInterface
 AVPluginMenu
 AVPluginMenuRelay
 AVPluginMouse
@@ -3789,7 +3790,6 @@ AW4VRTouchpadMode
 AW4XAlignment
 AW4YAlignment
 AW4ZIndexBehavior
-Awa6Ho69Ye6sjuig2ioGq
 AwardBadge
 AwardPoints
 AwareCompare
@@ -4049,6 +4049,7 @@ BFE701C11E3B075CBAD925AA50F
 BFLuaDraggersRoleSet
 BFMotor6DTransformFixRoleSet
 BFSupportPluginDebuggingRoleSet
+Bg4OXIaSZI5NRnlSnogrIT
 BgUpdateRedirectsDisable
 BgUpdateRedirectsHttpErrInfluxHundredthsPercentage
 BgUpdateRedirectsRejectInfluxHundredthsPercentage
@@ -4453,7 +4454,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405476
+ByVersion_0.434.0.405532
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -4726,6 +4727,7 @@ CDEFGHIJSTUVWXYZcdefghijstuvwxyz
 Cdotaccent
 CE583B11E29A3DBD856014A660
 Cedillasmall
+CEKJ1uYk4sqDogAg4D9Qp
 CelestialBodiesShown
 CellCenterToWorld
 CellCornerToWorld
@@ -6729,7 +6731,6 @@ CWindowImpl
 CWindowImplBaseT
 CWindowImplRoot
 CWinTraits
-CXBTBsFys2I6oTw4iITax
 CxxFrameHandler3
 CxxThrowException
 CycleOffset
@@ -8314,7 +8315,6 @@ EditTrigger
 EditTriggers
 EDockWindowID
 Edotaccent
-EDr9PY50SQbpt56yHxll22JM
 EE370A91111E2B410EF351327957B
 EE371A91111E2B410EF351327957B
 EE374A91111E2B410EF351327957B
@@ -8339,7 +8339,6 @@ EffectiveRetryCount
 EFrontVector
 Egravesmall
 EHERE\EfEpEzE
-EIOXhgzhcX13E9Za0VN6vqxJ
 EJTU\^bcfguw
 ElapsedSeconds
 ElapsedTime
@@ -8685,6 +8684,7 @@ ErrorUploadToBacktraceBaseUrl
 ErrorUploadToBacktraceLuaAppToken
 ErrorWindow
 ErrOutOfRetries
+EscapeButton
 ESDHwith3DES
 ESDHwithRC2
 ESGamePerfMonitor
@@ -8815,6 +8815,7 @@ EVRConfig_ForceBob
 EVRConfig_ForceHalfInterlace
 EVRConfig_ForceScaling
 EVRConfig_ForceThrottle
+EWBFAkRdoJ9B2k
 ExactMatch
 ExceptionAddress
 ExceptionCode
@@ -9082,7 +9083,6 @@ FFlagStudioSaveToCloudV3
 FFlagToolboxJointMigrationApi
 FFoRLVHHHHoTJVF
 FHFRF\FfFpFzF
-FHGQCy2i3JMNyzLYF7PxpKqS3quahqbqU6vVnuh3lyw
 FidelityRequestTriggered
 FieldOfView
 Figueiredo
@@ -9818,7 +9818,6 @@ GAThrottlingEventThresholdHundredthCat1
 GAThrottlingEventThresholdHundredthCat2
 GAThrottlingEventThresholdHundredthCat3
 GazeSelectionEnabled
-GbBHscjSIzgaCyUaomK
 GCDistance
 GCHappened
 Gcircumflex
@@ -10643,7 +10642,6 @@ GoToPreviousScriptLocation
 GoToSourceCodeTB
 GoToVersionFailed
 GpuVariance
-GPVY6RcF4Wed
 GrabCursor.png
 GrabRotateCursor
 GrabRotateCursor.png
@@ -10818,6 +10816,7 @@ GunCursor.png
 GunWaitCursor.png
 GvEphfEUiHHoD6hYFI4xWGpAnIHcklKQCxrf46kAhDGeZnqIgeGszlGdWafunGE8
 GVKUTS[BXIWH\KbHi
+GwHvSeXAbAKldsBgRJ7vGoAehLTn3kKSXZZJw
 GXGfGkGpGuG
 GyroscopeEnabled
 H_Key_dn.png
@@ -11338,6 +11337,7 @@ IconImageAssetId
 IconImageId
 IconPixmap
 IconVisibleInMenu
+IcPaW3JZRJTCIv
 Id_AlwaysOnTop
 ID_CONNECTION_LOST
 ID_CONNECTION_REQUEST_ACCEPTED
@@ -11889,6 +11889,7 @@ IRobloxDoc
 Is30FpsThrottleEnabled
 IsActivated
 IsActivatedWithExclusiveMouse
+IsAnalyticsServiceAutoCreated
 IsAncestorOf
 ISandboxLocalCache
 IsAnimationAssetUploadEnabled
@@ -12050,6 +12051,7 @@ Javascript
 JavaScript
 JavaScriptCallback
 Jba5qWkYU5nARYZm1gQVP
+JbKRS3QfX2Uif
 Jcircumflex
 JDJNJXJbJlJvJ
 JHJRJ\JfJpJxJ
@@ -12220,6 +12222,7 @@ LabelArray[globstart]
 LabelArray[nLog]
 LabelGallery
 LabelledData
+LAiu0kbPgA3g4MGSx9uHOtbCpaZN
 LandedBalanceD
 LandedBalanceP
 LandedTolerance
@@ -12230,7 +12233,6 @@ LanguageClientBase
 LanguageGroup
 LanguagePreference
 LanguageService
-LaP3N9a3xM13znZJUMqg2qQfRR6z4LguidOQaduWij79XHNcfLO
 LastEditTool
 LastEmulatedDeviceId
 LastGroupIndex
@@ -12725,6 +12727,7 @@ LoginFailureStudio
 LoginFailureStudioInfluxDbHundredthsPercentage
 LoginManager
 LoginNegotiateResponse
+LoginOrCloseDialog
 LoginOther
 LoginPageOpenTime
 LoginParse
@@ -13531,7 +13534,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEAnFkMZRJwvtHdidrEn6A1vqD3GL0Ea85c
+MIICCgKCAgEAsCYJ4
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -13571,10 +13574,10 @@ Miscellaneous
 Mismatched
 MissingCoreScript
 MissingDumpFile
-MlegWRAHwgvgGvd7KnVU9QI7xj18z68u4Q
 MMW4IkDragCollisionsMode
 MMW4PartMaterial
 MMW4UserInputState
+MnhkdYz9XTbFvoZG
 MobileDevelopmentDeployer
 MobileWebsite
 MockAndroidBackButtonPressed
@@ -13853,6 +13856,7 @@ MultTransposeMatrixf
 MusicalInstruments
 MutexLifetime
 MW4PartMaterial
+MXIXc9flhXzYV7K8Jo3tlBqJQ9Sor0DHIaJtGDIpuw
 MyModelsAction
 NAEAVHttpResponse
 NAEBUPlaceLauncherRequestInfo
@@ -14077,6 +14081,7 @@ NextSelectionUp
 NextSpawnLocation
 NextTabPage
 NfXf`fhfzf
+NglCjS8vuS
 NHDHVQChar
 NHVVariant
 NinjaMask.mesh
@@ -14165,6 +14170,7 @@ NPCUnequipTools
 NPEAVInstance
 NPEAVQString
 NPEAVQWidget
+NS5PRn4di0hy6omeNd0CAwEAAQ
 Ntildesmall
 NullPassword
 NUMBER_OF_ORDERED_STREAMS
@@ -14219,6 +14225,7 @@ NW4PenStyle
 NW4UserInputType
 Oacutesmall
 OAEPEncryptionSET
+OAGbwdEHLXHN
 OAUTHBEARER
 Obj.GroupColors
 Obj.GroupsActive
@@ -14268,7 +14275,6 @@ ObjectWithIface7
 ObscuredBy
 OccludeAll
 OccupancyDebugFS
-OcfVHC7s7GxoK3PDszrmz
 Ocircumflex
 Ocircumflexsmall
 OCSP_basic_add1_status
@@ -14300,7 +14306,6 @@ OCSPResponse
 OCSPSigning
 OCTETSTRING
 Odieresissmall
-OdIOTtFiwHyE0LcG2RjKzE2M33i2ZxCMGBr7zGq
 OfA9HPuHfA9H`uAfA9Hpu
 OfAdmissions
 OfApproval
@@ -14342,7 +14347,6 @@ OgreWidget
 OgreWidgetForGameState
 OgreWidgetShowEvent
 Oh44\h44\Q
-OHl6qGYpE8HPefGMqV
 Ohungarumlaut
 OiCCPPhotoshop
 OldActiveElement
@@ -14353,6 +14357,7 @@ OLEAUT32.dll
 OleInitialize
 OleLockRunning
 OleUninitialize
+OlV18X3vjzuw93kuc6JUGRDR1rclI8qNeiR
 OnAllScriptErrorsAction
 OnBadgeAwarded
 OnboardingsCompleted
@@ -14549,7 +14554,6 @@ OtherMechanismsAnchored
 OtherTextChanged
 OtherTopLabelOverride
 Otildesmall
-Oua0FzzfPycnG0OLljwh
 OutboundTotal
 OutBufferHealth
 OutClusters
@@ -14613,6 +14617,7 @@ OverrideStarterScript
 OverrideToMyBranch
 OverwriteMode
 OwnProperty
+OWolOBorAsWTtZxHQx1OS3reioW1iauJrjN6mT0RjluLoJ
 Ozs8xYCf2Q05p4gHyX
 PA^A]A\_^]
 PA^A]A\_^][
@@ -16113,6 +16118,8 @@ PluginManagementFixYieldingAndRetries
 PluginManagementPrettifyDesign
 PluginManagementPrettifyDesign2
 PluginManager
+PluginManager.
+PluginManagerInterface
 PluginMenu
 PluginMenuRelay
 PluginMetadata.json
@@ -17045,12 +17052,10 @@ QGraphicsScene
 QGraphicsView
 QGridLayout
 QGuiApplication
-QHaDk0mF3pCpPqz5KV4beWTGOfDS
 QHBoxLayout
 QHeaderView
 QHostAddress
 QHoverEvent
-QIkq5GnnsqEr
 QInputDialog
 QIntValidator
 QItemDelegate
@@ -17107,6 +17112,7 @@ QPropertyAnimation
 QProxyStyle
 QPushButton
 QPushButton[default
+QqFUjIJZTuiRCNR9FwuMUaQvfu9PTEb
 QQmlContext
 QQmlEngine
 QQmlImageProviderBase
@@ -17337,6 +17343,7 @@ QWheelEvent
 QWidgetAction
 QWidgetPluginGui
 QWidgetWindow
+Qz3w8HVXAhUX5M
 RadialBlurFS
 RagdollDefaultTimerTenthSecond
 RagdollEarlyExitTimeTenthSecond
@@ -18469,6 +18476,7 @@ RigidBodyLazyUpdating
 RigidityEnabled
 RiseVelocity
 Rj0isQcnqX
+Rn8tvvMMAzVVF5JT7kvLPNsVbm
 Roact.createElement
 ROBLOSECURITY
 Roblox.Hybrid
@@ -21778,6 +21786,7 @@ Studio.Common.Action.Replace
 Studio.Common.Action.Reset
 Studio.Common.Action.Resize
 Studio.Common.Action.Resume
+Studio.Common.Action.Retry
 Studio.Common.Action.Save
 Studio.Common.Action.Search
 Studio.Common.Action.Share
@@ -21796,8 +21805,10 @@ Studio.Emulation.v002.Phone
 Studio.Emulation.v002.Tablet
 Studio.fetchClientFailure.Https
 Studio.IkDragger.EnabledSession
+Studio.Internal.ExternalLoginDialog.FatalErrorMessage
 Studio.Internal.ExternalLoginDialog.GenericErrorMessage
 Studio.Internal.ExternalLoginDialog.MessageOnDialogClose
+Studio.Internal.ExternalLoginDialog.NoNetworkMessage
 Studio.Internal.ExternalLoginDialog.WindowTitle
 Studio.Internal.RobloxMainWindow.ChooseAPlaceInGameExplorer1
 Studio.Internal.RobloxMainWindow.NewScriptTab
@@ -21989,6 +22000,7 @@ StudioChat
 StudioChatSessionHandlerCrashFix
 StudioCheckEmergencyMessageAtStart
 StudioCheckEmergencyMessageOnUserLogIn
+StudioCheckNetworkForExternalLogin
 StudioCheckTeamServerExistsFrequency
 StudioCJVAlsoCheckLocale
 StudioClientPresenceUpdateInterval
@@ -22199,6 +22211,7 @@ StudioNewDirtyPublishWarningDialog
 StudioNewTableOutputWidget
 StudioNewTableOutputWidgetSourceStr2
 StudioNotifyAliveAnalyticsTimerMs
+StudioNumExternalLoginAttempts
 StudioOpenInstanceWithInstancePrintLink
 StudioOpenLocation
 StudioOpenPlace
@@ -22244,6 +22257,7 @@ StudioPlaySoloGuestCharacterAppearance
 StudioPlayTesting
 StudioPluginHost
 StudioPluginIdsPerModerationRequest
+StudioPluginManagerInterface
 StudioPopulateInsertObjectMenuAfterLogin
 StudioPopulateIntlInfo
 StudioPreventTCWidgetNullDMCrash
@@ -22438,6 +22452,7 @@ StudsOffset
 StudsOffsetWorldSpace
 StudsPerTileU
 StudsPerTileV
+StXOE7f1L8MSAgg2Uc5QqHwToTfbVby3FbuKKHY1tovBkm2JkHqPdEsYN7Qk
 StyleOption
 StyleSheet
 StyleVersion
@@ -22606,7 +22621,6 @@ SystemObject
 SystemPopup
 SystemTimeToFileTime
 SystemUtil
-Ta9XU2ZXwMPTwBmAd8Mfao00ENyYblRa7ZnK
 TabBarModel
 TabBarModel.append
 TabBarTabLabel
@@ -22691,6 +22705,7 @@ TattletaleShuffleCount
 TattletaleUseNewWordListFeatures
 TattletaleUseOriginalWordList
 TattletaleUseStrstr
+TC2PxD6FSt5aavqKgRlkOs83pfo0w4pwXf7trPlSC2CLLbdR4Vfw5puiBsg49mG
 Tcommaaccent
 TCP_NODELAY
 TeamCreate
@@ -22954,7 +22969,6 @@ TextWrapped
 TextXAlignment
 TextXmlParser
 TextYAlignment
-TFdQ7n2obR
 TGenericSlotWrapper
 TGenericSlotWrapper.
 ThatCausedFocusLoss
@@ -25377,6 +25391,7 @@ VPluginInstancesSourceLuaFile
 VPluginInstancesSourceModelFile
 VPluginLoader
 VPluginManager
+VPluginManagerInterface
 VPluginMenu
 VPluginMouse
 VPluginToolbar
@@ -26020,6 +26035,7 @@ WithSHA224
 WithSHA256
 WithSHA384
 WithSHA512
+WkEDmNKuMl
 WM_ATLGETCONTROL
 WM_ATLGETHOST
 WMCreateProfileManager
@@ -26160,7 +26176,6 @@ XPEAVFileSyncItem
 XPEAVICHull
 XPEAVQNetworkReply
 XPEAVRobloxScriptDiffDoc
-XpyZ1vXwi85s8Vgb0PiwfjrMSUcCAwEAAQ
 XQColorDialog
 Xregex_error
 XResolution
@@ -26297,10 +26312,11 @@ YieldFuncDesc
 YieldFunction
 YQByteArray
 YResolution
+YrQZn6xSYrtsBVqKQ0A1IWkNDvu5
 YwBBvY55YvBBwY5
 Z_KPEIBX_K_KPEIAU1
+ZbGSvx1IexwDGrOQGPYkDULcQqNw
 Zcaronsmall
-ZcCBq6fRf6
 Zdotaccent
 ZgnhKhWhci
 ZIndexBehavior
@@ -26314,7 +26330,6 @@ ZoomToHighlight
 ZP6APEAX1PEBX
 ZP6AX1PEAX
 ZPEAVRBXMessageBox
-ZqQsOtgnC6Qcg7ayJVTEPivVsZPWGgBR9RqnKlPpVtiavenBszYzTBa5QT9Q9suw
 ZRZZZbZt[.[
 ZVspecial_equipped_signal
 ZVTouchedSignal

@@ -81,6 +81,11 @@
     </Item>
     <Item class="ReflectionMetadataClass">
       <Properties>
+        <string name="Name">PluginManagerInterface</string>
+      </Properties>
+    </Item>
+    <Item class="ReflectionMetadataClass">
+      <Properties>
         <string name="Name">TeleportService</string>
         <string name="summary">Allows players to seamlessly leave a game and join another</string>
       </Properties>
