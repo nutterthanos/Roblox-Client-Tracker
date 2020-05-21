@@ -6,5 +6,6 @@ game:DefineFastFlag("AvatarSizeFixForReorganizeHeaders", false)
 game:DefineFastFlag("StudioLocalizationInGameSettingsEnabled", false)
 game:DefineFastFlag("StudioConvertGameSettingsToDevFramework", false)
 game:DefineFastFlag("StudioGameSettingsResetStoreAction2", false)
+game:DefineFastFlag("StudioStandaloneGameMetadata", false)
 
 return nil

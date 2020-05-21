@@ -25,7 +25,7 @@ local MorpherEditorRoot = require(Plugin.Src.Reducers.MorpherEditorRoot)
 local GameOwnerMetadata = require(Plugin.Src.Components.SettingsPages.PermissionsPage.Reducers.GameOwnerMetadata)
 
 local FFlagStudioLocalizationInGameSettingsEnabled = game:GetFastFlag("StudioLocalizationInGameSettingsEnabled")
-local FFlagStudioStandaloneGameMetadata = game:DefineFastFlag("FFlagStudioStandaloneGameMetadata", false)
+local FFlagStudioStandaloneGameMetadata = game:GetFastFlag("StudioStandaloneGameMetadata")
 
 return Rodux.combineReducers({
 	Settings = Settings,

@@ -28,6 +28,7 @@ local RadioButtonList = require(Src.RadioButtonList)
 local TextLabel = require(Src.TextLabel)
 local ScrollingFrame = require(Src.ScrollingFrame)
 local Separator = require(Src.Separator)
+local TextInput = require(Src.TextInput)
 
 -- NOTE: Please keep components in alphabetical order
 local UI = {
@@ -52,6 +53,7 @@ local UI = {
 	ShowOnTop = ShowOnTop,
 	ScrollingFrame = ScrollingFrame,
 	Separator = Separator,
+	TextInput = TextInput,
 	ToggleButton = ToggleButton,
 
 	Decoration = {

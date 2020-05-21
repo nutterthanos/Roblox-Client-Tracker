@@ -37,6 +37,7 @@ local TextService = game:GetService("TextService")
 local FFlagStudioConvertGameSettingsToDevFramework = game:GetFastFlag("StudioConvertGameSettingsToDevFramework")
 local FFlagGameSettingsPlaceSettings = game:GetFastFlag("GameSettingsPlaceSettings")
 local FFlagStudioAddMonetizationToGameSettings = game:GetFastFlag("StudioAddMonetizationToGameSettings")
+local FFlagStudioStandaloneGameMetadata = game:GetFastFlag("StudioStandaloneGameMetadata")
 
 local MainView = Roact.PureComponent:extend("MainView")
 
@@ -104,7 +105,7 @@ function MainView:render()
 	local theme = props.Theme:get("Plugin")
 	local localization = props.Localization
 
-	local isPublishedGame = props.GameId ~= 0
+	local isPublishedGame = not FFlagStudioStandaloneGameMetadata or props.GameId ~= 0
 
 	local children = {}
 	local menuEntries = {}
@@ -260,12 +261,14 @@ if FFlagStudioConvertGameSettingsToDevFramework then
 	})
 end
 
-MainView= RoactRodux.connect(
-	function(state, props)
-		return {
-			GameId = state.Metadata.gameId,
-		}
-	end
-)(MainView)
+if FFlagStudioStandaloneGameMetadata then
+	MainView = RoactRodux.connect(
+		function(state, props)
+			return {
+				GameId = state.Metadata.gameId,
+			}
+		end
+	)(MainView)
+end
 
 return MainView

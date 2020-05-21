@@ -65,6 +65,8 @@ local LoadAllSettings = require(Plugin.Src.Thunks.LoadAllSettings)
 local isEmpty = require(Plugin.Src.Util.isEmpty)
 local Analytics = require(Plugin.Src.Util.Analytics)
 
+local FFlagStudioStandaloneGameMetadata = game:GetFastFlag("StudioStandaloneGameMetadata")
+
 local gameSettingsHandle
 local pluginGui
 local openedTimestamp
@@ -366,9 +368,12 @@ local function openGameSettings(gameId, dataModel)
 		settingsStore:dispatch(DiscardErrors())
 	end
 
-	if game:GetFastFlag("GameSettingsNetworkRefactor") then
+	if FFlagStudioStandaloneGameMetadata then
 		settingsStore:dispatch(SetGameId(gameId))
 		settingsStore:dispatch(SetGame(dataModel))
+	end
+
+	if game:GetFastFlag("GameSettingsNetworkRefactor") then
 		settingsStore:dispatch(SetCurrentStatus(CurrentStatus.Open))
 	else
 		settingsStore:dispatch(LoadAllSettings(settingsImpl))
@@ -399,7 +404,7 @@ local function main()
 		settingsButton.ClickableWhenViewportHidden = true
 		settingsButton.Enabled = true
 		settingsButton.Click:connect(function()
-			if game:GetFastFlag("GameSettingsNetworkRefactor") then
+			if FFlagStudioStandaloneGameMetadata then
 				openGameSettings(game.GameId, game)
 			else
 				openGameSettings()

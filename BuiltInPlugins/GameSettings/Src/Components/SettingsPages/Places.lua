@@ -238,7 +238,7 @@ local function displayPlaceListPage(props, localization)
 				if key == "EditKey" then
 					props.dispatchSetEditPlaceId(id)
 				elseif key == "VerisonHistoryKey" then
-					StudioService:ShowPlaceHistoryVersionDialog()
+					StudioService:ShowPlaceVersionHistoryDialog()
 				end
 			end,
 		})
@@ -406,7 +406,7 @@ local function displayEditPlacePage(props, localization)
 				0, viewButtonTextExtents.Y + theme.viewButton.PaddingY),
 				LayoutOrder = layoutIndex:getNextOrder(),
 				OnClick = function()
-					StudioService:ShowPlaceHistoryVersionDialog()
+					StudioService:ShowPlaceVersionHistoryDialog()
 				end,
 			}, {
 				Roact.createElement(HoverArea, {Cursor = "PointingHand"}),
