@@ -176,6 +176,7 @@ Studio.GameSettings.AccessPermissions.NoAccessDescription,Cannot play or edit th
 Studio.GameSettings.AccessPermissions.PlayDescription,Can play this game, ,Can play this game
 Studio.GameSettings.AccessPermissions.EditDescription,Can play and edit this game, ,Can play and edit this game
 Studio.GameSettings.AccessPermissions.AdminDescription,"Can play, edit, and manage this game", ,"Can play, edit, and manage this game"
+Studio.GameSettings.AccessPermissions.OwnerDescription,Owner of the game, ,Owner of the game
 Studio.GameSettings.General.DevSubsDescription,Description, ,Description
 Studio.GameSettings.General.ErrorNameDescModerated,Filtered to %s, ,Filtered to %s
 Studio.GameSettings.General.ErrorNameDescHttp,An error has occurred with moderating the name and description. Please try again later!, ,An error has occurred with moderating the name and description. Please try again later!

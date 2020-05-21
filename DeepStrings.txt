@@ -47,6 +47,7 @@ A_NW4StateType
 A_NW4Status
 A_NW4UserCFrame
 A_NW4UserInputType
+Aa4Ii50oNkjLU1r1hyl4BbnurZRLKjbjr
 AA61B3A2068118C14FDE5E01E7934
 AAAEB11E38B9D871882A8E559
 AAAEC11E38B9D871882A8E559
@@ -393,7 +394,6 @@ AfterRequested
 AfterSeconds
 AfterUpdateContentFromSource
 AgainstLatestPackageAction
-AGCAm1Cz3c
 Age13OrOver
 AgeBracket
 AgentCanJump
@@ -406,6 +406,7 @@ AggregateInfo
 AggregateInfo.Frames
 AggregateInfo.Time.toFixed
 AggrFrames
+AgQKF9NtwEXswyBnpnzHyOHVrrYtZn1NeJDhe
 Agravesmall
 AHPEAU_iobuf
 AHPEAX1PEAPEAX
@@ -668,6 +669,7 @@ AnthroStandardPartIds
 AntiReplay
 AntiSpamSpamLimit
 AnyWayYouHashItOut4
+APdINvjIUoXvAMNq275lV77WEZXNQ47X9PfEx8wSAwnha3YGuGb78l33Sa9
 APEAU_iobuf
 ApiGamesChanged
 ApiKeyResult
@@ -3791,6 +3793,7 @@ AW4ZIndexBehavior
 AwardBadge
 AwardPoints
 AwareCompare
+AWbhHEeMQLb6uvm
 AX_J0W4FriendService_FriendEventType
 AX_J0W4FriendService_FriendStatus
 AX_JW4FriendService_FriendEventType
@@ -3866,7 +3869,6 @@ AXW4UiMessageType
 AXW4UserCFrame
 AXW4UserInputType
 AXW4VRTouchpad
-AYOGkINl93RZUzzIqvKN46KHgIBX7FNgct0s4cbOCc0ng
 BA447F42A91111E2B410EF351327957B
 BA886F11E18561866242201959
 BAA3C620681180838E23F0DC6224
@@ -4146,6 +4148,7 @@ BlendFuncSeparate
 BlendFuncSeparatei
 BlitContextFramebufferAMD
 BlitFramebuffer
+BLlQ9JpTK9sclapv
 BlobCacheMRPMap
 BlobNonCacheableMRDMap
 BlobPartMRDMap
@@ -4344,7 +4347,6 @@ BrowserWindow
 BrowserWindowClosed
 BrowserWindowWillNavigate
 BrushStyle
-Bs73BOKOKh
 BtYovqVKoHMDMoDd0u9Mc5CIyRqyu0IGS99A0jeEXRj7aofQ
 BU_Simplex1to4
 BubbleChat
@@ -4454,12 +4456,13 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405445
+ByVersion_0.434.0.405447
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
 CA2168118C14FDE5E01E7934
 CA583B11E29A3DBD856014A660
+CA9Lj5iXicCATftWzi
 CAAED11E38B9D871882A8E559
 CacheableContentProvider
 CacheableHitRate
@@ -4719,6 +4722,7 @@ CComPolyObject
 CCPPhotoshop
 Ccrypto\comp\comp_lib.c
 CCx[66[xCCx[6L
+CD13iVlXtoSi
 CD583B11E29A3DBD856014A660
 CDA22142068118C14FDE5E01E7934
 CDAC09CD62068118083FFBB091BBC13
@@ -7595,7 +7599,6 @@ DHBasedMac
 DHParameters
 DHparams_print_fp
 DhufyEeFO7U33Tv7vk
-Di6DWkThl6Jv
 Diagnostic
 Diagnostics
 DiagnosticsDockAction
@@ -9658,6 +9661,7 @@ FunctionUnused
 FunctionVar
 FutureIsBrightPhase2GL3
 FutureIsBrightPhase2GLES3
+FVQKWwurMG08w25DKfKrvw
 FXCompositing
 FXCompositingFS
 FXCompositingLinearFS
@@ -9818,7 +9822,6 @@ GAThrottlingEventThresholdHundredthCat1
 GAThrottlingEventThresholdHundredthCat2
 GAThrottlingEventThresholdHundredthCat3
 GazeSelectionEnabled
-GbWvlVaqG71
 GCDistance
 GCHappened
 GCincremental
@@ -10821,9 +10824,7 @@ GunCursor.png
 GunWaitCursor.png
 GvEphfEUiHHoD6hYFI4xWGpAnIHcklKQCxrf46kAhDGeZnqIgeGszlGdWafunGE8
 GVKUTS[BXIWH\KbHi
-GWZkgw4z5C3a39FVOP1V1l7P9eX5lSRL3lUXYwiIQO
 GXGfGkGpGuG
-GXGV3Cwec8s4Oe6AzOFiClw5AyDExTgIQioPLFdFpVc57z9aSa0mTd3tU
 GyroscopeEnabled
 H_Key_dn.png
 H_NAEBVQString
@@ -10924,7 +10925,6 @@ HaveActiveUser
 HB_OPTIONS
 HB_SHAPER_LIST
 Hcircumflex
-HCqYEyH3OTid0KW6DIaLxsl8a6
 HDCacheLock
 HeadColor3
 HeaderCheckBoxClicked
@@ -11000,7 +11000,6 @@ HighlightUpdate
 HighPriority
 HighResolution
 HighVelocityContactThresholdHundredth
-HikWfwZ8uvWJUAVTthX550YbMSneF1RwPzA
 HingeConstraint
 HingeConstraintAction
 HingeCursor
@@ -12056,7 +12055,6 @@ JasmineUPC
 Javascript
 JavaScript
 JavaScriptCallback
-JaXkUI0jcRyX
 Jba5qWkYU5nARYZm1gQVP
 Jcircumflex
 JDJNJXJbJlJvJ
@@ -12287,7 +12285,6 @@ LayoutOrder
 LazySubmitTask
 LC_MESSAGES
 LCMapStringW
-LCPWnJ5D7ic2108xU
 LDLBuildProgramTimeReportEnabled
 LDLBuildProgramTimeReportRate
 LDLComponents
@@ -12909,7 +12906,6 @@ LuauWarnOnUtf8
 LuauWatchdog
 LuaWebService
 LVvuOx39]O
-LZU0mfLW6V8Wr0
 M_NVWeakFunctionRef
 MachineAddress
 MachineConfig
@@ -12956,6 +12952,7 @@ MarketPlaceService
 Marshalled
 Marshaller
 MarshallerType
+MASj6hFoTbKuq1nlNaqykgBRF6In9Ng1033E7jwY1G3JtslV13DKB
 MaskFromColor
 MaskWeight
 MassCenterCompensation
@@ -13541,7 +13538,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEAoX2oa9pl2S7o3mphogEJRvMaZAo5x8RNTFD3
+MIICCgKCAgEAvehkj
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -13581,6 +13578,7 @@ Miscellaneous
 Mismatched
 MissingCoreScript
 MissingDumpFile
+MkIg0yXaUub8GQI5vqafV8IfrLbMgt0Ff8CAwEAAQ
 MMW4IkDragCollisionsMode
 MMW4PartMaterial
 MMW4UserInputState
@@ -14174,7 +14172,6 @@ NPCUnequipTools
 NPEAVInstance
 NPEAVQString
 NPEAVQWidget
-NTAu54pGxRk6UiyROb6
 Ntildesmall
 NullPassword
 NUMBER_OF_ORDERED_STREAMS
@@ -14352,7 +14349,6 @@ OgreWidgetShowEvent
 Oh44\h44\Q
 Ohungarumlaut
 OiCCPPhotoshop
-OksvqO80GOcY8
 OldActiveElement
 OldMessagesFetched
 OldServers
@@ -15771,6 +15767,7 @@ PickerFrameChanged
 PickerFrameDestroyed
 PIDataUnsigned
 PIDualSignedTBE
+PikNv8RJ6ftUXj
 PIN_CATEGORY_ANALOGVIDEOIN
 PIN_CATEGORY_CAPTURE
 PIN_CATEGORY_CC
@@ -17074,7 +17071,6 @@ QJsonDocument
 QJsonObject
 QJsonValue
 QJsonValueRef
-QJTOY79JK6yY0J2MT0lMJbRNzc0hmSIZgEpTSkAK
 QKeySequence
 QLayoutItem
 QLinearGradient
@@ -17120,6 +17116,7 @@ QPropertyAnimation
 QProxyStyle
 QPushButton
 QPushButton[default
+QqGwk10oRw5LvXx8T
 QQmlContext
 QQmlEngine
 QQmlImageProviderBase
@@ -17350,6 +17347,7 @@ QWheelEvent
 QWidgetAction
 QWidgetPluginGui
 QWidgetWindow
+QY0hBahEIUhRZ4A5aoNZIBvMx1qvi6OLufYyZ
 RadialBlurFS
 RagdollDefaultTimerTenthSecond
 RagdollEarlyExitTimeTenthSecond
@@ -22576,7 +22574,6 @@ SVWATAUAVH
 SVWATAUAWH
 SVWATAVAWH
 SVWAUAVAWH
-SvyAcJTT2DQmhiPyU
 SwapAttachmentsVerb
 SwapBuffers
 SwapBuffersMscOML
@@ -22619,6 +22616,7 @@ SystemObject
 SystemPopup
 SystemTimeToFileTime
 SystemUtil
+SZRqu6X7PzGXxF9yf1hSk1LQC0fkXUuFzNXTnNQvAHwyZU7bZhRism7OADYT
 TabBarModel
 TabBarModel.append
 TabBarTabLabel
@@ -23748,7 +23746,6 @@ TS_TST_INFO_set_tsa
 TS_VERIFY_CTX_new
 TSMk2ThrottleStreamJob
 TTUUEDDsss
-TUMeKqjsU83IivVq7wYr1sCAwEAAQ
 TurboBuildersClub
 TurnOffAction
 TurnOffManualJointCreation
@@ -25185,6 +25182,7 @@ ViewSelector.rbxm_ViewSelector_ViewSelector
 ViewSelectorButton
 ViewSelectorToolbar
 ViewStackedWidget
+VIjqyhvHo42lAFp
 VikingHelmet.mesh
 VImageHandleAdornment
 VImageLabel
@@ -25430,7 +25428,6 @@ VQNetworkCookie
 VQNetworkInterface
 VQNetworkReply
 VQPersistentModelIndex
-VqqK4P5iI5xSCHjnI2peftLVr3mkbhNnw19cv3xMyxNuf
 VQRegularExpression
 VQSequentialIterableImpl
 VQSslError
@@ -25823,7 +25820,6 @@ Wcircumflex
 WDU_Mbstatet
 WeakFunctionRef
 WeakThreadRef
-WEaLZICoqvb6P6zy
 WeaponsAction
 WebChatFilterHttpTimeoutSeconds
 WebChatFiltering
@@ -26079,7 +26075,6 @@ WorldToScreenPoint
 WorldToViewportPoint
 WP1Lk7UmX3No0NAVVrlNv8vM1TKYodC60fXpXkwOnxGMHelMkfu58xsxIB9tXB4U
 WPACKET_start_sub_packet_len__
-WrHA9MTLDBDOcmKAUQMmuTFm21oD8zErGQJgZZPmz6m8iqy9Axfd0YeSRzgBhpv
 WristDisplacementDamping
 WristDisplacementDampingMode
 WriteArray
@@ -26153,6 +26148,7 @@ XInputGetCapabilities
 XInputGetState
 XInputSetState
 Xinvalid_argument
+Xk1PtoHPJCEXpzt3DkxYmOAFmIYYq99ymgcjLpwHsOoJwnfYS522
 Xlength_error
 Xout_of_range
 XP6AXAEBUTextFilterResult
@@ -26181,7 +26177,6 @@ XPEAVRobloxScriptDiffDoc
 XQColorDialog
 Xregex_error
 XResolution
-XRVOvGORqbEihh9ReR
 Xtime_get_ticks
 XUnegotiation_response
 XvAAuY44YuAAvX4
@@ -26313,16 +26308,18 @@ YffYZefYDNNDCOO
 YieldEvent
 YieldFuncDesc
 YieldFunction
+YN6CJLo5AM
 YQByteArray
 YResolution
+YVWQ5sqF6jiz4TRCew
 YwBBvY55YvBBwY5
 Z_KPEIBX_K_KPEIAU1
 Zcaronsmall
 Zdotaccent
 ZgnhKhWhci
-ZI3BBlL6j8h
 ZIndexBehavior
 ZLcJhLcGhM
+ZNi1p8Imm2SlTkKyFkxh
 ZNjlXiODrHUcaGRYt
 ZntaLkerGlryCnmrArbeHbarAcrySaahTaveDgneBuruGrjuGayrOlmaTuleTadnKmylMhniSiahTooaLtbiTrmyMroeGgnaHihtErehCsnaCmagOrnuRrmhKgnoMariHanaKopoBinaHiiiYlatIhtoGtrsDhniZglgTonaHdhuBbgaTbmiLelaTbniLragUwahSamsOtrpCiarBiguBtpoCulaTgalGgnfTolySoepXrahKilaBxusXxnhPgahPoo
 ZoomActive
