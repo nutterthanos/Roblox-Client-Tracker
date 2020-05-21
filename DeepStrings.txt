@@ -4268,6 +4268,7 @@ BPuVfD9B`uOfD9BpuH
 BQByteArray
 BQJsonValueRef
 BQPersistentModelIndex
+BQulnk04knimdizWD6e
 BranchIcon
 BreakGroup
 BreakJoints
@@ -4955,6 +4956,7 @@ CipherString
 Ciphersuites
 CircularList
 Circumflexsmall
+CJ918hIxGUpEORo5DmHUop0O7EHEGeS
 CJVNotFallbackToEnglishForCoreGuiEnabled
 CJVNotFallbackToEnglishForUGCEnabled
 ClampColor
@@ -6185,6 +6187,7 @@ CountryRegionCode
 CountryRegionCodeReplicate
 CountShifted
 CountWidth
+CQfKfBvgv1P5ftJFBZE423iR84yjmNOF08t0d8Myv3wO
 CrackedLava
 CrashDumpFileName
 CrashEvent
@@ -7325,6 +7328,7 @@ DeltaTimes.length
 DeltaTimes.sort
 DeltaTimes[j]
 DeltaTimes[SplitIndex]
+DEmXEC0KINedBZPneiop7FETlJ5
 DependenciesInfo
 Deployment
 DeprecatableBroadcasts
@@ -9675,6 +9679,7 @@ FXCompositing
 FXCompositingFS
 FXCompositingLinearFS
 FXComposition
+FxHPz7NJ1RzJcvLCRrxhvP79yfZP7NR
 FxI9Fpu5E2
 GainMakeup
 GameAbsenceInWeb.
@@ -9840,6 +9845,7 @@ GCReducesQuota2
 GCReducesQuotaCriticalPercent
 GCReducesQuotaPercent
 Gdotaccent
+GDubvqUPPfm0
 GE_package.png
 GE_packagefolder.png
 GearAction
@@ -11100,8 +11106,10 @@ HPEAVQAction
 HPEBDHW4CaseSensitivity
 HPEBDPEBDV
 HPEBVQMimeData
+HPk0Nntqord
 HQEAPEAVQGraphicsItem
 HQFSShadowed
+HQtOH9dn4h
 HQVSShadowed
 HtmlEscaped
 HTTPAccumulatedBytes
@@ -12059,6 +12067,7 @@ IVRSystem_017
 IVRTrackedCamera_003
 IWebBrowser2
 IWorldStage
+IWvqMvNptIbyM2
 IXMLHTTPRequest2
 J_Key_dn.png
 J_NW4CurrencyType
@@ -12231,6 +12240,7 @@ KodchiangUPC
 KPEAVICHull
 KPEIBX_K_KPEIAU_iobuf
 KVScriptContext
+KwSvNDuYsnf8
 KYULPhCBFoD3mw5mygYqAeFlHdSL2k3MnDG
 LabelArray
 LabelArray.push
@@ -13082,6 +13092,7 @@ MaxViscousForceGravityTimesMult
 MaxVisibleItems
 MaxWaitTimeBeforeForcePacketProcessMS
 MayBeLinkedSourceModified
+MBw1NJ6euDpozpNbQ2ur48Ffjx8XrVbUUdg5q9
 MdiControls
 MDIManagerHost
 MEAA_JPEA_W_J
@@ -16511,6 +16522,7 @@ ProxiedRouter
 PROXY_CERT_INFO_EXTENSION
 PROXY_POLICY
 ProxyAction
+PsctbaxpwboA2IYHHScMhVg54SCUuSDxFY83L7P7Ons7FaRBeZpc
 PSPECIFIED
 PUBKEY_get0
 PUBKEY_set
@@ -17497,6 +17509,7 @@ RawJoinData
 RaycastFilterType
 RaycastParams
 RaycastResult
+RB5tnksijgbUZZmTRnMHUoU1
 RBX_CHECK_EQUAL
 RBX_CHECK_GE
 RBX_CHECK_GT
@@ -19999,6 +20012,7 @@ SRTP_AEAD_AES_128_GCM
 SRTP_AEAD_AES_256_GCM
 SRTP_AES128_CM_SHA1_32
 SRTP_AES128_CM_SHA1_80
+SS3XQg248eMPOiGdomz2F
 SSAOBlurXFS
 SSAOBlurYFS
 SSAOCompositFS
@@ -24344,6 +24358,7 @@ URawUntranslatedEntry
 UReplicatorPeerInfo
 UResponseError
 UResultDetail
+Urgq1u4HZ2pOC1uAEW1vO9dW3B9MCAwEAAQ
 UrlFormattingOption
 URLRequest
 URobloxApiGame
@@ -26174,6 +26189,7 @@ XInputGetState
 XInputSetState
 Xinvalid_argument
 Xlength_error
+XOmLwVG9Cqdhk3
 Xout_of_range
 XP6AXAEBUTextFilterResult
 XP6AXAEBVQString
@@ -26332,6 +26348,8 @@ YffYZefYDNNDCOO
 YieldEvent
 YieldFuncDesc
 YieldFunction
+YkpTbEjReTCye8s1UgXvXFMEK7DMk3zb5Etawqelw5TdGe
+YpH5IZMpQF
 YQByteArray
 YResolution
 YwBBvY55YvBBwY5
