@@ -669,6 +669,7 @@ AntiReplay
 AntiSpamSpamLimit
 AnyWayYouHashItOut4
 APEAU_iobuf
+ApexN2f1hGV9NjvssNAoLUBzuoTKsZ5rBsye09y1j2BiX2V6ykZqBLLEpvHn
 ApiGamesChanged
 ApiKeyResult
 ApiRateLimit
@@ -740,6 +741,7 @@ AppVersion
 APSToggleClientServerFTUE
 AQJsonArray
 AQJsonObject
+AquJ2fDyf0lOL95xijBTqc169nUm
 ArcadeStick
 ArcHandles
 Archivable
@@ -784,6 +786,7 @@ ArrowLeftIcon
 ArrowRightIcon
 ArrowToolAction
 ArtistIntent
+As6JqBWBqULUcb1Ko7EFi
 Ascii_helper
 AScrollWheelDeltaAmount
 ASIdentifierChoice
@@ -915,6 +918,7 @@ AT_KEYEXCHANGE
 AT_SIGNATURE
 ATAUAVAWIc
 ATAUAVAWLcT
+ATDDOQZ9AzI82Uvf7tTGGOtwvBE8Q5Mb4W8M6H
 AtEndChanged
 Atildesmall
 AtlAxWinLic140
@@ -3581,6 +3585,7 @@ AVVertexLayoutD3D11
 AVVertexLayoutD3D9
 AVVertexLayoutGL
 AVVertexLayoutVulkan
+AVVideoClock
 AVVideoFrame
 AVVideoJob
 AVVideoParser
@@ -3868,7 +3873,6 @@ AXW4UiMessageType
 AXW4UserCFrame
 AXW4UserInputType
 AXW4VRTouchpad
-AY5ZDo8rOXXVi4iOf7
 BA447F42A91111E2B410EF351327957B
 BA886F11E18561866242201959
 BAA3C620681180838E23F0DC6224
@@ -3983,7 +3987,6 @@ BBBA91111E2B410EF351327957B
 BBCA91111E2B410EF351327957B
 BbEcJYG[I[NYVP\B]
 BBFA91111E2B410EF351327957B
-BBIquiUifIyHdIFybSTML9
 BBxZ55ZxBBx[5D
 BC0A91111E2B410EF351327957B
 BC0DAEAAF011E38B9D871882A8E559
@@ -4050,6 +4053,7 @@ BFD701C11E3B075CBAD925AA50F
 BFE701C11E3B075CBAD925AA50F
 BFLuaDraggersRoleSet
 BFMotor6DTransformFixRoleSet
+BFPlaceVersionHistoryRoleSet
 BFSupportPluginDebuggingRoleSet
 BgUpdateRedirectsDisable
 BgUpdateRedirectsHttpErrInfluxHundredthsPercentage
@@ -4266,6 +4270,7 @@ BPuVfD9B`uOfD9BpuH
 BQByteArray
 BQJsonValueRef
 BQPersistentModelIndex
+Br9CNUWby9
 BranchIcon
 BreakGroup
 BreakJoints
@@ -4346,6 +4351,7 @@ BrowserWindow
 BrowserWindowClosed
 BrowserWindowWillNavigate
 BrushStyle
+BTE8apM1UVslQHXeo3A7VmR8ZKfS8ND8ty7Xmtpklmx0
 BtYovqVKoHMDMoDd0u9Mc5CIyRqyu0IGS99A0jeEXRj7aofQ
 BU_Simplex1to4
 BubbleChat
@@ -4455,7 +4461,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405536
+ByVersion_0.434.0.405548
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -7082,6 +7088,7 @@ DebugRealityCheck3
 DebugRenderDisableWangMobile
 DebugRenderDragAxis
 DebugRenderForceTechnologyVoxel
+DebugRenderTintUncompressedTexture
 DebugRenderVRHUD
 DebugReportAllSoundAssets
 DebugReportAnchoredSimBodyUpdatedFromSolver
@@ -7798,6 +7805,7 @@ Distribution
 DistributionPoint
 DistributionPoints
 DistToShowBufferCountSqr
+DjV7pjxUFFGIHL
 DKECCAK1600_ASM
 DlcVersion
 DListenerAttributes
@@ -8019,6 +8027,7 @@ DSO_up_ref
 Dst.Thread
 Dst.YBegin
 DSVideoCaptureEngine
+DTkXfTUf2h5D
 DTLS_RECORD_LAYER_new
 DTLSv1_listen
 DumbSpatialHash2
@@ -8341,6 +8350,7 @@ EFrontVector
 Egravesmall
 EHERE\EfEpEzE
 EJTU\^bcfguw
+EK6Xwl1gcT4dGuIGhQrQBHgwopW3Hv5AKVpYxA
 ElapsedSeconds
 ElapsedTime
 ElasticBehavior
@@ -8501,6 +8511,7 @@ EnableNewPreciseConvexDecompositionCollisionFidelity
 EnablePerfDataMemoryCollection
 EnablePerFrameSampling
 EnablePhysicsSleepBehaviorImprovements
+EnablePlaceVersionHistoryBeta
 EnablePlayFabBatchEventCompression
 EnablePlugin
 EnablePluginPermissionsPage2
@@ -8649,6 +8660,12 @@ EnvironmentSpecularScale
 EnviroSpeed
 EoOoZoaozo
 EphemeralCounter
+EphemeralCounterInfluxReportingEnabled
+EphemeralCounterInfluxReportingPriorityHundredthsPercent
+EphemeralCounterInfluxReportingThrottleHundredthsPercent
+EphemeralStatsInfluxReportingEnabled
+EphemeralStatsInfluxReportingPriorityHundredthsPercent
+EphemeralStatsInfluxReportingThrottleHundredthsPercent
 EqualizerSoundEffect
 EquippedEmotes
 EquippedEmotesChanged
@@ -9496,6 +9513,7 @@ FoundItems
 FoundThread
 FpFramebuffer
 FpsVariance
+FQi9hbLPFngBqoTXcSzJZU7ga3S4AXoB6ph0GHeEhapb2
 Fractional
 Frame_.frameend
 Frame_.frameendgpu
@@ -10576,6 +10594,7 @@ GImpactCompound
 GImpactCompoundShape
 GiveFocusBackAfterClickingTextbox
 GizmoRaycast
+GjdukNiO4MPEuXWSWXzTboaex2IzyyV8A8oJBSk0qOYzePvogmxx07dQjNJWVhx
 GL_ARB_texture_storage
 GL_EXT_texture_compression_s3tc
 Glass[0]VS
@@ -11078,6 +11097,8 @@ HoverTokenLogIndex
 HoverTokenLogIndexNext
 HoverTokenNext
 HoverWindowShadow
+HOXWtosPqW
+Hp2hLNknlkZvrGtL2
 HPEAU_iobuf
 HPEAUlua_State
 HPEAVQAction
@@ -11324,7 +11345,6 @@ HWYGOTH.ttf
 HybridEvent
 Iacutesmall
 IAutocompleter
-IaydAMHPguGIUNgI3n
 IBusyStateModel
 ICCProfile
 ICharacterSubject
@@ -11578,6 +11598,7 @@ InfiniteTriangleMeshRecalcFixEnabled
 Influenced
 InfluxDbLog
 InfluxEnabled
+InfluxEnableTypeEventTag
 InfluxOverUDPThreshold
 InfluxReportFeOnStartupErrorPermyriad
 InfluxReportLastVisitedUrl
@@ -12211,10 +12232,8 @@ KillPtClicked
 KillSurfaceJointsPart1
 KnownHeaders
 KodchiangUPC
-KoLI30rllTCljPX1XnsHFFaPOWtC6RHWwJNWa
 KPEAVICHull
 KPEIBX_K_KPEIAU_iobuf
-Kv2uPnV3J0iKfIT4TVx6CuJLkNByGHBgZpBwxnCmnkyv
 KVScriptContext
 KYULPhCBFoD3mw5mygYqAeFlHdSL2k3MnDG
 LabelArray
@@ -12537,7 +12556,6 @@ LiveCoding
 LiveScript
 LiveThreadRef
 LivingRoom
-LKgm9pq03d
 LLEo6Soxvx2
 LOAD_CERT_CTRL
 LoadAnimation
@@ -13519,7 +13537,6 @@ MethodQuery
 Metrics.width
 MetricsSets
 MetricType
-MfBQxqpFQfpLb
 MHapV7R8MxA953
 MicroProfile
 MicroProfileFlip
@@ -13536,7 +13553,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEAzGGW2FAuDesGrAol9
+MIICCgKCAgEAr6
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -13576,6 +13593,7 @@ Miscellaneous
 Mismatched
 MissingCoreScript
 MissingDumpFile
+MjOlRF19Ouj3F9IkaoiI
 MMW4IkDragCollisionsMode
 MMW4PartMaterial
 MMW4UserInputState
@@ -13796,7 +13814,6 @@ MSACM32.dll
 MsecBetweenTextureMemoryUsageArrayRefresh
 MSecsSinceEpoch
 MsgWaitForMultipleObjectsEx
-MSOHPC6CiFTffFB2bY9fDdnBSD
 MsToScreen
 MSVCP140.dll
 MSWSOCK.dll
@@ -13858,7 +13875,6 @@ MultTransposeMatrixf
 MusicalInstruments
 MutexLifetime
 MW4PartMaterial
-MyHbUfJGne6D78I4zRH
 MyModelsAction
 NAEAVHttpResponse
 NAEBUPlaceLauncherRequestInfo
@@ -14212,7 +14228,6 @@ NumRigidJointsNotInWorld
 NumTickets
 NVAuthenticationHelper
 Nvb5JjRCUQ
-NvIEfwfZ6LdUz3AaAHQVF110w9vJRRfJ6ofeMiXr45rMOWVJwialabsCAwEAAQ
 NVLuaWebService
 NvOptimusEnablement
 NVReplicator
@@ -14547,6 +14562,7 @@ OSSL_STORE_SEARCH_by_alias
 OSSL_STORE_SEARCH_by_issuer_serial
 OSSL_STORE_SEARCH_by_key_fingerprint
 OSSL_STORE_SEARCH_by_name
+OszLnHKfej7vgUlNrfSEncNyRWxtesZuPjB
 OtherBlues
 OtherDisconnect
 OtherMechanismsAnchored
@@ -14852,7 +14868,6 @@ PCStudioAppCJV
 PE_MAX_NB_SUBFR
 PEA_NAEBV2
 PEA_NPEAVQDialog
-PEAaBuBsqVXt0RvcYXzOPFfV
 PEAD1AEAPEAD
 PEAPEAVsgCObject
 PEAPEAX01PEAVQSlotObjectBase
@@ -15518,6 +15533,7 @@ PEAVVerbContainer
 PEAVVersionControlService
 PEAVVersionHistoryCommitCoordinator
 PEAVVertexBufferD3D9
+PEAVVideoClock
 PEAVVideoControl
 PEAVVideoFrame
 PEAVVideoRecord
@@ -16242,7 +16258,6 @@ PpjEtrFill
 PpjEtrThreshold
 PpjPmThreshold
 PPLTaskHandle
-PQ3QUY4Qrkb
 Prc.length
 Prc[MouseGraphX]
 Precertificate
@@ -16301,6 +16316,7 @@ PreviousAction
 PreviousButton
 PreviousChar
 PreviousDoc
+PreviousEditBlock
 PreviousMetric
 PreviousTabPage
 PreviousWidgetDestroyed
@@ -17328,7 +17344,6 @@ QuotedDouble
 QUrlTwoFlags
 QValidator
 QVariantAnimation
-QVaxbhwtuhAq0Z1IXzro0
 QVBoxLayout
 QVersionNumber
 QWebElement
@@ -18720,6 +18735,7 @@ RunUpdateCycle.
 RVideoInternal
 RVideoMemLogging
 RVideoTrace
+RWpQMlItVQgmW6WJZLvOTMKJAKuTsEEwXhs4yZRhdrDCfLCgeJx8IjZEp
 RxRlReport
 S_Key_dn.png
 SA_KPEAPEBV123
@@ -20315,6 +20331,7 @@ StreamingEnabled
 StreamingFasterTargetRadiusIncreaseAfterGC
 StreamingGcDistance
 StreamingGCDistance
+StreamingGCJobFixCharacterCheck
 StreamingLowMemWatermarkMB
 StreamingMaxGCDelayAfterPrefetchMS
 StreamingMaxPrefetchActive
@@ -21023,6 +21040,8 @@ Studio.App.PackageUtilities.UpdateError1
 Studio.App.PlaceResourceController.AddingPlace
 Studio.App.PlaceResourceController.CantRemoveStartPlace
 Studio.App.PlaceResourceController.ErrorWhileAddingPlace
+Studio.App.PlaceVersionHistory.BetaFeatureDescription
+Studio.App.PlaceVersionHistory.BetaFeatureTitle
 Studio.App.PlaceVersionHistoryDialog.Empty
 Studio.App.PlaceVersionHistoryDialog.PublishedColumnTitle
 Studio.App.PlaceVersionHistoryDialog.Tip
@@ -22061,6 +22080,7 @@ StudioEnableEmergencyMessageDisplayV2
 StudioEnableFileWatcherDelay
 StudioEnableLuauTypeChecking
 StudioEnableLuauTypeCheckingBetaFeature
+StudioEnablePVHBetaFeature
 StudioEnableRemoteDebugging
 StudioEnableResume3
 StudioEnableSafeUpdatesBetaFeature
@@ -22412,6 +22432,7 @@ StudioUrlEnableLuauTypeChecking
 StudioUrlEndpointString
 StudioUrlPhysicsNewConvexDecompositionEnabled
 StudioUrlPhysicsSleepImprovements
+StudioUrlPlaceVersionHistory
 StudioUrlSafeUpdates
 StudioUrlSaveToCloudV2
 StudioUrlSetInstanceDefaults
@@ -25146,6 +25167,7 @@ VideoStreamMaxBufferMs
 VideoStreamMinBufferMs
 VideoStreamUpperSeekSlopMs
 VideoSupport
+VideoSupportNonrealtimeTesting
 VIDEOTEXSTRING
 VideoTexture
 VideoTimeOffsetToVideoPTSMs
@@ -25708,6 +25730,7 @@ VVertexLayoutD3D11
 VVertexLayoutD3D9
 VVertexLayoutGL
 VVertexLayoutVulkan
+VVideoClock
 VVideoFrame
 VVideoParser
 VVideoStream
@@ -25736,6 +25759,7 @@ VWorldModel
 VWorldRoot
 Vwspp_callback_client
 VWSUATAUAVAW
+VwwenFbgfuhjUCAwEAAQ
 VWXYZ[\]^_`a
 VXmlElement
 VYieldFunctions
@@ -25808,6 +25832,7 @@ WaterColor
 WaterDirection
 WaterForce
 WaterReflectance
+WaterReflectionWaveFix
 WaterTransparency
 WaterViscosityDragFudgeFactor
 WaterWaveSize
@@ -26096,6 +26121,7 @@ WSAStartup
 WSAStringToAddressW
 WTHelperGetProvSignerFromChain
 WTHelperProvDataFromStateData
+WwFiT1eu83AfEUeSicIqUJbZkvCwz06fEJxqAKbnqq
 X_deprecated
 X_Fullscreen
 X_JW4AssetType
@@ -26302,13 +26328,9 @@ YAXW4error_type
 Ycircumflex
 Ydieresissmall
 YffYZefYDNNDCOO
-YFzYlc9P3Iwn2C2OGOjNfqC1lhp0DDF1SSZhhtHPNtVZPHijkZ61H
-YhLi7bDXT159xVcX5UjIb4sjB6DFoRDLjcGsHo
 YieldEvent
 YieldFuncDesc
 YieldFunction
-YMbDFkMZkFZJCc6pI0y0mCuovOIR67oSwZMu7JyxA7cTG8HiSGhp16Ky
-YmGI2IEeOdBizEK9M5f5MpStpUNn
 YQByteArray
 YResolution
 YwBBvY55YvBBwY5

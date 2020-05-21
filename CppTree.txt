@@ -1310,6 +1310,7 @@ RBX
 	Verb
 	VerbContainer
 	VersionControlService
+	VideoClock
 	VideoFrame
 	VideoJob
 	VideoStream

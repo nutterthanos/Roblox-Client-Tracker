@@ -882,6 +882,8 @@ Studio.App.PlaceResourceController.AddingPlace,,Adding Place...,Adding Place...
 Studio.App.PlaceResourceController.CantRemoveStartPlace,,You cannot remove the start place from a game.,You cannot remove the start place from a game.
 Studio.App.PlaceResourceController.ErrorWhileAddingPlace,,Error while adding place. See Output window for details.,Error while adding place. See Output window for details.
 Studio.App.PlaceResourceController.ThisFunctionalityHasBeenDisabled,,This functionality has been disabled. You can update your start place by doing File > Publish to Roblox As... and selecting the start place.,This functionality has been disabled. You can update your start place by doing File > Publish to Roblox As... and selecting the start place.
+Studio.App.PlaceVersionHistory.BetaFeatureDescription,,Enable developers to revert versions in Roblox Studio and provide downloadable history of all versions of a place.,Enable developers to revert versions in Roblox Studio and provide downloadable history of all versions of a place.
+Studio.App.PlaceVersionHistory.BetaFeatureTitle,,Place Version History in Studio,Place Version History in Studio
 Studio.App.PlaceVersionHistoryDialog.Empty,,No Place Versions found,No Place Versions found
 Studio.App.PlaceVersionHistoryDialog.PublishedColumnTitle,,Published,Published
 Studio.App.PlaceVersionHistoryDialog.Tip,,Select a place version to download and open it,Select a place version to download and open it
