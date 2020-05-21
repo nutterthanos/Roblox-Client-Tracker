@@ -19,6 +19,7 @@
         LayoutOrder = number, this will be the layout order of this component in its parent.
 
     Optional Props:
+        ShowTable = boolean, determines if the table should be displayed or not.
 ]]
 
 local Plugin = script.Parent.Parent.Parent
@@ -46,6 +47,9 @@ function DevProducts:render()
     local localization = props.Localization
 
     local productsList = props.ProductList
+    local showTable = props.ShowTable
+
+    local dispatchCreateNewDevProduct = props.CreateNewDevProduct
     local dispatchSetEditDevProductId = props.OnEditDevProductClicked
 
     local layoutOrder = props.LayoutOrder
@@ -75,14 +79,14 @@ function DevProducts:render()
                 0, buttonTextExtents.Y + theme.createButton.PaddingY),
                 LayoutOrder = 2,
                 OnClick = function()
-                    dispatchSetEditDevProductId(0)
+                    dispatchCreateNewDevProduct()
                 end,
             }, {
                 Roact.createElement(HoverArea, {Cursor = "PointingHand"}),
             }),
         }),
 
-        DeveloperProductTable = Roact.createElement(TableWithMenu, {
+        DeveloperProductTable = showTable and Roact.createElement(TableWithMenu, {
             Headers = {
                 localization:getText("Monetization", "ProductID"),
                 localization:getText("Monetization", "ProductName"),

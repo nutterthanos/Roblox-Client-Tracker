@@ -298,7 +298,7 @@ function MainView:render()
 					onLinkClicked = function()
 						GuiService:OpenBrowserWindow(Constants.PLUGIN_LIBRARY_URL)
 					end,
-					content = localizedContentoPluginsFound
+					content = localizedContent.NoPluginsFound
 				}
 			end
 		end

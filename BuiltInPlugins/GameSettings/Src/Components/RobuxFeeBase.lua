@@ -38,9 +38,10 @@ function RobuxFeeBase:render()
     local localization = props.Localization
 
     local taxRate = props.TaxRate
-    local minimumFee = props.MinimumFee
+    local minimumFee = props.Price > 0 and props.MinimumFee or 0
 
-    local price = string.format("%.f", props.Price)
+    local priceVal = type(props.Price) == "number" and props.Price or 0
+    local price = string.format("%.f", priceVal)
     local subText = props.SubText
     local enabled = props.Enabled
     local onPriceChanged = props.OnPriceChanged
@@ -50,7 +51,8 @@ function RobuxFeeBase:render()
     local feeText = localization:getText("Monetization", "FeeLabel", {string.format("%2d", taxRate * 100)})
     local feeTextSize = GetTextSize(feeText, theme.fontStyle.Normal.TextSize, theme.fontStyle.Normal.Font)
 
-    local feeAmount = string.format("%.f", tostring(math.max(minimumFee, math.ceil(price * taxRate))))
+    local feeVal = math.max(minimumFee, math.ceil(priceVal * taxRate))
+    local feeAmount = string.format("%.f", tostring(feeVal))
 
     local priceText = localization:getText("Monetization", "Price")
     local priceTextSize = GetTextSize(priceText, theme.fontStyle.Normal.TextSize, theme.fontStyle.Normal.Font)
@@ -58,16 +60,21 @@ function RobuxFeeBase:render()
     local earnText = localization:getText("Monetization", "EarnLabel")
     local earnTextSize = GetTextSize(earnText, theme.fontStyle.Normal.TextSize, theme.fontStyle.Normal.Font)
 
-    local earnAmount = string.format("%.f", tostring(math.floor(price * (1 - taxRate))))
+    local earnVal = (priceVal - feeVal > 0) and priceVal - feeVal or 0
+    local earnAmount = string.format("%.f", tostring(earnVal))
 
     local subTextSize
     if subText then
-        subTextSize = GetTextSize(subText, theme.fontStyle.Subtext.TextSize, theme.fontStyle.Subtext.Font,
-            Vector2.new(theme.robuxFeeBase.subText.width, math.huge))
+        if enabled then
+            subTextSize = GetTextSize(subText, theme.fontStyle.SmallError.TextSize, theme.fontStyle.SmallError.Font,
+                Vector2.new(theme.robuxFeeBase.subText.width, math.huge))
+        else
+            subTextSize = GetTextSize(subText, theme.fontStyle.Subtext.TextSize, theme.fontStyle.Subtext.Font,
+                Vector2.new(theme.robuxFeeBase.subText.width, math.huge))
+        end
     else
         subTextSize = {}
     end
-
 
     local transparency = enabled and theme.robuxFeeBase.transparency.enabled or theme.robuxFeeBase.transparency.disabled
 
@@ -143,7 +150,7 @@ function RobuxFeeBase:render()
             }),
 
             SubText = subText and Roact.createElement("TextLabel", Cryo.Dictionary.join(subTextTheme, {
-                Size = UDim2.new(0, subTextSize.X, 0, subTextSize.Y),
+                Size = UDim2.new(0, math.ceil(subTextSize.X), 0, subTextSize.Y),
 
                 BackgroundTransparency = 1,
 
