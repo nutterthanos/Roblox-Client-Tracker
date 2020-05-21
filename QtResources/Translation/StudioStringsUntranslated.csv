@@ -885,6 +885,7 @@ Studio.App.PlaceResourceController.ThisFunctionalityHasBeenDisabled,,This functi
 Studio.App.PlaceVersionHistory.BetaFeatureDescription,,Enable developers to revert versions in Roblox Studio and provide downloadable history of all versions of a place.,Enable developers to revert versions in Roblox Studio and provide downloadable history of all versions of a place.
 Studio.App.PlaceVersionHistory.BetaFeatureTitle,,Place Version History in Studio,Place Version History in Studio
 Studio.App.PlaceVersionHistoryDialog.Empty,,No Place Versions found,No Place Versions found
+Studio.App.PlaceVersionHistoryDialog.HelpLink,,More information,More information
 Studio.App.PlaceVersionHistoryDialog.PublishedColumnTitle,,Published,Published
 Studio.App.PlaceVersionHistoryDialog.Tip,,Select a place version to download and open it,Select a place version to download and open it
 Studio.App.PlaceVersionHistoryDialog.ViewHistory,,View History,View History
@@ -2349,6 +2350,7 @@ Studio.App.VersionHistoryDialog.CommittedColumnTitle,,Committed,Committed
 Studio.App.VersionHistoryDialog.CommitterColumnTitle,,Changed By,Changed By
 Studio.App.VersionHistoryDialog.CompareButtonText,,Compare selected versions,Compare selected versions
 Studio.App.VersionHistoryDialog.CompareWithPreviousButtonText,,Compare with previous version,Compare with previous version
+Studio.App.VersionHistoryDialog.ComparedVersionsIdentical3,,Versions %1 and %2 of the script '%3' are identical,Versions %1 and %2 of the script '%3' are identical
 Studio.App.VersionHistoryDialog.ConflictDialogMessage,,Unable to edit the following script(s) as they have uncommitted changes that'll be lost. Please commit or discard local changes and retry the operation.,Unable to edit the following script(s) as they have uncommitted changes that'll be lost. Please commit or discard local changes and retry the operation.
 Studio.App.VersionHistoryDialog.ConflictDialogTitle,,Unable To Edit Script(s),Unable To Edit Script(s)
 Studio.App.VersionHistoryDialog.ConflictingScripts,,Conflicting Script(s),Conflicting Script(s)
