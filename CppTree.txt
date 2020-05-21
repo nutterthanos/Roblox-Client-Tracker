@@ -1101,6 +1101,7 @@ RBX
 	PluginGuiService
 	PluginGuiServiceBase
 	PluginManager
+	PluginManagerInterface
 	PluginMenu
 	PluginMouse
 	PluginToolbar
@@ -1309,6 +1310,7 @@ RBX
 	Verb
 	VerbContainer
 	VersionControlService
+	VideoClock
 	VideoFrame
 	VideoJob
 	VideoStream
