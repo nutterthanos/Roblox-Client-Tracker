@@ -16,7 +16,7 @@ local FFlagStudioAddMonetizationToGameSettings = game:GetFastFlag("StudioAddMone
 
 local World = require(script.Parent.DEPRECATED_World)
 
-local AccessPermissions = require(script.Parent.AccessPermissions)
+local AccessPermissions = require(script.Parent.DEPRECATED_AccessPermissions)
 
 local Places = require(script.Parent.Places)
 
