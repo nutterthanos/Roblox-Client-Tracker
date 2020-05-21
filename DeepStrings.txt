@@ -3868,6 +3868,7 @@ AXW4UiMessageType
 AXW4UserCFrame
 AXW4UserInputType
 AXW4VRTouchpad
+AY5ZDo8rOXXVi4iOf7
 BA447F42A91111E2B410EF351327957B
 BA886F11E18561866242201959
 BAA3C620681180838E23F0DC6224
@@ -3982,6 +3983,7 @@ BBBA91111E2B410EF351327957B
 BBCA91111E2B410EF351327957B
 BbEcJYG[I[NYVP\B]
 BBFA91111E2B410EF351327957B
+BBIquiUifIyHdIFybSTML9
 BBxZ55ZxBBx[5D
 BC0A91111E2B410EF351327957B
 BC0DAEAAF011E38B9D871882A8E559
@@ -4049,7 +4051,6 @@ BFE701C11E3B075CBAD925AA50F
 BFLuaDraggersRoleSet
 BFMotor6DTransformFixRoleSet
 BFSupportPluginDebuggingRoleSet
-Bg4OXIaSZI5NRnlSnogrIT
 BgUpdateRedirectsDisable
 BgUpdateRedirectsHttpErrInfluxHundredthsPercentage
 BgUpdateRedirectsRejectInfluxHundredthsPercentage
@@ -4454,7 +4455,7 @@ BytesReceivedAndIgnoredPerSec
 BytesReceivedPerSec
 BytesRecvAndIgnored
 BytesWritten
-ByVersion_0.434.0.405532
+ByVersion_0.434.0.405536
 ByVersionForPlatform_
 C_specific_handler
 CA_NPEAVQObject
@@ -4727,7 +4728,6 @@ CDEFGHIJSTUVWXYZcdefghijstuvwxyz
 Cdotaccent
 CE583B11E29A3DBD856014A660
 Cedillasmall
-CEKJ1uYk4sqDogAg4D9Qp
 CelestialBodiesShown
 CellCenterToWorld
 CellCornerToWorld
@@ -7703,6 +7703,7 @@ DisableReplicatorLuaGetRakStatsString
 DisableRotateGridVerb
 DisableSignalrHundredthsPercentage
 DisableSignalrHundredthsPercentageWindows
+DisableSpecialShapeInMeshPart
 DisableVertexAttribArray
 DisallowMP3ChangeCopyright
 DisallowMP3ChangeEmphasis
@@ -8815,7 +8816,6 @@ EVRConfig_ForceBob
 EVRConfig_ForceHalfInterlace
 EVRConfig_ForceScaling
 EVRConfig_ForceThrottle
-EWBFAkRdoJ9B2k
 ExactMatch
 ExceptionAddress
 ExceptionCode
@@ -10796,6 +10796,7 @@ GuiCluster
 GUID_00000100_0000_0000_c000_000000000046
 GUID_b2d0778b_ac99_4c58_a5c8_e7724e5316b5
 GuidRegistryService
+GuidsGetGood
 GuiImageButton
 GuiImageMixin
 GuiImagePlaceholder.png
@@ -10816,7 +10817,6 @@ GunCursor.png
 GunWaitCursor.png
 GvEphfEUiHHoD6hYFI4xWGpAnIHcklKQCxrf46kAhDGeZnqIgeGszlGdWafunGE8
 GVKUTS[BXIWH\KbHi
-GwHvSeXAbAKldsBgRJ7vGoAehLTn3kKSXZZJw
 GXGfGkGpGuG
 GyroscopeEnabled
 H_Key_dn.png
@@ -11324,6 +11324,7 @@ HWYGOTH.ttf
 HybridEvent
 Iacutesmall
 IAutocompleter
+IaydAMHPguGIUNgI3n
 IBusyStateModel
 ICCProfile
 ICharacterSubject
@@ -11337,7 +11338,6 @@ IconImageAssetId
 IconImageId
 IconPixmap
 IconVisibleInMenu
-IcPaW3JZRJTCIv
 Id_AlwaysOnTop
 ID_CONNECTION_LOST
 ID_CONNECTION_REQUEST_ACCEPTED
@@ -12051,7 +12051,6 @@ Javascript
 JavaScript
 JavaScriptCallback
 Jba5qWkYU5nARYZm1gQVP
-JbKRS3QfX2Uif
 Jcircumflex
 JDJNJXJbJlJvJ
 JHJRJ\JfJpJxJ
@@ -12212,8 +12211,10 @@ KillPtClicked
 KillSurfaceJointsPart1
 KnownHeaders
 KodchiangUPC
+KoLI30rllTCljPX1XnsHFFaPOWtC6RHWwJNWa
 KPEAVICHull
 KPEIBX_K_KPEIAU_iobuf
+Kv2uPnV3J0iKfIT4TVx6CuJLkNByGHBgZpBwxnCmnkyv
 KVScriptContext
 KYULPhCBFoD3mw5mygYqAeFlHdSL2k3MnDG
 LabelArray
@@ -12222,7 +12223,6 @@ LabelArray[globstart]
 LabelArray[nLog]
 LabelGallery
 LabelledData
-LAiu0kbPgA3g4MGSx9uHOtbCpaZN
 LandedBalanceD
 LandedBalanceP
 LandedTolerance
@@ -12537,6 +12537,7 @@ LiveCoding
 LiveScript
 LiveThreadRef
 LivingRoom
+LKgm9pq03d
 LLEo6Soxvx2
 LOAD_CERT_CTRL
 LoadAnimation
@@ -13518,6 +13519,7 @@ MethodQuery
 Metrics.width
 MetricsSets
 MetricType
+MfBQxqpFQfpLb
 MHapV7R8MxA953
 MicroProfile
 MicroProfileFlip
@@ -13534,7 +13536,7 @@ MigrateTriangleMeshData3
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsI9zRp2OSccqdFx2
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAupANB3EbN9hFHHUj0eA
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjPRQo9jc
-MIICCgKCAgEAsCYJ4
+MIICCgKCAgEAzGGW2FAuDesGrAol9
 Millisecond
 MillisecondsBeforeHandlingReconnect
 MimeDataFromSelection
@@ -13577,7 +13579,6 @@ MissingDumpFile
 MMW4IkDragCollisionsMode
 MMW4PartMaterial
 MMW4UserInputState
-MnhkdYz9XTbFvoZG
 MobileDevelopmentDeployer
 MobileWebsite
 MockAndroidBackButtonPressed
@@ -13795,6 +13796,7 @@ MSACM32.dll
 MsecBetweenTextureMemoryUsageArrayRefresh
 MSecsSinceEpoch
 MsgWaitForMultipleObjectsEx
+MSOHPC6CiFTffFB2bY9fDdnBSD
 MsToScreen
 MSVCP140.dll
 MSWSOCK.dll
@@ -13856,7 +13858,7 @@ MultTransposeMatrixf
 MusicalInstruments
 MutexLifetime
 MW4PartMaterial
-MXIXc9flhXzYV7K8Jo3tlBqJQ9Sor0DHIaJtGDIpuw
+MyHbUfJGne6D78I4zRH
 MyModelsAction
 NAEAVHttpResponse
 NAEBUPlaceLauncherRequestInfo
@@ -14081,7 +14083,6 @@ NextSelectionUp
 NextSpawnLocation
 NextTabPage
 NfXf`fhfzf
-NglCjS8vuS
 NHDHVQChar
 NHVVariant
 NinjaMask.mesh
@@ -14170,7 +14171,6 @@ NPCUnequipTools
 NPEAVInstance
 NPEAVQString
 NPEAVQWidget
-NS5PRn4di0hy6omeNd0CAwEAAQ
 Ntildesmall
 NullPassword
 NUMBER_OF_ORDERED_STREAMS
@@ -14212,6 +14212,7 @@ NumRigidJointsNotInWorld
 NumTickets
 NVAuthenticationHelper
 Nvb5JjRCUQ
+NvIEfwfZ6LdUz3AaAHQVF110w9vJRRfJ6ofeMiXr45rMOWVJwialabsCAwEAAQ
 NVLuaWebService
 NvOptimusEnablement
 NVReplicator
@@ -14225,7 +14226,6 @@ NW4PenStyle
 NW4UserInputType
 Oacutesmall
 OAEPEncryptionSET
-OAGbwdEHLXHN
 OAUTHBEARER
 Obj.GroupColors
 Obj.GroupsActive
@@ -14357,7 +14357,6 @@ OLEAUT32.dll
 OleInitialize
 OleLockRunning
 OleUninitialize
-OlV18X3vjzuw93kuc6JUGRDR1rclI8qNeiR
 OnAllScriptErrorsAction
 OnBadgeAwarded
 OnboardingsCompleted
@@ -14617,7 +14616,6 @@ OverrideStarterScript
 OverrideToMyBranch
 OverwriteMode
 OwnProperty
-OWolOBorAsWTtZxHQx1OS3reioW1iauJrjN6mT0RjluLoJ
 Ozs8xYCf2Q05p4gHyX
 PA^A]A\_^]
 PA^A]A\_^][
@@ -14854,6 +14852,7 @@ PCStudioAppCJV
 PE_MAX_NB_SUBFR
 PEA_NAEBV2
 PEA_NPEAVQDialog
+PEAaBuBsqVXt0RvcYXzOPFfV
 PEAD1AEAPEAD
 PEAPEAVsgCObject
 PEAPEAX01PEAVQSlotObjectBase
@@ -16243,6 +16242,7 @@ PpjEtrFill
 PpjEtrThreshold
 PpjPmThreshold
 PPLTaskHandle
+PQ3QUY4Qrkb
 Prc.length
 Prc[MouseGraphX]
 Precertificate
@@ -17112,7 +17112,6 @@ QPropertyAnimation
 QProxyStyle
 QPushButton
 QPushButton[default
-QqFUjIJZTuiRCNR9FwuMUaQvfu9PTEb
 QQmlContext
 QQmlEngine
 QQmlImageProviderBase
@@ -17329,6 +17328,7 @@ QuotedDouble
 QUrlTwoFlags
 QValidator
 QVariantAnimation
+QVaxbhwtuhAq0Z1IXzro0
 QVBoxLayout
 QVersionNumber
 QWebElement
@@ -17343,7 +17343,6 @@ QWheelEvent
 QWidgetAction
 QWidgetPluginGui
 QWidgetWindow
-Qz3w8HVXAhUX5M
 RadialBlurFS
 RagdollDefaultTimerTenthSecond
 RagdollEarlyExitTimeTenthSecond
@@ -18476,7 +18475,6 @@ RigidBodyLazyUpdating
 RigidityEnabled
 RiseVelocity
 Rj0isQcnqX
-Rn8tvvMMAzVVF5JT7kvLPNsVbm
 Roact.createElement
 ROBLOSECURITY
 Roblox.Hybrid
@@ -22452,7 +22450,6 @@ StudsOffset
 StudsOffsetWorldSpace
 StudsPerTileU
 StudsPerTileV
-StXOE7f1L8MSAgg2Uc5QqHwToTfbVby3FbuKKHY1tovBkm2JkHqPdEsYN7Qk
 StyleOption
 StyleSheet
 StyleVersion
@@ -22705,7 +22702,6 @@ TattletaleShuffleCount
 TattletaleUseNewWordListFeatures
 TattletaleUseOriginalWordList
 TattletaleUseStrstr
-TC2PxD6FSt5aavqKgRlkOs83pfo0w4pwXf7trPlSC2CLLbdR4Vfw5puiBsg49mG
 Tcommaaccent
 TCP_NODELAY
 TeamCreate
@@ -26035,7 +26031,6 @@ WithSHA224
 WithSHA256
 WithSHA384
 WithSHA512
-WkEDmNKuMl
 WM_ATLGETCONTROL
 WM_ATLGETHOST
 WMCreateProfileManager
@@ -26307,15 +26302,17 @@ YAXW4error_type
 Ycircumflex
 Ydieresissmall
 YffYZefYDNNDCOO
+YFzYlc9P3Iwn2C2OGOjNfqC1lhp0DDF1SSZhhtHPNtVZPHijkZ61H
+YhLi7bDXT159xVcX5UjIb4sjB6DFoRDLjcGsHo
 YieldEvent
 YieldFuncDesc
 YieldFunction
+YMbDFkMZkFZJCc6pI0y0mCuovOIR67oSwZMu7JyxA7cTG8HiSGhp16Ky
+YmGI2IEeOdBizEK9M5f5MpStpUNn
 YQByteArray
 YResolution
-YrQZn6xSYrtsBVqKQ0A1IWkNDvu5
 YwBBvY55YvBBwY5
 Z_KPEIBX_K_KPEIAU1
-ZbGSvx1IexwDGrOQGPYkDULcQqNw
 Zcaronsmall
 Zdotaccent
 ZgnhKhWhci
