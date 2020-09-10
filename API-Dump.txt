@@ -156,6 +156,11 @@ Class Bone : Attachment
 	Property CFrame Bone.Transform [<📁> LoadOnly] [NotReplicated]
 	Property CFrame Bone.TransformedCFrame  [ReadOnly] [NotReplicated]
 	Property CFrame Bone.TransformedWorldCFrame  [ReadOnly] [NotReplicated]
+Class AvatarEditorService : Instance [NotCreatable] [Service] [NotReplicated]
+	Function Dictionary AvatarEditorService:GetAvatarRules() [Yields]
+	Function Dictionary AvatarEditorService:GetItemDetails(int64 itemId, Enum<ItemType> itemType) [Yields]
+	Function Array AvatarEditorService:GetRecommendedAssets(Enum<AvatarAssetType> assetType, int64 contextAssetId = 0) [Yields]
+	Function Array AvatarEditorService:GetRecommendedBundles(int64 bundleId) [Yields]
 Class Backpack : Instance
 Class BackpackItem : Instance [NotCreatable]
 	Property Content BackpackItem.TextureId
@@ -310,6 +315,7 @@ Class BrowserService : Instance [NotCreatable] [Service] [NotReplicated]
 Class BulkImportService : Instance [NotCreatable] [Service] [NotReplicated]
 	Function void BulkImportService:LaunchBulkImport(int assetTypeToImport) {RobloxScriptSecurity}
 	Function void BulkImportService:ShowBulkImportView() {RobloxScriptSecurity}
+	Event BulkImportService.AssetImported(Enum<AssetType> assetType, string name, int id) {RobloxScriptSecurity}
 	Event BulkImportService.BulkImportFinished(int state) {RobloxScriptSecurity}
 	Event BulkImportService.BulkImportStarted() {RobloxScriptSecurity}
 Class CacheableContentProvider : Instance [NotCreatable] [Service] [NotReplicated]
@@ -541,9 +547,14 @@ Class ContentProvider : Instance [NotCreatable] [Service] [NotReplicated]
 	Function int ContentProvider:CalculateNumTrianglesInMesh(string meshId) {RobloxScriptSecurity} [Yields]
 	Function int ContentProvider:CalculateNumTrianglesInMeshSync(string meshId) {RobloxScriptSecurity}
 	Function Array ContentProvider:GetFailedRequests() {RobloxScriptSecurity}
+	Function Array ContentProvider:ListEncryptedAssets()
 	Function void ContentProvider:Preload(Content contentId) [Deprecated]
 	Function void ContentProvider:PreloadAsync(Array contentIdList, Function callbackFunction = nil) [Yields]
+	Function void ContentProvider:RegisterDefaultEncryptionKey(string encryptionKey)
+	Function void ContentProvider:RegisterEncryptedAsset(Content assetId, string encryptionKey)
 	Function void ContentProvider:SetBaseUrl(string url) {LocalUserSecurity}
+	Function void ContentProvider:UnregisterDefaultEncryptionKey()
+	Function void ContentProvider:UnregisterEncryptedAsset(Content assetId)
 Class ContextActionService : Instance [NotCreatable] [Service]
 	Function void ContextActionService:BindAction(string actionName, Function functionToBind, bool createTouchButton, Tuple inputTypes)
 	Function void ContextActionService:BindActionAtPriority(string actionName, Function functionToBind, bool createTouchButton, int priorityLevel, Tuple inputTypes)
@@ -1167,6 +1178,7 @@ Class GuiService : Instance [NotCreatable] [Service] [NotReplicated]
 	Property bool GuiService.IsModalDialog  [ReadOnly] [NotReplicated] [Deprecated]
 	Property bool GuiService.IsWindows  [ReadOnly] [NotReplicated] [Deprecated]
 	Property bool GuiService.MenuIsOpen [<💾> SaveOnly] [ReadOnly] [NotReplicated]
+	Property bool GuiService.RenderHumanoidBillboards {RobloxScriptSecurity} [Hidden] [NotReplicated]
 	Property Class<GuiObject> GuiService.SelectedCoreObject {RobloxScriptSecurity} [<📁> LoadOnly] [NotReplicated]
 	Property Class<GuiObject> GuiService.SelectedObject
 	Function void GuiService:AddCenterDialog(Instance dialog, Enum<CenterDialogType> centerDialogType, Function showFunction, Function hideFunction) {RobloxScriptSecurity}
@@ -2098,6 +2110,7 @@ Class PhysicsSettings : Instance [NotCreatable] [Settings]
 	Property bool PhysicsSettings.AreUnalignedPartsShown
 	Property bool PhysicsSettings.AreWorldCoordsShown
 	Property bool PhysicsSettings.DisableCSGv2
+	Property bool PhysicsSettings.ForceCSGv2  [Hidden] [NotReplicated]
 	Property bool PhysicsSettings.IsReceiveAgeShown
 	Property bool PhysicsSettings.IsTreeShown
 	Property bool PhysicsSettings.ShowDecompositionGeometry
@@ -2816,7 +2829,9 @@ Class Studio : Instance [NotCreatable] [Service] [NotReplicated]
 	Property bool Studio.Disable Accurate Play Solo
 	Property bool Studio.Drag Multiple Parts As Single Part
 	Property bool Studio.Enable CoreScript Debugger
+	Property bool Studio.Enable Http Sandboxing
 	Property bool Studio.Enable Intellisense [<📁> LoadOnly] [NotReplicated] [Deprecated]
+	Property bool Studio.Enable Internal Beta Features
 	Property bool Studio.Enable Internal Features
 	Property bool Studio.Respect Studio shortcuts when game has focus
 	Property bool Studio.Search Content For Core Scripts
@@ -2929,9 +2944,11 @@ Class StudioService : Instance [NotCreatable] [Service] [NotReplicated]
 	Function bool StudioService:BaseURLHasChineseHost() {RobloxScriptSecurity}
 	Function void StudioService:ConvertToPackageUpload(string uploadUrl) {RobloxScriptSecurity}
 	Function void StudioService:CopyToClipboard(string stringToCopy) {RobloxScriptSecurity}
+	Function void StudioService:DEPRECATED_ShowPlaceVersionHistoryDialog() {RobloxScriptSecurity}
 	Function void StudioService:EmitPlacePublishedSignal() {RobloxScriptSecurity}
 	Function Dictionary StudioService:GetClassIcon(string className) {PluginSecurity}
 	Function Dictionary StudioService:GetResourceByCategory(string category) {RobloxScriptSecurity}
+	Function string StudioService:GetStartupAssetId() {RobloxScriptSecurity}
 	Function string StudioService:GetStartupPluginId() {RobloxScriptSecurity}
 	Function string StudioService:GetTermsOfUseUrl() {RobloxScriptSecurity}
 	Function int64 StudioService:GetUserId() {PluginSecurity}
@@ -2950,7 +2967,7 @@ Class StudioService : Instance [NotCreatable] [Service] [NotReplicated]
 	Function void StudioService:SetDocumentDisplayName(string newName) {RobloxScriptSecurity}
 	Function void StudioService:SetPluginEnabled(int64 assetId, bool state) {RobloxScriptSecurity}
 	Function void StudioService:SetUniverseDisplayName(string newName) {RobloxScriptSecurity}
-	Function void StudioService:ShowPlaceVersionHistoryDialog() {RobloxScriptSecurity}
+	Function void StudioService:ShowPlaceVersionHistoryDialog(int64 placeId) {RobloxScriptSecurity}
 	Function void StudioService:ShowPublishToRoblox() {RobloxScriptSecurity}
 	Function void StudioService:TryInstallPlugin(int64 assetId, int64 assetVersionId) {RobloxScriptSecurity} [Yields]
 	Function void StudioService:UninstallPlugin(int64 assetId) {RobloxScriptSecurity}
@@ -3170,6 +3187,10 @@ Class UIPadding : UIComponent
 	Property UDim UIPadding.PaddingTop
 Class UIScale : UIComponent
 	Property float UIScale.Scale
+Class UnvalidatedAssetService : Instance [NotCreatable] [Service]
+	Function void UnvalidatedAssetService:AppendTempAsset(int64 id, Vector3 lookAt, Vector3 camPos, string usage) {RobloxScriptSecurity}
+	Function bool UnvalidatedAssetService:AppendVantagePoint(int64 id, Vector3 lookAt, Vector3 camPos) {RobloxScriptSecurity}
+	Function bool UnvalidatedAssetService:RenameTempAsset(int64 tempId, int64 assetId) {RobloxScriptSecurity}
 Class UserGameSettings : Instance [NotCreatable] [UserSettings]
 	Property Enum<SavedQualitySetting> UserGameSettings.SavedQualityLevel
 	Property Enum<CustomCameraMode> UserGameSettings.CameraMode {RobloxScriptSecurity}
@@ -3502,6 +3523,34 @@ Enum AutoIndentRule
 	EnumItem AutoIndentRule.Off : 0
 	EnumItem AutoIndentRule.Absolute : 1
 	EnumItem AutoIndentRule.Relative : 2
+Enum AvatarAssetType
+	EnumItem AvatarAssetType.TShirt : 2
+	EnumItem AvatarAssetType.Hat : 8
+	EnumItem AvatarAssetType.Shirt : 11
+	EnumItem AvatarAssetType.Pants : 12
+	EnumItem AvatarAssetType.Head : 17
+	EnumItem AvatarAssetType.Face : 18
+	EnumItem AvatarAssetType.Gear : 19
+	EnumItem AvatarAssetType.Torso : 27
+	EnumItem AvatarAssetType.RightArm : 28
+	EnumItem AvatarAssetType.LeftArm : 29
+	EnumItem AvatarAssetType.LeftLeg : 30
+	EnumItem AvatarAssetType.RightLeg : 31
+	EnumItem AvatarAssetType.HairAccessory : 41
+	EnumItem AvatarAssetType.FaceAccessory : 42
+	EnumItem AvatarAssetType.NeckAccessory : 43
+	EnumItem AvatarAssetType.ShoulderAccessory : 44
+	EnumItem AvatarAssetType.FrontAccessory : 45
+	EnumItem AvatarAssetType.BackAccessory : 46
+	EnumItem AvatarAssetType.WaistAccessory : 47
+	EnumItem AvatarAssetType.ClimbAnimation : 48
+	EnumItem AvatarAssetType.FallAnimation : 50
+	EnumItem AvatarAssetType.IdleAnimation : 51
+	EnumItem AvatarAssetType.JumpAnimation : 52
+	EnumItem AvatarAssetType.RunAnimation : 53
+	EnumItem AvatarAssetType.SwimAnimation : 54
+	EnumItem AvatarAssetType.WalkAnimation : 55
+	EnumItem AvatarAssetType.EmoteAnimation : 61
 Enum AvatarContextMenuOption
 	EnumItem AvatarContextMenuOption.Friend : 0
 	EnumItem AvatarContextMenuOption.Chat : 1
@@ -4010,8 +4059,8 @@ Enum HttpRequestType
 	EnumItem HttpRequestType.Players : 7
 	EnumItem HttpRequestType.Chat : 15
 	EnumItem HttpRequestType.Avatar : 16
-	EnumItem HttpRequestType.Analytics : 22
-	EnumItem HttpRequestType.Localization : 24
+	EnumItem HttpRequestType.Analytics : 23
+	EnumItem HttpRequestType.Localization : 25
 Enum HumanoidCollisionType
 	EnumItem HumanoidCollisionType.OuterBox : 0
 	EnumItem HumanoidCollisionType.InnerBox : 1
@@ -4068,6 +4117,9 @@ Enum InputType
 	EnumItem InputType.NoInput : 0
 	EnumItem InputType.Constant : 12
 	EnumItem InputType.Sin : 13
+Enum ItemType
+	EnumItem ItemType.Asset : 0
+	EnumItem ItemType.Bundle : 1
 Enum JointCreationMode
 	EnumItem JointCreationMode.All : 0
 	EnumItem JointCreationMode.Surface : 1

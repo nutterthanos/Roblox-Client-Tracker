@@ -568,7 +568,9 @@ RBX
 		CmdUnfoldAll
 		CmdUnindentSelection
 		GotoLineDialog
+		HighlightFormatProvider
 		HighlightProvider
+		LSPClientSettings
 		QtLanguageClient
 		ScriptEditorCmdBase
 		ScriptHighlightCache
@@ -577,6 +579,7 @@ RBX
 		ScriptingCmdInput
 		ScriptingCommands
 		ScriptingManager
+		Settings
 	}
 	Scripting
 	{
@@ -733,6 +736,7 @@ RBX
 	AttachmentDraggerTool
 	AttachmentTool
 	AutoJointSurfacePair
+	AvatarEditorService
 	Backpack
 	BackpackItem
 	BadgeService
@@ -916,6 +920,7 @@ RBX
 	GameTool
 	GcJob
 	GenericNumberHandler
+	GenericTelemetryEnabledJob
 	Geometry
 	GeometryService
 	GfxBinding
@@ -1370,6 +1375,7 @@ RBX
 	UnlockedPartByLocalCharacter
 	UnSavedScripts
 	UnsecuredStudioGame
+	UnvalidatedAssetService
 	UserInputBase
 	UserInputService
 	UsernameHandler
