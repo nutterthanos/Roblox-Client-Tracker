@@ -3,7 +3,7 @@
 ]]
 local PackageIndex = script.Parent.Parent
 
-local package = PackageIndex["roblox_policy-provider"]["policy-provider"]
+local package = PackageIndex["roblox_lua-roact-policy-provider"]["lua-roact-policy-provider"]
 
 if package.ClassName == "ModuleScript" then
 	return require(package)
