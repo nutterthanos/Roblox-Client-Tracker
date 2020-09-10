@@ -7,6 +7,8 @@ game:DefineFastFlag("TerrainToolsUseDevFramework", false)
 game:DefineFastFlag("TerrainToolsUseMapSettingsWithPreview2", false)
 game:DefineFastFlag("TerrainEnableErrorReporting", false)
 game:DefineFastFlag("TerrainToolsReplaceSrcTogglesOff", false)
+game:DefineFastFlag("TerrainToolsFixRegionPreviewDeactivation", false)
+game:DefineFastFlag("TerrainToolsFixLargeSmoothAirFillerMaterial", false)
 
 local function handleFlagDependencies(flag, requiredFlags)
 	if not game:GetFastFlag(flag) then
@@ -18,6 +20,8 @@ local function handleFlagDependencies(flag, requiredFlags)
 			("FFlag%s requires FFlag%s to be on"):format(flag, requiredFlag))
 	end
 end
+
+handleFlagDependencies("TerrainToolsUseDevFramework", {"TerrainToolsUseMapSettingsWithPreview2"})
 
 -- Need to explicitly return something from a module
 -- Else you get an error "Module code did not return exactly one value"

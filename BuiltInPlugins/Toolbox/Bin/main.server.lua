@@ -1,3 +1,6 @@
+--!nolint ImportUnused
+--^ DEVTOOLS-4491
+
 if not plugin then
 	return
 end
@@ -6,20 +9,15 @@ end
 require(script.Parent.defineLuaFlags)
 local FFlagEnableOverrideAssetCursorFix = game:GetFastFlag("EnableOverrideAssetCursorFix")
 local FFlagAssetManagerLuaPlugin = game:GetFastFlag("AssetManagerLuaPlugin")
-local FFlagStudioUseNewAnimationImportExportFlow = settings():GetFFlag("StudioUseNewAnimationImportExportFlow")
 local FFlagStudioAssetConfigurationPlugin = game:GetFastFlag("StudioAssetConfigurationPlugin")
 local FFlagToolboxUseDevFrameworkPromise = game:GetFastFlag("ToolboxUseDevFrameworkPromise")
 local FFlagDevFrameworkUnhandledPromiseRejections = game:GetFastFlag("DevFrameworkUnhandledPromiseRejections")
 local FFlagToolboxDisableForLuobu = game:GetFastFlag("ToolboxDisableForLuobu")
 local FFlagDebugToolboxEnableRoactChecks = game:GetFastFlag("DebugToolboxEnableRoactChecks")
+local FFlagToolboxNewAssetAnalytics = game:GetFastFlag("ToolboxNewAssetAnalytics")
 
 local Plugin = script.Parent.Parent
 local Libs = Plugin.Libs
-local FFlagToolboxTabTooltips = game:GetFastFlag("ToolboxTabTooltips")
-if FFlagToolboxTabTooltips then
-	Libs:FindFirstChild("Roact"):Destroy()
-	Libs.RoactNext.Name = "Roact"
-end
 local Roact = require(Libs.Roact)
 
 if FFlagDebugToolboxEnableRoactChecks then
@@ -34,6 +32,7 @@ local Rodux = require(Libs.Rodux)
 
 local Util = Plugin.Core.Util
 local Analytics = require(Util.Analytics.Analytics)
+local AssetAnalyticsContextItem = require(Util.Analytics.AssetAnalyticsContextItem)
 local DebugFlags = require(Util.DebugFlags)
 local Settings = require(Util.Settings)
 local ToolboxTheme = require(Util.ToolboxTheme)
@@ -170,10 +169,8 @@ local function DEPRECATED_createMonolithicAssetConfig(assetId, flowType, instanc
 	local startScreen = AssetConfigUtil.getFlowStartScreen(flowType)
 
 	local defaultTab = ConfigTypes:getDefualtTab()
-	if FFlagStudioUseNewAnimationImportExportFlow then
-		if flowType == AssetConfigConstants.FLOW_TYPE.DOWNLOAD_FLOW then
-			defaultTab = ConfigTypes:getOverrideTab()
-		end
+	if flowType == AssetConfigConstants.FLOW_TYPE.DOWNLOAD_FLOW then
+		defaultTab = ConfigTypes:getOverrideTab()
 	end
 
 	-- If we don't have asset id, we will be publish an new asset.
@@ -215,10 +212,8 @@ local function DEPRECATED_createMonolithicAssetConfig(assetId, flowType, instanc
 			fireTabRefreshEvent()
 			Roact.unmount(assetConfigHandle)
 			assetConfigHandle = nil
-			if FFlagStudioUseNewAnimationImportExportFlow then
-				-- this should no-opt if user already selected an animation id in download flow
-				StudioService:AnimationIdSelected(0)
-			end
+			-- this should no-opt if user already selected an animation id in download flow
+			StudioService:AnimationIdSelected(0)
 		end
 	end
 
@@ -300,6 +295,12 @@ local function main()
 		Rodux.thunkMiddleware
 	})
 
+	local assetAnalyticsContextItem
+
+	if FFlagToolboxNewAssetAnalytics then
+		assetAnalyticsContextItem = AssetAnalyticsContextItem.new()
+	end
+
 	local settings = Settings.new(plugin)
 	local theme = createTheme()
 	local networkInterface = NetworkInterface.new()
@@ -343,6 +344,7 @@ local function main()
 		theme = theme,
 		store = toolboxStore,
 		settings = settings,
+		assetAnalytics = assetAnalyticsContextItem,
 	}, {
 		toolboxComponent
 	})
@@ -352,7 +354,7 @@ local function main()
 	StudioService.OnSaveToRoblox:connect(function(instances)
 		local function proceedToUpload()
 			local clonedInstances = AssetConfigUtil.getClonedInstances(instances)
-			if FFlagStudioUseNewAnimationImportExportFlow and #clonedInstances == 1 and clonedInstances[1]:IsA("KeyframeSequence") then
+			if #clonedInstances == 1 and clonedInstances[1]:IsA("KeyframeSequence") then
 				createAssetConfig(nil, AssetConfigConstants.FLOW_TYPE.UPLOAD_FLOW, clonedInstances, Enum.AssetType.Animation)
 			else
 				createAssetConfig(nil, AssetConfigConstants.FLOW_TYPE.UPLOAD_FLOW, clonedInstances)
@@ -361,11 +363,9 @@ local function main()
 		toolboxStore:dispatch(GetRolesRequest(networkInterface)):andThen(proceedToUpload, proceedToUpload)
 	end)
 
-	if FFlagStudioUseNewAnimationImportExportFlow then
-		StudioService.OnImportFromRoblox:connect(function(callback)
-			createAssetConfig(nil, AssetConfigConstants.FLOW_TYPE.DOWNLOAD_FLOW, nil, Enum.AssetType.Animation)
-		end)
-	end
+	StudioService.OnImportFromRoblox:connect(function(callback)
+		createAssetConfig(nil, AssetConfigConstants.FLOW_TYPE.DOWNLOAD_FLOW, nil, Enum.AssetType.Animation)
+	end)
 
 	StudioService.OnOpenManagePackagePlugin:connect(function(userId, assetId)
 		createAssetConfig(assetId, AssetConfigConstants.FLOW_TYPE.EDIT_FLOW, nil, Enum.AssetType.Model)

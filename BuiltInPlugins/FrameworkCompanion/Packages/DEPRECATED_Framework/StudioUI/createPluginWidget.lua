@@ -9,8 +9,10 @@
 ]]
 
 game:DefineFastFlag("FixDevFrameworkDockWidgetRestore", false)
+game:DefineFastFlag("DevFrameworkPluginWidgetEnabledEvent", false)
 
 local FFlagFixDevFrameworkDockWidgetRestore = game:GetFastFlag("FixDevFrameworkDockWidgetRestore")
+local FFlagDevFrameworkPluginWidgetEnabledEvent = game:GetFastFlag("DevFrameworkPluginWidgetEnabledEvent")
 
 local Framework = script.Parent.Parent
 local Roact = require(Framework.Parent.Roact)
@@ -34,6 +36,18 @@ local function createPluginWidget(componentName, createWidgetFunc)
 		if widget:IsA("PluginGui") then
 			widget:BindToClose(onClose)
 
+			if self.props.OnWidgetFocused then
+				self.windowFocusedConnection = widget.WindowFocused:Connect(function()
+					self.props.OnWidgetFocused(self.widget)
+				end)
+			end
+
+			if self.props.OnWidgetFocusReleased then
+				self.windowFocusReleasedConnection = widget.WindowFocusReleased:Connect(function()
+					self.props.OnWidgetFocusReleased(self.widget)
+				end)
+			end
+
 			if FFlagFixDevFrameworkDockWidgetRestore then
 				-- plugin:CreateDockWidgetPluginGui() blocks until after restore logic has ran
 				-- By the time Lua thread resumes, HostWidgetWasRestored has been set and is safe to use
@@ -51,6 +65,16 @@ local function createPluginWidget(componentName, createWidgetFunc)
 					end)
 				end
 			end
+		end
+
+		if FFlagDevFrameworkPluginWidgetEnabledEvent then
+			-- Connect to enabled changing *after* restore
+			-- Otherwise users of this will get 2 enabled changes: one from the onRestore, and the same from Roact.Change.Enabled
+			self.widgetEnabledChangedConnection = widget:GetPropertyChangedSignal("Enabled"):Connect(function()
+				if self.props[Roact.Change.Enabled] then
+					self.props[Roact.Change.Enabled](self.widget)
+				end
+			end)
 		end
 
 		self.focus = Focus.new(widget)
@@ -93,8 +117,24 @@ local function createPluginWidget(componentName, createWidgetFunc)
 	end
 
 	function PluginWidget:willUnmount()
+		if self.widgetEnabledChangedConnection then
+			self.widgetEnabledChangedConnection:Disconnect()
+			self.widgetEnabledChangedConnection = nil
+		end
+
+		if self.windowFocusReleasedConnection then
+			self.windowFocusReleasedConnection:Disconnect()
+			self.windowFocusReleasedConnection = nil
+		end
+
+		if self.windowFocusedConnection then
+			self.windowFocusedConnection:Disconnect()
+			self.windowFocusedConnection = nil
+		end
+
 		if self.widget then
 			self.widget:Destroy()
+			self.widget = nil
 		end
 	end
 
